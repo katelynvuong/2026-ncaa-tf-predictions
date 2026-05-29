@@ -38,7 +38,8 @@ def flattened_dataframes() -> dict[str, pd.DataFrame]:
     pr_rows: list[dict] = []
     result_rows: list[dict] = []
 
-    for profile in profiles:
+    for raw in profiles:
+        profile = raw.get("data") or {}
         athlete_id = profile.get("athlete_id", "")
         name = profile.get("name", "")
         school = profile.get("school", "")
@@ -49,7 +50,7 @@ def flattened_dataframes() -> dict[str, pd.DataFrame]:
         pr_row.update({f"pr_{event.replace(' ', '_')}": mark for event, mark in prs.items()})
         pr_rows.append(pr_row)
 
-        for season_entry in profile.get("seasons", []):
+        for season_entry in profile.get("meets", []):
             meet = season_entry.get("meet", "")
             date = season_entry.get("date", "")
             for result in season_entry.get("results", []):
@@ -70,7 +71,8 @@ def flattened_dataframes() -> dict[str, pd.DataFrame]:
     df_prs = pd.DataFrame(pr_rows)
     df_results = pd.DataFrame(result_rows)
 
-    out = Path("data")
+    out = Path("data/flattened_dataframes")
+    out.mkdir(parents=True, exist_ok=True)
     df_prs.to_csv(out / "athletes_prs.csv", index=False)
     df_results.to_csv(out / "season_results.csv", index=False)
 

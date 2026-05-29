@@ -75,7 +75,7 @@ def qualifying_athletes(context) -> pd.DataFrame:
     context.log.info(f"  → {len(rows)} unique athletes")
 
     df = pd.DataFrame(rows)
-    out = Path(f"data/qualifying_athletes_{context.partition_key}.csv")
+    out = Path(f"data/qualifying_athletes/qualifying_athletes_{context.partition_key}.csv")
     out.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(out, index=False)
     context.log.info(f"Saved {len(df)} athletes to {out}")
