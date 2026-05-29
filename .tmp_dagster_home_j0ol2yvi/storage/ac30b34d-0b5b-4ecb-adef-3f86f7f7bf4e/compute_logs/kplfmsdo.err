@@ -1,0 +1,10 @@
+[32m2026-05-29 14:03:25 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ac30b34d-0b5b-4ecb-adef-3f86f7f7bf4e - 41635 - LOGS_CAPTURED - Started capturing logs in process (pid: 41635).
+[32m2026-05-29 14:03:25 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ac30b34d-0b5b-4ecb-adef-3f86f7f7bf4e - 41635 - flattened_dataframes - STEP_START - Started execution of step "flattened_dataframes".
+[32m2026-05-29 14:03:26 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ac30b34d-0b5b-4ecb-adef-3f86f7f7bf4e - flattened_dataframes - Loaded 3602 athlete profiles
+[32m2026-05-29 14:03:27 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ac30b34d-0b5b-4ecb-adef-3f86f7f7bf4e - flattened_dataframes - athletes_prs.csv: 3602 rows
+[32m2026-05-29 14:03:27 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ac30b34d-0b5b-4ecb-adef-3f86f7f7bf4e - flattened_dataframes - season_results.csv: 175505 rows
+[32m2026-05-29 14:03:27 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ac30b34d-0b5b-4ecb-adef-3f86f7f7bf4e - 41635 - flattened_dataframes - STEP_OUTPUT - Yielded output "result" of type "Dict[String,DataFrame]". (Type check passed).
+[32m2026-05-29 14:03:27 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ac30b34d-0b5b-4ecb-adef-3f86f7f7bf4e - flattened_dataframes - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_j0ol2yvi/storage/flattened_dataframes using PickledObjectFilesystemIOManager...
+[32m2026-05-29 14:03:27 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ac30b34d-0b5b-4ecb-adef-3f86f7f7bf4e - 41635 - flattened_dataframes - ASSET_MATERIALIZATION - Materialized value flattened_dataframes.
+[32m2026-05-29 14:03:27 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ac30b34d-0b5b-4ecb-adef-3f86f7f7bf4e - 41635 - flattened_dataframes - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-05-29 14:03:27 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ac30b34d-0b5b-4ecb-adef-3f86f7f7bf4e - 41635 - flattened_dataframes - STEP_SUCCESS - Finished execution of step "flattened_dataframes" in 1.5s.

@@ -31,6 +31,13 @@ def _load_profiles(profiles_dir: Path) -> list[dict]:
 )
 def flattened_dataframes() -> dict[str, pd.DataFrame]:
     logger = dg.get_dagster_logger()
+
+    gender_map = {}
+    for csv_path in Path("data/qualifying_athletes").glob("*.csv"):
+        df_q = pd.read_csv(csv_path, dtype=str)
+        for _, row in df_q.iterrows():
+            gender_map[str(row["athlete_id"])] = row["gender"]
+
     profiles_dir = Path("data/profiles")
     profiles = _load_profiles(profiles_dir)
     logger.info(f"Loaded {len(profiles)} athlete profiles")
@@ -43,7 +50,7 @@ def flattened_dataframes() -> dict[str, pd.DataFrame]:
         athlete_id = profile.get("athlete_id", "")
         name = profile.get("name", "")
         school = profile.get("school", "")
-        gender = profile.get("gender", "")
+        gender = gender_map.get(athlete_id, "")
         prs = profile.get("prs", {})
 
         pr_row = {"athlete_id": athlete_id, "name": name, "school": school, "gender": gender}
