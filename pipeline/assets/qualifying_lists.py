@@ -10,6 +10,7 @@ Each list page has athlete profile links in the form:
 
 from __future__ import annotations
 
+import html
 import re
 from pathlib import Path
 
@@ -38,10 +39,10 @@ def _fetch_list_html(list_id: str, gender: str) -> str:
     return resp.text
 
 
-def _parse_athletes(html: str, region: str, gender: str) -> list[dict]:
+def _parse_athletes(page_html: str, region: str, gender: str) -> list[dict]:
     seen = set()
     rows = []
-    for match in _ATHLETE_URL_RE.finditer(html):
+    for match in _ATHLETE_URL_RE.finditer(page_html):
         url, athlete_id, school_slug, name_slug = match.groups()
         if athlete_id in seen:
             continue
@@ -49,8 +50,8 @@ def _parse_athletes(html: str, region: str, gender: str) -> list[dict]:
         rows.append(
             {
                 "athlete_id": athlete_id,
-                "school_slug": school_slug,
-                "name_slug": name_slug,
+                "school_slug": html.unescape(school_slug),
+                "name_slug": html.unescape(name_slug).removesuffix(".html"),
                 "gender": gender,
                 "region": region,
                 "tfrrs_url": url,
@@ -69,8 +70,8 @@ def qualifying_athletes(context) -> pd.DataFrame:
     list_id = _LIST_IDS[region]
 
     context.log.info(f"Fetching {region} {gender} list (id={list_id})")
-    html = _fetch_list_html(list_id, gender)
-    rows = _parse_athletes(html, region, gender)
+    page_html = _fetch_list_html(list_id, gender)
+    rows = _parse_athletes(page_html, region, gender)
     context.log.info(f"  → {len(rows)} unique athletes")
 
     df = pd.DataFrame(rows)

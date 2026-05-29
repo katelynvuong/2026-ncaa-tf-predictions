@@ -5,3 +5,23 @@
 [32m2026-05-29 12:32:34 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - 85673 - athlete_profiles - LOADED_INPUT - Loaded input "qualifying_athletes" using input manager "io_manager"
 [32m2026-05-29 12:32:34 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - 85673 - athlete_profiles - STEP_INPUT - Got input "qualifying_athletes" of type "DataFrame". (Type check passed).
 [32m2026-05-29 12:33:25 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 50 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:34:17 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 100 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:35:07 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 150 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:35:58 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 200 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:36:48 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 250 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:37:38 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 300 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:38:28 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 350 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:39:19 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 400 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:40:09 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 450 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:40:59 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 500 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:41:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 550 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:42:40 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 600 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:43:31 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 650 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:44:22 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 700 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:45:11 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 750 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:46:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 800 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:46:52 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Progress: 850 saved, 0 skipped, 0 errors / 885 total
+[32m2026-05-29 12:47:28 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - athlete_profiles - Done: 885 saved, 0 skipped, 0 errors
+[32m2026-05-29 12:47:28 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - 85673 - athlete_profiles - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+[32m2026-05-29 12:47:28 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - 85673 - athlete_profiles - ASSET_MATERIALIZATION - Materialized value athlete_profiles.
+[32m2026-05-29 12:47:28 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8b2f1c14-a796-47f4-8302-1db196629f48 - 85673 - athlete_profiles - STEP_SUCCESS - Finished execution of step "athlete_profiles" in 14m53s.

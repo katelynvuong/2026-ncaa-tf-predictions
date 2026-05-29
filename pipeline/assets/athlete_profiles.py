@@ -10,6 +10,7 @@ Estimated time per partition (~900 athletes): ~15–20 min.
 
 from __future__ import annotations
 
+import html
 import json
 import time
 from pathlib import Path
@@ -38,14 +39,14 @@ def athlete_profiles(context, qualifying_athletes: pd.DataFrame) -> None:
         athlete_id = str(row["athlete_id"])
         out_path = profiles_dir / f"{athlete_id}.json"
 
-        if out_path.exists():
+        if out_path.exists() and json.loads(out_path.read_text()).get("status"):
             skipped += 1
             continue
 
         result = get_athlete_profile(
             athlete_id=athlete_id,
-            school=row["school_slug"],
-            name=row["name_slug"],
+            school=html.unescape(row["school_slug"]),
+            name=html.unescape(row["name_slug"]).removesuffix(".html"),
         )
 
         if isinstance(result, dict) and result.get("error"):
