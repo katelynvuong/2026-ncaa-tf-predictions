@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ncaa-tf-predictions"
+version = "0.1.0"
+description = "Dagster pipeline for NCAA D1 outdoor track & field championship predictions."
+requires-python = ">=3.10"
+dependencies = [
+    "dagster>=1.12.1,<1.13",
+    "dagster-webserver>=1.12.1,<1.13",
+    "dagster-dg-cli>=1.12.1,<1.13",
+    "pandas>=2.0",
+    "requests>=2.31",
+    "sports-skills>=0.20",
+]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.9", "pytest>=8.0"]
+
+[tool.dg]
+directory_type = "project"
+
+[tool.dg.project]
+root_module = "pipeline"
+defs_module = "pipeline"
+code_location_target_module = "pipeline"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pipeline*"]
+
+[tool.ruff]
+line-length = 100
+src = ["pipeline"]

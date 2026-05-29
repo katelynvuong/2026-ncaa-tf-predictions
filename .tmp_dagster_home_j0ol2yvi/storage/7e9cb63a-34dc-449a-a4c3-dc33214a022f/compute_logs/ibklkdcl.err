@@ -1,0 +1,7 @@
+[32m2026-05-29 12:32:36 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7e9cb63a-34dc-449a-a4c3-dc33214a022f - 85701 - LOGS_CAPTURED - Started capturing logs in process (pid: 85701).
+[32m2026-05-29 12:32:36 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7e9cb63a-34dc-449a-a4c3-dc33214a022f - 85701 - athlete_profiles - STEP_START - Started execution of step "athlete_profiles".
+[32m2026-05-29 12:32:36 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7e9cb63a-34dc-449a-a4c3-dc33214a022f - athlete_profiles - Loading 1 partitions...
+[32m2026-05-29 12:32:36 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7e9cb63a-34dc-449a-a4c3-dc33214a022f - athlete_profiles - Loading partition west_m from /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_j0ol2yvi/storage/qualifying_athletes/west_m using PickledObjectFilesystemIOManager...
+[32m2026-05-29 12:32:36 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7e9cb63a-34dc-449a-a4c3-dc33214a022f - 85701 - athlete_profiles - LOADED_INPUT - Loaded input "qualifying_athletes" using input manager "io_manager"
+[32m2026-05-29 12:32:36 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7e9cb63a-34dc-449a-a4c3-dc33214a022f - 85701 - athlete_profiles - STEP_INPUT - Got input "qualifying_athletes" of type "DataFrame". (Type check passed).
+[32m2026-05-29 12:33:26 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7e9cb63a-34dc-449a-a4c3-dc33214a022f - athlete_profiles - Progress: 50 saved, 0 skipped, 0 errors / 920 total

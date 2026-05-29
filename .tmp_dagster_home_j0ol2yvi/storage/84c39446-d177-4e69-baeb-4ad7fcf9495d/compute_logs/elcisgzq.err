@@ -1,0 +1,10 @@
+[32m2026-05-29 12:28:32 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 84c39446-d177-4e69-baeb-4ad7fcf9495d - 82998 - LOGS_CAPTURED - Started capturing logs in process (pid: 82998).
+[32m2026-05-29 12:28:32 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 84c39446-d177-4e69-baeb-4ad7fcf9495d - 82998 - qualifying_athletes - STEP_START - Started execution of step "qualifying_athletes".
+[32m2026-05-29 12:28:32 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 84c39446-d177-4e69-baeb-4ad7fcf9495d - qualifying_athletes - Fetching west f list (id=5623)
+[32m2026-05-29 12:28:35 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 84c39446-d177-4e69-baeb-4ad7fcf9495d - qualifying_athletes -   → 851 unique athletes
+[32m2026-05-29 12:28:35 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 84c39446-d177-4e69-baeb-4ad7fcf9495d - qualifying_athletes - Saved 851 athletes to data/qualifying_athletes_west_f.csv
+[32m2026-05-29 12:28:35 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 84c39446-d177-4e69-baeb-4ad7fcf9495d - 82998 - qualifying_athletes - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-05-29 12:28:35 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 84c39446-d177-4e69-baeb-4ad7fcf9495d - qualifying_athletes - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_j0ol2yvi/storage/qualifying_athletes/west_f using PickledObjectFilesystemIOManager...
+[32m2026-05-29 12:28:35 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 84c39446-d177-4e69-baeb-4ad7fcf9495d - 82998 - qualifying_athletes - ASSET_MATERIALIZATION - Materialized value qualifying_athletes.
+[32m2026-05-29 12:28:35 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 84c39446-d177-4e69-baeb-4ad7fcf9495d - 82998 - qualifying_athletes - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-05-29 12:28:35 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 84c39446-d177-4e69-baeb-4ad7fcf9495d - 82998 - qualifying_athletes - STEP_SUCCESS - Finished execution of step "qualifying_athletes" in 2.8s.

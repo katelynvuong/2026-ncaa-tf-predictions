@@ -1,0 +1,72 @@
+[32m2026-05-29 11:57:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ec0e699b-1cdc-4622-a560-4bfdeee24b07 - 61431 - LOGS_CAPTURED - Started capturing logs in process (pid: 61431).
+[32m2026-05-29 11:57:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ec0e699b-1cdc-4622-a560-4bfdeee24b07 - 61431 - qualifying_athletes - STEP_START - Started execution of step "qualifying_athletes".
+[32m2026-05-29 11:57:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ec0e699b-1cdc-4622-a560-4bfdeee24b07 - qualifying_athletes - Fetching east f list (id=5622)
+[32m2026-05-29 11:57:04 -0700[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - ec0e699b-1cdc-4622-a560-4bfdeee24b07 - 61431 - qualifying_athletes - STEP_FAILURE - Execution of step "qualifying_athletes" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "qualifying_athletes"::
+
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>
+
+Stack Trace:
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/dagster/_core/execution/plan/compute_generator.py", line 135, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/dagster/_core/execution/plan/compute_generator.py", line 115, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+                                                                    ^^^^^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/pipeline/assets/qualifying_lists.py", line 76, in qualifying_athletes
+    html = _fetch_list_html(spec["list_id"], spec["gender"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/pipeline/assets/qualifying_lists.py", line 40, in _fetch_list_html
+    with urllib.request.urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1347, in do_open
+    raise URLError(err)
+
+The above exception occurred during handling of the following exception:
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)
+
+Stack Trace:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1344, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1319, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1365, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1314, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1074, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1018, in send
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1460, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1046, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1317, in do_handshake
+    self._sslobj.do_handshake()
+[0m
