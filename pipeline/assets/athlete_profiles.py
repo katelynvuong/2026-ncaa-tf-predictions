@@ -1,6 +1,6 @@
 """Step 2: Fetch full TFRRS athlete profiles via sports-skills xctf connector.
 
-Reads qualifying_athletes for the current partition, fetches each profile, saves
+Reads regional_athletes for the current partition, fetches each profile, saves
 raw JSON to data/profiles/{athlete_id}.json. Already-saved profiles are skipped
 so the asset is safely re-runnable after partial failures.
 
@@ -28,14 +28,14 @@ from pipeline.partitions import region_gender_partitions
     description="Bulk-fetch TFRRS athlete profiles and cache raw JSON to disk.",
     partitions_def=region_gender_partitions,
 )
-def athlete_profiles(context, qualifying_athletes: pd.DataFrame) -> None:
+def athlete_profiles(context, regional_athletes: pd.DataFrame) -> None:
     profiles_dir = Path("data/profiles")
     profiles_dir.mkdir(parents=True, exist_ok=True)
 
-    total = len(qualifying_athletes)
+    total = len(regional_athletes)
     saved = skipped = errors = 0
 
-    for i, row in qualifying_athletes.iterrows():
+    for i, row in regional_athletes.iterrows():
         athlete_id = str(row["athlete_id"])
         out_path = profiles_dir / f"{athlete_id}.json"
 

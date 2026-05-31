@@ -170,7 +170,7 @@ def _parse_event(url: str, region: str) -> list[dict]:
     description=(
         "Scrape NCAA regional Q/q qualifiers from Flash Results (East + West). "
         "athlete_id is extracted directly from the embedded TFRRS URL in each row, "
-        "matching the IDs in athlete_profiles and qualifying_athletes."
+        "matching the IDs in athlete_profiles and regional_athletes."
     ),
 )
 def final_athletes() -> pd.DataFrame:

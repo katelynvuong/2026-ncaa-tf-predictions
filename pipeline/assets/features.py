@@ -3,6 +3,7 @@
 Built on top of final_athletes, season_results, and athletes_prs.
 Each feature is added as a column to a base DataFrame keyed on
 (athlete_id, event) — one row per athlete-event combination at nationals.
+Relay events (4x100, 4x400) are included as single rows with NaN features.
 """
 
 from __future__ import annotations
@@ -19,9 +20,16 @@ _WIND_EVENTS = {"100", "200", "100H", "110H", "LJ", "TJ"}
 # Field events where higher mark = better (everyone else: lower = better)
 _FIELD_EVENTS = {"HJ", "PV", "LJ", "TJ", "SP", "DT", "HT", "JT"}
 
+# Relay events — no individual athlete features
+_RELAY_EVENTS = {"4x100", "4x400"}
+
+# TFRRS uses inconsistent names for some events — map aliases to our standard key
+_EVENT_ALIASES = {
+    "10,000": "10k",
+}
+
 
 def _extract_wind(mark: str) -> float | None:
-    """Return wind reading from a mark string, or None if absent."""
     m = re.search(r"\(([+-]?\d+\.?\d*)\)", mark)
     return float(m.group(1)) if m else None
 
@@ -31,10 +39,8 @@ def _strip_wind(mark: str) -> str:
 
 
 def _to_seconds(mark: str) -> float | None:
-    """Convert a track mark string to total seconds. Returns None if unparseable."""
     mark = _strip_wind(mark).strip()
     if not mark or re.search(r"[a-df-z]", mark, re.IGNORECASE):
-        # Contains letters other than 'e' (scientific notation) → DNF/DNS/DQ/etc.
         return None
     try:
         if ":" in mark:
@@ -46,11 +52,9 @@ def _to_seconds(mark: str) -> float | None:
 
 
 def _to_meters(mark: str) -> float | None:
-    """Extract metric distance/height from a field event mark. Returns None if unparseable."""
     m = re.search(r"(\d+\.?\d*)m", mark)
     if m:
         return float(m.group(1))
-    # Bare number with no unit (rare) — try direct float
     bare = _strip_wind(mark).strip()
     try:
         return float(bare)
@@ -65,7 +69,6 @@ def _parse_mark(mark: str, event: str) -> float | None:
 
 
 def _is_wind_legal(mark: str, event: str) -> bool:
-    """Return False for wind-aided marks (> +2.0 m/s) in wind-sensitive events."""
     if event not in _WIND_EVENTS:
         return True
     wind = _extract_wind(mark)
@@ -73,34 +76,35 @@ def _is_wind_legal(mark: str, event: str) -> bool:
 
 
 def _filter_results(results: pd.DataFrame) -> pd.DataFrame:
-    """Keep only 2026 results with legal wind."""
+    """Keep only 2026 results with legal wind, and normalise event name aliases."""
     year_mask = results["date"].str.contains("2026", na=False)
     wind_mask = results.apply(
         lambda r: _is_wind_legal(str(r["mark"]), str(r["event"])), axis=1
     )
-    return results[year_mask & wind_mask].copy()
+    df = results[year_mask & wind_mask].copy()
+    df["event"] = df["event"].replace(_EVENT_ALIASES)
+    return df
 
 
 def _season_best(results: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.Series:
-    """
-    For each athlete_id, return their season best numeric mark in the given event.
-    Lower is better for track; higher is better for field.
-    """
     ev = results[results["event"] == event].copy()
     ev["numeric"] = pd.to_numeric(ev["mark"].apply(lambda m: _parse_mark(m, event)), errors="coerce")
     ev = ev.dropna(subset=["numeric"])
     ev = ev[ev["athlete_id"].isin(athlete_ids)]
-
     if event in _FIELD_EVENTS:
-        best = ev.groupby("athlete_id")["numeric"].max()
-    else:
-        best = ev.groupby("athlete_id")["numeric"].min()
+        return ev.groupby("athlete_id")["numeric"].max().reindex(athlete_ids)
+    return ev.groupby("athlete_id")["numeric"].min().reindex(athlete_ids)
 
-    return best.reindex(athlete_ids)
+
+def _season_avg(results: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.Series:
+    ev = results[results["event"] == event].copy()
+    ev["numeric"] = pd.to_numeric(ev["mark"].apply(lambda m: _parse_mark(m, event)), errors="coerce")
+    ev = ev.dropna(subset=["numeric"])
+    ev = ev[ev["athlete_id"].isin(athlete_ids)]
+    return ev.groupby("athlete_id")["numeric"].mean().reindex(athlete_ids)
 
 
 def _avg_place(results: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.Series:
-    """Average final-round place across all 2026 results in the event."""
     ev = results[(results["event"] == event) & results["place"].str.contains(r"\(F\)", na=False)].copy()
     ev["place_num"] = ev["place"].str.extract(r"^(\d+)").astype(float)
     ev = ev.dropna(subset=["place_num"])
@@ -112,7 +116,6 @@ _CONF_CHAMP_RE = re.compile(r"outdoor.*champ|champ.*outdoor", re.IGNORECASE)
 
 
 def _conf_champ_place(results: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.Series:
-    """Place in the outdoor conference championship final for the given event."""
     conf = results[
         results["meet"].str.contains(_CONF_CHAMP_RE, na=False)
         & results["place"].str.contains(r"\(F\)", na=False)
@@ -121,17 +124,7 @@ def _conf_champ_place(results: pd.DataFrame, event: str, athlete_ids: list[str])
     ].copy()
     conf["place_num"] = conf["place"].str.extract(r"^(\d+)").astype(float)
     conf = conf.dropna(subset=["place_num"])
-    # One conference champ per athlete — take best place in case of duplicate rows
     return conf.groupby("athlete_id")["place_num"].min().reindex(athlete_ids)
-
-
-def _season_avg(results: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.Series:
-    """Average 2026 mark across all completed (non-DNF/DQ/DNS) results in the event."""
-    ev = results[results["event"] == event].copy()
-    ev["numeric"] = pd.to_numeric(ev["mark"].apply(lambda m: _parse_mark(m, event)), errors="coerce")
-    ev = ev.dropna(subset=["numeric"])
-    ev = ev[ev["athlete_id"].isin(athlete_ids)]
-    return ev.groupby("athlete_id")["numeric"].mean().reindex(athlete_ids)
 
 
 @dg.asset(
@@ -150,7 +143,28 @@ def features() -> pd.DataFrame:
 
     rows = []
     for event, group in final.groupby("event"):
-        athlete_ids = group["athlete_id"].tolist()
+        is_relay = event in _RELAY_EVENTS
+
+        if is_relay:
+            # One row per relay team — no individual features
+            for _, athlete in group.iterrows():
+                rows.append({
+                    "athlete_id": None,
+                    "athlete_name": None,
+                    "school": athlete["school"],
+                    "event": event,
+                    "gender": athlete["gender"],
+                    "region": athlete["region"],
+                    "qualifier": athlete["qualifier"],
+                    "season_best": None,
+                    "season_avg": None,
+                    "avg_place": None,
+                    "conf_champ_place": None,
+                    "is_auto_qualifier": int(athlete["qualifier"] == "Q"),
+                })
+            continue
+
+        athlete_ids = group["athlete_id"].dropna().tolist()
         sb = _season_best(results, event, athlete_ids)
         avg = _season_avg(results, event, athlete_ids)
         ap = _avg_place(results, event, athlete_ids)
@@ -179,8 +193,9 @@ def features() -> pd.DataFrame:
     df.to_csv(out, index=False)
 
     total = len(df)
-    populated = df["season_best"].notna().sum()
-    logger.info(f"season_best populated: {populated}/{total} ({100*populated/total:.1f}%)")
+    for col in ["season_best", "season_avg", "avg_place", "conf_champ_place"]:
+        n = df[col].notna().sum()
+        logger.info(f"{col}: {n}/{total} ({100*n/total:.1f}%)")
     return df
 
 

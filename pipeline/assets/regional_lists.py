@@ -65,7 +65,7 @@ def _parse_athletes(page_html: str, region: str, gender: str) -> list[dict]:
     description="Scrape athlete slugs from a single TFRRS D1 Outdoor qualifying list.",
     partitions_def=region_gender_partitions,
 )
-def qualifying_athletes(context) -> pd.DataFrame:
+def regional_athletes(context) -> pd.DataFrame:
     region, gender = context.partition_key.split("_")
     list_id = _LIST_IDS[region]
 
@@ -75,11 +75,11 @@ def qualifying_athletes(context) -> pd.DataFrame:
     context.log.info(f"  → {len(rows)} unique athletes")
 
     df = pd.DataFrame(rows)
-    out = Path(f"data/qualifying_athletes/qualifying_athletes_{context.partition_key}.csv")
+    out = Path(f"data/regional_athletes/regional_athletes_{context.partition_key}.csv")
     out.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(out, index=False)
     context.log.info(f"Saved {len(df)} athletes to {out}")
     return df
 
 
-assets = [qualifying_athletes]
+assets = [regional_athletes]
