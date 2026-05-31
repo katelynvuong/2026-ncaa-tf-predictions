@@ -1,0 +1,13 @@
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - 76398 - LOGS_CAPTURED - Started capturing logs in process (pid: 76398).
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - 76398 - training_dataset - STEP_START - Started execution of step "training_dataset".
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - training_dataset - Training dataset: 995 rows
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - training_dataset - Feature fill rates:
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - training_dataset -   season_best: 979/995 (98.4%)
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - training_dataset -   season_avg: 979/995 (98.4%)
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - training_dataset -   avg_place: 978/995 (98.3%)
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - training_dataset -   conf_champ_place: 899/995 (90.4%)
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - 76398 - training_dataset - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - training_dataset - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/training_dataset using PickledObjectFilesystemIOManager...
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - 76398 - training_dataset - ASSET_MATERIALIZATION - Materialized value training_dataset.
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - 76398 - training_dataset - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-05-31 16:10:33 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ca5f295f-501c-47fa-b34d-8f4e5b96868f - 76398 - training_dataset - STEP_SUCCESS - Finished execution of step "training_dataset" in 100ms.

@@ -23,6 +23,29 @@ _FIELD_EVENTS = {"HJ", "PV", "LJ", "TJ", "SP", "DT", "HT", "JT"}
 # Relay events — no individual athlete features
 _RELAY_EVENTS = {"4x100", "4x400"}
 
+# Map our standard event key → athletes_prs.csv column name
+_EVENT_PR_COL = {
+    "100":   "pr_100",
+    "200":   "pr_200",
+    "400":   "pr_400",
+    "800":   "pr_800",
+    "1500":  "pr_1500",
+    "3000S": "pr_3000S",
+    "5000":  "pr_5000",
+    "10k":   "pr_10,000",
+    "110H":  "pr_110H",
+    "100H":  "pr_100H",
+    "400H":  "pr_400H",
+    "HJ":    "pr_HJ",
+    "PV":    "pr_PV",
+    "LJ":    "pr_LJ",
+    "TJ":    "pr_TJ",
+    "SP":    "pr_SP",
+    "DT":    "pr_DT",
+    "HT":    "pr_HT",
+    "JT":    "pr_JT",
+}
+
 # TFRRS uses inconsistent names for some events — map aliases to our standard key
 _EVENT_ALIASES = {
     "10,000": "10k",
@@ -112,6 +135,18 @@ def _avg_place(results: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.
     return ev.groupby("athlete_id")["place_num"].mean().reindex(athlete_ids)
 
 
+def _pr_feature(prs: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.Series:
+    """Return all-time PR for each athlete in the given event, parsed to numeric."""
+    pr_col = _EVENT_PR_COL.get(event)
+    if not pr_col or pr_col not in prs.columns:
+        return pd.Series(index=athlete_ids, dtype=float)
+    sub = prs.set_index("athlete_id")[pr_col].reindex(athlete_ids)
+    return pd.to_numeric(
+        sub.apply(lambda m: _parse_mark(m, event) if pd.notna(m) else None),
+        errors="coerce",
+    )
+
+
 _CONF_CHAMP_RE = re.compile(r"outdoor.*champ|champ.*outdoor", re.IGNORECASE)
 
 
@@ -137,6 +172,7 @@ def features() -> pd.DataFrame:
 
     final = pd.read_csv("data/final_athletes.csv", dtype=str)
     results = pd.read_csv("data/flattened_dataframes/season_results.csv", dtype=str)
+    prs = pd.read_csv("data/flattened_dataframes/athletes_prs.csv", dtype=str)
 
     results = _filter_results(results)
     logger.info(f"Filtered results: {len(results)} rows (2026, wind-legal)")
@@ -164,10 +200,11 @@ def features() -> pd.DataFrame:
             continue
 
         athlete_ids = group["athlete_id"].dropna().tolist()
-        sb = _season_best(results, event, athlete_ids)
+        sb  = _season_best(results, event, athlete_ids)
         avg = _season_avg(results, event, athlete_ids)
-        ap = _avg_place(results, event, athlete_ids)
-        cp = _conf_champ_place(results, event, athlete_ids)
+        ap  = _avg_place(results, event, athlete_ids)
+        cp  = _conf_champ_place(results, event, athlete_ids)
+        pr  = _pr_feature(prs, event, athlete_ids)
 
         for _, athlete in group.iterrows():
             aid = athlete["athlete_id"]
@@ -183,6 +220,7 @@ def features() -> pd.DataFrame:
                 "season_avg": avg.get(aid),
                 "avg_place": ap.get(aid),
                 "conf_champ_place": cp.get(aid),
+                "pr": pr.get(aid),
             })
 
     df = pd.DataFrame(rows)

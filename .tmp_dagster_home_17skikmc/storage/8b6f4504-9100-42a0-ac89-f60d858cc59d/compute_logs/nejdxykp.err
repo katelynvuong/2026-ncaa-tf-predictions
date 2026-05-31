@@ -1,0 +1,20 @@
+[32m2026-05-31 15:40:43 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - 57327 - LOGS_CAPTURED - Started capturing logs in process (pid: 57327).
+[32m2026-05-31 15:40:43 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - 57327 - supplemental_profiles - STEP_START - Started execution of step "supplemental_profiles".
+[32m2026-05-31 15:40:44 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 9006516 (Okon_Israel)
+[32m2026-05-31 15:40:45 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 8673358 (Kuleshov_Roman)
+[32m2026-05-31 15:40:46 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 9262004 (Jackson_Shawnti)
+[32m2026-05-31 15:40:47 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 8899837 (Tomkinson_Charlotte)
+[32m2026-05-31 15:40:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 8609549 (Samuel_Habtom)
+[32m2026-05-31 15:40:50 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 8977339 (Kurui_Evans)
+[32m2026-05-31 15:40:51 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 8647595 (Musau_Brian)
+[32m2026-05-31 15:40:52 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 8594983 (Guadia_Adisu)
+[32m2026-05-31 15:40:54 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 8860314 (Cameron_Victoria)
+[32m2026-05-31 15:40:55 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 9188510 (Scatchard_Mena)
+[32m2026-05-31 15:40:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 8916070 (Kosgei_Pamela)
+[32m2026-05-31 15:40:57 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 9230145 (Hedengren_Jane)
+[32m2026-05-31 15:40:59 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 8278025 (Hutchins_Jenna)
+[32m2026-05-31 15:41:00 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Saved 9105473 (Cherotich_Diana)
+[32m2026-05-31 15:41:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - supplemental_profiles - Done: 14 saved, 846 skipped, 0 errors
+[32m2026-05-31 15:41:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - 57327 - supplemental_profiles - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+[32m2026-05-31 15:41:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - 57327 - supplemental_profiles - ASSET_MATERIALIZATION - Materialized value supplemental_profiles.
+[32m2026-05-31 15:41:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 8b6f4504-9100-42a0-ac89-f60d858cc59d - 57327 - supplemental_profiles - STEP_SUCCESS - Finished execution of step "supplemental_profiles" in 17.42s.

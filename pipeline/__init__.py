@@ -1,6 +1,6 @@
 import dagster as dg
 
-from pipeline.assets import regional_lists, athlete_profiles, dataframes, final_athletes, features, training_data
+from pipeline.assets import regional_lists, athlete_profiles, dataframes, final_athletes, features, training_data, model
 
 defs = dg.Definitions(
     assets=[
@@ -10,5 +10,6 @@ defs = dg.Definitions(
         *final_athletes.assets,
         *features.assets,
         *training_data.assets,
+        *model.assets,
     ],
 )

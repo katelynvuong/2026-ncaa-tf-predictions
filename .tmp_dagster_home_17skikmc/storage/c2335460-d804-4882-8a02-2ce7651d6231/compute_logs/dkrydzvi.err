@@ -1,0 +1,27 @@
+[32m2026-05-31 10:48:12 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - 22228 - LOGS_CAPTURED - Started capturing logs in process (pid: 22228).
+[32m2026-05-31 10:48:12 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - 22228 - predictions - STEP_START - Started execution of step "predictions".
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions - ── 2025 holdout validation ──
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   MAE:  1.202 places
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   RMSE: 1.499 places
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   Top-8 recall: 134/242 (55.4%)
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions - Final model trained on 979 rows (4 years)
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions - Feature importances:
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   avg_place             : 0.4631
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   conf_champ_place      : 0.2973
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   season_best           : 0.1217
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   season_avg            : 0.1180
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions - Saved 860 predictions → data/predictions/predictions.csv
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions - Saved team scores → data/predictions/team_scores.csv
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions - ── Top 3 Men ──
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   1. Oregon — 28 pts
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   2. Arkansas — 26 pts
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   3. Air Force — 20 pts
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions - ── Top 3 Women ──
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   1. Georgia — 22 pts
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   2. Oregon — 19 pts
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions -   3. South Carolina — 17 pts
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - 22228 - predictions - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - predictions - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/predictions using PickledObjectFilesystemIOManager...
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - 22228 - predictions - ASSET_MATERIALIZATION - Materialized value predictions.
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - 22228 - predictions - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-05-31 10:48:13 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c2335460-d804-4882-8a02-2ce7651d6231 - 22228 - predictions - STEP_SUCCESS - Finished execution of step "predictions" in 515ms.

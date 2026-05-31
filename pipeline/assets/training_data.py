@@ -27,6 +27,7 @@ from pipeline.assets.features import (
     _season_avg,
     _avg_place,
     _conf_champ_place,
+    _pr_feature,
     _RELAY_EVENTS,
 )
 
@@ -295,6 +296,8 @@ def training_features() -> pd.DataFrame:
     all_results = pd.DataFrame(result_rows)
     logger.info(f"Built results table: {len(all_results)} rows across all profiles")
 
+    prs = pd.read_csv("data/flattened_dataframes/athletes_prs.csv", dtype=str)
+
     feature_rows = []
     for year, year_group in champ.groupby("year"):
         year_results = _filter_results(all_results, year=int(year))
@@ -308,6 +311,7 @@ def training_features() -> pd.DataFrame:
             avg = _season_avg(year_results, event, athlete_ids)
             ap  = _avg_place(year_results, event, athlete_ids)
             cp  = _conf_champ_place(year_results, event, athlete_ids)
+            pr  = _pr_feature(prs, event, athlete_ids)
 
             for _, row in event_group.iterrows():
                 aid = row["athlete_id"]
@@ -322,6 +326,7 @@ def training_features() -> pd.DataFrame:
                     "season_avg":        avg.get(aid),
                     "avg_place":         ap.get(aid),
                     "conf_champ_place":  cp.get(aid),
+                    "pr":                pr.get(aid),
                 })
 
     df = pd.DataFrame(feature_rows)
@@ -345,12 +350,12 @@ def training_dataset() -> pd.DataFrame:
 
     # Convert numeric columns
     champ["place"] = pd.to_numeric(champ["place"], errors="coerce")
-    for col in ["season_best", "season_avg", "avg_place", "conf_champ_place"]:
+    for col in ["season_best", "season_avg", "avg_place", "conf_champ_place", "pr"]:
         feats[col] = pd.to_numeric(feats[col], errors="coerce")
 
     df = champ.merge(
         feats[["year", "athlete_id", "event", "season_best", "season_avg",
-               "avg_place", "conf_champ_place"]],
+               "avg_place", "conf_champ_place", "pr"]],
         on=["year", "athlete_id", "event"],
         how="left",
     )
@@ -360,7 +365,7 @@ def training_dataset() -> pd.DataFrame:
 
     logger.info(f"Training dataset: {len(df)} rows")
     logger.info(f"Feature fill rates:")
-    for col in ["season_best", "season_avg", "avg_place", "conf_champ_place"]:
+    for col in ["season_best", "season_avg", "avg_place", "conf_champ_place", "pr"]:
         n = df[col].notna().sum()
         logger.info(f"  {col}: {n}/{len(df)} ({100*n/len(df):.1f}%)")
     return df
