@@ -75,9 +75,9 @@ def _is_wind_legal(mark: str, event: str) -> bool:
     return wind is None or wind <= 2.0
 
 
-def _filter_results(results: pd.DataFrame) -> pd.DataFrame:
-    """Keep only 2026 results with legal wind, and normalise event name aliases."""
-    year_mask = results["date"].str.contains("2026", na=False)
+def _filter_results(results: pd.DataFrame, year: int = 2026) -> pd.DataFrame:
+    """Keep only results from the given year with legal wind, and normalise event name aliases."""
+    year_mask = results["date"].str.contains(str(year), na=False)
     wind_mask = results.apply(
         lambda r: _is_wind_legal(str(r["mark"]), str(r["event"])), axis=1
     )
@@ -160,7 +160,6 @@ def features() -> pd.DataFrame:
                     "season_avg": None,
                     "avg_place": None,
                     "conf_champ_place": None,
-                    "is_auto_qualifier": int(athlete["qualifier"] == "Q"),
                 })
             continue
 
@@ -184,7 +183,6 @@ def features() -> pd.DataFrame:
                 "season_avg": avg.get(aid),
                 "avg_place": ap.get(aid),
                 "conf_champ_place": cp.get(aid),
-                "is_auto_qualifier": int(athlete["qualifier"] == "Q"),
             })
 
     df = pd.DataFrame(rows)

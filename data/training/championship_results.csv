@@ -1,0 +1,996 @@
+year,event,gender,place,athlete_id,athlete_name,school,mark
+2025,100,M,1,8328830,Jordan Anthony,Arkansas,10.07
+2025,100,M,2,8343523,Max Thomas,USC,10.10
+2025,100,M,3,8992440,Jelani Watkins,LSU,10.10
+2025,100,M,4,8709992,Kanyinsola Ajayi,Auburn,10.13
+2025,100,M,5,8682109,Davonte Howell,Tennessee,10.17
+2025,100,M,6,8714494,Jaiden  Reid,LSU,10.17
+2025,100,M,7,9006516,Israel Okon,Auburn,10.18
+2025,100,M,8,8339841,T'Mars McCallum,Tennessee,10.24
+2025,200,M,1,8362093,Carli Makarawu,Kentucky,22.62
+2025,200,M,2,7984341,Makanakaishe Charamba,Auburn,15.34
+2025,200,M,3,8236839,Garrett Kaalund,USC,17.77
+2025,200,M,4,8328830,Jordan Anthony,Arkansas,26.02
+2025,200,M,5,8339841,T'Mars McCallum,Tennessee,19.96
+2025,200,M,6,8343523,Max Thomas,USC,14.57
+2025,200,M,7,8982863,Xavier Butler,Texas,18.56
+2025,200,M,8,8700013,Abdul-Rasheed Saminu,South Florida,25.28
+2025,400,M,1,8691776,Samuel Ogazi,Alabama,44.84
+2025,400,M,2,8343526,William Jones,USC,45.53
+2025,400,M,3,8666362,Jordan Pierre,Arkansas-Pine Bluff,45.75
+2025,400,M,4,8364830,DeSean  Boyce,Texas Tech,45.78
+2025,400,M,5,8978945,Joseph Taylor,Duke,45.83
+2025,400,M,6,8711001,Jayden Davis,Arizona State,45.91
+2025,400,M,7,7734256,Auhmad Robinson,Texas A&M,46.07
+2025,400,M,8,8671794,Gabriel Clement II,UCLA,46.17
+2025,800,M,1,7987288,Sam Whitmarsh,Texas A&M,2:11.27
+2025,800,M,2,7892016,Matthew Erickson,Oregon,1:52.70
+2025,800,M,3,8673515,Rivaldo  Marshall,Arkansas,1:42.45
+2025,800,M,4,7918236,Samuel  Rodman,Princeton,1:30.84
+2025,800,M,5,7751674,Aidan McCarthy,Cal Poly,1:59.71
+2025,800,M,6,8023572,Samuel  Navarro,Miss State,2:10.95
+2025,800,M,7,7916232,Christian Jackson,Virginia Tech,1:47.42
+2025,800,M,8,8328299,Tyrice Taylor,Arkansas,2:00.34
+2025,1500,M,1,7910774,Nathan Green,Washington,3:47.26
+2025,1500,M,2,7908130,Ethan Strand,North Carolina,3:47.33
+2025,1500,M,3,8623171,Ferenc Kovacs,Harvard,3:47.42
+2025,1500,M,4,7899902,Adam Spencer,Wisconsin,3:47.50
+2025,1500,M,5,8329149,Gary Martin,Virginia,3:47.58
+2025,1500,M,6,7727751,Jack Crull,Bradley,3:47.61
+2025,1500,M,7,8672366,Simeon Birnbaum,Oregon,3:47.64
+2025,1500,M,8,7936824,Damian Hackett,Cornell,3:47.74
+2025,5000,M,1,8647595,Brian Musau,Oklahoma State,12:40.56
+2025,5000,M,2,8609549,Habtom Samuel,New Mexico,11:52.80
+2025,5000,M,3,8232893,Marco Langon,Villanova,9:36.85
+2025,5000,M,4,8330427,Valentin Soca,CBU,15:54.10
+2025,5000,M,5,8585457,Rocky Hansen,Wake Forest,10:01.86
+2025,5000,M,6,7735918,Matt Strangio,Portland,14:43.61
+2025,5000,M,7,9020103,Ishmael Kipkurui,New Mexico,12:04.67
+2025,5000,M,8,8013125,Fouad Messaoudi,Oklahoma State,12:45.21
+2025,10k,M,1,9020103,Ishmael Kipkurui,New Mexico,30:17.61
+2025,10k,M,2,8609549,Habtom Samuel,New Mexico,27:06.32
+2025,10k,M,3,8725440,Ernest Cheruiyot,Texas Tech,24:12.81
+2025,10k,M,4,8245423,Rodgers Kiplimo,Iowa State,35:53.60
+2025,10k,M,5,8977339,Evans Kurui,Washington St.,24:30.77
+2025,10k,M,6,8983861,David Mullarkey,Northern Arizona,29:28.56
+2025,10k,M,7,7717276,Dylan Schubert,Furman,37:39.03
+2025,10k,M,8,7888807,Creed Thompson,BYU,21:53.58
+2025,110H,M,1,8709994,Ja'Kobe Tharp,Auburn,13.05
+2025,110H,M,2,8009666,Zachary Extine,Arizona,13.13
+2025,110H,M,3,9001093,John Adesola,Houston,13.28
+2025,110H,M,4,7727876,Jamar  Marshall Jr.,Houston,13.34
+2025,110H,M,5,8611983,Demario Prince,Baylor,13.44
+2025,110H,M,6,7984691,Darius Brown,DePaul,13.50
+2025,110H,M,7,8714497,Jahiem Stern,LSU,13.57
+2025,110H,M,8,7979143,Jayden Smith,Davidson,13.65
+2025,400H,M,1,8017719,Nathaniel Ezekiel,Baylor,58.89
+2025,400H,M,2,8712078,Ja'Qualon Scott,Texas A&M,48.78
+2025,400H,M,3,8316982,Kody Blackwood,Texas,41.37
+2025,400H,M,4,7993397,Oskar Edlund,Texas Tech,51.48
+2025,400H,M,5,9008200,Saad Hinti,Tennessee,55.01
+2025,400H,M,6,8005683,Bryce McCray,Texas A&M,39.12
+2025,400H,M,7,7974466,Johnny Brackins,USC,1:04.70
+2025,400H,M,8,8668146,Bryce Tucker,Rutgers,49.82
+2025,3000S,M,1,8268086,James Corrigan,BYU,5:47.49
+2025,3000S,M,2,8916058,Geoffrey Kirwa,Louisville,10:16.43
+2025,3000S,M,3,7717277,Carson Williams,Furman,6:49.77
+2025,3000S,M,4,8895705,Joash Ruto,Iowa State,8:40.49
+2025,3000S,M,5,8895220,Collins Kiprop Kipngok,Kentucky,9:43.39
+2025,3000S,M,6,9020972,Mathew Kosgei,New Mexico,6:32.89
+2025,3000S,M,7,8261257,Benjamin Balazs,Oregon,9:40.13
+2025,3000S,M,8,7894462,Rob McManus,Montana State,9:06.30
+2025,4x100,M,1,,,,28.37
+2025,4x400,M,1,,,,2:18.93
+2025,HJ,M,1,8341372,Arvesta Troupe,Ole Miss,1.91m
+2025,HJ,M,4,7978389,Kamyren Garrett,Illinois,2.46m
+2025,HJ,M,5,8675817,Nathanil Figgers,South Carolina,1.61m
+2025,PV,M,1,9009619,Aleksandr Solovev,Texas A&M,7.51m
+2025,PV,M,2,8320105,Ashton Barkdull,Kansas,4.87m
+2025,PV,M,3,7722564,Bradley Jelmert,Arkansas State,6.36m
+2025,PV,M,4,7718475,Benjamin Conacher,Virginia Tech,5.02m
+2025,SP,M,1,7727861,Jason Swarens,Wisconsin,15.92m
+2025,SP,M,2,7725397,Thomas Kitchell,North Carolina,24.47m
+2025,SP,M,3,8341371,Tarik Robinson-O'Hagan,Ole Miss,26.53m
+2025,SP,M,4,8672432,Kobe Lawrence,Oregon,25.81m
+2025,SP,M,5,8369390,Christopher Licata,South Carolina,18.74m
+2025,SP,M,6,7722255,Danny Bryant,BYU,17.34m
+2025,SP,M,7,7729961,Dylan  Targgart,South Carolina,19.87m
+2025,SP,M,8,8319513,Fred Moudani Likibi,Cincinnati,15.36m
+2025,DT,M,1,7930060,Ralford  Mullings,Oklahoma,69.31m
+2025,DT,M,2,8019706,Mykolas Alekna,California,66.77m
+2025,DT,M,3,8367906,Uladzislau Puchko,Virginia Tech,63.94m
+2025,DT,M,4,8699158,Racquil Broderick,USC,63.31m
+2025,DT,M,5,8376077,Michael Pinckney,UCLA,61.39m
+2025,DT,M,6,7983335,Dimitrios Pavlidis,Kansas,61.04m
+2025,DT,M,7,8700044,Vincent Ugwoke,South Florida,60.58m
+2025,DT,M,8,8682097,Aron  Alvarez Aranda,Tennessee,59.87m
+2025,HT,M,1,7537882,Kostas Zaltos,Minnesota,67.93m
+2025,HT,M,2,8676284,Angelos Mantzouranis,Minnesota,56.18m
+2025,HT,M,3,8341371,Tarik Robinson-O'Hagan,Ole Miss,67.57m
+2025,HT,M,4,8324710,Texas  Tanner,Air Force,81.24m
+2025,HT,M,5,8440603,Rory Devaney,Cal Poly,64.52m
+2025,HT,M,6,9014928,Ryan  Johnson,Iowa,62.56m
+2025,HT,M,7,8673338,Daniel Reynolds,Wyoming,83.62m
+2025,HT,M,8,8705111,Christian Toro,Duke,76.52m
+2025,JT,M,1,7655614,Devoux Deysel,Miami (Fla.),72.76m
+2025,JT,M,2,8714790,Leikel Cabrera Gay,Florida,60.08m
+2025,JT,M,3,8711055,Callan Saldutto,Missouri,77.65m
+2025,JT,M,4,9047243,Moustafa Alsherif,Georgia,77.46m
+2025,JT,M,5,8364008,Keyshawn Strachan,Nebraska,96.31m
+2025,JT,M,6,8321686,Mike Stein,Iowa,71.22m
+2025,JT,M,7,7546466,Arthur Petersen,Nebraska,77.77m
+2025,JT,M,8,8121538,James Kotowski,UMass Lowell,62.40m
+2025,100,W,1,8107788,Samirah Moody,USC,9.03
+2025,100,W,2,8675923,JaMeesia Ford,South Carolina,8.25
+2025,100,W,3,8714489,Tima Godbless,LSU,10.75
+2025,100,W,4,8679347,Anthaya Charlton,Florida,13.99
+2025,100,W,5,8003629,Leah Bertrand,Ohio State,10.88
+2025,100,W,6,8712626,Shenese Walker,Florida State,12.24
+2025,100,W,7,8368619,Dajaz Defrand,USC,14.38
+2025,100,W,8,8977035,Brianna Selby,USC,9.57
+2025,200,W,1,8675923,JaMeesia Ford,South Carolina,22.21
+2025,200,W,2,8699147,Madison Whyte,USC,22.23
+2025,200,W,3,8368619,Dajaz Defrand,USC,22.39
+2025,200,W,4,8003629,Leah Bertrand,Ohio State,22.60
+2025,200,W,5,8364545,Jasmine Montgomery,Texas A&M,22.61
+2025,200,W,6,8647431,Kenondra Davis,Texas,22.66
+2025,200,W,7,7986734,Jayla Jamison,South Carolina,22.77
+2025,200,W,8,8341502,Gabrielle Matthews,Florida,22.84
+2025,400,W,1,8235200,Aaliyah Butler,Georgia,49.26
+2025,400,W,2,8364135,Dejanea Oakley,Georgia,49.65
+2025,400,W,3,7478918,Rosey Effiong,Arkansas,50.51
+2025,400,W,4,8359937,Ella Onojuvwevwo,LSU,50.57
+2025,400,W,5,8677962,Kaylyn Brown,Arkansas,51.30
+2025,400,W,6,8338531,Rachel Joseph,Iowa State,51.36
+2025,400,W,7,6995056,Sami Oblad,BYU,51.57
+2025,400,W,8,8712628,Kaelyaah Liburd,Florida State,51.69
+2025,800,W,1,8239785,Roisin Willis,Stanford,1:32.15
+2025,800,W,2,7908137,Makayla Paige,North Carolina,1:23.28
+2025,800,W,3,7722268,Meghan Hunter,BYU,2:06.18
+2025,800,W,4,7930954,Michaela Rose,LSU,2:25.76
+2025,800,W,5,8321329,Lauren Tolbert,Duke,1:41.90
+2025,800,W,6,8617013,Smilla Kolbe,North Florida,1:49.54
+2025,800,W,7,7735951,Laura  Pellicoro,Portland,1:30.63
+2025,800,W,8,8584868,Veronica Hargrave,Indiana,2:32.46
+2025,1500,W,1,7730040,Sophie O'Sullivan,Washington,4:07.94
+2025,1500,W,2,7897037,Margot  Appleton,Virginia,4:08.99
+2025,1500,W,3,7815743,Maggi Congdon,Northern Arizona,4:09.31
+2025,1500,W,4,8288637,Silan  Ayyildiz,Oregon,4:09.75
+2025,1500,W,5,8261269,Klaudia Kazimierska,Oregon,4:10.42
+2025,1500,W,6,7889042,Kimberley May,Providence,4:10.79
+2025,1500,W,7,7402013,Lindsey Butler,Virginia Tech,4:10.79
+2025,1500,W,8,8324602,Chloe Foerster,Washington,4:11.03
+2025,5000,W,1,8916070,Pamela Kosgei,New Mexico,17:16.70
+2025,5000,W,2,8267707,Vera Sjoberg,Boston University,19:37.81
+2025,5000,W,3,8592999,Sophia Kennedy,Stanford,12:37.42
+2025,5000,W,4,9020090,Marion Jepngetich,New Mexico,12:00.06
+2025,5000,W,5,8242189,Grace Hartman,NC State,11:41.55
+2025,5000,W,6,8585341,Paityn Noe,Arkansas,16:31.96
+2025,5000,W,7,9001984,Agnes McTighe,Northern Arizona,19:57.92
+2025,5000,W,8,8982729,Amina Maatoug,Washington,18:05.68
+2025,10k,W,1,8916070,Pamela Kosgei,New Mexico,31:17.82
+2025,10k,W,2,8242189,Grace Hartman,NC State,31:32.15
+2025,10k,W,3,8920567,Joy Naukot,West Virginia,31:34.34
+2025,10k,W,4,8585341,Paityn Noe,Arkansas,31:36.91
+2025,10k,W,5,7893942,Chloe Scrimgeour,Georgetown,31:41.68
+2025,10k,W,6,9012348,Edna Chepkemoi,LSU,32:10.75
+2025,10k,W,7,7891172,Rosina Machu,Gonzaga,32:15.49
+2025,10k,W,8,8711956,Brenda Tuwei,Alabama,32:20.14
+2025,100H,W,1,8354291,Aaliyah McCormick,Oregon,10.76
+2025,100H,W,2,8364031,Jaiya Covington,Texas A&M,15.00
+2025,100H,W,3,8986740,Marcia Sey,Howard,15.91
+2025,100H,W,4,9006522,Ana-Liese Torian,Auburn,15.41
+2025,100H,W,5,8316097,Oneka Wilson,Clemson,13.94
+2025,100H,W,6,8345801,Janela Spencer,Ohio State,13.25
+2025,400H,W,1,8011524,Savannah Sutherland,Michigan,46.69
+2025,400H,W,2,8647433,Akala Garrett,Texas,43.73
+2025,400H,W,3,8996686,Michelle Smith,Georgia,57.96
+2025,400H,W,4,8336291,Sanaa Hebron,Miami (Fla.),1:04.34
+2025,400H,W,5,8368627,Tyra Wilson,Florida State,56.13
+2025,400H,W,6,8332686,Chloe Fair,Harvard,54.14
+2025,400H,W,7,8705610,Amelliah Birdow,TCU,56.40
+2025,400H,W,8,8369558,Allyria McBride,Vanderbilt,58.45
+2025,3000S,W,1,8614328,Doris Lemngole,Alabama,8:58.15
+2025,3000S,W,2,7712194,Lexy Halladay-Lowry,BYU,9:08.68
+2025,3000S,W,3,8594424,Angelina Napoleon,NC State,9:16.66
+2025,3000S,W,4,8585677,Sarah Tait,West Virginia,9:27.80
+2025,3000S,W,5,8917740,Debora Cherono,Texas A&M,9:32.10
+2025,3000S,W,6,7917518,Katelyn Stewart-Barnett,Michigan State,9:33.21
+2025,3000S,W,7,8704570,Shelby Jensen,Utah State,9:36.61
+2025,3000S,W,8,8917138,Leah Jeruto,Oklahoma,9:38.94
+2025,4x100,W,1,,,,42.22
+2025,4x400,W,1,,,,10
+2025,HJ,W,1,8005705,Elena Kulichenko,Georgia,1.96m
+2025,HJ,W,2,8679706,Rose Yeboah,Illinois,1.93m
+2025,HJ,W,3,7727577,Jenna Rogers,Nebraska,1.90m
+2025,HJ,W,4,8324337,Alyssa Jones,Stanford,1.90m
+2025,HJ,W,5,8701620,Temitope Adeshina,Texas Tech,1.87m
+2025,HJ,W,6,8983909,Kristi Perez-Snyman,Missouri,1.87m
+2025,HJ,W,7,8676337,Celia Rifaterra,Virginia,1.84m
+2025,HJ,W,8,8996991,Valentina Fakrogha,UCLA,1.84m
+2025,PV,W,1,8676762,Hana Moll,Washington,4.50m
+2025,PV,W,2,7980608,Chloe Timberg,Rutgers,4.36m
+2025,PV,W,3,8676761,Amanda Moll,Washington,5.34m
+2025,PV,W,6,8354288,Emily Fitzsimmons,Oregon,5.24m
+2025,PV,W,7,7484536,Gennifer Hirata,South Dakota,3.60m
+2025,SP,W,1,7727870,Mya Lesnar,Colorado St.,19.01m
+2025,SP,W,2,9007180,Abria Smith,Illinois,18.85m
+2025,SP,W,3,8647437,Nina Ndubuisi,Texas,18.50m
+2025,SP,W,4,8673346,Jayden Ulrich,Louisville,18.26m
+2025,SP,W,5,8977029,Ashley Erasmus,USC,17.99m
+2025,SP,W,6,8634276,Kelsie Murrell-Ross,Georgia,17.80m
+2025,SP,W,7,8691791,MyeJoi Williams,Alabama,17.73m
+2025,SP,W,8,7746659,Cierra Jackson,Fresno State,17.70m
+2025,DT,W,1,7746659,Cierra Jackson,Fresno State,70.43m
+2025,DT,W,2,8398788,Alida Van Daalen,Florida,77.93m
+2025,DT,W,3,7725119,Shelby Frank,Texas Tech,49.43m
+2025,DT,W,4,8721010,Caisa-Marie Lindfors,California,71.96m
+2025,DT,W,5,8924225,Amanda Ngandu-Ntumba,Cincinnati,61.38m
+2025,DT,W,6,7513086,Adrienne Adams,Auburn,78.72m
+2025,DT,W,7,8673346,Jayden Ulrich,Louisville,48.20m
+2025,DT,W,8,7729050,Michaelle Valentin,FIU,51.91m
+2025,HT,W,1,8634278,Stephanie Ratcliffe,Georgia,71.37m
+2025,HT,W,2,7725119,Shelby Frank,Texas Tech,71.05m
+2025,HT,W,3,8709403,Lara Roberts,Texas State,70.42m
+2025,HT,W,4,7511460,Emma Robbins,Oklahoma State,69.27m
+2025,HT,W,5,9016408,Giavonna Meeks,California,68.94m
+2025,HT,W,6,8008554,Gudrun Hallgrimsdottir,VCU,68.66m
+2025,HT,W,7,7719803,Kenna Curry,North Dakota,68.16m
+2025,HT,W,8,7547302,Chloe Lindeman,Wisconsin,67.82m
+2025,JT,W,1,8435569,Valentina Barrios Bornacelli,Missouri,62.00m
+2025,JT,W,2,8996684,Manuela Rotundo,Georgia,60.35m
+2025,JT,W,3,8705608,Irene Jepkemboi,TCU,60.31m
+2025,JT,W,4,7986520,Lianna Davidson,Georgia,59.03m
+2025,JT,W,5,7730318,Maddie Harris,Nebraska,58.36m
+2025,JT,W,6,8996998,Jana van Schalkwyk,UCLA,57.07m
+2025,JT,W,7,8473803,McKyla Van Der Westhuizen,Rice,56.65m
+2025,JT,W,8,7977180,Kelsi Oldroyd,Utah Valley,56.37m
+2024,100,M,1,8348286,Louie Hinchliffe,Houston,10.45
+2024,100,M,2,8363992,Favour Ashe,Auburn,7.20
+2024,100,M,3,8709992,Kanyinsola Ajayi,Auburn,7.81
+2024,100,M,4,7989909,Godson Oghenebrume,LSU,10.83
+2024,100,M,5,8700013,Saminu Abdul-Rasheed,South Florida,9.52
+2024,100,M,6,8709986,Wanya McCoy,Florida,7.33
+2024,100,M,7,7721646,Shaun Maswanganyi,Houston,7.24
+2024,100,M,8,8367318,Zachaeus  Beard,Northwestern St.,10.71
+2024,200,M,1,8674190,Cheickna Traore,Penn State,19.95
+2024,200,M,2,8363938,Robert Gregory,Florida,20.08
+2024,200,M,3,8700013,Saminu Abdul-Rasheed,South Florida,20.12
+2024,200,M,4,8016458,Tarsis Orogot,Alabama,20.14
+2024,200,M,5,7984341,Makanakaishe Charamba,Auburn,20.20
+2024,200,M,6,7721646,Shaun Maswanganyi,Houston,20.25
+2024,200,M,7,8318061,Jamarion Stubbs,Alabama State,20.59
+2024,200,M,8,7482112,Lance Lang,Arkansas,20.67
+2024,400,M,1,8235187,Christopher Morales Williams,Georgia,40.92
+2024,400,M,2,8691776,Samuel Ogazi,Alabama,48.53
+2024,400,M,3,8363942,JeVaughn Powell,Florida,31.18
+2024,400,M,4,8022254,Johnnie Blockburger,USC,41.76
+2024,400,M,5,8235489,Judson Lincoln IV,Virginia Tech,39.88
+2024,400,M,6,7487901,Emmanuel Bynum,Tennessee,45.30
+2024,400,M,7,8709973,Reheem  Hayles,Florida,47.62
+2024,400,M,8,7930058,Justin  Robinson,Arizona State,50.06
+2024,800,M,1,8621220,Shane  Cohen,Virginia,1:44.97
+2024,800,M,2,7987288,Sam Whitmarsh,Texas A&M,1:45.10
+2024,800,M,3,6904283,Finley McLear,Iowa State,1:45.66
+2024,800,M,4,7974317,Tarees Rhoden,Clemson,1:45.70
+2024,800,M,5,7383904,Sean Dolan,Villanova,1:45.89
+2024,800,M,6,7725762,Yusuf Bizimana,Texas,1:46.37
+2024,800,M,7,7945430,Kimar Farquharson,Texas A&M,1:46.38
+2024,800,M,8,8235126,Nicholas Plant,Virginia Tech,1:47.00
+2024,1500,M,1,7480799,Joe Waskom,Washington,3:48.26
+2024,1500,M,2,7722809,Elliott Cook,Oregon,2:33.70
+2024,1500,M,3,7899902,Adam Spencer,Wisconsin,2:40.46
+2024,1500,M,4,8271041,Colin Sahlman,Northern Arizona,3:04.74
+2024,1500,M,5,6900649,Damien Dilcher,Iona,3:31.43
+2024,1500,M,6,7700480,Wes Porter,Virginia,3:47.01
+2024,1500,M,7,7371800,Ezekiel  Rop,Iowa State,3:36.09
+2024,1500,M,8,8074967,Anass  Essayi,South Carolina,2:38.99
+2024,5000,M,1,7908131,Parker Wolfe,North Carolina,13:04.37
+2024,5000,M,2,7711751,Nico Young,Northern Arizona,11:32.76
+2024,5000,M,3,7697359,Ky Robinson,Stanford,10:34.60
+2024,5000,M,4,8647595,Brian Musau,Oklahoma State,13:40.68
+2024,5000,M,5,7919013,Graham Blanks,Harvard,15:38.35
+2024,5000,M,6,8609549,Habtom Samuel,New Mexico,17:20.15
+2024,5000,M,7,8009874,Toby Gillen,Ole Miss,13:08.66
+2024,5000,M,8,7388515,Jesse Hamlin,Butler,15:14.63
+2024,10k,M,1,8609549,Habtom Samuel,New Mexico,30:39.73
+2024,10k,M,2,7895317,Victor Kiprop,Alabama,34:53.86
+2024,10k,M,3,8647596,Denis  Kipngetich,Oklahoma State,29:00.96
+2024,10k,M,4,8725440,Ernest Cheruiyot,Texas Tech,26:46.27
+2024,10k,M,5,7554109,Chandler Gibbens,Kansas,35:30.50
+2024,10k,M,6,7815149,Ian Kibiwot,Louisville,27:03.99
+2024,10k,M,7,7889759,Sanele Masondo,Iowa State,25:07.03
+2024,10k,M,8,7904836,Patrick Kiprop,Arkansas,34:43.61
+2024,110H,M,1,7538550,Darius Luff,Nebraska,11.74
+2024,110H,M,2,8709994,Ja'Kobe Tharp,Auburn,9.24
+2024,110H,M,3,8712078,Ja'Qualon Scott,Texas A&M,12.74
+2024,110H,M,4,8679005,Malachi Snow,San Jose St.,12.13
+2024,110H,M,5,7070432,De' Vion Wilson,Houston,16.84
+2024,110H,M,6,7491601,Samuel Bennett,Howard,15.07
+2024,110H,M,7,8029490,Jerome Campbell,Northern Colorado,17.27
+2024,110H,M,8,8359929,Matthew Sophia,LSU,10.96
+2024,400H,M,1,7526270,Caleb Dean,Texas Tech,47.23
+2024,400H,M,2,7535860,Chris Robinson,Alabama,47.98
+2024,400H,M,3,8017719,Nathaniel Ezekiel,Baylor,48.88
+2024,400H,M,4,8712078,Ja'Qualon Scott,Texas A&M,49.08
+2024,400H,M,5,7993397,Oskar Edlund,Texas Tech,49.23
+2024,400H,M,6,7746444,Corde Long,Alabama,49.47
+2024,400H,M,7,8017812,Jakwan Hale,Tennessee,49.49
+2024,400H,M,8,7729850,Sean Burrell,LSU,51.17
+2024,3000S,M,1,7373057,Parker Stokes,Georgetown,8:19.54
+2024,3000S,M,2,7979835,Nathan Mountain,Virginia,8:30.77
+2024,3000S,M,3,6872531,Gable Sieperda,Iowa State,7:04.98
+2024,3000S,M,4,8245050,Abdelhakim Abouzouhir,Eastern Kentucky,7:31.31
+2024,3000S,M,5,8237169,CJ Singleton,Notre Dame,8:57.91
+2024,3000S,M,6,8281094,Estanis Ruiz,Portland,8:17.99
+2024,3000S,M,7,7700490,Yasin Sado,Virginia,10:04.73
+2024,3000S,M,8,6874366,Alexander Korczynski,Northeastern,8:14.14
+2024,4x100,M,1,,,,30.05
+2024,4x400,M,1,,,,2:54.81
+2024,HJ,M,1,7535392,Romaine Beckford,Arkansas,2.26m
+2024,HJ,M,2,7977923,Tyus Wilson,Nebraska,2.72m
+2024,HJ,M,3,7719884,Caleb  Snowden,Arkansas-Pine Bluff,1.81m
+2024,HJ,M,4,8684031,Tito Alofe,Harvard,2.24m
+2024,HJ,M,5,7983333,Devin Loudermilk,Kansas,2.07m
+2024,HJ,M,6,8676195,Kyren Washington,Oklahoma,2.84m
+2024,HJ,M,7,8634240,Riyon Rankin,Georgia,1.89m
+2024,HJ,M,8,7730020,Brady Palen,Wichita State,1.89m
+2024,PV,M,1,7599292,Keaton Daniel,Kentucky,5.16m
+2024,PV,M,2,7983334,Clayton Simms,Kansas,5.11m
+2024,PV,M,5,8664682,Cody  Johnston,Illinois,5.02m
+2024,SP,M,1,8341371,Tarik Robinson-O'Hagan,Ole Miss,20.88m
+2024,SP,M,2,7727861,Jason Swarens,Wisconsin,20.38m
+2024,SP,M,3,7729961,Dylan  Targgart,South Carolina,20.23m
+2024,SP,M,4,7722255,Danny Bryant,BYU,20.02m
+2024,SP,M,5,8713721,Courtney Lawrence,Clemson,19.92m
+2024,SP,M,6,8634255,Alexander Kolesnikoff,Georgia,19.70m
+2024,SP,M,7,7544543,Tyler Sudduth,Illinois,19.67m
+2024,SP,M,8,7538541,Kevin Shubert,Nebraska,19.63m
+2024,DT,M,1,7537623,Francois Prinsloo,South Alabama,54.62m
+2024,DT,M,2,8699158,Racquil Broderick,USC,44.47m
+2024,DT,M,3,7983335,Dimitrios Pavlidis,Kansas,42.68m
+2024,DT,M,4,6992912,Mitchell Weber,Missouri,57.20m
+2024,DT,M,5,8709971,Kai Chang,Florida,49.70m
+2024,DT,M,6,7537576,Jacob  Lemmon,Virginia,78.56m
+2024,DT,M,7,7039996,Milton Ingraham,Miami (Fla.),68.70m
+2024,DT,M,8,7722603,Dallin Shurts,BYU,63.76m
+2024,HT,M,1,8720932,Rowan  Hamilton,California,77.18m
+2024,HT,M,2,7981311,Kenneth Ikeji,Harvard,77.12m
+2024,HT,M,3,8676284,Angelos Mantzouranis,Minnesota,75.50m
+2024,HT,M,4,8009990,Israel Oloyede,Grand Canyon,75.29m
+2024,HT,M,5,7886978,Nikolaos Polychroniou,USC,74.18m
+2024,HT,M,6,8699945,Trey Knight,CSUN,74.00m
+2024,HT,M,7,8341371,Tarik Robinson-O'Hagan,Ole Miss,72.81m
+2024,HT,M,8,8318487,Parker Feuerborn,SE Missouri,71.42m
+2024,JT,M,1,8235191,Marc Minichello,Georgia,56.49m
+2024,JT,M,2,8324562,Chandler Ault,Washington,79.31m
+2024,JT,M,3,7655614,Devoux Deysel,Miami (Fla.),56.36m
+2024,JT,M,4,7974488,Chinecherem Prosper  Nnamdi,Baylor,93.09m
+2024,JT,M,5,8364008,Keyshawn Strachan,Auburn,80.20m
+2024,JT,M,6,8369918,Remi Rougete,Miss State,65.32m
+2024,JT,M,7,8321686,Mike Stein,Iowa,59.70m
+2024,JT,M,8,7184209,Cameron Bates,BYU,61.28m
+2024,200,W,1,6985778,McKenzie Long,Ole Miss,27.51
+2024,200,W,2,8675923,JaMeesia Ford,South Carolina,26.72
+2024,200,W,3,7722969,Jadyn Mays,Oregon,23.30
+2024,200,W,4,7986734,Jayla Jamison,South Carolina,26.49
+2024,200,W,5,8343530,Jassani Carter,USC,19.72
+2024,200,W,6,8235201,Kaila Jackson,Georgia,21.32
+2024,200,W,7,8368619,Dajaz Defrand,Florida State,23.86
+2024,200,W,8,8714489,Tima Godbless,LSU,21.73
+2024,400,W,1,7732209,Nickisha Pryce,Arkansas,48.41
+2024,400,W,2,8677962,Kaylyn Brown,Arkansas,35.87
+2024,400,W,3,7511452,Amber Anning,Arkansas,35.71
+2024,400,W,4,7478918,Rosey Effiong,Arkansas,47.74
+2024,400,W,5,7785853,Isabella  Whittaker,Penn,52.18
+2024,400,W,6,8359937,Ella Onojuvwevwo,LSU,57.32
+2024,400,W,7,7519684,Jan'Taijah Jones,USC,45.19
+2024,400,W,8,7729115,Brianna White,Tennessee,1:02.98
+2024,800,W,1,8239784,Juliette Whittaker,Stanford,1:59.61
+2024,800,W,2,8239785,Roisin Willis,Stanford,2:00.17
+2024,800,W,3,7481168,Gabija Galvydyte,Oklahoma State,2:00.23
+2024,800,W,4,7930954,Michaela Rose,LSU,2:01.03
+2024,800,W,5,8603131,Hayley Kitching,Penn State,2:01.05
+2024,800,W,6,8364036,Sanu Jallow,Arkansas,2:01.07
+2024,800,W,7,8234613,Aniya Mosley,Ohio State,2:01.23
+2024,800,W,8,8321329,Lauren Tolbert,Duke,2:01.95
+2024,1500,W,1,7919037,Maia Ramsden,Harvard,4:06.62
+2024,1500,W,2,7889042,Kimberley May,Providence,4:08.07
+2024,1500,W,3,8261269,Klaudia Kazimierska,Oregon,4:08.22
+2024,1500,W,4,7982248,Melissa Riggins,Georgetown,4:08.74
+2024,1500,W,5,7388961,Flomena Asekol,Florida,4:08.91
+2024,1500,W,6,7687816,Shannon Flockhart,Providence,4:09.53
+2024,1500,W,7,7402013,Lindsey Butler,Virginia Tech,4:09.85
+2024,1500,W,8,7544494,Olivia Howell,Texas,4:10.05
+2024,5000,W,1,7699859,Parker Valby,Florida,14:52.18
+2024,5000,W,2,8247130,Hilda Olemomoi,Alabama,15:10.04
+2024,5000,W,3,7003048,Bailey Hertenstein,Colorado,15:10.98
+2024,5000,W,4,7897037,Margot Appleton,Virginia,15:24.24
+2024,5000,W,5,8601479,Juliet Cherubet,Texas Tech,15:25.41
+2024,5000,W,6,7389217,Taylor Roe,Oklahoma State,15:26.18
+2024,5000,W,7,6907365,Ella Baran,Colorado,15:28.43
+2024,5000,W,8,6882597,Sadie Sargent,BYU,15:30.63
+2024,10k,W,1,7699859,Parker Valby,Florida,31:46.09
+2024,10k,W,2,8247130,Hilda Olemomoi,Alabama,31:51.89
+2024,10k,W,3,7389217,Taylor Roe,Oklahoma State,32:17.45
+2024,10k,W,4,6911493,Molly Born,Oklahoma State,32:27.18
+2024,10k,W,5,7893942,Chloe Scrimgeour,Georgetown,32:29.44
+2024,10k,W,6,8278025,Jenna Hutchins,BYU,32:44.05
+2024,10k,W,7,7891097,Sydney Thorvaldson,Arkansas,32:50.47
+2024,10k,W,8,8242189,Grace Hartman,NC State,32:54.98
+2024,100H,W,1,7533304,Grace Stark,Florida,12.47
+2024,100H,W,2,8321889,Maribel Caicedo,Washington St.,12.56
+2024,100H,W,3,7513080,Rayniah  Jones,UCF,12.59
+2024,100H,W,4,7687405,Jasmine Jones,USC,12.64
+2024,100H,W,5,7545644,Destiny Huven,Arkansas,12.85
+2024,100H,W,6,8011545,Aasia Laurencin,Michigan,12.86
+2024,100H,W,7,7736277,Micaela De Mello,Washington St.,12.92
+2024,100H,W,8,7886983,Jalaysiya Smith,USC,12.96
+2024,400H,W,1,7687405,Jasmine Jones,USC,1:08.04
+2024,400H,W,2,8011524,Savannah Sutherland,Michigan,38.35
+2024,400H,W,3,7731611,Rachel  Glenn,Arkansas,49.24
+2024,400H,W,4,8647433,Akala Garrett,Texas,49.36
+2024,400H,W,5,8475863,Sydni Townsend,Houston,42.91
+2024,400H,W,6,7985917,Shana Grebo,Oregon,1:08.58
+2024,400H,W,7,8341502,Gabrielle Matthews,Ole Miss,38.73
+2024,400H,W,8,7494773,Abbey Glynn,Colorado,52.97
+2024,3000S,W,1,8614328,Doris Lemngole,Alabama,12:01.82
+2024,3000S,W,2,7404684,Olivia Markezich,Notre Dame,8:32.78
+2024,3000S,W,3,7366920,Janette Schraft,Iowa State,9:57.82
+2024,3000S,W,4,7686712,Greta Karinauskaite,CBU,12:10.97
+2024,3000S,W,5,7374015,Laura  Taborda,Arkansas,11:07.78
+2024,3000S,W,6,7389432,Elise Thorner,Florida,11:03.90
+2024,3000S,W,7,7888162,Sophie Novak,Notre Dame,6:46.38
+2024,3000S,W,8,8720351,Karrie  Baloga,Northern Arizona,11:09.56
+2024,4x100,W,1,,,,51.66
+2024,4x400,W,1,,,,3:47.66
+2024,HJ,W,3,8701620,Temitope Adeshina,Texas Tech,1.65m
+2024,HJ,W,4,7729642,Lamara Distin,Texas A&M,1.36m
+2024,PV,W,1,7980608,Chloe Timberg,Rutgers,3.91m
+2024,PV,W,2,6984395,Riley Felts,Charlotte,3.87m
+2024,PV,W,3,8676762,Hana Moll,Washington,4.19m
+2024,PV,W,4,8324599,Nastassja Campbell,Washington,4.18m
+2024,PV,W,7,8015605,Tori Thomas,Illinois,4.97m
+2024,SP,W,1,7722972,Jaida Ross,Oregon,19.57m
+2024,SP,W,2,7002471,Gabby Morris,Colorado St.,18.66m
+2024,SP,W,3,7977784,Axelina Johansson,Nebraska,18.24m
+2024,SP,W,4,8673346,Jayden Ulrich,Louisville,17.89m
+2024,SP,W,5,7727870,Mya Lesnar,Colorado St.,17.67m
+2024,SP,W,6,8398788,Alida Van Daalen,Florida,17.52m
+2024,SP,W,7,8713328,Sarah Omoregie,Vanderbilt,17.35m
+2024,SP,W,8,8647437,Nina Ndubuisi,Texas,17.15m
+2024,DT,W,1,7004006,Veronica Fraley,Vanderbilt,67.48m
+2024,DT,W,2,8673346,Jayden Ulrich,Louisville,81.33m
+2024,DT,W,3,8398788,Alida Van Daalen,Florida,70.56m
+2024,DT,W,4,7725119,Shelby Frank,Minnesota,57.35m
+2024,DT,W,5,7723779,Corinne Jemison,Michigan,70.28m
+2024,DT,W,6,7501493,Michaela  Hawkins,Colorado St.,74.78m
+2024,DT,W,7,8684055,Milina Wepiwe,Harvard,59.23m
+2024,DT,W,8,8710581,Abigail Martin,Texas A&M,43.36m
+2024,HT,W,1,8339459,Elisabet Rut Runarsdottir,Texas State,70.47m
+2024,HT,W,2,7542360,Tara Simpson-Sullivan,Rice,69.94m
+2024,HT,W,3,7511444,Jalani Davis,Ole Miss,69.86m
+2024,HT,W,4,8354292,Shelby Moran,Oregon,69.43m
+2024,HT,W,5,8008554,Gudrun Hallgrimsdottir,VCU,69.12m
+2024,HT,W,6,8376104,Mayyi Mahama,UCLA,68.69m
+2024,HT,W,7,7725119,Shelby Frank,Minnesota,68.40m
+2024,HT,W,8,6985107,Amber Simpson,Illinois,67.73m
+2024,JT,W,1,7729053,Rhema Otabor,Nebraska,64.19m
+2024,JT,W,2,7986520,Lianna Davidson,Texas A&M,60.70m
+2024,JT,W,3,8473803,McKyla Van Der Westhuizen,Rice,57.51m
+2024,JT,W,4,8705608,Irene Jepkemboi,TCU,56.51m
+2024,JT,W,5,7777611,Eniko Sara,Nebraska,55.66m
+2024,JT,W,6,7487690,Skylar Ciccolini,Missouri,55.06m
+2024,JT,W,7,8716146,Trinity Spooner,LSU,54.81m
+2024,JT,W,8,8353877,Deisiane Teixeira,Miami (Fla.),54.54m
+2023,100,M,1,7036992,Courtney Lindsey,Texas Tech,9.89
+2023,100,M,2,7989909,Godson Oghenebrume,LSU,9.90
+2023,100,M,3,7721646,Shaun Maswanganyi,Houston,9.91
+2023,100,M,4,7729846,Da'Marcus Fleming,LSU,9.97
+2023,100,M,5,7731969,PJ Austin,Florida,9.97
+2023,100,M,6,7980286,Udodi Onwuzurike,Stanford,9.98
+2023,100,M,7,7722962,Micah Williams,Oregon,9.99
+2023,100,M,8,8363992,Favour Ashe,Auburn,10.02
+2023,200,M,1,7980286,Udodi Onwuzurike,Stanford,16.87
+2023,200,M,2,7036992,Courtney Lindsey,Texas Tech,20.66
+2023,200,M,3,7727055,Terrence Jones,Texas Tech,22.85
+2023,200,M,4,8363938,Robert Gregory,Florida,20.89
+2023,200,M,5,8016458,Tarsis Orogot,Alabama,20.03
+2023,200,M,6,7721646,Shaun Maswanganyi,Houston,25.29
+2023,200,M,7,7734619,David Dunlap,Northern Arizona,20.77
+2023,200,M,8,7531874,Cameron Miller,Louisville,16.24
+2023,400,M,1,8365076,Emmanuel Bamidele,Florida,35.40
+2023,400,M,2,7731978,Ryan Willie,Florida,33.63
+2023,400,M,3,7487901,Emmanuel Bynum,Tennessee,39.16
+2023,400,M,4,7930058,Justin  Robinson,Arizona State,46.74
+2023,400,M,5,7727878,Dubem Nwachukwu,Arizona State,50.31
+2023,400,M,6,7986433,Reheem Hayles,N. Carolina A&T,35.73
+2023,400,M,7,8363942,JeVaughn Powell,Florida,44.87
+2023,400,M,8,8040987,Gamali Felix,Arizona State,37.18
+2023,800,M,1,8233518,Will Sumner,Georgia,1:41.14
+2023,800,M,2,7725762,Yusuf Bizimana,Texas,1:21.42
+2023,800,M,3,8322772,Handal Roban,Penn State,2:03.97
+2023,800,M,4,7724879,Abdullahi Hassan,Wisconsin,1:49.49
+2023,800,M,5,7700481,Conor  Murphy,Virginia,1:54.95
+2023,800,M,6,8237621,Mehdi Yanouri,Oklahoma State,2:17.39
+2023,800,M,7,7751674,Aidan McCarthy,Cal Poly,1:33.97
+2023,800,M,8,8009334,Tiarnan Crorken,Ole Miss,1:15.84
+2023,1500,M,1,7910774,Nathan Green,Washington,3:42.78
+2023,1500,M,2,7480799,Joe Waskom,Washington,3:42.93
+2023,1500,M,3,7899902,Adam Spencer,Wisconsin,3:42.98
+2023,1500,M,4,8074967,Anass  Essayi,South Carolina,3:43.31
+2023,1500,M,5,7363947,Isaac  Basten,Drake,3:43.33
+2023,1500,M,6,6922271,Jesse Hunt,North Carolina,3:43.40
+2023,1500,M,7,7371800,Ezekiel  Rop,Iowa State,3:43.59
+2023,1500,M,8,7364612,Evan Dorenkamp,Penn State,3:44.20
+2023,5000,M,1,7697359,Ky Robinson,Stanford,16:36.83
+2023,5000,M,2,7919013,Graham Blanks,Harvard,18:03.56
+2023,5000,M,3,7397924,Jackson  Sharp,Wisconsin,13:24.44
+2023,5000,M,4,7686035,Luke Tewalt,Wake Forest,10:26.92
+2023,5000,M,5,7908131,Parker Wolfe,North Carolina,15:15.30
+2023,5000,M,6,7416005,Charles Hicks,Stanford,16:16.39
+2023,5000,M,7,7688021,Carter Solomon,Notre Dame,12:36.12
+2023,5000,M,8,7711751,Nico Young,Northern Arizona,15:26.69
+2023,10k,M,1,7697359,Ky Robinson,Stanford,33:32.25
+2023,10k,M,2,7416005,Charles Hicks,Stanford,33:50.64
+2023,10k,M,3,6476140,Casey Clinger,BYU,33:18.49
+2023,10k,M,4,6880448,James Mwaura,Gonzaga,34:27.46
+2023,10k,M,5,6516194,Isai Rodriguez,Oklahoma State,29:06.35
+2023,10k,M,6,7919013,Graham Blanks,Harvard,33:21.17
+2023,10k,M,7,6429872,Barry Keane,Butler,33:22.71
+2023,10k,M,8,7904836,Patrick Kiprop,Arkansas,25:02.64
+2023,110H,M,1,7537813,Phillip Lemonious,Arkansas,12.98
+2023,110H,M,2,7070432,De' Vion Wilson,Houston,11.14
+2023,110H,M,3,7981048,Jaheem Hayles,Syracuse,16.47
+2023,110H,M,4,6972494,Omotade Ojora,USC,14.22
+2023,110H,M,5,7718288,Giano Roberts,Clemson,11.85
+2023,110H,M,6,7538550,Darius Luff,Nebraska,10.04
+2023,110H,M,7,7496245,Connor Schulman,Texas A&M,9.43
+2023,110H,M,8,7728735,Rasheem Brown,Tennessee,11.75
+2023,400H,M,1,7535860,Chris Robinson,Alabama,48.12
+2023,400H,M,2,7746444,Corde Long,Alabama,48.53
+2023,400H,M,3,8017719,Nathaniel Ezekiel,Baylor,48.54
+2023,400H,M,4,7526270,Caleb Dean,Texas Tech,48.56
+2023,400H,M,5,7487906,Rasheeme Griffith,Tennessee,49.17
+2023,400H,M,6,7495802,Caleb Cavanaugh,Georgia,49.20
+2023,400H,M,7,7039313,Cass Elliott,Washington,49.21
+2023,400H,M,8,7044237,James Smith II,Texas A&M,49.21
+2023,3000S,M,1,6882592,Kenneth Rooks,BYU,8:26.17
+2023,3000S,M,2,6876443,Duncan Hamilton,Montana State,8:32.18
+2023,3000S,M,3,8005749,Victor Kibiego,UTEP,8:32.49
+2023,3000S,M,4,7979835,Nathan Mountain,Virginia,8:35.99
+2023,3000S,M,5,6429582,Matthew Wilkinson,Minnesota,8:36.12
+2023,3000S,M,6,8245050,Abdelhakim Abouzouhir,Eastern Kentucky,8:36.19
+2023,3000S,M,7,6990067,Victor Shitsama,Oklahoma State,8:36.79
+2023,3000S,M,8,6876347,Derek  Johnson,Virginia,8:37.29
+2023,4x100,M,1,,,,10
+2023,4x400,M,1,,,,2:57.74
+2023,HJ,M,1,7535392,Romaine Beckford,South Florida,2.27m
+2023,HJ,M,2,6569708,Vernon Turner,Oklahoma,2.27m
+2023,HJ,M,3,6992911,Roberto Vilches,Missouri,2.24m
+2023,HJ,M,4,7534612,Trey Allen,Louisville,2.16m
+2023,HJ,M,4,8369917,Tony Jones,Miss State,2.16m
+2023,HJ,M,4,7977923,Tyus Wilson,Nebraska,2.16m
+2023,HJ,M,4,7530597,"Shaun Miller, Jr.",Ohio State,2.16m
+2023,HJ,M,4,7476114,Slavko Stevic,SE Louisiana,2.16m
+2023,PV,M,1,7719642,Kyle Rademeyer,South Alabama,5.70m
+2023,PV,M,2,7728252,Hunter Garretson,Akron,5.70m
+2023,PV,M,5,7983334,Clayton Simms,Kansas,5.60m
+2023,SP,M,1,6583856,Jordan Geist,Arizona,21.06m
+2023,SP,M,2,6901432,Turner Washington,Arizona State,21.04m
+2023,SP,M,3,8319513,Fred Moudani Likibi,Cincinnati,20.54m
+2023,SP,M,4,7977918,Maxwell Otterdahl,Nebraska,20.52m
+2023,SP,M,5,7989907,John Meyer,LSU,20.44m
+2023,SP,M,6,8003661,Hayden Tobias,Ohio State,20.26m
+2023,SP,M,7,6533143,Jordan West,Arkansas,20.02m
+2023,SP,M,8,7729241,Jeff Duensing,California,19.98m
+2023,DT,M,1,6901432,Turner Washington,Arizona State,73.50m
+2023,DT,M,2,7003965,Roje Stona,Arkansas,78.00m
+2023,DT,M,3,8019706,Mykolas Alekna,California,71.47m
+2023,DT,M,4,8359928,Claudio Romero,LSU,75.83m
+2023,DT,M,5,8012869,Kevin Nedrick,Liberty,59.45m
+2023,DT,M,6,7039996,Milton Ingraham,Florida State,77.41m
+2023,DT,M,7,7722603,Dallin Shurts,BYU,68.01m
+2023,DT,M,8,6586906,Elijah Mason,Washington,62.32m
+2023,HT,M,1,7981311,Kenneth Ikeji,Harvard,98.96m
+2023,HT,M,2,7537882,Kostas Zaltos,Minnesota,94.65m
+2023,HT,M,3,6583856,Jordan Geist,Arizona,80.53m
+2023,HT,M,4,8014116,Decio Andrade,Miami (Fla.),59.72m
+2023,HT,M,5,7886978,Nikolaos Polychroniou,USC,53.76m
+2023,HT,M,6,7980790,Jake Kubiatowicz,Minnesota,55.75m
+2023,HT,M,7,7188295,Tyler Merkley,Penn State,91.22m
+2023,HT,M,8,8341371,Tarik Robinson-O'Hagan,Ole Miss,54.96m
+2023,JT,M,1,6985940,Tzuriel Pedigo,LSU,58.25m
+2023,JT,M,2,6988187,Ethan Dabbs,Virginia,81.65m
+2023,JT,M,3,7974488,Chinecherem Prosper  Nnamdi,Baylor,94.82m
+2023,JT,M,4,8235191,Marc Minichello,Georgia,88.09m
+2023,JT,M,5,7729615,Sam Hankins,Texas A&M,61.71m
+2023,JT,M,6,7744832,Braden Presser,Navy,75.24m
+2023,JT,M,7,7208883,John Keenan,Notre Dame,60.01m
+2023,JT,M,8,7184209,Cameron Bates,BYU,54.54m
+2023,100,W,1,7087489,Julien Alfred,Texas,7.72
+2023,100,W,2,6985354,Kennedy Blackmon,Oklahoma,10.77
+2023,100,W,3,7534774,Jacious Sears,Tennessee,13.90
+2023,100,W,4,8235201,Kaila Jackson,Georgia,12.06
+2023,100,W,5,7690425,Kevona Davis,Texas,10.33
+2023,100,W,6,7548443,Rosemary Chukwuma,Texas Tech,8.61
+2023,100,W,7,8316972,Ezinne Abba,Texas,8.20
+2023,100,W,8,8368619,Dajaz Defrand,Florida State,10.75
+2023,200,W,1,7087489,Julien Alfred,Texas,18.04
+2023,200,W,2,6985778,McKenzie Long,Ole Miss,15.54
+2023,200,W,3,7690425,Kevona Davis,Texas,19.38
+2023,200,W,4,7534774,Jacious Sears,Tennessee,24.91
+2023,200,W,5,8316977,Lanae Thomas,Texas,21.92
+2023,200,W,6,7002873,Caisja Chandler,USC,22.60
+2023,200,W,7,7732042,Talitha  Diggs,Florida,19.54
+2023,200,W,8,6550717,Karimah Davis,Kentucky,19.79
+2023,400,W,1,7690419,Rhasidat Adeleke,Texas,56.09
+2023,400,W,2,7488009,Britton Wilson,Arkansas,35.25
+2023,400,W,3,7732209,Nickisha Pryce,Arkansas,43.70
+2023,400,W,4,7478918,Rosey Effiong,Arkansas,54.84
+2023,400,W,5,7732042,Talitha  Diggs,Florida,1:05.19
+2023,400,W,6,7723778,Ziyah Holman,Michigan,35.73
+2023,400,W,7,7724966,Jermaisha Arnold,Texas A&M,42.38
+2023,400,W,8,7002165,Tierra Robinson-Jones,Texas A&M,53.17
+2023,800,W,1,7930954,Michaela Rose,LSU,2:02.23
+2023,800,W,2,7481168,Gabija Galvydyte,Oklahoma State,1:41.20
+2023,800,W,3,6547986,Claire Seymour,BYU,2:18.64
+2023,800,W,4,8239785,Roisin Willis,Stanford,1:48.82
+2023,800,W,5,6920343,Dorcus Ewoi,Campbell,1:29.16
+2023,800,W,6,7008908,Valery Tobias,Texas,1:59.95
+2023,800,W,7,6909381,Aurora Rynda,Michigan,2:15.47
+2023,800,W,8,7722268,Meghan Hunter,BYU,1:46.69
+2023,1500,W,1,7919037,Maia Ramsden,Harvard,4:08.60
+2023,1500,W,2,7929852,Izzy Thornton-Bott,Oregon,4:09.21
+2023,1500,W,3,7897037,Margot Appleton,Virginia,4:09.30
+2023,1500,W,4,8261269,Klaudia Kazimierska,Oregon,4:09.84
+2023,1500,W,5,8285251,Billah Jepkirui,Oklahoma State,4:10.17
+2023,1500,W,6,7687816,Shannon Flockhart,Providence,4:10.78
+2023,1500,W,7,7704053,Katelyn Tuohy,NC State,4:11.40
+2023,1500,W,8,7544494,Olivia Howell,Illinois,4:11.54
+2023,5000,W,1,7699859,Parker Valby,Florida,12:24.46
+2023,5000,W,2,7934445,Everlyn Kemboi,Utah Valley,18:09.91
+2023,5000,W,3,7905593,Emily Venters,Utah,12:24.50
+2023,5000,W,4,8397826,Amaris Tyynismaa,NC State,11:58.07
+2023,5000,W,5,8257176,Amina Maatoug,Duke,15:38.74
+2023,5000,W,6,6445545,Cailie Logue,Iowa State,12:01.89
+2023,5000,W,7,7905591,Simone Plourde,Utah,19:28.63
+2023,5000,W,8,7893942,Chloe Scrimgeour,Georgetown,19:59.99
+2023,10k,W,1,7934445,Everlyn Kemboi,Utah Valley,39:10.90
+2023,10k,W,2,7905593,Emily Venters,Utah,36:04.47
+2023,10k,W,3,7376675,Mercy Chelangat,Alabama,34:08.41
+2023,10k,W,4,7389434,Amelia Mazza-Downie,New Mexico,42:23.76
+2023,10k,W,5,8247130,Hilda Olemomoi,Alabama,42:12.88
+2023,10k,W,6,6445545,Cailie Logue,Iowa State,31:27.52
+2023,10k,W,7,7367311,Amanda Vestri,Syracuse,28:12.94
+2023,10k,W,8,7366522,Kelsey Chmiel,NC State,35:33.68
+2023,100H,W,1,7718451,Ackera Nugent,Arkansas,12.38
+2023,100H,W,2,6995394,Masai Russell,Kentucky,13.93
+2023,100H,W,3,7511453,Alia Armstrong,LSU,14.99
+2023,100H,W,4,7511395,Talie Bonds,Arizona,11.95
+2023,100H,W,5,7533304,Grace Stark,Florida,14.50
+2023,100H,W,6,8002777,Alexis Glasco,Coastal Carolina,11.85
+2023,100H,W,7,8011545,Aasia Laurencin,Michigan,11.67
+2023,100H,W,8,6988926,Paula  Salmon,N. Carolina A&T,12.92
+2023,400H,W,1,8011524,Savannah Sutherland,Michigan,1:02.08
+2023,400H,W,2,6995394,Masai Russell,Kentucky,57.94
+2023,400H,W,3,7520143,Chastity Pickett,Campbell,43.34
+2023,400H,W,4,8366921,Brooke Overholt,Vanderbilt,1:01.61
+2023,400H,W,5,8359933,Shani'a Bellamy,LSU,1:02.25
+2023,400H,W,6,8316107,Lashanna Graham,Clemson,1:01.15
+2023,400H,W,7,7488009,Britton Wilson,Arkansas,58.16
+2023,400H,W,8,7494773,Abbey Glynn,Colorado,1:07.78
+2023,3000S,W,1,7404684,Olivia Markezich,Notre Dame,7:09.43
+2023,3000S,W,2,7686712,Greta Karinauskaite,CBU,7:42.39
+2023,3000S,W,3,7365150,Ceili McCabe,West Virginia,12:12.47
+2023,3000S,W,4,7712194,Lexy Halladay-Lowry,BYU,7:33.85
+2023,3000S,W,5,7389432,Elise Thorner,New Mexico,6:48.07
+2023,3000S,W,6,6870153,Grace Fetherstonhaugh,Oregon State,7:04.43
+2023,3000S,W,7,7612157,Kaylee Mitchell,Oregon State,8:27.11
+2023,3000S,W,8,6545344,Pauline Meyer,Arkansas State,10:32.11
+2023,4x100,W,1,,,,41.60
+2023,4x400,W,1,,,,3:50.58
+2023,HJ,W,1,7487638,Charity Griffith,Ball State,1.97m
+2023,HJ,W,2,7729642,Lamara Distin,Texas A&M,1.87m
+2023,HJ,W,3,8005705,Elena Kulichenko,Georgia,1.46m
+2023,HJ,W,4,7989006,Lilian Turban,Hawaii,1.66m
+2023,HJ,W,7,7540309,Cierra Tidwell,BYU,2.24m
+2023,HJ,W,8,7497079,Taylor Beard,Cincinnati,2.28m
+2023,PV,W,1,7495942,Julia Fixsen,Virginia Tech,3.56m
+2023,PV,W,2,8324599,Nastassja Campbell,Washington,3.83m
+2023,PV,W,3,7484536,Gennifer Hirata,South Dakota,3.74m
+2023,PV,W,4,7528279,Sevanna Hanson,Arizona State,4.69m
+2023,PV,W,5,7707244,Sydney Horn,High Point,4.17m
+2023,PV,W,8,8235499,Kenna Stimmel,Virginia Tech,4.26m
+2023,SP,W,1,7977784,Axelina Johansson,Nebraska,24.10m
+2023,SP,W,2,8354294,Jorinde Van Klinken,Oregon,13.86m
+2023,SP,W,3,8353875,Rosa Santana,UNLV,14.70m
+2023,SP,W,4,8398788,Alida Van Daalen,Florida,22.39m
+2023,SP,W,5,7722972,Jaida Ross,Oregon,15.03m
+2023,SP,W,6,7493771,Mallory Kauffman,Penn State,16.92m
+2023,SP,W,7,6584256,Josie Schaefer,Wisconsin,22.80m
+2023,SP,W,8,7039504,Hannah Hall,Miami (Fla.),22.96m
+2023,DT,W,1,8354294,Jorinde Van Klinken,Oregon,73.42m
+2023,DT,W,2,7979969,Ashley Anumba,Virginia,62.35m
+2023,DT,W,3,8398788,Alida Van Daalen,Florida,74.95m
+2023,DT,W,4,7730608,Caisa-Marie Lindfors,Florida State,42.12m
+2023,DT,W,5,6592751,Samantha  Lenton,Memphis,41.27m
+2023,DT,W,6,7491617,Estel Valeanu,Harvard,57.09m
+2023,DT,W,7,7002471,Gabby McDonald,Colorado St.,58.34m
+2023,DT,W,8,7730828,Jade Whitfield,Oregon State,51.29m
+2023,HT,W,1,7491616,Stephanie Ratcliffe,Harvard,73.63m
+2023,HT,W,2,6574473,Madi Malone,Auburn,72.37m
+2023,HT,W,3,7729246,Anna Purchase,California,71.47m
+2023,HT,W,4,7511460,Emma Robbins,Kansas State,69.89m
+2023,HT,W,5,7542360,Tara Simpson-Sullivan,Rice,67.00m
+2023,HT,W,6,6557376,Shey Taiwo,Ole Miss,66.99m
+2023,HT,W,7,8339459,Elisabet Rut Runarsdottir,Texas State,66.98m
+2023,HT,W,8,6558758,Taylor Gorum,Alabama,66.60m
+2023,JT,W,1,7729053,Rhema Otabor,Nebraska,42.83m
+2023,JT,W,2,7986520,Lianna Davidson,Texas A&M,66.42m
+2023,JT,W,3,7986521,Katelyn Fairchild,Texas A&M,52.17m
+2023,JT,W,4,7730318,Maddie Harris,Nebraska,45.81m
+2023,JT,W,5,7487690,Skylar Ciccolini,Missouri,40.90m
+2023,JT,W,6,6992947,Sophia Rivera,Missouri,48.09m
+2023,JT,W,7,8467686,Federica  Botter,UCLA,39.61m
+2023,JT,W,8,6588923,Madison Wiltrout,North Carolina,67.15m
+2022,100,M,1,7531871,Joseph Fahnbulleh,Florida,10.00
+2022,100,M,2,7994600,Favour Ashe,Tennessee,10.08
+2022,100,M,3,7728613,Javonte Harding,N. Carolina A&T,10.08
+2022,100,M,4,7730597,JoVaughn Martin,Florida State,10.09
+2022,100,M,5,7731977,Dedrick Vanover,Florida,10.16
+2022,100,M,6,7495800,Matthew Boling,Georgia,10.18
+2022,100,M,7,7722962,Micah Williams,Oregon,10.19
+2022,100,M,8,7729846,Da'Marcus Fleming,LSU,10.20
+2022,200,M,1,7531871,Joseph Fahnbulleh,Florida,25.39
+2022,200,M,2,7495800,Matthew Boling,Georgia,18.12
+2022,200,M,3,7980286,Udodi Onwuzurike,Stanford,20.36
+2022,200,M,4,6588208,Micaiah Harris,Texas,26.18
+2022,200,M,5,8016458,Tarsis Orogot,Alabama,26.01
+2022,200,M,6,7721646,Shaun Maswanganyi,Houston,15.80
+2022,200,M,7,7713620,Robert Gregory,TCU,15.41
+2022,200,M,8,7036992,Courtney Lindsey,Texas Tech,17.78
+2022,400,M,1,7495470,Randolph Ross,N. Carolina A&T,36.63
+2022,400,M,2,8010865,Champion Allison,Florida,36.42
+2022,400,M,3,6997785,Elija Godwin,Georgia,52.51
+2022,400,M,4,7008872,Jonathan Jones,Texas,37.75
+2022,400,M,5,7731978,Ryan Willie,Florida,58.05
+2022,400,M,6,7974885,Richard Kuykendoll,Oklahoma,43.45
+2022,400,M,7,7538741,Jevaughn Powell,UTEP,38.94
+2022,400,M,8,7037364,Tyler Johnson,Ohio State,35.75
+2022,800,M,1,8022881,Moad Zahafi,Texas Tech,1:44.49
+2022,800,M,2,7722926,Navasky Anderson,Miss State,1:45.02
+2022,800,M,3,7729617,Brandon Miller,Texas A&M,1:45.09
+2022,800,M,4,8711106,Jason Gomez,Iowa State,1:46.34
+2022,800,M,5,7383904,Sean Dolan,Villanova,1:46.38
+2022,800,M,6,7930022,Dayton  Carlson,Arizona State,1:46.72
+2022,800,M,7,7918236,Samuel  Rodman,Princeton,1:46.96
+2022,800,M,8,5983045,Jonathan Schwind,Lipscomb,1:47.12
+2022,1500,M,1,7480799,Joe Waskom,Washington,3:45.58
+2022,1500,M,2,6901779,Mario Garcia Romo,Ole Miss,3:45.69
+2022,1500,M,3,6476059,Sam Ellis,Princeton,3:45.82
+2022,1500,M,4,7895663,Thomas Vanoppen,Wake Forest,3:46.03
+2022,1500,M,5,7480790,Luke  Houser,Washington,3:46.13
+2022,1500,M,6,5971060,Jonathan  Davis,Illinois,3:46.15
+2022,1500,M,7,7910774,Nathan Green,Washington,3:46.26
+2022,1500,M,8,7899902,Adam Spencer,Wisconsin,3:46.28
+2022,5000,M,1,5461344,Olin  Hacker,Wisconsin,14:08.12
+2022,5000,M,2,6025566,Morgan Beadlescomb,Michigan State,11:10.96
+2022,5000,M,3,7711751,Nico Young,Northern Arizona,14:09.06
+2022,5000,M,4,7697359,Ky Robinson,Stanford,16:44.69
+2022,5000,M,5,7388938,Sam Gilman,Air Force,16:37.31
+2022,5000,M,6,7893794,Michael Power,Tulsa,11:21.44
+2022,5000,M,7,7910773,Brian Fay,Washington,11:13.46
+2022,5000,M,8,5624063,Alex Ostberg,North Carolina,12:59.14
+2022,10k,M,1,6891927,Dylan Jacobs,Notre Dame,26:30.78
+2022,10k,M,2,7389301,Alex Maier,Oklahoma State,28:46.54
+2022,10k,M,3,7409415,Abdihamid Nur,Northern Arizona,25:08.12
+2022,10k,M,4,7697360,Cole Sprout,Stanford,26:50.15
+2022,10k,M,5,7386914,Athanas  Kioko,Campbell,21:46.82
+2022,10k,M,6,7416005,Charles Hicks,Stanford,34:14.44
+2022,10k,M,7,7730602,Adriaan Wildschutt,Florida State,28:52.25
+2022,10k,M,8,6591141,Aaron Bienenfeld,Oregon,22:56.23
+2022,110H,M,1,6578646,Trey Cunningham,Florida State,9.36
+2022,110H,M,2,6999405,Eric Edwards Jr.,LSU,16.70
+2022,110H,M,3,7503401,Joshua Zeller,Michigan,10.61
+2022,110H,M,4,7718288,Giano Roberts,Clemson,14.53
+2022,110H,M,5,7044818,Lafranz Campbell,Clemson,11.71
+2022,110H,M,6,8003659,Kentre Patterson,Ohio State,11.31
+2022,110H,M,7,7482261,Justin Leaston,Charlotte,16.88
+2022,110H,M,8,6972494,Omotade Ojora,USC,14.81
+2022,400H,M,1,7729850,Sean Burrell,LSU,48.70
+2022,400H,M,2,7019596,Malik Metivier,Texas Tech,49.13
+2022,400H,M,3,6569704,Isaiah Levingston,Oklahoma,49.20
+2022,400H,M,4,8017719,Nathaniel Ezekiel,Baylor,49.24
+2022,400H,M,5,6547850,Quivell Jordan-Bacot,Houston,49.52
+2022,400H,M,6,6531718,Drake Schneider,Montana State,49.75
+2022,400H,M,7,6547924,Colten Yardley,BYU,50.10
+2022,400H,M,8,7044237,James Smith,Texas A&M,50.19
+2022,3000S,M,1,7727420,Ahmed  Jaziri,Eastern Kentucky,10:23.38
+2022,3000S,M,2,6876443,Duncan Hamilton,Montana State,9:53.67
+2022,3000S,M,3,7373057,Parker Stokes,Georgetown,5:54.21
+2022,3000S,M,4,5977704,Ryan Smeeton,Oklahoma State,9:10.07
+2022,3000S,M,5,6476063,Ed Trippas,Princeton,9:05.32
+2022,3000S,M,6,6882592,Kenneth Rooks,BYU,10:38.26
+2022,3000S,M,7,6011691,Alec Basten,Minnesota,7:28.44
+2022,3000S,M,8,6429582,Matthew Wilkinson,Minnesota,9:50.89
+2022,4x100,M,1,,,,38.49
+2022,4x400,M,1,,,,3:16.77
+2022,HJ,M,1,6533098,Tejaswin Shankar,Kansas State,1.91m
+2022,HJ,M,2,6121266,Darius Carbin,Georgia,2.89m
+2022,HJ,M,3,7019595,Dontavious Hill,Auburn,2.32m
+2022,HJ,M,4,6569708,Vernon Turner,Oklahoma,2.81m
+2022,HJ,M,5,6588212,Mitch Jacobson,Washington St.,2.14m
+2022,HJ,M,6,7546465,Bryson DeBerry,UT-Arlington,2.77m
+2022,HJ,M,7,7534612,Trey Allen,Louisville,2.16m
+2022,HJ,M,8,6992911,Roberto Vilches,Missouri,1.63m
+2022,PV,M,1,7975590,Sondre Guttormsen,Princeton,7.25m
+2022,PV,M,2,6543213,Clayton Fritsch,Sam Houston,6.90m
+2022,PV,M,3,7599292,Keaton Daniel,Kentucky,6.61m
+2022,PV,M,4,7975589,Simen Guttormsen,Princeton,6.89m
+2022,PV,M,5,7041294,Branson Ellis,Stephen F. Austin,5.76m
+2022,PV,M,6,7540246,Zach McWhorter,BYU,7.06m
+2022,PV,M,7,7983334,Clayton Simms,Kansas,6.44m
+2022,PV,M,8,7719642,Kyle Rademeyer,South Alabama,6.88m
+2022,SP,M,1,6547040,Adrian Piperi,Texas,21.52m
+2022,SP,M,2,6901432,Turner Washington,Arizona State,21.05m
+2022,SP,M,3,6598183,Isaac Odugbesan,Alabama,20.48m
+2022,SP,M,4,6533143,Jordan West,Tennessee,20.28m
+2022,SP,M,5,6079450,Darius King,Northern Iowa,20.04m
+2022,SP,M,6,6533352,Logan Calvin,Illinois State,19.89m
+2022,SP,M,7,8003661,Hayden Tobias,Ohio State,19.86m
+2022,SP,M,8,7966997,Nikolas Curtiss,Iowa,19.74m
+2022,DT,M,1,7537580,Claudio Romero,Virginia,56.91m
+2022,DT,M,2,8019706,Mykolas Alekna,California,78.06m
+2022,DT,M,3,7930060,Ralford  Mullings,Arizona State,61.21m
+2022,DT,M,4,6527557,Iffy Joyner,California,71.08m
+2022,DT,M,5,6533951,Kaleb Siekmeier,Minnesota,68.39m
+2022,DT,M,6,7534789,Jeffrey Williams,Miami (Fla.),50.28m
+2022,DT,M,7,6586906,Elijah Mason,Washington,54.24m
+2022,DT,M,8,7480316,Jordan Johnson,Iowa,65.47m
+2022,HT,M,1,6104881,Logan Blomquist,SE Missouri,78.51m
+2022,HT,M,2,7188295,Tyler Merkley,Penn State,93.06m
+2022,HT,M,3,7537882,Kostas Zaltos,Minnesota,75.41m
+2022,HT,M,4,7041008,Bobby Colantonio,Alabama,64.05m
+2022,HT,M,5,6996705,Michael Bryan,Wichita State,52.24m
+2022,HT,M,6,7977922,Alexander Talley,Nebraska,67.23m
+2022,HT,M,7,8014116,Decio Andrade,Miami (Fla.),49.60m
+2022,HT,M,8,7687398,Trey Knight,USC,72.85m
+2022,JT,M,1,6874930,Marc Minichello,Penn,73.05m
+2022,JT,M,2,6988187,Ethan Dabbs,Virginia,77.29m
+2022,JT,M,3,6985940,Tzuriel Pedigo,LSU,83.63m
+2022,JT,M,4,6547485,Taran Taylor,Wichita State,100.81m
+2022,JT,M,5,7974488,Chinecherem Prosper  Nnamdi,Baylor,82.54m
+2022,JT,M,6,7546466,Arthur Petersen,UT-Arlington,63.36m
+2022,JT,M,7,7797902,DJ Jonsson,Miss State,86.97m
+2022,JT,M,8,7495806,Ahmed Magour,Georgia,76.07m
+2022,100,W,1,7087489,Julien Alfred,Texas,11.02
+2022,100,W,2,7722970,Kemba Nelson,Oregon,11.02
+2022,100,W,3,6995396,Abby Steiner,Kentucky,11.08
+2022,100,W,4,7548443,Rosemary Chukwuma,Texas Tech,11.14
+2022,100,W,5,7729916,Favour Ofili,LSU,11.17
+2022,100,W,6,8042870,Grace Nwokocha,N. Carolina A&T,11.21
+2022,100,W,7,7690425,Kevona Davis,Texas,11.22
+2022,100,W,8,7540568,Melissa Jefferson,Coastal Carolina,11.24
+2022,200,W,1,6995396,Abby Steiner,Kentucky,17.44
+2022,200,W,2,7729916,Favour Ofili,LSU,25.80
+2022,200,W,3,6586400,Anavia Battle,Ohio State,18.54
+2022,200,W,4,7008903,Kynnedy Flannel,Texas,24.14
+2022,200,W,5,7690425,Kevona Davis,Texas,17.55
+2022,200,W,6,8042870,Grace Nwokocha,N. Carolina A&T,28.15
+2022,200,W,7,7524761,Edidiong Odiong,Florida State,22.02
+2022,200,W,8,7036762,Joella Lloyd,Tennessee,22.35
+2022,400,W,1,7732042,Talitha  Diggs,Florida,49.99
+2022,400,W,2,7496294,Charokee Young,Texas A&M,50.65
+2022,400,W,3,7008907,Kennedy Simon,Texas,50.69
+2022,400,W,4,6989583,Alexis Holmes,Kentucky,50.71
+2022,400,W,5,7546402,Stacey Ann Williams,Texas,51.13
+2022,400,W,6,7492615,Shae Anderson,UCLA,51.50
+2022,400,W,7,7478918,Rosey Effiong,Arkansas,51.55
+2022,400,W,8,7718448,Kavia Francis,Baylor,52.16
+2022,800,W,1,6550329,Kristie Schoffield,Boise State,2:05.94
+2022,800,W,2,6086448,McKenna Keegan,Villanova,1:30.07
+2022,800,W,3,7481168,Gabija Galvydyte,Oklahoma State,1:52.02
+2022,800,W,4,6904226,Imogen Barrett,Florida,1:59.61
+2022,800,W,5,6871713,Sarah Hendrick,Kennesaw State,1:38.98
+2022,800,W,6,7008908,Valery Tobias,Texas,1:40.65
+2022,800,W,7,5977375,Aaliyah Miller,Baylor,2:16.59
+2022,800,W,8,6895487,Katy-Ann McDonald,LSU,1:46.27
+2022,1500,W,1,7367325,Sintayehu Vissa,Ole Miss,4:46.84
+2022,1500,W,2,7791359,Micaela Degenero,Colorado,4:37.08
+2022,1500,W,3,5962970,Christina Aragon,Stanford,4:00.00
+2022,1500,W,4,6419176,Krissy Gear,Arkansas,4:55.07
+2022,1500,W,5,6436596,Julia Heymach,Stanford,3:20.47
+2022,1500,W,6,6430629,Emily Mackay,Binghamton,4:28.68
+2022,1500,W,7,7687816,Shannon Flockhart,Providence,5:18.91
+2022,1500,W,8,6982204,Eusila Chepkemei,Mid. Tenn. State,3:51.33
+2022,5000,W,1,7704053,Katelyn Tuohy,NC State,16:41.05
+2022,5000,W,2,7699859,Parker Valby,Florida,17:28.92
+2022,5000,W,3,7389217,Taylor Roe,Oklahoma State,17:24.59
+2022,5000,W,4,7376675,Mercy Chelangat,Alabama,16:01.53
+2022,5000,W,5,6423728,Lauren Gregory,Arkansas,13:55.50
+2022,5000,W,6,7791361,Abby Nichols,Colorado,17:06.40
+2022,5000,W,7,7389428,Gracelyn Larkin,New Mexico,13:13.14
+2022,5000,W,8,7388051,Isabel Van Camp,Arkansas,19:57.62
+2022,10k,W,1,7376675,Mercy Chelangat,Alabama,32:37.08
+2022,10k,W,2,7422260,Grace Forbes,Rice,32:48.07
+2022,10k,W,3,6455158,Jenna Magness,Michigan State,32:59.96
+2022,10k,W,4,7392925,Emily Covert,Colorado,33:14.64
+2022,10k,W,5,6454342,Alexandra Hays,NC State,33:16.16
+2022,10k,W,6,7389214,Gabby  Hentemann,Oklahoma State,33:18.04
+2022,10k,W,7,7480903,Haley Herberg,Washington,33:20.33
+2022,10k,W,8,7726451,Charlotte Dannatt,Georgetown,33:26.78
+2022,100H,W,1,7511453,Alia Armstrong,LSU,12.57
+2022,100H,W,2,7687405,Jasmine Jones,USC,12.66
+2022,100H,W,3,6995394,Masai Russell,Kentucky,12.81
+2022,100H,W,4,6988926,Paula  Salmon,N. Carolina A&T,12.85
+2022,100H,W,5,7496293,Kaylah Robinson,Texas A&M,12.86
+2022,100H,W,6,7545644,Destiny Huven,Wisconsin,12.92
+2022,100H,W,7,6985909,Demisha Roswell,Texas Tech,12.94
+2022,100H,W,8,7497320,Destinee  Rocker,South Carolina,13.07
+2022,400H,W,1,7488009,Britton Wilson,Arkansas,46.86
+2022,400H,W,2,8010896,Anna Hall,Florida,1:08.45
+2022,400H,W,3,6583377,Lauren Hoffman,Duke,1:10.03
+2022,400H,W,4,6995394,Masai Russell,Kentucky,1:01.98
+2022,400H,W,5,6527547,Deshae Wise,Texas A&M,1:10.55
+2022,400H,W,6,6592009,Bianca Stubler,Wisconsin,45.20
+2022,400H,W,7,8010900,Vanessa Watson,Florida,53.42
+2022,400H,W,8,7044242,Shannon Meisberger,Arizona,1:02.52
+2022,3000S,W,1,6107448,Courtney Wayment,BYU,8:59.32
+2022,3000S,W,2,6471626,Kayley DeLay,Yale,8:22.93
+2022,3000S,W,3,7365150,Ceili McCabe,West Virginia,8:05.47
+2022,3000S,W,4,5966782,Madison Boreman,Colorado,9:21.56
+2022,3000S,W,5,7389432,Elise Thorner,New Mexico,7:10.50
+2022,3000S,W,6,7612157,Kaylee Mitchell,Oregon State,10:32.05
+2022,3000S,W,7,5965696,Logan Jolly,Arkansas,9:11.77
+2022,3000S,W,8,6910593,Adva Cohen,New Mexico,9:01.07
+2022,4x100,W,1,,,,52.18
+2022,4x400,W,1,,,,3:00.27
+2022,HJ,W,1,7729642,Lamara Distin,Texas A&M,1.68m
+2022,HJ,W,2,8014418,Abigail Kwarteng,Mid. Tenn. State,1.90m
+2022,HJ,W,3,7731611,Rachel  Glenn,South Carolina,2.23m
+2022,HJ,W,4,7003545,Sanaa Barnes,Villanova,1.88m
+2022,HJ,W,5,7487638,Charity Griffith,Ball State,1.94m
+2022,HJ,W,6,7511454,Nyagoa Bayak,LSU,1.92m
+2022,HJ,W,6,7727577,Jenna Rogers,Nebraska,1.32m
+2022,HJ,W,6,6537001,Marguerite Lorenzo,Cornell,2.03m
+2022,PV,W,1,6540291,Gabriela Leon,Louisville,4.60m
+2022,PV,W,2,6988330,Amanda Fassold,Arkansas,4.55m
+2022,PV,W,3,6987320,Lisa Gunnarsson,LSU,4.55m
+2022,PV,W,4,6562838,Rachel Baxter,Virginia Tech,4.50m
+2022,PV,W,5,7495942,Julia Fixsen,Virginia Tech,4.40m
+2022,PV,W,6,7707244,Sydney Horn,High Point,4.35m
+2022,PV,W,7,6545350,Sophia Franklin,Michigan State,4.35m
+2022,PV,W,8,6527910,Sommer Knight,East Carolina,4.30m
+2022,SP,W,1,6701960,Adelaide Aquilla,Ohio State,22.39m
+2022,SP,W,2,7727873,Jorinde Van Klinken,Arizona State,21.37m
+2022,SP,W,3,7977784,Axelina Johansson,Nebraska,19.87m
+2022,SP,W,4,7729144,Maria Deaviz,Virginia,22.10m
+2022,SP,W,5,7722972,Jaida Ross,Oregon,12.84m
+2022,SP,W,6,7530664,Divine Oladipo,Vanderbilt,20.93m
+2022,SP,W,7,6461040,A'veun Moore-Jones,Southern Illinois,22.39m
+2022,SP,W,8,6135492,Annina Brandenburg,Abilene Christian,15.40m
+2022,DT,W,1,7727873,Jorinde Van Klinken,Arizona State,72.73m
+2022,DT,W,2,6605848,Alexandra Emilianov,Kansas,73.05m
+2022,DT,W,3,7002878,Malin Smith,Texas Tech,60.19m
+2022,DT,W,4,6569688,Lauren Jones,Oklahoma,61.00m
+2022,DT,W,5,6576296,Seasons Usual,Texas Tech,47.61m
+2022,DT,W,6,7725119,Shelby Frank,Minnesota,55.97m
+2022,DT,W,7,6586020,Debbie Ajagbe,Miami (Fla.),63.37m
+2022,DT,W,8,7720913,Emily March,Iowa State,64.68m
+2022,HT,W,1,6527542,Camryn Rogers,California,87.77m
+2022,HT,W,2,8016825,Alyssa Wilson,Texas State,72.54m
+2022,HT,W,3,6583863,Beatrice Llano,Arizona State,87.24m
+2022,HT,W,4,7730797,Sara Killinen,Virginia Tech,72.44m
+2022,HT,W,5,6901444,Shelby Moran,Arizona State,80.46m
+2022,HT,W,6,7511444,Jalani Davis,Ole Miss,87.61m
+2022,HT,W,7,7729246,Anna Purchase,California,56.17m
+2022,HT,W,8,6574473,Madi Malone,Auburn,72.68m
+2022,JT,W,1,6703200,Ashton Riner,BYU,58.24m
+2022,JT,W,2,7730318,Maddie Harris,Nebraska,57.69m
+2022,JT,W,3,6588923,Madison Wiltrout,North Carolina,56.46m
+2022,JT,W,4,7729053,Rhema Otabor,FIU,55.92m
+2022,JT,W,5,7526548,Sara Zabarino,Florida State,55.61m
+2022,JT,W,6,7842838,Kate Joyce,Princeton,54.68m
+2022,JT,W,7,6586855,Virginia Miller,Stanford,54.12m
+2022,JT,W,8,7979191,Valentina  Barrios Bornacelli,Washington St.,54.03m
