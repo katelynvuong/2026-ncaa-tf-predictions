@@ -1,0 +1,10 @@
+[32m2026-05-31 08:33:17 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 280192d7-b5c3-4567-a07b-01bcab3efb27 - 25695 - LOGS_CAPTURED - Started capturing logs in process (pid: 25695).
+[32m2026-05-31 08:33:17 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 280192d7-b5c3-4567-a07b-01bcab3efb27 - 25695 - qualifying_athletes - STEP_START - Started execution of step "qualifying_athletes".
+[32m2026-05-31 08:33:17 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 280192d7-b5c3-4567-a07b-01bcab3efb27 - qualifying_athletes - Fetching east f list (id=5622)
+[32m2026-05-31 08:33:17 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 280192d7-b5c3-4567-a07b-01bcab3efb27 - qualifying_athletes -   → 885 unique athletes
+[32m2026-05-31 08:33:17 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 280192d7-b5c3-4567-a07b-01bcab3efb27 - qualifying_athletes - Saved 885 athletes to data/qualifying_athletes/qualifying_athletes_east_f.csv
+[32m2026-05-31 08:33:17 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 280192d7-b5c3-4567-a07b-01bcab3efb27 - 25695 - qualifying_athletes - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-05-31 08:33:17 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 280192d7-b5c3-4567-a07b-01bcab3efb27 - qualifying_athletes - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/qualifying_athletes/east_f using PickledObjectFilesystemIOManager...
+[32m2026-05-31 08:33:17 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 280192d7-b5c3-4567-a07b-01bcab3efb27 - 25695 - qualifying_athletes - ASSET_MATERIALIZATION - Materialized value qualifying_athletes.
+[32m2026-05-31 08:33:17 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 280192d7-b5c3-4567-a07b-01bcab3efb27 - 25695 - qualifying_athletes - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-05-31 08:33:17 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 280192d7-b5c3-4567-a07b-01bcab3efb27 - 25695 - qualifying_athletes - STEP_SUCCESS - Finished execution of step "qualifying_athletes" in 784ms.

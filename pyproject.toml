@@ -13,6 +13,7 @@ dependencies = [
     "dagster-dg-cli>=1.12.1,<1.13",
     "pandas>=2.0",
     "requests>=2.31",
+    "beautifulsoup4>=4.12",
     "sports-skills>=0.20",
 ]
 

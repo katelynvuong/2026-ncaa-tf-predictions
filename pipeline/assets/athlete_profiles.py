@@ -66,4 +66,56 @@ def athlete_profiles(context, qualifying_athletes: pd.DataFrame) -> None:
     context.log.info(f"Done: {saved} saved, {skipped} skipped, {errors} errors")
 
 
-assets = [athlete_profiles]
+@dg.asset(
+    group_name="data_collection",
+    deps=["final_athletes"],
+    description=(
+        "Fetch TFRRS profiles for any individual athlete in final_athletes "
+        "who wasn't in the qualifying lists and is missing a profile JSON."
+    ),
+)
+def supplemental_profiles(context) -> None:
+    final = pd.read_csv("data/final_athletes.csv", dtype=str)
+    profiles_dir = Path("data/profiles")
+    profiles_dir.mkdir(parents=True, exist_ok=True)
+
+    # Relay rows have no athlete_id — skip them
+    candidates = final.dropna(subset=["athlete_id", "tfrrs_url"])
+    candidates = candidates[candidates["tfrrs_url"].str.startswith("http", na=False)]
+
+    saved = skipped = errors = 0
+    for _, row in candidates.iterrows():
+        athlete_id = str(row["athlete_id"])
+        out_path = profiles_dir / f"{athlete_id}.json"
+
+        if out_path.exists():
+            skipped += 1
+            continue
+
+        # Parse school_slug and name_slug from the stored TFRRS URL
+        # URL format: https://www.tfrrs.org/athletes/{id}/{school_slug}/{name_slug}
+        parts = row["tfrrs_url"].rstrip("/").split("/")
+        school_slug = parts[-2]
+        name_slug = parts[-1]
+
+        result = get_athlete_profile(
+            athlete_id=athlete_id,
+            school=school_slug,
+            name=name_slug,
+        )
+
+        if isinstance(result, dict) and result.get("error"):
+            context.log.warning(f"Error for {athlete_id} {name_slug}: {result.get('message')}")
+            errors += 1
+            time.sleep(1)
+            continue
+
+        out_path.write_text(json.dumps(result, indent=2))
+        context.log.info(f"Saved {athlete_id} ({name_slug})")
+        saved += 1
+        time.sleep(1)
+
+    context.log.info(f"Done: {saved} saved, {skipped} skipped, {errors} errors")
+
+
+assets = [athlete_profiles, supplemental_profiles]

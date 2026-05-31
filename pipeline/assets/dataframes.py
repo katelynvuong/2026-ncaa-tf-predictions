@@ -27,7 +27,7 @@ def _load_profiles(profiles_dir: Path) -> list[dict]:
 @dg.asset(
     group_name="data_processing",
     description="Flatten cached athlete JSON profiles into athletes_prs.csv and season_results.csv.",
-    deps=["athlete_profiles"],
+    deps=["athlete_profiles", "supplemental_profiles"],
 )
 def flattened_dataframes() -> dict[str, pd.DataFrame]:
     logger = dg.get_dagster_logger()
