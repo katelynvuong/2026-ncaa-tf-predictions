@@ -2,8 +2,22 @@
 __pycache__/
 *.pyc
 *.egg-info/
-dist/
 .dagster/
-data/profiles/
-data/*.csv
 *.log
+
+# Pipeline data — large files, not needed in repo
+data/profiles/
+data/regional_athletes/
+data/flattened_dataframes/
+data/training/
+data/predictions/
+data/*.csv
+data/.DS_Store
+
+# Frontend build output
+app/frontend/dist/
+app/frontend/node_modules/
+
+# Keep the static JSON data files — Vercel needs these
+!app/frontend/public/data/
+.vercel

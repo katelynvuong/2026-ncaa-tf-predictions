@@ -1,0 +1,39 @@
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - 55877 - LOGS_CAPTURED - Started capturing logs in process (pid: 55877).
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - 55877 - predictions - STEP_START - Started execution of step "predictions".
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions - ── 2025 holdout validation ──
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   MAE:              2.617 places
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   RMSE:             3.312 places
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   Spearman (avg):   0.637
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   Top-3 hit rate:   71/108 (65.7%)
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions - Final model trained on 1665 rows (4 years)
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions - XGBoost feature importances:
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   pr                            : 0.2807
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   avg_place                     : 0.2556
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   conf_champ_place              : 0.1062
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   season_avg                    : 0.1050
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   conf_champ_place_any_event    : 0.0949
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   season_best                   : 0.0803
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   cross_event_avg_place         : 0.0773
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions - Ridge coefficients:
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   season_best                   : -0.8234
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   season_avg                    : -0.7140
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   cross_event_avg_place         : 0.0255
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   conf_champ_place              : 0.1076
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   conf_champ_place_any_event    : 0.2973
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   pr                            : 0.3851
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   avg_place                     : 0.4332
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions - Saved 860 predictions → data/predictions/predictions.csv
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions - Saved team scores → data/predictions/team_scores.csv
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions - ── Top 3 Men ──
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   1. Oregon — 42 pts
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   2. Nebraska — 36 pts
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   3. New Mexico — 24 pts
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions - ── Top 3 Women ──
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   1. South Carolina — 26 pts
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   2. Princeton — 26 pts
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions -   3. Oregon — 23 pts
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - 55877 - predictions - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - predictions - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/predictions using PickledObjectFilesystemIOManager...
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - 55877 - predictions - ASSET_MATERIALIZATION - Materialized value predictions.
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - 55877 - predictions - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-06-01 14:31:03 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 79844b08-4861-4e2a-a1fb-153ea41901ae - 55877 - predictions - STEP_SUCCESS - Finished execution of step "predictions" in 767ms.

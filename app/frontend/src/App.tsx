@@ -4,7 +4,7 @@ import Podium from "./components/Podium"
 import EventChart from "./components/EventChart"
 import MetricsPanel from "./components/MetricsPanel"
 
-const API = "http://localhost:8000/api"
+const BASE = import.meta.env.VITE_DATA_URL ?? "/data"
 
 const EVENT_LABELS: Record<string, string> = {
   "100": "100m", "200": "200m", "400": "400m", "800": "800m",
@@ -23,9 +23,9 @@ export default function App() {
   const [selected, setSelected]   = useState("__podium__")
 
   useEffect(() => {
-    fetch(`${API}/team-standings`).then(r => r.json()).then(setStandings)
-    fetch(`${API}/event-predictions`).then(r => r.json()).then(setEvents)
-    fetch(`${API}/metrics`).then(r => r.json()).then(setMetrics)
+    fetch(`${BASE}/team_standings.json`).then(r => r.json()).then(setStandings)
+    fetch(`${BASE}/event_predictions.json`).then(r => r.json()).then(setEvents)
+    fetch(`${BASE}/metrics.json`).then(r => r.json()).then(setMetrics)
   }, [])
 
   const byCategory = CAT_ORDER.map(cat => ({
@@ -73,14 +73,29 @@ export default function App() {
           <h2 className="text-lg font-semibold text-center mb-6 text-white/80">
             {EVENT_LABELS[selectedEvent.event] ?? selectedEvent.event}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <EventChart athletes={selectedEvent.M} gender="M" />
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <EventChart athletes={selectedEvent.W} gender="W" />
-            </div>
-          </div>
+          {(() => {
+            const hasMen   = selectedEvent.M.length > 0
+            const hasWomen = selectedEvent.W.length > 0
+            if (hasMen && hasWomen) return (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                  <EventChart athletes={selectedEvent.M} gender="M" />
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                  <EventChart athletes={selectedEvent.W} gender="W" />
+                </div>
+              </div>
+            )
+            const gender   = hasMen ? "M" : "W"
+            const athletes = hasMen ? selectedEvent.M : selectedEvent.W
+            return (
+              <div className="flex justify-center">
+                <div className="bg-white/5 border border-white/10 rounded-xl p-5 w-full max-w-lg">
+                  <EventChart athletes={athletes} gender={gender} />
+                </div>
+              </div>
+            )
+          })()}
         </div>
       ) : null}
 

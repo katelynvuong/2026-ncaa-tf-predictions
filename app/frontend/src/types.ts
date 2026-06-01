@@ -39,4 +39,6 @@ export interface Metrics {
   years_trained: number[]
   relay_excluded: boolean
   events_count: number
+  model_type: string
+  model_note: string
 }

@@ -17,7 +17,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-_DATA = Path(__file__).parents[2] / "data" / "app"
+_DATA = Path(__file__).parents[1] / "frontend" / "public" / "data"
 
 
 def _load(filename: str) -> dict | list:

@@ -1,0 +1,19 @@
+{
+  "mae": 1.367,
+  "rmse": 1.679,
+  "spearman": 0.702,
+  "top3_hit_rate": 0.731,
+  "top3_hits": 79,
+  "top3_total": 108,
+  "training_rows": 1107,
+  "years_trained": [
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "relay_excluded": true,
+  "events_count": 19,
+  "model_type": "XGBoost (Gradient Boosted Trees)",
+  "model_note": "Gradient boosted decision trees trained on historical NCAA championship results (2022\u20132025). Predicts finishing place for each athlete based on their 2026 season performance features."
+}

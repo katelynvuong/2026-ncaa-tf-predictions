@@ -73,7 +73,7 @@ _SLUG_EVENT_MAP = {
 
 _SKIP_SLUGS = {"decathlon", "heptathlon"}
 _SCORING_POINTS = {"10", "8", "6", "5", "4", "3", "2", "1"}
-# Field events use wind in the last column instead of scoring points — filter by place directly
+# LJ/TJ have wind in last column instead of scoring points — filter by place directly
 _WIND_FIELD_EVENTS = {"LJ", "TJ"}
 _ATHLETE_ID_RE = re.compile(r"/athletes/(\d+)/")
 _MEET_ID_RE = re.compile(r"/results/(\d+)/")

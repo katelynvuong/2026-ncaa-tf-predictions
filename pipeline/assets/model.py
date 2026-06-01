@@ -4,8 +4,9 @@ Validation strategy: train on 2022–2024, evaluate on 2025 holdout,
 then retrain on all 4 years before predicting 2026 placements.
 
 Outputs:
-  data/predictions.csv   — predicted rank per athlete per event
-  data/team_scores.csv   — aggregated team point totals (men + women)
+  data/predictions/predictions.csv  — top-8 per event-gender
+  data/predictions/team_scores.csv  — team point totals
+  data/predictions/metrics.json     — validation metrics
 """
 
 from __future__ import annotations
@@ -16,7 +17,6 @@ from pathlib import Path
 import dagster as dg
 import pandas as pd
 from scipy.stats import spearmanr
-from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from xgboost import XGBRegressor
 
@@ -24,11 +24,7 @@ FEATURES = ["season_best", "season_avg", "avg_place", "conf_champ_place", "pr",
             "cross_event_avg_place", "conf_champ_place_any_event"]
 TARGET = "place"
 RELAY_EVENTS = {"4x100", "4x400"}
-
-# Features normalized per (event, gender) — makes marks comparable across events
 NORMALIZE_FEATURES = ["season_best", "season_avg", "pr"]
-
-# NCAA scoring: 1st=10, 2nd=8, 3rd=6, 4th=5, 5th=4, 6th=3, 7th=2, 8th=1
 SCORING = {1: 10, 2: 8, 3: 6, 4: 5, 5: 4, 6: 3, 7: 2, 8: 1}
 
 
@@ -41,16 +37,13 @@ def _load_training(path: str) -> pd.DataFrame:
     return df.dropna(subset=[TARGET])
 
 
-
 def _fit_normalizer(df: pd.DataFrame) -> dict:
-    """Compute mean/std per (event, gender) for each normalizable feature."""
     stats: dict = {}
     for (event, gender), grp in df.groupby(["event", "gender"]):
         stats[(event, gender)] = {}
         for feat in NORMALIZE_FEATURES:
             vals = grp[feat].dropna()
             stats[(event, gender)][feat] = (vals.mean(), vals.std()) if len(vals) >= 2 else None
-    # Global fallback for unseen event-gender combos at prediction time
     stats["__global__"] = {
         feat: (df[feat].mean(), df[feat].std()) for feat in NORMALIZE_FEATURES
     }
@@ -58,7 +51,6 @@ def _fit_normalizer(df: pd.DataFrame) -> dict:
 
 
 def _apply_normalizer(df: pd.DataFrame, stats: dict) -> pd.DataFrame:
-    """Z-score normalize mark-based features using precomputed stats."""
     df = df.copy()
     for feat in NORMALIZE_FEATURES:
         normed = pd.Series(index=df.index, dtype=float)
@@ -71,16 +63,6 @@ def _apply_normalizer(df: pd.DataFrame, stats: dict) -> pd.DataFrame:
                 normed.loc[grp.index] = (grp[feat] - mean) / std
         df[feat] = normed
     return df
-
-
-def _build_ridge() -> Ridge:
-    return Ridge(alpha=1.0)
-
-
-def _impute_medians(train: pd.DataFrame, pred: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Median-impute NaNs in pred using medians from train."""
-    medians = train[FEATURES].median()
-    return train[FEATURES].fillna(medians), pred[FEATURES].fillna(medians)
 
 
 def _build_model() -> XGBRegressor:
@@ -97,7 +79,6 @@ def _build_model() -> XGBRegressor:
 
 
 def _rank_within_event(df: pd.DataFrame, score_col: str) -> pd.Series:
-    """Rank athletes within each (event, gender) group by predicted score."""
     return df.groupby(["event", "gender"])[score_col].rank(method="min", ascending=True)
 
 
@@ -113,7 +94,7 @@ def predictions() -> pd.DataFrame:
     logger = dg.get_dagster_logger()
 
     train_df = _load_training("data/training/training_dataset.csv")
-    pred_df = pd.read_csv("data/features.csv", dtype=str)
+    pred_df  = pd.read_csv("data/features.csv", dtype=str)
     for col in FEATURES:
         pred_df[col] = pd.to_numeric(pred_df[col], errors="coerce")
 
@@ -125,21 +106,17 @@ def predictions() -> pd.DataFrame:
     train_val = _apply_normalizer(train_val, val_norm)
     holdout   = _apply_normalizer(holdout, val_norm)
 
-    train_val_imp, holdout_imp = _impute_medians(train_val, holdout)
-    model_val  = _build_model()
-    ridge_val  = _build_ridge()
+    model_val = _build_model()
     model_val.fit(train_val[FEATURES], train_val[TARGET])
-    ridge_val.fit(train_val_imp, train_val[TARGET])
 
     if len(holdout) > 0:
-        preds_2025 = (model_val.predict(holdout[FEATURES]) + ridge_val.predict(holdout_imp)) / 2
+        preds_2025 = model_val.predict(holdout[FEATURES])
         mae  = mean_absolute_error(holdout[TARGET], preds_2025)
         rmse = mean_squared_error(holdout[TARGET], preds_2025) ** 0.5
 
         holdout = holdout.copy()
         holdout["pred"] = preds_2025
 
-        # Spearman rank correlation — average across (event, gender) groups
         spearman_scores = []
         top3_hits = top3_total = 0
         for _, grp in holdout.groupby(["event", "gender"]):
@@ -148,11 +125,10 @@ def predictions() -> pd.DataFrame:
             corr, _ = spearmanr(grp[TARGET], grp["pred"])
             if not pd.isna(corr):
                 spearman_scores.append(corr)
-            # Top-3 hit rate
-            actual_top3  = set(grp.nsmallest(3, TARGET).index)
-            pred_top3    = set(grp.nsmallest(3, "pred").index)
-            top3_hits   += len(actual_top3 & pred_top3)
-            top3_total  += len(actual_top3)
+            actual_top3 = set(grp.nsmallest(3, TARGET).index)
+            pred_top3   = set(grp.nsmallest(3, "pred").index)
+            top3_hits  += len(actual_top3 & pred_top3)
+            top3_total += len(actual_top3)
 
         avg_spearman  = sum(spearman_scores) / len(spearman_scores) if spearman_scores else 0
         top3_hit_rate = top3_hits / top3_total if top3_total > 0 else 0
@@ -165,41 +141,33 @@ def predictions() -> pd.DataFrame:
 
         Path("data/predictions").mkdir(parents=True, exist_ok=True)
         Path("data/predictions/metrics.json").write_text(json.dumps({
-            "mae":            round(float(mae), 3),
-            "rmse":           round(float(rmse), 3),
-            "spearman":       round(float(avg_spearman), 3),
-            "top3_hit_rate":  round(float(top3_hit_rate), 3),
-            "top3_hits":      int(top3_hits),
-            "top3_total":     int(top3_total),
+            "mae":           round(float(mae), 3),
+            "rmse":          round(float(rmse), 3),
+            "spearman":      round(float(avg_spearman), 3),
+            "top3_hit_rate": round(float(top3_hit_rate), 3),
+            "top3_hits":     int(top3_hits),
+            "top3_total":    int(top3_total),
         }, indent=2))
     else:
         logger.warning("No 2025 holdout data available for validation.")
 
     # ── Final model: train on all years ─────────────────────────────────────
-    full_train = train_df.dropna(subset=FEATURES, how="all")
+    full_train  = train_df.dropna(subset=FEATURES, how="all")
     final_norm  = _fit_normalizer(full_train)
-    full_train   = _apply_normalizer(full_train, final_norm)
-    model_final  = _build_model()
-    ridge_final  = _build_ridge()
+    full_train  = _apply_normalizer(full_train, final_norm)
+    model_final = _build_model()
     model_final.fit(full_train[FEATURES], full_train[TARGET])
-    full_train_imp, _ = _impute_medians(full_train, full_train)
-    ridge_final.fit(full_train_imp, full_train[TARGET])
     logger.info(f"Final model trained on {len(full_train)} rows ({full_train['year'].nunique()} years)")
 
-    # ── Feature importance (XGBoost component) ───────────────────────────────
     importance = dict(zip(FEATURES, model_final.feature_importances_))
-    logger.info("XGBoost feature importances:")
+    logger.info("Feature importances:")
     for feat, imp in sorted(importance.items(), key=lambda x: -x[1]):
         logger.info(f"  {feat:30s}: {imp:.4f}")
-    logger.info("Ridge coefficients:")
-    for feat, coef in sorted(zip(FEATURES, ridge_final.coef_), key=lambda x: x[1]):
-        logger.info(f"  {feat:30s}: {coef:.4f}")
 
     # ── Predict 2026 ─────────────────────────────────────────────────────────
     ind = pred_df[~pred_df["event"].isin(RELAY_EVENTS)].copy()
     ind = _apply_normalizer(ind, final_norm)
-    _, ind_imp = _impute_medians(full_train, ind)
-    ind["predicted_place"] = (model_final.predict(ind[FEATURES]) + ridge_final.predict(ind_imp)) / 2
+    ind["predicted_place"] = model_final.predict(ind[FEATURES])
     ind["predicted_rank"]  = _rank_within_event(ind, "predicted_place").astype(int)
 
     out_dir = Path("data/predictions")
@@ -226,7 +194,6 @@ def predictions() -> pd.DataFrame:
 
     team_scores = pd.concat(score_rows, ignore_index=True)
     team_scores.to_csv(out_dir / "team_scores.csv", index=False)
-    logger.info(f"Saved team scores → data/predictions/team_scores.csv")
 
     logger.info("── Top 3 Men ──")
     for _, row in team_scores[team_scores["gender"] == "M"].head(3).iterrows():

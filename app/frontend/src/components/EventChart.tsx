@@ -28,11 +28,6 @@ const CustomTick = ({ x, y, payload, data }: any) => {
   )
 }
 
-const CustomBarLabel = ({ x, y, width, value }: any) => (
-  <text x={x + width / 2} y={y - 6} textAnchor="middle" fontSize={11} fill="rgba(240,238,236,0.7)">
-    {value}
-  </text>
-)
 
 export default function EventChart({ athletes, gender }: Props) {
   if (!athletes.length) return (
@@ -71,12 +66,15 @@ export default function EventChart({ athletes, gender }: Props) {
                 <div className="bg-[#1c1c24] border border-white/10 rounded-lg px-3 py-2 text-xs">
                   <p className="font-semibold text-white">{d.name}</p>
                   <p className="text-white/50">{d.school}</p>
-                  <p className="text-white/40 mt-1">Score: {d.place.toFixed(2)}</p>
+                  <p className="text-white/40 mt-1">
+                    Model score: <span className="text-white/70">{d.place.toFixed(2)}</span>
+                    <span className="text-white/30"> (lower = stronger predicted finish)</span>
+                  </p>
                 </div>
               )
             }}
           />
-          <Bar dataKey="height" radius={[4, 4, 0, 0]} label={<CustomBarLabel />} isAnimationActive>
+          <Bar dataKey="height" radius={[4, 4, 0, 0]} isAnimationActive>
             {data.map((_, i) => (
               <Cell key={i} fill={COLOR[gender]} fillOpacity={1 - i * 0.08} />
             ))}

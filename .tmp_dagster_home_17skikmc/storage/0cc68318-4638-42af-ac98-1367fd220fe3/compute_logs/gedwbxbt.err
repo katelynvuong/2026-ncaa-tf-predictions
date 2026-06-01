@@ -1,0 +1,91 @@
+[32m2026-06-01 14:23:33 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - 50898 - LOGS_CAPTURED - Started capturing logs in process (pid: 50898).
+[32m2026-06-01 14:23:33 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - 50898 - final_athletes - STEP_START - Started execution of step "final_athletes".
+[32m2026-06-01 14:23:34 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes - east: 40 event pages found
+[32m2026-06-01 14:23:34 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   001-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:34 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   002-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:35 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   003-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:35 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   004-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:35 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   005-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:36 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   006-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:36 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   007-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:36 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   008-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:37 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   009-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:37 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   010-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:37 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   011-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:38 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   012-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:38 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   013-1_compiled.htm: 10 qualifiers
+[32m2026-06-01 14:23:38 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   014-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   015-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   016-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   017-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:40 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   018-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:40 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   019-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:40 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   020-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:41 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   021-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:41 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   022-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:42 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   023-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:42 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   024-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:42 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   025-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:43 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   026-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:43 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   027-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:43 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   028-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:44 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   029-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:44 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   030-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:44 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   031-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:45 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   032-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:45 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   033-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:46 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   034-1_compiled.htm: 10 qualifiers
+[32m2026-06-01 14:23:46 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   035-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:46 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   036-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:47 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   037-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:47 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   038-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:47 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   039-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:48 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   040-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:48 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes - west: 40 event pages found
+[32m2026-06-01 14:23:48 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   001-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:48 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   002-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   003-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   004-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   005-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:50 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   006-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:50 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   007-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:50 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   008-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:51 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   009-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:51 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   010-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:51 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   011-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:52 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   012-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:52 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   013-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:52 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   014-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:53 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   015-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:53 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   016-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:53 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   017-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:54 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   018-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:54 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   019-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:54 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   020-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:55 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   021-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:55 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   022-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:55 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   023-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   024-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   025-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:57 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   026-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:57 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   027-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:57 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   028-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:58 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   029-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:58 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   030-2_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:58 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   031-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:58 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   032-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:59 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   033-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:59 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   034-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:23:59 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   035-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:24:00 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   036-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:24:00 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   037-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:24:00 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   038-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:24:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   039-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:24:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   040-1_compiled.htm: 12 qualifiers
+[32m2026-06-01 14:24:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes - Saved 956 total qualifiers → data/final_athletes.csv
+[32m2026-06-01 14:24:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes -   Athletes with matched athlete_id: 860
+[32m2026-06-01 14:24:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - 50898 - final_athletes - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-06-01 14:24:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - final_athletes - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/final_athletes using PickledObjectFilesystemIOManager...
+[32m2026-06-01 14:24:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - 50898 - final_athletes - ASSET_MATERIALIZATION - Materialized value final_athletes.
+[32m2026-06-01 14:24:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - 50898 - final_athletes - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-06-01 14:24:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 0cc68318-4638-42af-ac98-1367fd220fe3 - 50898 - final_athletes - STEP_SUCCESS - Finished execution of step "final_athletes" in 27.83s.

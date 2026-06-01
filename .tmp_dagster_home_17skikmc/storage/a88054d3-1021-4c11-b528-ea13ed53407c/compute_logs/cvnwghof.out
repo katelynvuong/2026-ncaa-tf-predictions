@@ -1,0 +1,20 @@
+
+up to date, audited 257 packages in 790ms
+
+60 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+> frontend@0.0.0 build
+> tsc -b && vite build
+
+vite v8.0.16 building client environment for production...
+[2Ktransforming...✓ 578 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.45 kB │ gzip:   0.29 kB
+dist/assets/index-DNHe4zBR.css   10.06 kB │ gzip:   3.09 kB
+dist/assets/index-OtVLUsCz.js   537.77 kB │ gzip: 163.82 kB
+
+✓ built in 474ms

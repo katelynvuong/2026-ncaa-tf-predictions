@@ -1,0 +1,27 @@
+# Python environment and cache
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+*.db
+
+# Large pipeline data — not needed for deployment
+data/profiles/
+data/regional_athletes/
+data/flattened_dataframes/
+data/training/
+data/predictions/
+data/.DS_Store
+data/*.csv
+
+# Dagster runtime
+.tmp_dagster_home*/
+.dagster/
+
+# Backend — not used in static deployment
+app/backend/
+
+# Misc
+*.log
+libomp.dylib
+uv.lock

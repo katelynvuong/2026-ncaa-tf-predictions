@@ -16,7 +16,7 @@ from pathlib import Path
 import dagster as dg
 import pandas as pd
 
-_APP_DATA = Path("data/app")
+_APP_DATA = Path("app/frontend/public/data")
 
 _EVENT_ORDER = [
     "100", "200", "400", "800", "1500", "3000S", "5000", "10k",
@@ -92,10 +92,12 @@ def app_metrics() -> None:
 
     output = {
         **raw,
-        "training_rows": int(train["place"].notna().sum()),
-        "years_trained": [int(y) for y in years],
+        "training_rows":  int(train["place"].notna().sum()),
+        "years_trained":  [int(y) for y in years],
         "relay_excluded": True,
-        "events_count": int(train["event"].nunique()),
+        "events_count":   int(train["event"].nunique()),
+        "model_type":     "XGBoost (Gradient Boosted Trees)",
+        "model_note":     "Gradient boosted decision trees trained on historical NCAA championship results (2022–2025). Predicts finishing place for each athlete based on their 2026 season performance features.",
     }
 
     _APP_DATA.mkdir(parents=True, exist_ok=True)

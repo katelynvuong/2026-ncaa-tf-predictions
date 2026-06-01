@@ -51,11 +51,6 @@ export default function MetricsPanel({ metrics }: Props) {
       tip: "Of all athletes who actually finished in the top 3 at the 2025 NCAA Championships (used as a validation holdout set), how many did the model also predict in the top 3.",
     },
     {
-      label: "Training Rows",
-      value: metrics.training_rows.toLocaleString(),
-      tip: "Total number of individual athlete-event performances the model was trained on across all years.",
-    },
-    {
       label: "Years Trained",
       value: yearsLabel,
       tip: "The championship seasons used to train the model. The most recent year is held out for validation.",
@@ -70,6 +65,9 @@ export default function MetricsPanel({ metrics }: Props) {
   return (
     <div className="mt-10 border border-white/10 rounded-xl p-5 bg-white/5">
       <p className="text-xs uppercase tracking-widest text-white/40 mb-4 text-center">Model Info</p>
+      <div className="text-center mb-5">
+        <p className="text-sm font-semibold text-white/80">{metrics.model_type}</p>
+      </div>
       <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
         {stats.map(({ label, value, tip }) => (
           <div key={label}>

@@ -58,11 +58,11 @@ Then open `http://localhost:3000`.
 8. `historical_profiles` — fetches profiles for historical championship athletes
 9. `training_features` — computes features for historical athletes per year
 10. `training_dataset` — joins championship results + features into ML training CSV
-11. `predictions` — trains XGBoost + Ridge blend, evaluates on 2025 holdout, predicts 2026
+11. `predictions` — trains XGBoost, evaluates on 2025 holdout, predicts 2026
 
 **app**
-12. `app_metrics` — exports model validation metrics to data/app/metrics.json
-13. `app_team_standings` — computes sprints/distance/field breakdown per top-3 team
+12. `app_metrics` — exports model validation metrics to `app/frontend/public/data/metrics.json`
+13. `app_team_standings` — builds top-3 team standings with scorer breakdowns
 14. `app_event_predictions` — structures per-event top-8 predictions for the frontend
 15. `frontend_build` — runs `npm run build` in app/frontend/
 
@@ -70,32 +70,30 @@ Then open `http://localhost:3000`.
 
 After materializing through the `app` group in Dagster:
 
-**Terminal 1 — Backend:**
-```bash
-cd app/backend
-uvicorn main:app --reload
-# Runs on http://localhost:8000
-```
-
-**Terminal 2 — Frontend (dev):**
 ```bash
 cd app/frontend
 npm run dev
 # Opens http://localhost:5173
 ```
 
-Or to run the production build:
-```bash
-cd app/frontend
-npm run build
-npm run preview
-# Opens http://localhost:4173
-```
+The FastAPI backend (`app/backend/`) is optional — it's only needed if you prefer to serve data via API locally. The default setup reads JSON files directly from `public/data/`.
 
 The app shows:
-- **Team Standings** — gold/silver/bronze podium for predicted top-3 men's and women's teams, broken down by sprints/distance/field
-- **Event Explorer** — dropdown to view predicted top-8 finishers for any individual event (men and women side by side)
-- **Model Info** — validation metrics and training dataset details
+- **Team Standings** — gold/silver/bronze podium for predicted top-3 men's and women's teams
+- **Event Explorer** — dropdown to view predicted top-8 finishers for any individual event
+- **Model Info** — validation metrics and model details
+
+## Deploying to Vercel (Public Link)
+
+1. Install the Vercel CLI: `npm i -g vercel`
+2. From the project root, run: `vercel`
+3. Follow the prompts — Vercel will detect `vercel.json` and configure automatically
+4. On subsequent deploys after updating predictions: `vercel --prod`
+
+**Update workflow:**
+1. Re-run Dagster pipeline through the `app` group
+2. `git add app/frontend/public/data/ && git commit -m "update predictions"`
+3. `git push` — Vercel auto-deploys within ~30 seconds
 
 ## Data Sources
 

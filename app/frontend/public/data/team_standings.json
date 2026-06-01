@@ -1,0 +1,226 @@
+[
+  {
+    "gender": "M",
+    "rank": 1,
+    "school": "Oregon",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
+    "total_points": 47.0,
+    "scorers": [
+      {
+        "event": "1500m",
+        "athlete_name": "Simeon Birnbaum",
+        "points": 10
+      },
+      {
+        "event": "5000m",
+        "athlete_name": "Simeon Birnbaum",
+        "points": 8
+      },
+      {
+        "event": "Triple Jump",
+        "athlete_name": "Tre Betts",
+        "points": 6
+      },
+      {
+        "event": "110m H",
+        "athlete_name": "Kai Graves-Blanks",
+        "points": 5
+      },
+      {
+        "event": "3000m SC",
+        "athlete_name": "Benjamin Balazs",
+        "points": 5
+      },
+      {
+        "event": "Discus",
+        "athlete_name": "Ben Smith",
+        "points": 5
+      },
+      {
+        "event": "Shot Put",
+        "athlete_name": "Ben Smith",
+        "points": 5
+      },
+      {
+        "event": "1500m",
+        "athlete_name": "Tomas Palfrey",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "gender": "M",
+    "rank": 2,
+    "school": "Arkansas",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
+    "total_points": 27.0,
+    "scorers": [
+      {
+        "event": "5000m",
+        "athlete_name": "Ben Shearer",
+        "points": 6
+      },
+      {
+        "event": "800m",
+        "athlete_name": "Rivaldo Marshall",
+        "points": 6
+      },
+      {
+        "event": "100m",
+        "athlete_name": "Jelani Watkins",
+        "points": 5
+      },
+      {
+        "event": "200m",
+        "athlete_name": "Jelani Watkins",
+        "points": 3
+      },
+      {
+        "event": "10,000m",
+        "athlete_name": "Ernest Cheruiyot",
+        "points": 2
+      },
+      {
+        "event": "1500m",
+        "athlete_name": "Brian Masai",
+        "points": 2
+      },
+      {
+        "event": "200m",
+        "athlete_name": "Dapriest Hogans",
+        "points": 1
+      },
+      {
+        "event": "400m",
+        "athlete_name": "Jordan Pierre",
+        "points": 1
+      },
+      {
+        "event": "Long Jump",
+        "athlete_name": "Juriad Hughes",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "gender": "M",
+    "rank": 3,
+    "school": "Auburn",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
+    "total_points": 25.0,
+    "scorers": [
+      {
+        "event": "100m",
+        "athlete_name": "Kanyinsola Ajayi",
+        "points": 10
+      },
+      {
+        "event": "110m H",
+        "athlete_name": "Ja'Kobe Tharp",
+        "points": 10
+      },
+      {
+        "event": "200m",
+        "athlete_name": "Israel Okon",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "gender": "W",
+    "rank": 1,
+    "school": "South Carolina",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
+    "total_points": 31.0,
+    "scorers": [
+      {
+        "event": "1500m",
+        "athlete_name": "Salma Elbadra",
+        "points": 10
+      },
+      {
+        "event": "400m H",
+        "athlete_name": "Akala Garrett",
+        "points": 10
+      },
+      {
+        "event": "Pole Vault",
+        "athlete_name": "Jathiyah Muhammad",
+        "points": 4
+      },
+      {
+        "event": "400m H",
+        "athlete_name": "Kyndall Harrington-Spain",
+        "points": 3
+      },
+      {
+        "event": "200m",
+        "athlete_name": "JaMeesia Ford",
+        "points": 2
+      },
+      {
+        "event": "Long Jump",
+        "athlete_name": "Tristen Harris",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "gender": "W",
+    "rank": 2,
+    "school": "Florida",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
+    "total_points": 29.0,
+    "scorers": [
+      {
+        "event": "100m",
+        "athlete_name": "Gabrielle Matthews",
+        "points": 10
+      },
+      {
+        "event": "Discus",
+        "athlete_name": "Alida Van Daalen",
+        "points": 10
+      },
+      {
+        "event": "800m",
+        "athlete_name": "Layla Haynes",
+        "points": 5
+      },
+      {
+        "event": "Discus",
+        "athlete_name": "Akari Isaac",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "gender": "W",
+    "rank": 3,
+    "school": "BYU",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
+    "total_points": 28.0,
+    "scorers": [
+      {
+        "event": "10,000m",
+        "athlete_name": "Jane Hedengren",
+        "points": 10
+      },
+      {
+        "event": "5000m",
+        "athlete_name": "Jane Hedengren",
+        "points": 10
+      },
+      {
+        "event": "3000m SC",
+        "athlete_name": "Taylor Lovell",
+        "points": 6
+      },
+      {
+        "event": "800m",
+        "athlete_name": "Krystie Solomon",
+        "points": 2
+      }
+    ]
+  }
+]
