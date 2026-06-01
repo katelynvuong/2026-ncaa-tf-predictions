@@ -1,12 +1,16 @@
+export interface Scorer {
+  event: string
+  athlete_name: string
+  points: number
+}
+
 export interface TeamStanding {
   gender: "M" | "W"
   rank: number
   school: string
   logo_url: string | null
   total_points: number
-  sprints_pts: number
-  distance_pts: number
-  field_pts: number
+  scorers: Scorer[]
 }
 
 export interface Athlete {

@@ -5,9 +5,43 @@
     "school": "Oregon",
     "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
     "total_points": 46.0,
-    "sprints_pts": 3.0,
-    "distance_pts": 28.0,
-    "field_pts": 15.0
+    "scorers": [
+      {
+        "event": "1500m",
+        "athlete_name": "Simeon Birnbaum",
+        "points": 10
+      },
+      {
+        "event": "Shot Put",
+        "athlete_name": "Ben Smith",
+        "points": 10
+      },
+      {
+        "event": "3000m SC",
+        "athlete_name": "Benjamin Balazs",
+        "points": 8
+      },
+      {
+        "event": "5000m",
+        "athlete_name": "Simeon Birnbaum",
+        "points": 8
+      },
+      {
+        "event": "Discus",
+        "athlete_name": "Ben Smith",
+        "points": 5
+      },
+      {
+        "event": "110m H",
+        "athlete_name": "Kai Graves-Blanks",
+        "points": 3
+      },
+      {
+        "event": "1500m",
+        "athlete_name": "Tomas Palfrey",
+        "points": 2
+      }
+    ]
   },
   {
     "gender": "M",
@@ -15,9 +49,43 @@
     "school": "Arkansas",
     "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
     "total_points": 33.0,
-    "sprints_pts": 13.0,
-    "distance_pts": 20.0,
-    "field_pts": 0.0
+    "scorers": [
+      {
+        "event": "5000m",
+        "athlete_name": "Ben Shearer",
+        "points": 6
+      },
+      {
+        "event": "800m",
+        "athlete_name": "Rivaldo Marshall",
+        "points": 6
+      },
+      {
+        "event": "100m",
+        "athlete_name": "Jelani Watkins",
+        "points": 5
+      },
+      {
+        "event": "10,000m",
+        "athlete_name": "Ernest Cheruiyot",
+        "points": 5
+      },
+      {
+        "event": "200m",
+        "athlete_name": "Jelani Watkins",
+        "points": 5
+      },
+      {
+        "event": "1500m",
+        "athlete_name": "Brian Masai",
+        "points": 3
+      },
+      {
+        "event": "400m",
+        "athlete_name": "Jordan Pierre",
+        "points": 3
+      }
+    ]
   },
   {
     "gender": "M",
@@ -25,9 +93,28 @@
     "school": "Louisville",
     "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
     "total_points": 30.0,
-    "sprints_pts": 0.0,
-    "distance_pts": 14.0,
-    "field_pts": 16.0
+    "scorers": [
+      {
+        "event": "10,000m",
+        "athlete_name": "Elsingi Kipruto",
+        "points": 10
+      },
+      {
+        "event": "Long Jump",
+        "athlete_name": "Roman Kuleshov",
+        "points": 10
+      },
+      {
+        "event": "Triple Jump",
+        "athlete_name": "Roman Kuleshov",
+        "points": 6
+      },
+      {
+        "event": "5000m",
+        "athlete_name": "Elsingi Kipruto",
+        "points": 4
+      }
+    ]
   },
   {
     "gender": "W",
@@ -35,9 +122,48 @@
     "school": "Princeton",
     "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/163.png",
     "total_points": 30.0,
-    "sprints_pts": 0.0,
-    "distance_pts": 0.0,
-    "field_pts": 30.0
+    "scorers": [
+      {
+        "event": "Javelin",
+        "athlete_name": "Shea Greene",
+        "points": 8
+      },
+      {
+        "event": "Long Jump",
+        "athlete_name": "Alexandra Kelly",
+        "points": 6
+      },
+      {
+        "event": "High Jump",
+        "athlete_name": "Alysa Carrigan",
+        "points": 5
+      },
+      {
+        "event": "Pole Vault",
+        "athlete_name": "Tessa Mudd",
+        "points": 4
+      },
+      {
+        "event": "Discus",
+        "athlete_name": "Layla Giordano",
+        "points": 3
+      },
+      {
+        "event": "Triple Jump",
+        "athlete_name": "Georgina Scoot",
+        "points": 2
+      },
+      {
+        "event": "Hammer",
+        "athlete_name": "Angela McAuslan-Kelly",
+        "points": 1
+      },
+      {
+        "event": "Long Jump",
+        "athlete_name": "Georgina Scoot",
+        "points": 1
+      }
+    ]
   },
   {
     "gender": "W",
@@ -45,9 +171,33 @@
     "school": "Georgia",
     "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
     "total_points": 28.0,
-    "sprints_pts": 26.0,
-    "distance_pts": 0.0,
-    "field_pts": 2.0
+    "scorers": [
+      {
+        "event": "200m",
+        "athlete_name": "Adaejah Hodge",
+        "points": 8
+      },
+      {
+        "event": "400m",
+        "athlete_name": "Dejanea Oakley",
+        "points": 8
+      },
+      {
+        "event": "100m",
+        "athlete_name": "Adaejah Hodge",
+        "points": 5
+      },
+      {
+        "event": "400m H",
+        "athlete_name": "Michelle Smith",
+        "points": 5
+      },
+      {
+        "event": "Shot Put",
+        "athlete_name": "Nina Ndubuisi",
+        "points": 2
+      }
+    ]
   },
   {
     "gender": "W",
@@ -55,8 +205,32 @@
     "school": "South Carolina",
     "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
     "total_points": 25.0,
-    "sprints_pts": 13.0,
-    "distance_pts": 10.0,
-    "field_pts": 2.0
+    "scorers": [
+      {
+        "event": "1500m",
+        "athlete_name": "Salma Elbadra",
+        "points": 10
+      },
+      {
+        "event": "400m H",
+        "athlete_name": "Akala Garrett",
+        "points": 10
+      },
+      {
+        "event": "200m",
+        "athlete_name": "JaMeesia Ford",
+        "points": 2
+      },
+      {
+        "event": "Long Jump",
+        "athlete_name": "Tristen Harris",
+        "points": 2
+      },
+      {
+        "event": "100m",
+        "athlete_name": "JaMeesia Ford",
+        "points": 1
+      }
+    ]
   }
 ]

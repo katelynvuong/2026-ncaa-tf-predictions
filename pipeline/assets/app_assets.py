@@ -18,7 +18,12 @@ import pandas as pd
 
 _APP_DATA = Path("data/app")
 
-# Event → category mapping
+_EVENT_ORDER = [
+    "100", "200", "400", "800", "1500", "3000S", "5000", "10k",
+    "110H", "100H", "400H", "4x100", "4x400",
+    "HJ", "PV", "LJ", "TJ", "SP", "DT", "HT", "JT",
+]
+
 _EVENT_CATEGORY = {
     "100": "sprints", "200": "sprints", "400": "sprints",
     "100H": "sprints", "110H": "sprints", "400H": "sprints",
@@ -28,6 +33,17 @@ _EVENT_CATEGORY = {
     "HJ": "field", "PV": "field", "LJ": "field", "TJ": "field",
     "SP": "field", "DT": "field", "HT": "field", "JT": "field",
 }
+
+_EVENT_LABELS = {
+    "100": "100m", "200": "200m", "400": "400m", "800": "800m",
+    "1500": "1500m", "3000S": "3000m SC", "5000": "5000m", "10k": "10,000m",
+    "110H": "110m H", "100H": "100m H", "400H": "400m H",
+    "4x100": "4x100m Relay", "4x400": "4x400m Relay",
+    "HJ": "High Jump", "PV": "Pole Vault", "LJ": "Long Jump", "TJ": "Triple Jump",
+    "SP": "Shot Put", "DT": "Discus", "HT": "Hammer", "JT": "Javelin",
+}
+
+_SCORING_MAP = {1: 10, 2: 8, 3: 6, 4: 5, 5: 4, 6: 3, 7: 2, 8: 1}
 
 # School name → ESPN CDN logo ID
 _ESPN_ID = {
@@ -56,9 +72,7 @@ _ESPN_ID = {
 
 def _logo_url(school: str) -> str | None:
     espn_id = _ESPN_ID.get(school)
-    if espn_id:
-        return f"https://a.espncdn.com/i/teamlogos/ncaa/500/{espn_id}.png"
-    return None
+    return f"https://a.espncdn.com/i/teamlogos/ncaa/500/{espn_id}.png" if espn_id else None
 
 
 @dg.asset(
@@ -78,10 +92,10 @@ def app_metrics() -> None:
 
     output = {
         **raw,
-        "training_rows":   int(train["place"].notna().sum()),
-        "years_trained":   [int(y) for y in years],
-        "relay_excluded":  True,
-        "events_count":    int(train["event"].nunique()),
+        "training_rows": int(train["place"].notna().sum()),
+        "years_trained": [int(y) for y in years],
+        "relay_excluded": True,
+        "events_count": int(train["event"].nunique()),
     }
 
     _APP_DATA.mkdir(parents=True, exist_ok=True)
@@ -91,7 +105,7 @@ def app_metrics() -> None:
 @dg.asset(
     group_name="app",
     deps=["predictions"],
-    description="Compute sprints/distance/field point breakdown per school and save to data/app/team_standings.json.",
+    description="Build top-3 team standings with individual scorer breakdowns for tooltip display.",
 )
 def app_team_standings() -> None:
     preds = pd.read_csv("data/predictions/predictions.csv", dtype=str)
@@ -100,26 +114,32 @@ def app_team_standings() -> None:
     scores["predicted_rank"] = pd.to_numeric(scores["predicted_rank"], errors="coerce")
     preds["predicted_rank"]  = pd.to_numeric(preds["predicted_rank"],  errors="coerce")
 
-    scoring_map = {1: 10, 2: 8, 3: 6, 4: 5, 5: 4, 6: 3, 7: 2, 8: 1}
-    preds["points"] = preds["predicted_rank"].map(scoring_map).fillna(0)
-    preds["category"] = preds["event"].map(_EVENT_CATEGORY).fillna("other")
+    preds["points"] = preds["predicted_rank"].map(_SCORING_MAP).fillna(0)
 
     result = []
     for gender in ["M", "W"]:
         top3 = scores[scores["gender"] == gender].nsmallest(3, "predicted_rank")
         for _, row in top3.iterrows():
             school = row["school"]
-            school_preds = preds[(preds["school"] == school) & (preds["gender"] == gender)]
-            cat_pts = school_preds.groupby("category")["points"].sum().to_dict()
+            school_preds = (
+                preds[(preds["school"] == school) & (preds["gender"] == gender) & (preds["points"] > 0)]
+                .sort_values("points", ascending=False)
+            )
+            scorers = [
+                {
+                    "event":        _EVENT_LABELS.get(r["event"], r["event"]),
+                    "athlete_name": r["athlete_name"],
+                    "points":       int(r["points"]),
+                }
+                for _, r in school_preds.iterrows()
+            ]
             result.append({
-                "gender":        gender,
-                "rank":          int(row["predicted_rank"]),
-                "school":        school,
-                "logo_url":      _logo_url(school),
-                "total_points":  float(row["total_points"]),
-                "sprints_pts":   float(cat_pts.get("sprints", 0)),
-                "distance_pts":  float(cat_pts.get("distance", 0)),
-                "field_pts":     float(cat_pts.get("field", 0)),
+                "gender":       gender,
+                "rank":         int(row["predicted_rank"]),
+                "school":       school,
+                "logo_url":     _logo_url(school),
+                "total_points": float(row["total_points"]),
+                "scorers":      scorers,
             })
 
     _APP_DATA.mkdir(parents=True, exist_ok=True)
@@ -133,38 +153,34 @@ def app_team_standings() -> None:
 )
 def app_event_predictions() -> None:
     preds = pd.read_csv("data/predictions/predictions.csv", dtype=str)
-    preds["predicted_rank"] = pd.to_numeric(preds["predicted_rank"], errors="coerce")
+    preds["predicted_rank"]  = pd.to_numeric(preds["predicted_rank"],  errors="coerce")
     preds["predicted_place"] = pd.to_numeric(preds["predicted_place"], errors="coerce")
 
-    event_order = list(_EVENT_CATEGORY.keys())
     events_data: dict = {}
-
     for (event, gender), grp in preds.groupby(["event", "gender"]):
         grp = grp.sort_values("predicted_rank")
-        athletes = []
-        for _, row in grp.iterrows():
-            rank = int(row["predicted_rank"])
-            athletes.append({
-                "rank":             rank,
-                "bar_height":       9 - rank,  # descending staircase
-                "athlete_name":     row["athlete_name"],
-                "school":           row["school"],
-                "predicted_place":  round(float(row["predicted_place"]), 3),
-            })
-        key = event
-        if key not in events_data:
-            events_data[key] = {
-                "event":    event,
-                "category": _EVENT_CATEGORY.get(event, "other"),
-                "M":        [],
-                "W":        [],
+        athletes = [
+            {
+                "rank":            int(row["predicted_rank"]),
+                "bar_height":      9 - int(row["predicted_rank"]),
+                "athlete_name":    row["athlete_name"],
+                "school":          row["school"],
+                "predicted_place": round(float(row["predicted_place"]), 3),
             }
-        events_data[key][gender] = athletes
+            for _, row in grp.iterrows()
+        ]
+        if event not in events_data:
+            events_data[event] = {
+                "event":    event,
+                "label":    _EVENT_LABELS.get(event, event),
+                "category": _EVENT_CATEGORY.get(event, "other"),
+                "M": [], "W": [],
+            }
+        events_data[event][gender] = athletes
 
-    # Sort events in logical order
     ordered = sorted(
         events_data.values(),
-        key=lambda e: event_order.index(e["event"]) if e["event"] in event_order else 99,
+        key=lambda e: _EVENT_ORDER.index(e["event"]) if e["event"] in _EVENT_ORDER else 99,
     )
 
     _APP_DATA.mkdir(parents=True, exist_ok=True)

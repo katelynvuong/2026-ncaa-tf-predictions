@@ -63,13 +63,13 @@ export default function App() {
       </div>
 
       {selected === "__podium__" ? (
-        <div className="flex flex-col md:flex-row gap-12 justify-center">
+        <div key="podium" className="animate-rise flex flex-col md:flex-row gap-12 justify-center">
           <Podium standings={standings} gender="M" />
           <div className="hidden md:block w-px bg-white/10" />
           <Podium standings={standings} gender="W" />
         </div>
       ) : selectedEvent ? (
-        <div>
+        <div key={selectedEvent.event} className="animate-rise">
           <h2 className="text-lg font-semibold text-center mb-6 text-white/80">
             {EVENT_LABELS[selectedEvent.event] ?? selectedEvent.event}
           </h2>
