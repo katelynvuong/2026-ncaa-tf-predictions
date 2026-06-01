@@ -18,7 +18,8 @@ from scipy.stats import spearmanr
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from xgboost import XGBRegressor
 
-FEATURES = ["season_best", "season_avg", "avg_place", "conf_champ_place", "pr", "cross_event_avg_place"]
+FEATURES = ["season_best", "season_avg", "avg_place", "conf_champ_place", "pr",
+            "cross_event_avg_place", "conf_champ_place_any_event"]
 TARGET = "place"
 RELAY_EVENTS = {"4x100", "4x400"}
 

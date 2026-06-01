@@ -1,0 +1,31 @@
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - 59750 - LOGS_CAPTURED - Started capturing logs in process (pid: 59750).
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - 59750 - predictions - STEP_START - Started execution of step "predictions".
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions - ── 2025 holdout validation ──
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   MAE:              1.319 places
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   RMSE:             1.636 places
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   Spearman (avg):   0.741
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   Top-3 hit rate:   75/96 (78.1%)
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions - Final model trained on 979 rows (4 years)
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions - Feature importances:
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   avg_place             : 0.3525
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   conf_champ_place      : 0.2040
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   conf_champ_place_any_event: 0.1147
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   cross_event_avg_place : 0.0926
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   pr                    : 0.0923
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   season_avg            : 0.0743
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   season_best           : 0.0696
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions - Saved 860 predictions → data/predictions/predictions.csv
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions - Saved team scores → data/predictions/team_scores.csv
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions - ── Top 3 Men ──
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   1. Oregon — 46 pts
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   2. Arkansas — 41 pts
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   3. Louisville — 26 pts
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions - ── Top 3 Women ──
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   1. BYU — 31 pts
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   2. Oregon — 30 pts
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions -   3. South Carolina — 29 pts
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - 59750 - predictions - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - predictions - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/predictions using PickledObjectFilesystemIOManager...
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - 59750 - predictions - ASSET_MATERIALIZATION - Materialized value predictions.
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - 59750 - predictions - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-06-01 12:11:39 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 99db1f02-293b-449b-a9ff-1b6925113bee - 59750 - predictions - STEP_SUCCESS - Finished execution of step "predictions" in 631ms.

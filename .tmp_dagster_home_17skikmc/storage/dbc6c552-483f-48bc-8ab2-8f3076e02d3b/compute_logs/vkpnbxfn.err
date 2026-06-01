@@ -1,0 +1,10 @@
+[32m2026-06-01 11:31:02 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - dbc6c552-483f-48bc-8ab2-8f3076e02d3b - 33163 - LOGS_CAPTURED - Started capturing logs in process (pid: 33163).
+[32m2026-06-01 11:31:02 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - dbc6c552-483f-48bc-8ab2-8f3076e02d3b - 33163 - regional_athletes - STEP_START - Started execution of step "regional_athletes".
+[32m2026-06-01 11:31:02 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - dbc6c552-483f-48bc-8ab2-8f3076e02d3b - regional_athletes - Fetching east f list (id=5622)
+[32m2026-06-01 11:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - dbc6c552-483f-48bc-8ab2-8f3076e02d3b - regional_athletes -   → 885 unique athletes
+[32m2026-06-01 11:31:03 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - dbc6c552-483f-48bc-8ab2-8f3076e02d3b - regional_athletes - Saved 885 athletes to data/regional_athletes/regional_athletes_east_f.csv
+[32m2026-06-01 11:31:03 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - dbc6c552-483f-48bc-8ab2-8f3076e02d3b - 33163 - regional_athletes - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-06-01 11:31:03 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - dbc6c552-483f-48bc-8ab2-8f3076e02d3b - regional_athletes - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/regional_athletes/east_f using PickledObjectFilesystemIOManager...
+[32m2026-06-01 11:31:03 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - dbc6c552-483f-48bc-8ab2-8f3076e02d3b - 33163 - regional_athletes - ASSET_MATERIALIZATION - Materialized value regional_athletes.
+[32m2026-06-01 11:31:03 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - dbc6c552-483f-48bc-8ab2-8f3076e02d3b - 33163 - regional_athletes - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-06-01 11:31:03 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - dbc6c552-483f-48bc-8ab2-8f3076e02d3b - 33163 - regional_athletes - STEP_SUCCESS - Finished execution of step "regional_athletes" in 919ms.

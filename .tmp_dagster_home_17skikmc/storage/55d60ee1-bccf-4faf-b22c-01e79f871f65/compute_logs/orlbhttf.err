@@ -1,0 +1,15 @@
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - 33851 - LOGS_CAPTURED - Started capturing logs in process (pid: 33851).
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - 33851 - training_dataset - STEP_START - Started execution of step "training_dataset".
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - training_dataset - Training dataset: 995 rows
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - training_dataset - Feature fill rates:
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - training_dataset -   season_best: 979/995 (98.4%)
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - training_dataset -   season_avg: 979/995 (98.4%)
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - training_dataset -   avg_place: 979/995 (98.4%)
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - training_dataset -   conf_champ_place: 905/995 (91.0%)
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - training_dataset -   pr: 979/995 (98.4%)
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - training_dataset -   cross_event_avg_place: 869/995 (87.3%)
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - 33851 - training_dataset - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - training_dataset - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/training_dataset using PickledObjectFilesystemIOManager...
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - 33851 - training_dataset - ASSET_MATERIALIZATION - Materialized value training_dataset.
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - 33851 - training_dataset - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-06-01 11:31:56 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 55d60ee1-bccf-4faf-b22c-01e79f871f65 - 33851 - training_dataset - STEP_SUCCESS - Finished execution of step "training_dataset" in 114ms.

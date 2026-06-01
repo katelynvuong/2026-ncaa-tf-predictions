@@ -134,6 +134,18 @@ def _season_avg(results: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd
     return ev.groupby("athlete_id")["numeric"].mean().reindex(athlete_ids)
 
 
+def _conf_champ_place_any_event(results: pd.DataFrame, athlete_ids: list[str]) -> pd.Series:
+    """Best conference championship final place across ANY event — captures conference-level dominance."""
+    conf = results[
+        results["meet"].str.contains(_CONF_CHAMP_RE, na=False)
+        & results["place"].str.contains(r"\(F\)", na=False)
+        & results["athlete_id"].isin(athlete_ids)
+    ].copy()
+    conf["place_num"] = conf["place"].str.extract(r"^(\d+)").astype(float)
+    conf = conf.dropna(subset=["place_num"])
+    return conf.groupby("athlete_id")["place_num"].min().reindex(athlete_ids)
+
+
 def _cross_event_avg_place(results: pd.DataFrame, athlete_ids: list[str]) -> pd.Series:
     """Average finals place across ALL events for each athlete — captures general competitive level."""
     ev = results[results["place"].str.contains(r"\(F\)", na=False)].copy()
@@ -143,10 +155,6 @@ def _cross_event_avg_place(results: pd.DataFrame, athlete_ids: list[str]) -> pd.
     return ev.groupby("athlete_id")["place_num"].mean().reindex(athlete_ids)
 
 
-# Events with a single round at regionals — no separate final, so (P) is the only result
-_SINGLE_ROUND_EVENTS = {"5000", "10k"}
-
-
 def _avg_place(results: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.Series:
     ev_f = results[(results["event"] == event) & results["place"].str.contains(r"\(F\)", na=False)].copy()
     ev_f["place_num"] = ev_f["place"].str.extract(r"^(\d+)").astype(float)
@@ -154,15 +162,15 @@ def _avg_place(results: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.
     ev_f = ev_f[ev_f["athlete_id"].isin(athlete_ids)]
     avg = ev_f.groupby("athlete_id")["place_num"].mean().reindex(athlete_ids)
 
-    if event in _SINGLE_ROUND_EVENTS:
-        missing = avg[avg.isna()].index.tolist()
-        if missing:
-            ev_p = results[(results["event"] == event) & results["place"].str.contains(r"\(P\)", na=False)].copy()
-            ev_p["place_num"] = ev_p["place"].str.extract(r"^(\d+)").astype(float)
-            ev_p = ev_p.dropna(subset=["place_num"])
-            ev_p = ev_p[ev_p["athlete_id"].isin(missing)]
-            avg_p = ev_p.groupby("athlete_id")["place_num"].mean()
-            avg = avg.fillna(avg_p)
+    # Fall back to (P) results for any athlete with no (F) results in this event
+    missing = avg[avg.isna()].index.tolist()
+    if missing:
+        ev_p = results[(results["event"] == event) & results["place"].str.contains(r"\(P\)", na=False)].copy()
+        ev_p["place_num"] = ev_p["place"].str.extract(r"^(\d+)").astype(float)
+        ev_p = ev_p.dropna(subset=["place_num"])
+        ev_p = ev_p[ev_p["athlete_id"].isin(missing)]
+        avg_p = ev_p.groupby("athlete_id")["place_num"].mean()
+        avg = avg.fillna(avg_p)
 
     return avg
 
@@ -172,7 +180,7 @@ def _pr_feature(prs: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.Ser
     pr_col = _EVENT_PR_COL.get(event)
     if not pr_col or pr_col not in prs.columns:
         return pd.Series(index=athlete_ids, dtype=float)
-    sub = prs.set_index("athlete_id")[pr_col].reindex(athlete_ids)
+    sub = prs.drop_duplicates("athlete_id").set_index("athlete_id")[pr_col].reindex(athlete_ids)
     return pd.to_numeric(
         sub.apply(lambda m: _parse_mark(m, event) if pd.notna(m) else None),
         errors="coerce",
@@ -210,9 +218,10 @@ def features() -> pd.DataFrame:
     results_place = _filter_results_for_place(results)
     logger.info(f"Filtered results: {len(results_marks)} rows (mark-based), {len(results_place)} rows (place-based)")
 
-    # Compute cross-event avg place once across all individual athletes
+    # Compute athlete-level features once across all individual athletes
     all_individual_ids = final[~final["event"].isin(_RELAY_EVENTS)]["athlete_id"].dropna().unique().tolist()
-    cross_ap = _cross_event_avg_place(results_place, all_individual_ids)
+    cross_ap      = _cross_event_avg_place(results_place, all_individual_ids)
+    conf_champ_any = _conf_champ_place_any_event(results_place, all_individual_ids)
 
     rows = []
     for event, group in final.groupby("event"):
@@ -234,6 +243,7 @@ def features() -> pd.DataFrame:
                     "avg_place": None,
                     "conf_champ_place": None,
                     "cross_event_avg_place": None,
+                    "conf_champ_place_any_event": None,
                 })
             continue
 
@@ -260,6 +270,7 @@ def features() -> pd.DataFrame:
                 "conf_champ_place": cp.get(aid),
                 "pr": pr.get(aid),
                 "cross_event_avg_place": cross_ap.get(aid),
+                "conf_champ_place_any_event": conf_champ_any.get(aid),
             })
 
     df = pd.DataFrame(rows)

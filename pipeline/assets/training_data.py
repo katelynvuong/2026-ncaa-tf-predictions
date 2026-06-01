@@ -28,6 +28,7 @@ from pipeline.assets.features import (
     _season_avg,
     _avg_place,
     _conf_champ_place,
+    _conf_champ_place_any_event,
     _cross_event_avg_place,
     _pr_feature,
     _RELAY_EVENTS,
@@ -306,8 +307,9 @@ def training_features() -> pd.DataFrame:
         year_results_place = _filter_results_for_place(all_results, year=int(year))
         logger.info(f"{year}: {len(year_results_marks)} mark rows, {len(year_results_place)} place rows")
 
-        all_year_ids = year_group[~year_group["event"].isin(_RELAY_EVENTS)]["athlete_id"].tolist()
-        year_cross_ap = _cross_event_avg_place(year_results_place, all_year_ids)
+        all_year_ids = year_group[~year_group["event"].isin(_RELAY_EVENTS)]["athlete_id"].dropna().unique().tolist()
+        year_cross_ap       = _cross_event_avg_place(year_results_place, all_year_ids)
+        year_conf_champ_any = _conf_champ_place_any_event(year_results_place, all_year_ids)
 
         for event, event_group in year_group.groupby("event"):
             if event in _RELAY_EVENTS:
@@ -333,7 +335,8 @@ def training_features() -> pd.DataFrame:
                     "avg_place":         ap.get(aid),
                     "conf_champ_place":       cp.get(aid),
                     "pr":                     pr.get(aid),
-                    "cross_event_avg_place":  year_cross_ap.get(aid),
+                    "cross_event_avg_place":      year_cross_ap.get(aid),
+                    "conf_champ_place_any_event": year_conf_champ_any.get(aid),
                 })
 
     df = pd.DataFrame(feature_rows)
@@ -357,12 +360,14 @@ def training_dataset() -> pd.DataFrame:
 
     # Convert numeric columns
     champ["place"] = pd.to_numeric(champ["place"], errors="coerce")
-    for col in ["season_best", "season_avg", "avg_place", "conf_champ_place", "pr", "cross_event_avg_place"]:
+    for col in ["season_best", "season_avg", "avg_place", "conf_champ_place", "pr",
+                "cross_event_avg_place", "conf_champ_place_any_event"]:
         feats[col] = pd.to_numeric(feats[col], errors="coerce")
 
     df = champ.merge(
         feats[["year", "athlete_id", "event", "season_best", "season_avg",
-               "avg_place", "conf_champ_place", "pr", "cross_event_avg_place"]],
+               "avg_place", "conf_champ_place", "pr",
+               "cross_event_avg_place", "conf_champ_place_any_event"]],
         on=["year", "athlete_id", "event"],
         how="left",
     )
