@@ -1,0 +1,17 @@
+{
+  "mae": 1.462,
+  "rmse": 1.749,
+  "spearman": 0.694,
+  "top3_hit_rate": 0.731,
+  "top3_hits": 79,
+  "top3_total": 108,
+  "training_rows": 1107,
+  "years_trained": [
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "relay_excluded": true,
+  "events_count": 19
+}

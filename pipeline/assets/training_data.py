@@ -73,6 +73,8 @@ _SLUG_EVENT_MAP = {
 
 _SKIP_SLUGS = {"decathlon", "heptathlon"}
 _SCORING_POINTS = {"10", "8", "6", "5", "4", "3", "2", "1"}
+# Field events use wind in the last column instead of scoring points — filter by place directly
+_WIND_FIELD_EVENTS = {"LJ", "TJ"}
 _ATHLETE_ID_RE = re.compile(r"/athletes/(\d+)/")
 _MEET_ID_RE = re.compile(r"/results/(\d+)/")
 
@@ -137,16 +139,20 @@ def _parse_results(event_url: str, event_key: str, gender: str, year: int) -> li
         if len(tds) < 5:
             continue
 
-        # Filter to final-round scorers via points column
-        points = tds[-1].get_text(strip=True)
-        if points not in _SCORING_POINTS:
-            continue
-
         place_text = tds[0].get_text(strip=True)
         try:
             place = int(place_text)
         except ValueError:
-            continue
+            continue  # skip attempt-detail rows (empty place) and non-numeric rows
+
+        if event_key in _WIND_FIELD_EVENTS:
+            # LJ/TJ: last column is wind reading, not points — filter by place 1-8 directly
+            if place > 8:
+                continue
+        else:
+            # All other events: filter by scoring points in last column
+            if tds[-1].get_text(strip=True) not in _SCORING_POINTS:
+                continue
 
         mark = tds[4].get_text(strip=True)
 

@@ -1,0 +1,32 @@
+[32m2026-06-01 13:39:44 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 04ba1f2b-78eb-49c9-8b4f-c017de77583a - 21219 - LOGS_CAPTURED - Started capturing logs in process (pid: 21219).
+[32m2026-06-01 13:39:44 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 04ba1f2b-78eb-49c9-8b4f-c017de77583a - 21219 - app_team_standings - STEP_START - Started execution of step "app_team_standings".
+[32m2026-06-01 13:39:44 -0700[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - 04ba1f2b-78eb-49c9-8b4f-c017de77583a - 21219 - app_team_standings - STEP_FAILURE - Execution of step "app_team_standings" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "app_team_standings"::
+
+TypeError: Column 'predicted_rank' has dtype str, cannot use method 'nsmallest' with this dtype
+
+Stack Trace:
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/dagster/_core/execution/plan/compute_generator.py", line 135, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/dagster/_core/execution/plan/compute_generator.py", line 115, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+                                                                    ^^^^^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/pipeline/assets/app_assets.py", line 108, in app_team_standings
+    top3 = scores[scores["gender"] == gender].nsmallest(3, "predicted_rank")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/pandas/core/frame.py", line 8975, in nsmallest
+    return selectn.SelectNFrame(self, n=n, keep=keep, columns=columns).nsmallest()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/pandas/core/methods/selectn.py", line 77, in nsmallest
+    return self.compute("nsmallest")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/pandas/core/methods/selectn.py", line 232, in compute
+    raise TypeError(
+[0m

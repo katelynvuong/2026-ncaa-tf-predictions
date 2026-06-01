@@ -1,0 +1,62 @@
+[
+  {
+    "gender": "M",
+    "rank": 1,
+    "school": "Oregon",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
+    "total_points": 46.0,
+    "sprints_pts": 3.0,
+    "distance_pts": 28.0,
+    "field_pts": 15.0
+  },
+  {
+    "gender": "M",
+    "rank": 2,
+    "school": "Arkansas",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
+    "total_points": 33.0,
+    "sprints_pts": 13.0,
+    "distance_pts": 20.0,
+    "field_pts": 0.0
+  },
+  {
+    "gender": "M",
+    "rank": 3,
+    "school": "Louisville",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
+    "total_points": 30.0,
+    "sprints_pts": 0.0,
+    "distance_pts": 14.0,
+    "field_pts": 16.0
+  },
+  {
+    "gender": "W",
+    "rank": 1,
+    "school": "Princeton",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/163.png",
+    "total_points": 30.0,
+    "sprints_pts": 0.0,
+    "distance_pts": 0.0,
+    "field_pts": 30.0
+  },
+  {
+    "gender": "W",
+    "rank": 2,
+    "school": "Georgia",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
+    "total_points": 28.0,
+    "sprints_pts": 26.0,
+    "distance_pts": 0.0,
+    "field_pts": 2.0
+  },
+  {
+    "gender": "W",
+    "rank": 3,
+    "school": "South Carolina",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
+    "total_points": 25.0,
+    "sprints_pts": 13.0,
+    "distance_pts": 10.0,
+    "field_pts": 2.0
+  }
+]

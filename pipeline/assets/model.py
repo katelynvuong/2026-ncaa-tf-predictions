@@ -10,11 +10,13 @@ Outputs:
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import dagster as dg
 import pandas as pd
 from scipy.stats import spearmanr
+from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from xgboost import XGBRegressor
 
@@ -71,6 +73,16 @@ def _apply_normalizer(df: pd.DataFrame, stats: dict) -> pd.DataFrame:
     return df
 
 
+def _build_ridge() -> Ridge:
+    return Ridge(alpha=1.0)
+
+
+def _impute_medians(train: pd.DataFrame, pred: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Median-impute NaNs in pred using medians from train."""
+    medians = train[FEATURES].median()
+    return train[FEATURES].fillna(medians), pred[FEATURES].fillna(medians)
+
+
 def _build_model() -> XGBRegressor:
     return XGBRegressor(
         n_estimators=200,
@@ -113,11 +125,14 @@ def predictions() -> pd.DataFrame:
     train_val = _apply_normalizer(train_val, val_norm)
     holdout   = _apply_normalizer(holdout, val_norm)
 
-    model_val = _build_model()
+    train_val_imp, holdout_imp = _impute_medians(train_val, holdout)
+    model_val  = _build_model()
+    ridge_val  = _build_ridge()
     model_val.fit(train_val[FEATURES], train_val[TARGET])
+    ridge_val.fit(train_val_imp, train_val[TARGET])
 
     if len(holdout) > 0:
-        preds_2025 = model_val.predict(holdout[FEATURES])
+        preds_2025 = (model_val.predict(holdout[FEATURES]) + ridge_val.predict(holdout_imp)) / 2
         mae  = mean_absolute_error(holdout[TARGET], preds_2025)
         rmse = mean_squared_error(holdout[TARGET], preds_2025) ** 0.5
 
@@ -147,27 +162,44 @@ def predictions() -> pd.DataFrame:
         logger.info(f"  RMSE:             {rmse:.3f} places")
         logger.info(f"  Spearman (avg):   {avg_spearman:.3f}")
         logger.info(f"  Top-3 hit rate:   {top3_hits}/{top3_total} ({100*top3_hit_rate:.1f}%)")
+
+        Path("data/predictions").mkdir(parents=True, exist_ok=True)
+        Path("data/predictions/metrics.json").write_text(json.dumps({
+            "mae":            round(float(mae), 3),
+            "rmse":           round(float(rmse), 3),
+            "spearman":       round(float(avg_spearman), 3),
+            "top3_hit_rate":  round(float(top3_hit_rate), 3),
+            "top3_hits":      int(top3_hits),
+            "top3_total":     int(top3_total),
+        }, indent=2))
     else:
         logger.warning("No 2025 holdout data available for validation.")
 
     # ── Final model: train on all years ─────────────────────────────────────
     full_train = train_df.dropna(subset=FEATURES, how="all")
     final_norm  = _fit_normalizer(full_train)
-    full_train  = _apply_normalizer(full_train, final_norm)
-    model_final = _build_model()
+    full_train   = _apply_normalizer(full_train, final_norm)
+    model_final  = _build_model()
+    ridge_final  = _build_ridge()
     model_final.fit(full_train[FEATURES], full_train[TARGET])
+    full_train_imp, _ = _impute_medians(full_train, full_train)
+    ridge_final.fit(full_train_imp, full_train[TARGET])
     logger.info(f"Final model trained on {len(full_train)} rows ({full_train['year'].nunique()} years)")
 
-    # ── Feature importance ────────────────────────────────────────────────────
+    # ── Feature importance (XGBoost component) ───────────────────────────────
     importance = dict(zip(FEATURES, model_final.feature_importances_))
-    logger.info("Feature importances:")
+    logger.info("XGBoost feature importances:")
     for feat, imp in sorted(importance.items(), key=lambda x: -x[1]):
-        logger.info(f"  {feat:22s}: {imp:.4f}")
+        logger.info(f"  {feat:30s}: {imp:.4f}")
+    logger.info("Ridge coefficients:")
+    for feat, coef in sorted(zip(FEATURES, ridge_final.coef_), key=lambda x: x[1]):
+        logger.info(f"  {feat:30s}: {coef:.4f}")
 
     # ── Predict 2026 ─────────────────────────────────────────────────────────
     ind = pred_df[~pred_df["event"].isin(RELAY_EVENTS)].copy()
     ind = _apply_normalizer(ind, final_norm)
-    ind["predicted_place"] = model_final.predict(ind[FEATURES])
+    _, ind_imp = _impute_medians(full_train, ind)
+    ind["predicted_place"] = (model_final.predict(ind[FEATURES]) + ridge_final.predict(ind_imp)) / 2
     ind["predicted_rank"]  = _rank_within_event(ind, "predicted_place").astype(int)
 
     out_dir = Path("data/predictions")

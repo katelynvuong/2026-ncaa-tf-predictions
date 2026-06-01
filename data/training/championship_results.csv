@@ -88,6 +88,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2025,PV,M,2,8320105,Ashton Barkdull,Kansas,4.87m
 2025,PV,M,3,7722564,Bradley Jelmert,Arkansas State,6.36m
 2025,PV,M,4,7718475,Benjamin Conacher,Virginia Tech,5.02m
+2025,LJ,M,1,7731971,Malcolm Clemons,Florida,7.16m
+2025,LJ,M,2,7973950,Blair  Anderson,Oklahoma State,6.82m
+2025,LJ,M,3,7984924,Henry Kiner,Arkansas,5.73m
+2025,LJ,M,4,8725163,Charles Godfred,Minnesota,10.12m
+2025,LJ,M,5,8986893,Lokesh Sathyanathan,Tarleton State,7.52m
+2025,LJ,M,6,8599966,Tyson Adams,NC State,6.33m
+2025,LJ,M,7,8329029,Greg Foster,Princeton,5.77m
+2025,LJ,M,8,8996696,Jayden Keys,Georgia,6.32m
+2025,TJ,M,1,8283704,Brandon Green Jr,Oklahoma,13.45m
+2025,TJ,M,2,8714172,Floyd Whitaker,Oklahoma,15.43m
+2025,TJ,M,3,8368601,Kyvon Tatham,Florida State,11.69m
+2025,TJ,M,4,7987465,Luke Brown,Kentucky,13.91m
+2025,TJ,M,5,9011661,Selva Prabhu,Kansas State,16.57m
+2025,TJ,M,6,8358263,Theophilus Mudzengerere,South Carolina,13.68m
+2025,TJ,M,7,7979847,Safin Wills,Oregon,19.93m
+2025,TJ,M,8,8674331,Stafon Roach,ULM,18.39m
 2025,SP,M,1,7727861,Jason Swarens,Wisconsin,15.92m
 2025,SP,M,2,7725397,Thomas Kitchell,North Carolina,24.47m
 2025,SP,M,3,8341371,Tarik Robinson-O'Hagan,Ole Miss,26.53m
@@ -213,6 +229,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2025,PV,W,3,8676761,Amanda Moll,Washington,5.34m
 2025,PV,W,6,8354288,Emily Fitzsimmons,Oregon,5.24m
 2025,PV,W,7,7484536,Gennifer Hirata,South Dakota,3.60m
+2025,LJ,W,1,7731621,Synclair Savage,Louisville,6.72m
+2025,LJ,W,2,8324337,Alyssa Jones,Stanford,6.70m
+2025,LJ,W,3,7533309,Alexis Brown,Baylor,6.63m
+2025,LJ,W,4,8015591,Tacoria Humphrey,Illinois,6.62m
+2025,LJ,W,5,8679347,Anthaya Charlton,Florida,6.58m
+2025,LJ,W,6,8664744,Sophia  Beckmon,Illinois,6.49m
+2025,LJ,W,7,8647432,Aaliyah Foster,Texas,6.47m
+2025,LJ,W,8,9063858,Prestina Ochonogor,Tarleton State,6.41m
+2025,TJ,W,1,8374480,Winny Bii,Texas A&M,13.96m
+2025,TJ,W,2,8010632,Emilia Sjostrand,San Jose St.,13.88m
+2025,TJ,W,3,8283682,Agur  Dwol,Oklahoma,13.77m
+2025,TJ,W,4,7974393,Shantae Foreman,Clemson,13.72m
+2025,TJ,W,5,7491670,Victoria Gorlova,Texas Tech,13.53m
+2025,TJ,W,6,8996687,Skylynn Townsend,Georgia,13.52m
+2025,TJ,W,7,9013735,Ashley Moore,Oklahoma,13.30m
+2025,TJ,W,8,7726437,Ryann Porter,Oregon,13.22m
 2025,SP,W,1,7727870,Mya Lesnar,Colorado St.,19.01m
 2025,SP,W,2,9007180,Abria Smith,Illinois,18.85m
 2025,SP,W,3,8647437,Nina Ndubuisi,Texas,18.50m
@@ -338,6 +370,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2024,PV,M,1,7599292,Keaton Daniel,Kentucky,5.16m
 2024,PV,M,2,7983334,Clayton Simms,Kansas,5.11m
 2024,PV,M,5,8664682,Cody  Johnston,Illinois,5.02m
+2024,LJ,M,1,8343519,Chrstyn John (JC) Stevenson,USC,6.08m
+2024,LJ,M,2,7524768,Jeremiah Davis,Florida State,9.04m
+2024,LJ,M,3,7731971,Malcolm Clemons,Florida,8.61m
+2024,LJ,M,4,7974466,Johnny Brackins,USC,8.59m
+2024,LJ,M,5,7697085,Wayne Pinnock,Arkansas,9.58m
+2024,LJ,M,6,8725163,Charles Godfred,Minnesota,6.79m
+2024,LJ,M,7,8700012,Goodness Iredia,South Florida,8.88m
+2024,LJ,M,8,7730053,Nikaoli Williams,Oklahoma,6.29m
+2024,TJ,M,1,7791695,Salif Mane,FDU,17.14m
+2024,TJ,M,2,7534785,Russell Robinson,Miami (Fla.),17.13m
+2024,TJ,M,3,8283704,Brandon Green Jr,Oklahoma,16.63m
+2024,TJ,M,4,7524768,Jeremiah Davis,Florida State,16.62m
+2024,TJ,M,5,7987465,Luke Brown,Kentucky,16.44m
+2024,TJ,M,6,7979848,Praise Aniamaka,Purdue,16.30m
+2024,TJ,M,7,8368601,Kyvon Tatham,Florida State,16.30m
+2024,TJ,M,8,8363937,Sean Dixon-Bodie,Florida,16.28m
 2024,SP,M,1,8341371,Tarik Robinson-O'Hagan,Ole Miss,20.88m
 2024,SP,M,2,7727861,Jason Swarens,Wisconsin,20.38m
 2024,SP,M,3,7729961,Dylan  Targgart,South Carolina,20.23m
@@ -451,6 +499,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2024,PV,W,3,8676762,Hana Moll,Washington,4.19m
 2024,PV,W,4,8324599,Nastassja Campbell,Washington,4.18m
 2024,PV,W,7,8015605,Tori Thomas,Illinois,4.97m
+2024,LJ,W,1,7958878,Ackelia Smith,Texas,6.79m
+2024,LJ,W,2,7732041,Claire  Bryant,Florida,6.74m
+2024,LJ,W,3,8324337,Alyssa Jones,Stanford,6.64m
+2024,LJ,W,4,8679347,Anthaya Charlton,Florida,6.59m
+2024,LJ,W,5,7533309,Alexis Brown,Baylor,6.51m
+2024,LJ,W,6,7730386,Funminiyi Olajide,SMU,6.48m
+2024,LJ,W,7,7978401,Velecia Williams,Nebraska,6.41m
+2024,LJ,W,8,8700917,Ida Breigan,UTSA,6.40m
+2024,TJ,W,1,7958878,Ackelia Smith,Texas,11.62m
+2024,TJ,W,2,8014286,Darja Sopova,Illinois,16.25m
+2024,TJ,W,3,8010632,Emilia Sjostrand,San Jose St.,13.45m
+2024,TJ,W,4,8029262,Anne-Suzanna Fosther-Katta,Texas Tech,10.12m
+2024,TJ,W,5,8235207,Mikeisha Welcome,Georgia,10.65m
+2024,TJ,W,6,7687408,Temitope Ojora,USC,15.00m
+2024,TJ,W,7,8014297,Eunice Ilunga Mbuyi,ULM,13.77m
+2024,TJ,W,8,7730606,Ruta Lasmane,Texas Tech,10.94m
 2024,SP,W,1,7722972,Jaida Ross,Oregon,19.57m
 2024,SP,W,2,7002471,Gabby Morris,Colorado St.,18.66m
 2024,SP,W,3,7977784,Axelina Johansson,Nebraska,18.24m
@@ -576,6 +640,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2023,PV,M,1,7719642,Kyle Rademeyer,South Alabama,5.70m
 2023,PV,M,2,7728252,Hunter Garretson,Akron,5.70m
 2023,PV,M,5,7983334,Clayton Simms,Kansas,5.60m
+2023,LJ,M,1,7487907,Carey McLeod,Arkansas,9.25m
+2023,LJ,M,2,7697085,Wayne Pinnock,Arkansas,7.82m
+2023,LJ,M,3,8328829,Jordan Turner,Kentucky,8.86m
+2023,LJ,M,4,7731971,Malcolm Clemons,Florida,6.13m
+2023,LJ,M,5,7023317,Cameron Crump,Miss State,9.65m
+2023,LJ,M,6,7730053,Nikaoli Williams,Oklahoma,10.19m
+2023,LJ,M,7,7524768,Jeremiah Davis,Florida State,10.17m
+2023,LJ,M,8,8478306,Brandon Hicklin,LSU,8.33m
+2023,TJ,M,1,8339138,Jaydon Hibbert,Arkansas,13.87m
+2023,TJ,M,2,7534785,Russell Robinson,Miami (Fla.),16.43m
+2023,TJ,M,3,7524768,Jeremiah Davis,Florida State,18.34m
+2023,TJ,M,4,8363937,Sean Dixon-Bodie,Florida,11.96m
+2023,TJ,M,5,7791695,Salif Mane,Fairleigh Dickinson,16.62m
+2023,TJ,M,6,6988192,Owayne Owens,Virginia,12.27m
+2023,TJ,M,7,7003472,Malik Cunningham,Villanova,11.48m
+2023,TJ,M,8,8337002,Astley Davis,Southern Utah,13.42m
 2023,SP,M,1,6583856,Jordan Geist,Arizona,21.06m
 2023,SP,M,2,6901432,Turner Washington,Arizona State,21.04m
 2023,SP,M,3,8319513,Fred Moudani Likibi,Cincinnati,20.54m
@@ -702,6 +782,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2023,PV,W,4,7528279,Sevanna Hanson,Arizona State,4.69m
 2023,PV,W,5,7707244,Sydney Horn,High Point,4.17m
 2023,PV,W,8,8235499,Kenna Stimmel,Virginia Tech,4.26m
+2023,LJ,W,1,7958878,Ackelia Smith,Texas,6.88m
+2023,LJ,W,2,8324337,Alyssa Jones,Stanford,6.86m
+2023,LJ,W,3,8010897,Jasmine Moore,Florida,6.66m
+2023,LJ,W,4,7488536,Alysah Hickey,Oregon,6.48m
+2023,LJ,W,5,7732041,Claire  Bryant,Florida,6.44m
+2023,LJ,W,6,7037704,Charisma Taylor,Tennessee,6.41m
+2023,LJ,W,7,8010632,Emilia Sjostrand,San Jose St.,6.31m
+2023,LJ,W,8,7731621,Synclair Savage,Louisville,6.30m
+2023,TJ,W,1,8010897,Jasmine Moore,Florida,14.78m
+2023,TJ,W,2,7958878,Ackelia Smith,Texas,14.54m
+2023,TJ,W,3,7730606,Ruta Lasmane,Texas Tech,14.21m
+2023,TJ,W,4,7037704,Charisma Taylor,Tennessee,13.93m
+2023,TJ,W,5,6997737,Titiana Marsh,Georgia,13.67m
+2023,TJ,W,6,7687408,Temitope Ojora,USC,13.66m
+2023,TJ,W,7,8029262,Anne-Suzanna Fosther-Katta,Texas Tech,13.66m
+2023,TJ,W,8,8235207,Mikeisha Welcome,Georgia,13.62m
 2023,SP,W,1,7977784,Axelina Johansson,Nebraska,24.10m
 2023,SP,W,2,8354294,Jorinde Van Klinken,Oregon,13.86m
 2023,SP,W,3,8353875,Rosa Santana,UNLV,14.70m
@@ -832,6 +928,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2022,PV,M,6,7540246,Zach McWhorter,BYU,7.06m
 2022,PV,M,7,7983334,Clayton Simms,Kansas,6.44m
 2022,PV,M,8,7719642,Kyle Rademeyer,South Alabama,6.88m
+2022,LJ,M,1,7697085,Wayne Pinnock,Tennessee,8.00m
+2022,LJ,M,2,7524768,Jeremiah Davis,Florida State,8.00m
+2022,LJ,M,3,7524772,Isaac Grimes,Florida State,7.97m
+2022,LJ,M,4,7487907,Carey McLeod,Tennessee,7.90m
+2022,LJ,M,5,6988878,Brandon  Hicklin,N. Carolina A&T,7.86m
+2022,LJ,M,6,6985983,A'Nan Bridgett,Rutgers,7.85m
+2022,LJ,M,7,7725763,Stacy Brown Jr,Texas,7.81m
+2022,LJ,M,8,7487909,Anthony Riley,Tennessee,7.80m
+2022,TJ,M,1,6605817,Chengetayi Mapaya,TCU,12.95m
+2022,TJ,M,2,7734303,Emmanuel Ihemeje,Oregon,14.65m
+2022,TJ,M,3,7989903,Apalos Edwards,LSU,17.21m
+2022,TJ,M,4,7038695,Keyshawn King,Stanford,16.16m
+2022,TJ,M,5,6992896,Georgi Nachev,Missouri,12.62m
+2022,TJ,M,6,7034968,Chris Welch,Texas Tech,17.30m
+2022,TJ,M,7,7524768,Jeremiah Davis,Florida State,20.97m
+2022,TJ,M,8,7735674,Nathan Crawford-Wallis,Prairie View,13.69m
 2022,SP,M,1,6547040,Adrian Piperi,Texas,21.52m
 2022,SP,M,2,6901432,Turner Washington,Arizona State,21.05m
 2022,SP,M,3,6598183,Isaac Odugbesan,Alabama,20.48m
@@ -962,6 +1074,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2022,PV,W,6,7707244,Sydney Horn,High Point,4.35m
 2022,PV,W,7,6545350,Sophia Franklin,Michigan State,4.35m
 2022,PV,W,8,6527910,Sommer Knight,East Carolina,4.30m
+2022,LJ,W,1,8010897,Jasmine Moore,Florida,6.79m
+2022,LJ,W,2,7091735,Deborah Acquah,Texas A&M,7.26m
+2022,LJ,W,3,8036060,Tyra Gittens,Texas,5.98m
+2022,LJ,W,4,6562811,Monae' Nichols,Texas Tech,5.62m
+2022,LJ,W,5,7732041,Claire  Bryant,Florida,7.55m
+2022,LJ,W,6,7989960,Morgan Smalls,LSU,7.31m
+2022,LJ,W,7,6528087,Caira Pettway,Baylor,8.08m
+2022,LJ,W,8,7958878,Ackelia Smith,Texas,5.58m
+2022,TJ,W,1,8010897,Jasmine Moore,Florida,14.32m
+2022,TJ,W,2,7500561,Ruth Usoro,Texas Tech,13.95m
+2022,TJ,W,3,7730606,Ruta Lasmane,Texas Tech,13.89m
+2022,TJ,W,4,7958878,Ackelia Smith,Texas,13.79m
+2022,TJ,W,5,6997737,Titiana Marsh,Georgia,13.55m
+2022,TJ,W,6,7036942,Natricia Hooper,Florida,13.44m
+2022,TJ,W,7,7488539,Dominique Ruotolo,Oregon,13.27m
+2022,TJ,W,8,7524308,Esther Isa,Mid. Tenn. State,13.24m
 2022,SP,W,1,6701960,Adelaide Aquilla,Ohio State,22.39m
 2022,SP,W,2,7727873,Jorinde Van Klinken,Arizona State,21.37m
 2022,SP,W,3,7977784,Axelina Johansson,Nebraska,19.87m

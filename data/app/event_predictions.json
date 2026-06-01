@@ -1,0 +1,2168 @@
+[
+  {
+    "event": "100",
+    "category": "sprints",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Kanyinsola Ajayi",
+        "school": "Auburn",
+        "predicted_place": 2.58
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Mustapha Bokpin",
+        "school": "Middle Tennessee",
+        "predicted_place": 2.655
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Eddie Nketia",
+        "school": "USC",
+        "predicted_place": 2.89
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Jelani Watkins",
+        "school": "Arkansas",
+        "predicted_place": 2.91
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Louie Hinchliffe",
+        "school": "Houston",
+        "predicted_place": 3.101
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Traunard Folson",
+        "school": "Tennessee",
+        "predicted_place": 3.503
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Durian Moss",
+        "school": "Florida State",
+        "predicted_place": 3.562
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Abel Jordan",
+        "school": "Cal St. Fullerton",
+        "predicted_place": 4.32
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Brianna Selby",
+        "school": "USC",
+        "predicted_place": 2.64
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Gabrielle Matthews",
+        "school": "Florida",
+        "predicted_place": 2.685
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Shenese Walker",
+        "school": "Florida State",
+        "predicted_place": 2.991
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Adaejah Hodge",
+        "school": "Georgia",
+        "predicted_place": 3.363
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Shawnti Jackson",
+        "school": "LSU",
+        "predicted_place": 3.371
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Dajaz Defrand",
+        "school": "USC",
+        "predicted_place": 3.501
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Tiriah Kelley",
+        "school": "Baylor",
+        "predicted_place": 3.648
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "JaMeesia Ford",
+        "school": "South Carolina",
+        "predicted_place": 3.738
+      }
+    ]
+  },
+  {
+    "event": "200",
+    "category": "sprints",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Miguel Rosario",
+        "school": "Grand Canyon",
+        "predicted_place": 2.642
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Mustapha Bokpin",
+        "school": "Middle Tennessee",
+        "predicted_place": 2.773
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Tory Lanham",
+        "school": "Kansas City",
+        "predicted_place": 3.286
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Jelani Watkins",
+        "school": "Arkansas",
+        "predicted_place": 3.83
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Eddie Nketia",
+        "school": "USC",
+        "predicted_place": 3.861
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Israel Okon",
+        "school": "Auburn",
+        "predicted_place": 4.005
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Jalen Johnson",
+        "school": "Clemson",
+        "predicted_place": 4.273
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Drew Donley",
+        "school": "Texas State",
+        "predicted_place": 4.433
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Lauren Roy",
+        "school": "Tarleton State",
+        "predicted_place": 2.266
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Adaejah Hodge",
+        "school": "Georgia",
+        "predicted_place": 2.641
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Yahnari Lyons",
+        "school": "Howard",
+        "predicted_place": 3.281
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Taylor Snaer",
+        "school": "UCLA",
+        "predicted_place": 3.475
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Tiriah Kelley",
+        "school": "Baylor",
+        "predicted_place": 3.524
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Shawnti Jackson",
+        "school": "LSU",
+        "predicted_place": 3.564
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "JaMeesia Ford",
+        "school": "South Carolina",
+        "predicted_place": 4.093
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Dajaz Defrand",
+        "school": "USC",
+        "predicted_place": 4.457
+      }
+    ]
+  },
+  {
+    "event": "400",
+    "category": "sprints",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Samuel Ogazi",
+        "school": "Alabama",
+        "predicted_place": 2.457
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Jaden Marchan",
+        "school": "Georgetown",
+        "predicted_place": 2.881
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Jayden Davis",
+        "school": "Arizona State",
+        "predicted_place": 3.171
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Kenny Carpenter",
+        "school": "Colorado St.",
+        "predicted_place": 3.618
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Jack Stadlman",
+        "school": "USC",
+        "predicted_place": 3.661
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Jordan Pierre",
+        "school": "Arkansas",
+        "predicted_place": 4.373
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Martin Kouyoumdjian",
+        "school": "UTSA",
+        "predicted_place": 4.412
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Sidi Njie",
+        "school": "Georgia",
+        "predicted_place": 4.722
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Madison Whyte",
+        "school": "USC",
+        "predicted_place": 2.701
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Dejanea Oakley",
+        "school": "Georgia",
+        "predicted_place": 2.862
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Rushana Dwyer",
+        "school": "Northwestern St.",
+        "predicted_place": 2.929
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Alexia Smith",
+        "school": "Purdue",
+        "predicted_place": 3.221
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Sydney Segalla",
+        "school": "Boston College",
+        "predicted_place": 3.435
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Rachel Joseph",
+        "school": "Iowa State",
+        "predicted_place": 3.886
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Esther Joseph",
+        "school": "Tennessee",
+        "predicted_place": 4.113
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Sanaria Butler",
+        "school": "Arkansas",
+        "predicted_place": 4.433
+      }
+    ]
+  },
+  {
+    "event": "100H",
+    "category": "sprints",
+    "M": [],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Tashina Alase",
+        "school": "Southern",
+        "predicted_place": 2.553
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Tonie-Ann Forbes",
+        "school": "Texas Tech",
+        "predicted_place": 2.756
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Emmi Scales",
+        "school": "Kentucky",
+        "predicted_place": 2.813
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Rachel Mehringer",
+        "school": "Indiana State",
+        "predicted_place": 2.918
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Kailey Elliott",
+        "school": "East Carolina",
+        "predicted_place": 3.106
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Macee Rivers",
+        "school": "Illinois State",
+        "predicted_place": 3.128
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Aaliyah McCormick",
+        "school": "Oregon",
+        "predicted_place": 3.147
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Symoria Adkins",
+        "school": "Texas Tech",
+        "predicted_place": 4.216
+      }
+    ]
+  },
+  {
+    "event": "110H",
+    "category": "sprints",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Ja'Kobe Tharp",
+        "school": "Auburn",
+        "predicted_place": 2.202
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Kendrick Smallwood",
+        "school": "Texas",
+        "predicted_place": 2.69
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Trenton Givens",
+        "school": "Colorado St.",
+        "predicted_place": 2.744
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Jamir Brown",
+        "school": "Syracuse",
+        "predicted_place": 2.976
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Ja'Shaun Lloyd",
+        "school": "Texas State",
+        "predicted_place": 2.998
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Kai Graves-Blanks",
+        "school": "Oregon",
+        "predicted_place": 3.043
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Josh Parrish",
+        "school": "Wichita State",
+        "predicted_place": 3.16
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Le'Ezra Brown",
+        "school": "Georgia",
+        "predicted_place": 3.408
+      }
+    ],
+    "W": []
+  },
+  {
+    "event": "400H",
+    "category": "sprints",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Jason Parrish",
+        "school": "Wichita State",
+        "predicted_place": 2.59
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Kody Blackwood",
+        "school": "Texas",
+        "predicted_place": 3.008
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Jarvis Anderson",
+        "school": "Stephen F. Austin",
+        "predicted_place": 3.161
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Ja-Van Poole",
+        "school": "Oakland",
+        "predicted_place": 3.46
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "James Ledbetter",
+        "school": "Nebraska",
+        "predicted_place": 3.495
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Danny Tragarz",
+        "school": "Colorado",
+        "predicted_place": 3.528
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Isaiah Taylor",
+        "school": "N. Carolina A&T",
+        "predicted_place": 3.626
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Ryan Matulonis",
+        "school": "Penn",
+        "predicted_place": 3.735
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Akala Garrett",
+        "school": "South Carolina",
+        "predicted_place": 2.417
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Vanessa Mercera",
+        "school": "Kansas State",
+        "predicted_place": 2.62
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Kelsie Belquist",
+        "school": "Nebraska",
+        "predicted_place": 3.041
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Michelle Smith",
+        "school": "Georgia",
+        "predicted_place": 3.575
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Kirin Chacchia",
+        "school": "SMU",
+        "predicted_place": 4.21
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Tilde Bjerager",
+        "school": "Montana State",
+        "predicted_place": 4.461
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Elle Riley",
+        "school": "Brown",
+        "predicted_place": 4.49
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Sanaa Hebron",
+        "school": "Miami (Fla.)",
+        "predicted_place": 4.549
+      }
+    ]
+  },
+  {
+    "event": "800",
+    "category": "distance",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Tinoda Matsatsa",
+        "school": "Georgetown",
+        "predicted_place": 2.157
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Colin Sahlman",
+        "school": "Northern Arizona",
+        "predicted_place": 2.499
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Rivaldo Marshall",
+        "school": "Arkansas",
+        "predicted_place": 3.045
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Christian Jackson",
+        "school": "Virginia Tech",
+        "predicted_place": 3.48
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Peter Narumbe",
+        "school": "Texas A&M",
+        "predicted_place": 3.573
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Camden Law",
+        "school": "Michigan",
+        "predicted_place": 3.655
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Camden Marshall",
+        "school": "Indiana",
+        "predicted_place": 4.005
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Allon Clay",
+        "school": "Penn State",
+        "predicted_place": 4.077
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Hayley Kitching",
+        "school": "Penn State",
+        "predicted_place": 2.568
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Sanu Jallow",
+        "school": "Arkansas",
+        "predicted_place": 2.746
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Gladys Chepngetich",
+        "school": "Clemson",
+        "predicted_place": 3.25
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Makayla Paige",
+        "school": "North Carolina",
+        "predicted_place": 4.049
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Juliette Whittaker",
+        "school": "Stanford",
+        "predicted_place": 4.179
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Maeve O'Neill",
+        "school": "Providence",
+        "predicted_place": 4.327
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Emmaculate Jemutai",
+        "school": "Kansas",
+        "predicted_place": 4.583
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Veronica Hargrave",
+        "school": "Indiana",
+        "predicted_place": 4.618
+      }
+    ]
+  },
+  {
+    "event": "1500",
+    "category": "distance",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Simeon Birnbaum",
+        "school": "Oregon",
+        "predicted_place": 2.188
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Trent McFarland",
+        "school": "Michigan",
+        "predicted_place": 2.804
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Brendan Herger",
+        "school": "Michigan",
+        "predicted_place": 3.458
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Benne Anderson",
+        "school": "Syracuse",
+        "predicted_place": 3.712
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Matan Ivri",
+        "school": "Wisconsin",
+        "predicted_place": 3.873
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Brian Masai",
+        "school": "Arkansas",
+        "predicted_place": 4.276
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Tomas Palfrey",
+        "school": "Oregon",
+        "predicted_place": 4.417
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Gary Martin",
+        "school": "Virginia",
+        "predicted_place": 4.643
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Salma Elbadra",
+        "school": "South Carolina",
+        "predicted_place": 2.322
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Rosemary Longisa",
+        "school": "Washington St.",
+        "predicted_place": 3.02
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Hayley Burns",
+        "school": "Northern Arizona",
+        "predicted_place": 3.129
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Kaiya Robertson",
+        "school": "Boise State",
+        "predicted_place": 3.144
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Silan Ayyildiz",
+        "school": "Oregon",
+        "predicted_place": 3.537
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Juliet Cherubet",
+        "school": "Oregon",
+        "predicted_place": 3.712
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Sadie Engelhardt",
+        "school": "NC State",
+        "predicted_place": 3.841
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Tia Wilson",
+        "school": "Florida",
+        "predicted_place": 4.406
+      }
+    ]
+  },
+  {
+    "event": "3000S",
+    "category": "distance",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Nathan Mountain",
+        "school": "Virginia",
+        "predicted_place": 2.734
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Benjamin Balazs",
+        "school": "Oregon",
+        "predicted_place": 2.813
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Ryker Holtzen",
+        "school": "Wyoming",
+        "predicted_place": 2.942
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Collins Kiprop Kipngok",
+        "school": "Kentucky",
+        "predicted_place": 3.072
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Brett Gardner",
+        "school": "Virginia",
+        "predicted_place": 3.127
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Kristian Imroth",
+        "school": "Eastern Kentucky",
+        "predicted_place": 3.312
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Titus Kimaru",
+        "school": "Texas Tech",
+        "predicted_place": 3.336
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Joash Ruto",
+        "school": "Iowa State",
+        "predicted_place": 3.582
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Sophie Novak",
+        "school": "Notre Dame",
+        "predicted_place": 2.624
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Katelyn Stewart-Barnett",
+        "school": "Michigan State",
+        "predicted_place": 2.877
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Taylor Lovell",
+        "school": "BYU",
+        "predicted_place": 3.05
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Barrett Justema",
+        "school": "Georgetown",
+        "predicted_place": 3.397
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Angelina Napoleon",
+        "school": "NC State",
+        "predicted_place": 3.779
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Jule Lindner",
+        "school": "Virginia Tech",
+        "predicted_place": 4.156
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Cynthia Jemutai",
+        "school": "Alabama",
+        "predicted_place": 4.47
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Nelly Jemeli",
+        "school": "Miss State",
+        "predicted_place": 4.473
+      }
+    ]
+  },
+  {
+    "event": "5000",
+    "category": "distance",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Habtom Samuel",
+        "school": "New Mexico",
+        "predicted_place": 2.449
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Simeon Birnbaum",
+        "school": "Oregon",
+        "predicted_place": 3.001
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Ben Shearer",
+        "school": "Arkansas",
+        "predicted_place": 3.163
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Charlie Ortmans",
+        "school": "Harvard",
+        "predicted_place": 3.44
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Elsingi Kipruto",
+        "school": "Louisville",
+        "predicted_place": 3.641
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Marco Langon",
+        "school": "Villanova",
+        "predicted_place": 4.039
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Evans Kurui",
+        "school": "Washington St.",
+        "predicted_place": 4.208
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Denis Kipngetich",
+        "school": "Oklahoma State",
+        "predicted_place": 4.262
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Jane Hedengren",
+        "school": "BYU",
+        "predicted_place": 2.15
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Katie Bohlke",
+        "school": "Virginia Tech",
+        "predicted_place": 2.57
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Doris Lemngole",
+        "school": "Alabama",
+        "predicted_place": 2.627
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Brighter Jepchumba",
+        "school": "Eastern Kentucky",
+        "predicted_place": 2.71
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Betty Kipkore",
+        "school": "Iowa State",
+        "predicted_place": 3.603
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Nancy Cherop",
+        "school": "Clemson",
+        "predicted_place": 3.694
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Pamela Kosgei",
+        "school": "New Mexico",
+        "predicted_place": 3.83
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Mercyline Kirwa",
+        "school": "Iowa State",
+        "predicted_place": 4.117
+      }
+    ]
+  },
+  {
+    "event": "10k",
+    "category": "distance",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Elsingi Kipruto",
+        "school": "Louisville",
+        "predicted_place": 2.524
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Habtom Samuel",
+        "school": "New Mexico",
+        "predicted_place": 2.604
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Evans Kiplagat",
+        "school": "New Mexico",
+        "predicted_place": 3.0
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Ernest Cheruiyot",
+        "school": "Arkansas",
+        "predicted_place": 3.106
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "William Zegarski",
+        "school": "Butler",
+        "predicted_place": 3.273
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Denis Kipngetich",
+        "school": "Oklahoma State",
+        "predicted_place": 3.326
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Evan Jenkins",
+        "school": "Washington",
+        "predicted_place": 3.451
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Will Anthony",
+        "school": "Virginia",
+        "predicted_place": 3.669
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Mercy Jebitok",
+        "school": "Akron",
+        "predicted_place": 2.396
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Caren Kiplagat",
+        "school": "Alabama",
+        "predicted_place": 2.601
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Jane Hedengren",
+        "school": "BYU",
+        "predicted_place": 2.611
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Chloe Thomas",
+        "school": "Washington",
+        "predicted_place": 2.801
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Rylee Blade",
+        "school": "Florida State",
+        "predicted_place": 2.849
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Jadyn Keeler",
+        "school": "North Dakota",
+        "predicted_place": 2.873
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Ruth White",
+        "school": "New Hampshire",
+        "predicted_place": 3.098
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Mercyline Kirwa",
+        "school": "Iowa State",
+        "predicted_place": 3.375
+      }
+    ]
+  },
+  {
+    "event": "HJ",
+    "category": "field",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Ethan Ruffin",
+        "school": "FDU",
+        "predicted_place": 2.685
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Tito Alofe",
+        "school": "Harvard",
+        "predicted_place": 2.858
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Gage Voyles",
+        "school": "Kennesaw State",
+        "predicted_place": 3.354
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Kimani Jack",
+        "school": "Georgia",
+        "predicted_place": 3.362
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Antrea Mita",
+        "school": "Houston",
+        "predicted_place": 3.579
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Jonathan Kapitolnik",
+        "school": "Illinois",
+        "predicted_place": 3.996
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Jordan Wenger",
+        "school": "Oral Roberts",
+        "predicted_place": 4.283
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Etoro Bassey",
+        "school": "Texas A&M",
+        "predicted_place": 4.388
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Temitope Adeshina",
+        "school": "Texas Tech",
+        "predicted_place": 2.536
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Rose Yeboah",
+        "school": "Illinois",
+        "predicted_place": 3.307
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Alyssa Jones",
+        "school": "Stanford",
+        "predicted_place": 3.434
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Alysa Carrigan",
+        "school": "Princeton",
+        "predicted_place": 3.477
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Jelese Alexander",
+        "school": "Wichita State",
+        "predicted_place": 3.819
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Kemarah Howard",
+        "school": "Kentucky",
+        "predicted_place": 4.212
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Valentina Fakrogha",
+        "school": "UCLA",
+        "predicted_place": 4.386
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Kya Crook",
+        "school": "Arizona",
+        "predicted_place": 4.432
+      }
+    ]
+  },
+  {
+    "event": "PV",
+    "category": "field",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Matthew Gray",
+        "school": "App State",
+        "predicted_place": 2.234
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Brian Schloeder",
+        "school": "Navy",
+        "predicted_place": 2.357
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Caelan Harland",
+        "school": "South Dakota",
+        "predicted_place": 2.377
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Dyson Wicker",
+        "school": "Nebraska",
+        "predicted_place": 3.134
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "James Rhoads",
+        "school": "Washington",
+        "predicted_place": 3.207
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Ismaila Sawaneh",
+        "school": "Tennessee",
+        "predicted_place": 3.555
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Anthony Meacham",
+        "school": "Kansas",
+        "predicted_place": 3.606
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Ricardo Montes de Oca",
+        "school": "High Point",
+        "predicted_place": 3.764
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Hana Moll",
+        "school": "Washington",
+        "predicted_place": 2.319
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Marleen Mulla",
+        "school": "South Dakota",
+        "predicted_place": 2.676
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Hannah Grace",
+        "school": "Tennessee",
+        "predicted_place": 3.019
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Anna Willis",
+        "school": "South Dakota",
+        "predicted_place": 3.462
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Tessa Mudd",
+        "school": "Princeton",
+        "predicted_place": 3.509
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Molly Haywood",
+        "school": "Baylor",
+        "predicted_place": 3.547
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Kennedy Drish",
+        "school": "George Mason",
+        "predicted_place": 3.834
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Avery Hilliard",
+        "school": "Cornell",
+        "predicted_place": 4.028
+      }
+    ]
+  },
+  {
+    "event": "LJ",
+    "category": "field",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Roman Kuleshov",
+        "school": "Louisville",
+        "predicted_place": 2.156
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Tafadzwa Chikomba",
+        "school": "Kansas State",
+        "predicted_place": 2.929
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Markus White",
+        "school": "Liberty",
+        "predicted_place": 2.965
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Charles Godfred",
+        "school": "Minnesota",
+        "predicted_place": 3.109
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Greg Foster",
+        "school": "Princeton",
+        "predicted_place": 3.285
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Quincy Isaac",
+        "school": "Michigan",
+        "predicted_place": 3.473
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Tyler Nichols",
+        "school": "Southern Miss.",
+        "predicted_place": 4.01
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Steven Evans-Glynn",
+        "school": "Long Beach St.",
+        "predicted_place": 4.073
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Peace Omonzane",
+        "school": "Boston University",
+        "predicted_place": 2.239
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Trinity Shadd-Ceres",
+        "school": "Creighton",
+        "predicted_place": 2.249
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Alexandra Kelly",
+        "school": "Princeton",
+        "predicted_place": 3.754
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Prestina Ochonogor",
+        "school": "Tarleton State",
+        "predicted_place": 3.885
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Alyssa Jones",
+        "school": "Stanford",
+        "predicted_place": 3.904
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Sydnie Vanek",
+        "school": "Arizona",
+        "predicted_place": 3.93
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Tristen Harris",
+        "school": "South Carolina",
+        "predicted_place": 4.006
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Georgina Scoot",
+        "school": "Princeton",
+        "predicted_place": 4.037
+      }
+    ]
+  },
+  {
+    "event": "TJ",
+    "category": "field",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Selva Prabhu",
+        "school": "Kansas State",
+        "predicted_place": 2.761
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Jonathan Seremes",
+        "school": "Texas Tech",
+        "predicted_place": 3.038
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Roman Kuleshov",
+        "school": "Louisville",
+        "predicted_place": 3.5
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Jemuel Miller",
+        "school": "UTSA",
+        "predicted_place": 3.55
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Theo Mudzengerere",
+        "school": "Kentucky",
+        "predicted_place": 3.835
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Praise Aniamaka",
+        "school": "Purdue",
+        "predicted_place": 3.839
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Kelsey Daniel",
+        "school": "Texas",
+        "predicted_place": 4.004
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Viktor Morozov",
+        "school": "Illinois",
+        "predicted_place": 4.17
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Taryn Burkett",
+        "school": "Grand Canyon",
+        "predicted_place": 2.914
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Sharifa Davronova",
+        "school": "Oregon",
+        "predicted_place": 3.109
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Shantae Foreman",
+        "school": "Clemson",
+        "predicted_place": 3.197
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Maeva Tahou",
+        "school": "Charleston Southern",
+        "predicted_place": 3.47
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Alba Cuns Iglesias",
+        "school": "Louisville",
+        "predicted_place": 3.962
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Daniela Wamokpego",
+        "school": "Kansas State",
+        "predicted_place": 3.971
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Georgina Scoot",
+        "school": "Princeton",
+        "predicted_place": 4.313
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Katharina Graman",
+        "school": "Illinois",
+        "predicted_place": 4.422
+      }
+    ]
+  },
+  {
+    "event": "SP",
+    "category": "field",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Ben Smith",
+        "school": "Oregon",
+        "predicted_place": 3.263
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Cordell Nwokeji",
+        "school": "Houston",
+        "predicted_place": 3.277
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Ethan Elliott",
+        "school": "Drake",
+        "predicted_place": 3.404
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Menachem Chen",
+        "school": "Arkansas State",
+        "predicted_place": 3.541
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Obiora Okeke",
+        "school": "Notre Dame",
+        "predicted_place": 3.955
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Hencu Lamberts",
+        "school": "Nebraska",
+        "predicted_place": 4.264
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Wade Shomper",
+        "school": "Bucknell",
+        "predicted_place": 4.312
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Cade Moran",
+        "school": "Nebraska",
+        "predicted_place": 4.451
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Axelina Johansson",
+        "school": "Nebraska",
+        "predicted_place": 2.329
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Jessica Oji",
+        "school": "Penn",
+        "predicted_place": 3.592
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Makayla Long",
+        "school": "Colorado St.",
+        "predicted_place": 3.606
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Sydney Brewster",
+        "school": "Montana State",
+        "predicted_place": 3.868
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Kaia Tupu-South",
+        "school": "Louisville",
+        "predicted_place": 4.363
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Anthonett Nabwe",
+        "school": "Minnesota",
+        "predicted_place": 4.443
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Nina Ndubuisi",
+        "school": "Georgia",
+        "predicted_place": 4.501
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Alida Van Daalen",
+        "school": "Florida",
+        "predicted_place": 4.676
+      }
+    ]
+  },
+  {
+    "event": "DT",
+    "category": "field",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Ralford Mullings",
+        "school": "Oklahoma",
+        "predicted_place": 2.459
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Shamar Reid",
+        "school": "Florida State",
+        "predicted_place": 2.763
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Texas Tanner",
+        "school": "Air Force",
+        "predicted_place": 2.845
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Ben Smith",
+        "school": "Oregon",
+        "predicted_place": 3.392
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Racquil Broderick",
+        "school": "USC",
+        "predicted_place": 3.523
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Christian Hicks",
+        "school": "Liberty",
+        "predicted_place": 3.533
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Trevor Gunzell",
+        "school": "Alabama",
+        "predicted_place": 3.681
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Iosif Papa",
+        "school": "UMBC",
+        "predicted_place": 3.786
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Alida Van Daalen",
+        "school": "Florida",
+        "predicted_place": 2.54
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Klaire Kovatch",
+        "school": "Colorado St.",
+        "predicted_place": 2.946
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Marie Josee Bovele Linaka",
+        "school": "Oregon",
+        "predicted_place": 3.262
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Sofia Sluchaninova",
+        "school": "Kansas",
+        "predicted_place": 3.335
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Ines Lopez",
+        "school": "Arizona State",
+        "predicted_place": 3.362
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Layla Giordano",
+        "school": "Princeton",
+        "predicted_place": 3.708
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Summer Mosley",
+        "school": "CSUN",
+        "predicted_place": 4.048
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Joyce Oguama",
+        "school": "Alabama",
+        "predicted_place": 4.492
+      }
+    ]
+  },
+  {
+    "event": "HT",
+    "category": "field",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Texas Tanner",
+        "school": "Air Force",
+        "predicted_place": 2.462
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Angelos Mantzouranis",
+        "school": "Minnesota",
+        "predicted_place": 2.688
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Jeremiah Nubbe",
+        "school": "Virginia",
+        "predicted_place": 2.923
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Alex Bernstein",
+        "school": "DePaul",
+        "predicted_place": 3.048
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Ryan Johnson",
+        "school": "Iowa",
+        "predicted_place": 3.145
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Travis Martin",
+        "school": "Cal Poly",
+        "predicted_place": 3.491
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Gary Moore",
+        "school": "Kansas State",
+        "predicted_place": 3.505
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Igor Olaru",
+        "school": "Tennessee",
+        "predicted_place": 3.592
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Ellie Roan",
+        "school": "Boston University",
+        "predicted_place": 2.196
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Elisabet Rut Runarsdottir",
+        "school": "Texas State",
+        "predicted_place": 2.502
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Anthonett Nabwe",
+        "school": "Minnesota",
+        "predicted_place": 2.599
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Mariana Pestana",
+        "school": "Virginia Tech",
+        "predicted_place": 3.114
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Valentina Savva",
+        "school": "California",
+        "predicted_place": 3.12
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Marie Rougetet",
+        "school": "Miss State",
+        "predicted_place": 3.204
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Kali Terza",
+        "school": "Kennesaw State",
+        "predicted_place": 3.363
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Angela McAuslan-Kelly",
+        "school": "Princeton",
+        "predicted_place": 3.401
+      }
+    ]
+  },
+  {
+    "event": "JT",
+    "category": "field",
+    "M": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Brandon Falconer",
+        "school": "Mount St. Mary's",
+        "predicted_place": 2.168
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Evan Niedrowski",
+        "school": "Monmouth",
+        "predicted_place": 2.187
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Reuben Booysen",
+        "school": "South Alabama",
+        "predicted_place": 2.284
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "Chinecherem Prosper Nnamdi",
+        "school": "Texas A&M",
+        "predicted_place": 2.307
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Keyshawn Strachan",
+        "school": "Nebraska",
+        "predicted_place": 2.564
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Ben Shughart",
+        "school": "Liberty",
+        "predicted_place": 3.22
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Jordan Davis",
+        "school": "Georgia",
+        "predicted_place": 3.256
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Jemar Ferguson",
+        "school": "Louisiana",
+        "predicted_place": 3.367
+      }
+    ],
+    "W": [
+      {
+        "rank": 1,
+        "bar_height": 8,
+        "athlete_name": "Evelyn Bliss",
+        "school": "Bucknell",
+        "predicted_place": 2.658
+      },
+      {
+        "rank": 2,
+        "bar_height": 7,
+        "athlete_name": "Shea Greene",
+        "school": "Princeton",
+        "predicted_place": 2.813
+      },
+      {
+        "rank": 3,
+        "bar_height": 6,
+        "athlete_name": "Lilly Urban",
+        "school": "Nevada",
+        "predicted_place": 2.898
+      },
+      {
+        "rank": 4,
+        "bar_height": 5,
+        "athlete_name": "McKyla Van Der Westhuizen",
+        "school": "Rice",
+        "predicted_place": 3.009
+      },
+      {
+        "rank": 5,
+        "bar_height": 4,
+        "athlete_name": "Charlize Goody",
+        "school": "Texas State",
+        "predicted_place": 3.196
+      },
+      {
+        "rank": 6,
+        "bar_height": 3,
+        "athlete_name": "Eleanor Partrick",
+        "school": "Alabama",
+        "predicted_place": 3.235
+      },
+      {
+        "rank": 7,
+        "bar_height": 2,
+        "athlete_name": "Irene Jepkemboi",
+        "school": "TCU",
+        "predicted_place": 3.312
+      },
+      {
+        "rank": 8,
+        "bar_height": 1,
+        "athlete_name": "Kristen Jay",
+        "school": "Kent State",
+        "predicted_place": 3.345
+      }
+    ]
+  }
+]
