@@ -99,12 +99,19 @@ def _is_wind_legal(mark: str, event: str) -> bool:
 
 
 def _filter_results(results: pd.DataFrame, year: int = 2026) -> pd.DataFrame:
-    """Keep only results from the given year with legal wind, and normalise event name aliases."""
+    """Year + wind filter for mark-based features (season_best, season_avg, pr)."""
     year_mask = results["date"].str.contains(str(year), na=False)
     wind_mask = results.apply(
         lambda r: _is_wind_legal(str(r["mark"]), str(r["event"])), axis=1
     )
     df = results[year_mask & wind_mask].copy()
+    df["event"] = df["event"].replace(_EVENT_ALIASES)
+    return df
+
+
+def _filter_results_for_place(results: pd.DataFrame, year: int = 2026) -> pd.DataFrame:
+    """Year-only filter for place-based features — wind legality is irrelevant for place."""
+    df = results[results["date"].str.contains(str(year), na=False)].copy()
     df["event"] = df["event"].replace(_EVENT_ALIASES)
     return df
 
@@ -127,12 +134,37 @@ def _season_avg(results: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd
     return ev.groupby("athlete_id")["numeric"].mean().reindex(athlete_ids)
 
 
-def _avg_place(results: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.Series:
-    ev = results[(results["event"] == event) & results["place"].str.contains(r"\(F\)", na=False)].copy()
+def _cross_event_avg_place(results: pd.DataFrame, athlete_ids: list[str]) -> pd.Series:
+    """Average finals place across ALL events for each athlete — captures general competitive level."""
+    ev = results[results["place"].str.contains(r"\(F\)", na=False)].copy()
     ev["place_num"] = ev["place"].str.extract(r"^(\d+)").astype(float)
     ev = ev.dropna(subset=["place_num"])
     ev = ev[ev["athlete_id"].isin(athlete_ids)]
     return ev.groupby("athlete_id")["place_num"].mean().reindex(athlete_ids)
+
+
+# Events with a single round at regionals — no separate final, so (P) is the only result
+_SINGLE_ROUND_EVENTS = {"5000", "10k"}
+
+
+def _avg_place(results: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.Series:
+    ev_f = results[(results["event"] == event) & results["place"].str.contains(r"\(F\)", na=False)].copy()
+    ev_f["place_num"] = ev_f["place"].str.extract(r"^(\d+)").astype(float)
+    ev_f = ev_f.dropna(subset=["place_num"])
+    ev_f = ev_f[ev_f["athlete_id"].isin(athlete_ids)]
+    avg = ev_f.groupby("athlete_id")["place_num"].mean().reindex(athlete_ids)
+
+    if event in _SINGLE_ROUND_EVENTS:
+        missing = avg[avg.isna()].index.tolist()
+        if missing:
+            ev_p = results[(results["event"] == event) & results["place"].str.contains(r"\(P\)", na=False)].copy()
+            ev_p["place_num"] = ev_p["place"].str.extract(r"^(\d+)").astype(float)
+            ev_p = ev_p.dropna(subset=["place_num"])
+            ev_p = ev_p[ev_p["athlete_id"].isin(missing)]
+            avg_p = ev_p.groupby("athlete_id")["place_num"].mean()
+            avg = avg.fillna(avg_p)
+
+    return avg
 
 
 def _pr_feature(prs: pd.DataFrame, event: str, athlete_ids: list[str]) -> pd.Series:
@@ -174,8 +206,13 @@ def features() -> pd.DataFrame:
     results = pd.read_csv("data/flattened_dataframes/season_results.csv", dtype=str)
     prs = pd.read_csv("data/flattened_dataframes/athletes_prs.csv", dtype=str)
 
-    results = _filter_results(results)
-    logger.info(f"Filtered results: {len(results)} rows (2026, wind-legal)")
+    results_marks = _filter_results(results)
+    results_place = _filter_results_for_place(results)
+    logger.info(f"Filtered results: {len(results_marks)} rows (mark-based), {len(results_place)} rows (place-based)")
+
+    # Compute cross-event avg place once across all individual athletes
+    all_individual_ids = final[~final["event"].isin(_RELAY_EVENTS)]["athlete_id"].dropna().unique().tolist()
+    cross_ap = _cross_event_avg_place(results_place, all_individual_ids)
 
     rows = []
     for event, group in final.groupby("event"):
@@ -196,14 +233,15 @@ def features() -> pd.DataFrame:
                     "season_avg": None,
                     "avg_place": None,
                     "conf_champ_place": None,
+                    "cross_event_avg_place": None,
                 })
             continue
 
         athlete_ids = group["athlete_id"].dropna().tolist()
-        sb  = _season_best(results, event, athlete_ids)
-        avg = _season_avg(results, event, athlete_ids)
-        ap  = _avg_place(results, event, athlete_ids)
-        cp  = _conf_champ_place(results, event, athlete_ids)
+        sb  = _season_best(results_marks, event, athlete_ids)
+        avg = _season_avg(results_marks, event, athlete_ids)
+        ap  = _avg_place(results_place, event, athlete_ids)
+        cp  = _conf_champ_place(results_place, event, athlete_ids)
         pr  = _pr_feature(prs, event, athlete_ids)
 
         for _, athlete in group.iterrows():
@@ -221,6 +259,7 @@ def features() -> pd.DataFrame:
                 "avg_place": ap.get(aid),
                 "conf_champ_place": cp.get(aid),
                 "pr": pr.get(aid),
+                "cross_event_avg_place": cross_ap.get(aid),
             })
 
     df = pd.DataFrame(rows)

@@ -1,0 +1,14 @@
+[32m2026-05-31 17:22:12 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - 22995 - LOGS_CAPTURED - Started capturing logs in process (pid: 22995).
+[32m2026-05-31 17:22:12 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - 22995 - training_features - STEP_START - Started execution of step "training_features".
+[32m2026-05-31 17:22:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - training_features - Loaded 4165 profiles
+[32m2026-05-31 17:22:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - training_features - Built results table: 217809 rows across all profiles
+[32m2026-05-31 17:22:16 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - training_features - 2022: 16874 filtered results
+[32m2026-05-31 17:22:19 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - training_features - 2023: 27455 filtered results
+[32m2026-05-31 17:22:23 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - training_features - 2024: 37890 filtered results
+[32m2026-05-31 17:22:26 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - training_features - 2025: 51502 filtered results
+[32m2026-05-31 17:22:27 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - training_features - Saved 979 feature rows → data/training/training_features.csv
+[32m2026-05-31 17:22:27 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - 22995 - training_features - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-05-31 17:22:27 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - training_features - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/training_features using PickledObjectFilesystemIOManager...
+[32m2026-05-31 17:22:27 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - 22995 - training_features - ASSET_MATERIALIZATION - Materialized value training_features.
+[32m2026-05-31 17:22:27 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - 22995 - training_features - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-05-31 17:22:27 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 58c9cb83-6954-4d14-9df7-f286e400c563 - 22995 - training_features - STEP_SUCCESS - Finished execution of step "training_features" in 15.2s.

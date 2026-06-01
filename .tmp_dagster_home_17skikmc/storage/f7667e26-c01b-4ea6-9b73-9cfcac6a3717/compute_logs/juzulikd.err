@@ -1,0 +1,12 @@
+[32m2026-05-31 17:13:45 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f7667e26-c01b-4ea6-9b73-9cfcac6a3717 - 17536 - LOGS_CAPTURED - Started capturing logs in process (pid: 17536).
+[32m2026-05-31 17:13:45 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f7667e26-c01b-4ea6-9b73-9cfcac6a3717 - 17536 - features - STEP_START - Started execution of step "features".
+[32m2026-05-31 17:13:48 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - f7667e26-c01b-4ea6-9b73-9cfcac6a3717 - features - Filtered results: 60035 rows (2026, wind-legal)
+[32m2026-05-31 17:13:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - f7667e26-c01b-4ea6-9b73-9cfcac6a3717 - features - season_best: 860/956 (90.0%)
+[32m2026-05-31 17:13:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - f7667e26-c01b-4ea6-9b73-9cfcac6a3717 - features - season_avg: 860/956 (90.0%)
+[32m2026-05-31 17:13:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - f7667e26-c01b-4ea6-9b73-9cfcac6a3717 - features - avg_place: 831/956 (86.9%)
+[32m2026-05-31 17:13:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - f7667e26-c01b-4ea6-9b73-9cfcac6a3717 - features - conf_champ_place: 673/956 (70.4%)
+[32m2026-05-31 17:13:49 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f7667e26-c01b-4ea6-9b73-9cfcac6a3717 - 17536 - features - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-05-31 17:13:49 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f7667e26-c01b-4ea6-9b73-9cfcac6a3717 - features - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/features using PickledObjectFilesystemIOManager...
+[32m2026-05-31 17:13:49 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f7667e26-c01b-4ea6-9b73-9cfcac6a3717 - 17536 - features - ASSET_MATERIALIZATION - Materialized value features.
+[32m2026-05-31 17:13:49 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f7667e26-c01b-4ea6-9b73-9cfcac6a3717 - 17536 - features - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-05-31 17:13:49 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f7667e26-c01b-4ea6-9b73-9cfcac6a3717 - 17536 - features - STEP_SUCCESS - Finished execution of step "features" in 4.18s.

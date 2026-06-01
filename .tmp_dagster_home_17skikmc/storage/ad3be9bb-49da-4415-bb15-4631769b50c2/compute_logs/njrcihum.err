@@ -1,0 +1,12 @@
+[32m2026-05-31 17:29:45 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ad3be9bb-49da-4415-bb15-4631769b50c2 - 28064 - LOGS_CAPTURED - Started capturing logs in process (pid: 28064).
+[32m2026-05-31 17:29:45 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ad3be9bb-49da-4415-bb15-4631769b50c2 - 28064 - features - STEP_START - Started execution of step "features".
+[32m2026-05-31 17:29:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ad3be9bb-49da-4415-bb15-4631769b50c2 - features - Filtered results: 60035 rows (mark-based), 62363 rows (place-based)
+[32m2026-05-31 17:29:50 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ad3be9bb-49da-4415-bb15-4631769b50c2 - features - season_best: 860/956 (90.0%)
+[32m2026-05-31 17:29:50 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ad3be9bb-49da-4415-bb15-4631769b50c2 - features - season_avg: 860/956 (90.0%)
+[32m2026-05-31 17:29:50 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ad3be9bb-49da-4415-bb15-4631769b50c2 - features - avg_place: 855/956 (89.4%)
+[32m2026-05-31 17:29:50 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - ad3be9bb-49da-4415-bb15-4631769b50c2 - features - conf_champ_place: 739/956 (77.3%)
+[32m2026-05-31 17:29:50 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ad3be9bb-49da-4415-bb15-4631769b50c2 - 28064 - features - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-05-31 17:29:50 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ad3be9bb-49da-4415-bb15-4631769b50c2 - features - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/features using PickledObjectFilesystemIOManager...
+[32m2026-05-31 17:29:50 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ad3be9bb-49da-4415-bb15-4631769b50c2 - 28064 - features - ASSET_MATERIALIZATION - Materialized value features.
+[32m2026-05-31 17:29:50 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ad3be9bb-49da-4415-bb15-4631769b50c2 - 28064 - features - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-05-31 17:29:50 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ad3be9bb-49da-4415-bb15-4631769b50c2 - 28064 - features - STEP_SUCCESS - Finished execution of step "features" in 4.39s.
