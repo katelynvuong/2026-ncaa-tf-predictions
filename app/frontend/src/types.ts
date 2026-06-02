@@ -16,7 +16,7 @@ export interface TeamStanding {
 export interface Athlete {
   rank: number
   bar_height: number
-  athlete_name: string
+  athlete_name: string | null
   school: string
   predicted_place: number
 }

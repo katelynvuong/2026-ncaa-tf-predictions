@@ -68,7 +68,7 @@ export default function MetricsPanel({ metrics }: Props) {
     {
       label: "Events",
       value: `${metrics.events_count}`,
-      tip: "Number of individual events included in model training. Relay events (4x100, 4x400) are excluded since they have no individual athlete-level features.",
+      tip: "Number of events included in model training, including relay events (4x100, 4x400).",
     },
   ]
 

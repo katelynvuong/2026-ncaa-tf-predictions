@@ -12,18 +12,23 @@ const ORDINAL = ["", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th"]
 const CustomTick = ({ x, y, payload, data }: any) => {
   const entry = data[payload.index]
   if (!entry) return null
-  const lastName = entry.name.split(" ").pop() ?? entry.name
+  const isRelay = !entry.name
+  const label = isRelay
+    ? (entry.school.length > 12 ? entry.school.slice(0, 12) + "…" : entry.school)
+    : (entry.name.split(" ").pop() ?? entry.name)
   return (
     <g transform={`translate(${x},${y})`}>
       <text x={0} y={0} dy={14} textAnchor="middle" fontSize={11} fill="#9ca3af">
         {payload.value}
       </text>
       <text x={0} y={0} dy={28} textAnchor="middle" fontSize={10} fill="rgba(240,238,236,0.65)">
-        {lastName}
+        {label}
       </text>
-      <text x={0} y={0} dy={40} textAnchor="middle" fontSize={9} fill="rgba(240,238,236,0.3)">
-        {entry.school.length > 10 ? entry.school.slice(0, 10) + "…" : entry.school}
-      </text>
+      {!isRelay && (
+        <text x={0} y={0} dy={40} textAnchor="middle" fontSize={9} fill="rgba(240,238,236,0.3)">
+          {entry.school.length > 10 ? entry.school.slice(0, 10) + "…" : entry.school}
+        </text>
+      )}
     </g>
   )
 }
@@ -37,7 +42,7 @@ export default function EventChart({ athletes, gender }: Props) {
   const data = athletes.map(a => ({
     label:   ORDINAL[a.rank] ?? `${a.rank}th`,
     height:  a.bar_height,
-    name:    a.athlete_name,
+    name:    a.athlete_name ?? null,
     school:  a.school,
     place:   a.predicted_place,
   }))
@@ -64,8 +69,8 @@ export default function EventChart({ athletes, gender }: Props) {
               const d = payload[0].payload
               return (
                 <div className="bg-[#1c1c24] border border-white/10 rounded-lg px-3 py-2 text-xs">
-                  <p className="font-semibold text-white">{d.name}</p>
-                  <p className="text-white/50">{d.school}</p>
+                  <p className="font-semibold text-white">{d.name ?? d.school}</p>
+                  {d.name && <p className="text-white/50">{d.school}</p>}
                   <p className="text-white/40 mt-1">
                     Model score: <span className="text-white/70">{d.place.toFixed(2)}</span>
                     <span className="text-white/30"> (lower = stronger predicted finish)</span>

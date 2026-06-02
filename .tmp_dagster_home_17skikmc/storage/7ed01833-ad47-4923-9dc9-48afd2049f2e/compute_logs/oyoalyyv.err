@@ -1,0 +1,19 @@
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - 87455 - LOGS_CAPTURED - Started capturing logs in process (pid: 87455).
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - 87455 - training_dataset - STEP_START - Started execution of step "training_dataset".
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset - Training dataset: 1851 rows
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset - Feature fill rates:
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset -   season_best: 1664/1851 (89.9%)
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset -   season_avg: 1664/1851 (89.9%)
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset -   avg_place: 1664/1851 (89.9%)
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset -   conf_champ_place: 1322/1851 (71.4%)
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset -   pr: 1664/1851 (89.9%)
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset -   cross_event_avg_place: 1664/1851 (89.9%)
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset -   conf_champ_place_any_event: 1370/1851 (74.0%)
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset -   relay_qualifying_time: 148/1851 (8.0%)
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset -   relay_season_best: 30/1851 (1.6%)
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset -   relay_qualifying_place: 148/1851 (8.0%)
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - 87455 - training_dataset - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - training_dataset - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/training_dataset using PickledObjectFilesystemIOManager...
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - 87455 - training_dataset - ASSET_MATERIALIZATION - Materialized value training_dataset.
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - 87455 - training_dataset - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-06-01 20:32:30 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7ed01833-ad47-4923-9dc9-48afd2049f2e - 87455 - training_dataset - STEP_SUCCESS - Finished execution of step "training_dataset" in 126ms.

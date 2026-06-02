@@ -1,0 +1,32 @@
+[32m2026-06-01 20:02:07 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 366f8e18-c03f-42ea-ae86-0fd43cc57db7 - 67407 - LOGS_CAPTURED - Started capturing logs in process (pid: 67407).
+[32m2026-06-01 20:02:07 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 366f8e18-c03f-42ea-ae86-0fd43cc57db7 - 67407 - training_features - STEP_START - Started execution of step "training_features".
+[32m2026-06-01 20:02:08 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 366f8e18-c03f-42ea-ae86-0fd43cc57db7 - training_features - Loaded 4841 profiles
+[32m2026-06-01 20:02:09 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 366f8e18-c03f-42ea-ae86-0fd43cc57db7 - training_features - Built results table: 263189 rows across all profiles
+[32m2026-06-01 20:02:12 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 366f8e18-c03f-42ea-ae86-0fd43cc57db7 - training_features - 2019: 10230 mark rows, 10578 place rows
+[32m2026-06-01 20:02:12 -0700[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - 366f8e18-c03f-42ea-ae86-0fd43cc57db7 - 67407 - training_features - STEP_FAILURE - Execution of step "training_features" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "training_features"::
+
+ValueError: DataFrame index must be unique for orient='index'.
+
+Stack Trace:
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/dagster/_core/execution/plan/compute_generator.py", line 135, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/dagster/_core/execution/plan/compute_generator.py", line 115, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+                                                                    ^^^^^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/pipeline/assets/training_data.py", line 540, in training_features
+    qual_map = rq.set_index("school")[["qualifying_place", "qt_secs"]].to_dict("index")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/pandas/core/frame.py", line 2236, in to_dict
+    return to_dict(self, orient, into=into, index=index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.venv/lib/python3.12/site-packages/pandas/core/methods/to_dict.py", line 259, in to_dict
+    raise ValueError("DataFrame index must be unique for orient='index'.")
+[0m

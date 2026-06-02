@@ -20,18 +20,19 @@ _APP_DATA = Path("app/frontend/public/data")
 
 _EVENT_ORDER = [
     "100", "200", "400", "800", "1500", "3000S", "5000", "10k",
-    "110H", "100H", "400H", "4x100", "4x400",
+    "110H", "100H", "400H",
     "HJ", "PV", "LJ", "TJ", "SP", "DT", "HT", "JT",
+    "4x100", "4x400",
 ]
 
 _EVENT_CATEGORY = {
     "100": "sprints", "200": "sprints", "400": "sprints",
     "100H": "sprints", "110H": "sprints", "400H": "sprints",
-    "4x100": "sprints", "4x400": "sprints",
     "800": "distance", "1500": "distance", "3000S": "distance",
     "5000": "distance", "10k": "distance",
     "HJ": "field", "PV": "field", "LJ": "field", "TJ": "field",
     "SP": "field", "DT": "field", "HT": "field", "JT": "field",
+    "4x100": "relays", "4x400": "relays",
 }
 
 _EVENT_LABELS = {
@@ -94,7 +95,7 @@ def app_metrics() -> None:
         **raw,
         "training_rows":  int(train["place"].notna().sum()),
         "years_trained":  [int(y) for y in years],
-        "relay_excluded": True,
+        "relay_excluded": False,
         "events_count":   int(train["event"].nunique()),
         "model_type":     "XGBoost (Gradient Boosted Trees)",
         "model_note":     "Gradient boosted decision trees trained on historical NCAA championship results (2022–2025). Predicts finishing place for each athlete based on their 2026 season performance features.",

@@ -1,255 +1,255 @@
 school,total_points,gender,predicted_rank
-Arkansas,50.0,M,1
-Oregon,45.0,M,2
-Louisville,27.0,M,3
-New Mexico,26.0,M,4
-Minnesota,24.0,M,5
-Virginia,24.0,M,6
-Texas,22.0,M,7
-Auburn,22.0,M,8
-Michigan,21.0,M,9
-Oklahoma,20.0,M,10
-Georgetown,18.0,M,11
-Middle Tennessee,18.0,M,12
-Kentucky,16.0,M,13
-Houston,16.0,M,14
-Air Force,16.0,M,15
-Harvard,15.0,M,16
-Nebraska,14.0,M,17
-Florida State,13.0,M,18
-USC,13.0,M,19
-Kansas State,13.0,M,20
-Tennessee,13.0,M,21
-Texas A&M,11.0,M,22
-N. Carolina A&T,11.0,M,23
-Alabama,11.0,M,24
-Grand Canyon,10.0,M,25
-Iowa,10.0,M,26
-Wyoming,10.0,M,27
+Arkansas,39.0,M,1
+Oregon,32.0,M,2
+Auburn,30.0,M,3
+Louisville,27.0,M,4
+Texas A&M,22.0,M,5
+New Mexico,21.0,M,6
+Air Force,20.0,M,7
+Virginia,19.0,M,8
+Syracuse,19.0,M,9
+Tennessee,18.0,M,10
+Michigan,18.0,M,11
+Georgia,18.0,M,12
+Kansas State,17.0,M,13
+Georgetown,16.0,M,14
+Middle Tennessee,16.0,M,15
+Minnesota,16.0,M,16
+Houston,15.0,M,17
+Alabama,15.0,M,18
+Kentucky,15.0,M,19
+USC,14.0,M,20
+Ohio State,14.0,M,21
+Texas,14.0,M,22
+Nebraska,14.0,M,23
+Wichita State,13.0,M,24
+Texas Tech,13.0,M,25
+Liberty,12.0,M,26
+N. Carolina A&T,12.0,M,27
 FDU,10.0,M,28
-Stephen F. Austin,10.0,M,29
-Navy,10.0,M,30
-South Alabama,10.0,M,31
-Oklahoma State,10.0,M,32
-Michigan State,10.0,M,33
-Texas Tech,10.0,M,34
-Colorado St.,10.0,M,35
-Wichita State,9.0,M,36
-Mount St. Mary's,8.0,M,37
+Grand Canyon,10.0,M,29
+Florida State,10.0,M,30
+Miss State,10.0,M,31
+Navy,10.0,M,32
+South Alabama,10.0,M,33
+Oklahoma,9.0,M,34
+Harvard,9.0,M,35
+UTSA,9.0,M,36
+Northern Arizona,8.0,M,37
 South Dakota,8.0,M,38
-Liberty,8.0,M,39
-Cal St. Fullerton,8.0,M,40
-Syracuse,8.0,M,41
-Monmouth,8.0,M,42
-Drake,8.0,M,43
-Northern Arizona,8.0,M,44
-Washington,7.0,M,45
-Georgia,7.0,M,46
-Arizona State,6.0,M,47
-App State,6.0,M,48
-East Carolina,6.0,M,49
-Kansas City,6.0,M,50
-Penn State,6.0,M,51
-Butler,5.0,M,52
-Miss State,5.0,M,53
-LSU,5.0,M,54
-Virginia Tech,5.0,M,55
-Texas State,5.0,M,56
-Wisconsin,5.0,M,57
-Colorado,4.0,M,58
-BYU,4.0,M,59
-Kennesaw State,4.0,M,60
-Florida,3.0,M,61
-Purdue,3.0,M,62
-Notre Dame,3.0,M,63
-Iowa State,3.0,M,64
-Ole Miss,3.0,M,65
-Princeton,3.0,M,66
-DePaul,3.0,M,67
-Northwestern St.,2.0,M,68
-Oakland,2.0,M,69
-Eastern Kentucky,2.0,M,70
-UTSA,2.0,M,71
-Penn,1.0,M,72
-Arkansas State,1.0,M,73
-Army West Point,1.0,M,74
-High Point,1.0,M,75
-Louisiana,1.0,M,76
-Southern Miss.,0.0,M,77
-ULM,0.0,M,78
-Villanova,0.0,M,79
-SE Missouri,0.0,M,80
-Utah State,0.0,M,81
-Sam Houston,0.0,M,82
-Samford,0.0,M,83
-Wake Forest,0.0,M,84
-UMBC,0.0,M,85
-UCLA,0.0,M,86
-Western Kentucky,0.0,M,87
-UC Santa Barbara,0.0,M,88
-Tulane,0.0,M,89
-Alabama A&M,0.0,M,90
-South Carolina,0.0,M,91
-Washington St.,0.0,M,92
-South Florida,0.0,M,93
-TCU,0.0,M,94
-Weber State,0.0,M,95
-Rice,0.0,M,96
-Bradley,0.0,M,97
-Providence,0.0,M,98
-Pittsburgh,0.0,M,99
-Idaho State,0.0,M,100
-Idaho,0.0,M,101
-Boston College,0.0,M,102
-Georgia Tech,0.0,M,103
-Boston University,0.0,M,104
-Gardner-Webb,0.0,M,105
-Florida A&M,0.0,M,106
-Eastern Washington,0.0,M,107
-Duke,0.0,M,108
-Cornell,0.0,M,109
-Clemson,0.0,M,110
-Cincinnati,0.0,M,111
-California,0.0,M,112
-Cal Poly,0.0,M,113
-CSUN,0.0,M,114
-Illinois,0.0,M,115
-Indiana,0.0,M,116
-Kansas,0.0,M,117
-Bucknell,0.0,M,118
-Arizona,0.0,M,119
-Oral Roberts,0.0,M,120
-Ohio State,0.0,M,121
-North Texas,0.0,M,122
-North Dakota,0.0,M,123
-North Carolina,0.0,M,124
-Montana State,0.0,M,125
-Boise State,0.0,M,126
-Montana,0.0,M,127
-Missouri,0.0,M,128
-Miami (Fla.),0.0,M,129
-Baylor,0.0,M,130
-Long Beach St.,0.0,M,131
-Lipscomb,0.0,M,132
+Purdue,8.0,M,39
+Arizona State,8.0,M,40
+Mount St. Mary's,8.0,M,41
+Drake,8.0,M,42
+Eastern Kentucky,8.0,M,43
+East Carolina,8.0,M,44
+Princeton,7.0,M,45
+Arkansas State,6.0,M,46
+Stephen F. Austin,6.0,M,47
+Kennesaw State,6.0,M,48
+Wisconsin,5.0,M,49
+Monmouth,5.0,M,50
+DePaul,5.0,M,51
+LSU,5.0,M,52
+App State,5.0,M,53
+Florida,5.0,M,54
+Oral Roberts,4.0,M,55
+SE Missouri,4.0,M,56
+Tulane,4.0,M,57
+Washington,4.0,M,58
+Notre Dame,4.0,M,59
+Villanova,4.0,M,60
+Iowa,4.0,M,61
+Louisiana,3.0,M,62
+Long Beach St.,3.0,M,63
+Ole Miss,3.0,M,64
+Virginia Tech,3.0,M,65
+Wake Forest,3.0,M,66
+Texas State,3.0,M,67
+Cal St. Fullerton,3.0,M,68
+UMBC,3.0,M,69
+Butler,3.0,M,70
+Wyoming,3.0,M,71
+Oklahoma State,2.0,M,72
+Penn,2.0,M,73
+Bucknell,2.0,M,74
+Cal Poly,2.0,M,75
+Eastern Washington,2.0,M,76
+Illinois,2.0,M,77
+Clemson,2.0,M,78
+Colorado,1.0,M,79
+South Carolina,1.0,M,80
+Colorado St.,1.0,M,81
+Montana State,0.0,M,82
+Florida A&M,0.0,M,83
+Gardner-Webb,0.0,M,84
+Boston University,0.0,M,85
+Bradley,0.0,M,86
+UCLA,0.0,M,87
+Arizona,0.0,M,88
+TCU,0.0,M,89
+Georgia Tech,0.0,M,90
+UC Santa Barbara,0.0,M,91
+Duke,0.0,M,92
+ULM,0.0,M,93
+Southern Miss.,0.0,M,94
+Cornell,0.0,M,95
+Utah State,0.0,M,96
+Alabama A&M,0.0,M,97
+Cincinnati,0.0,M,98
+California,0.0,M,99
+Washington St.,0.0,M,100
+Weber State,0.0,M,101
+Western Kentucky,0.0,M,102
+CSUN,0.0,M,103
+High Point,0.0,M,104
+Idaho,0.0,M,105
+South Florida,0.0,M,106
+Montana,0.0,M,107
+Missouri,0.0,M,108
+Army West Point,0.0,M,109
+North Carolina,0.0,M,110
+North Dakota,0.0,M,111
+North Texas,0.0,M,112
+BYU,0.0,M,113
+Northwestern St.,0.0,M,114
+Michigan State,0.0,M,115
+Oakland,0.0,M,116
+Baylor,0.0,M,117
+Miami (Fla.),0.0,M,118
+Boise State,0.0,M,119
+Lipscomb,0.0,M,120
+Boston College,0.0,M,121
+Kansas City,0.0,M,122
+Kansas,0.0,M,123
+Penn State,0.0,M,124
+Pittsburgh,0.0,M,125
+Iowa State,0.0,M,126
+Providence,0.0,M,127
+Indiana,0.0,M,128
+Rice,0.0,M,129
+Sam Houston,0.0,M,130
+Samford,0.0,M,131
+Idaho State,0.0,M,132
 NC State,0.0,M,133
-Nebraska,32.0,W,1
-South Carolina,30.0,W,2
-Tennessee,29.0,W,3
-Florida,28.0,W,4
-BYU,26.0,W,5
-Oregon,26.0,W,6
-USC,25.0,W,7
-Georgia,23.0,W,8
-Boston University,20.0,W,9
-Washington,20.0,W,10
-Texas Tech,19.0,W,11
-Alabama,19.0,W,12
-Virginia Tech,19.0,W,13
-Penn State,18.0,W,14
-Clemson,17.0,W,15
-Princeton,17.0,W,16
-Illinois,15.0,W,17
-Kentucky,13.0,W,18
-Texas,13.0,W,19
-Tarleton State,12.0,W,20
-Texas State,12.0,W,21
-Florida State,12.0,W,22
-Michigan,12.0,W,23
-LSU,12.0,W,24
-Arkansas,11.0,W,25
-Baylor,11.0,W,26
-Kansas State,10.0,W,27
-South Dakota,10.0,W,28
-Grand Canyon,10.0,W,29
-Southern,10.0,W,30
-Notre Dame,10.0,W,31
-Northwestern St.,10.0,W,32
-Akron,10.0,W,33
-Bucknell,10.0,W,34
-Louisville,9.0,W,35
-Nevada,8.0,W,36
-UCLA,8.0,W,37
-Kansas,8.0,W,38
-Iowa State,8.0,W,39
-Washington St.,8.0,W,40
-Ole Miss,8.0,W,41
-Minnesota,8.0,W,42
-Creighton,8.0,W,43
-Michigan State,8.0,W,44
-Stanford,8.0,W,45
-Arizona,7.0,W,46
-Howard,6.0,W,47
-Indiana State,6.0,W,48
-Boise State,6.0,W,49
-Colorado St.,6.0,W,50
-Arizona State,5.0,W,51
-Miami (Fla.),5.0,W,52
-Georgetown,5.0,W,53
-North Carolina,5.0,W,54
-Texas A&M,5.0,W,55
-Eastern Kentucky,5.0,W,56
-Northern Arizona,5.0,W,57
-Purdue,5.0,W,58
-NC State,4.0,W,59
-West Virginia,4.0,W,60
-Central Arkansas,4.0,W,61
-Boston College,4.0,W,62
+Georgia,45.0,W,1
+South Carolina,37.0,W,2
+USC,31.0,W,3
+BYU,28.0,W,4
+Princeton,23.0,W,5
+Oregon,22.0,W,6
+Arkansas,22.0,W,7
+Alabama,21.0,W,8
+Texas Tech,21.0,W,9
+Florida,21.0,W,10
+Nebraska,20.0,W,11
+Boston University,20.0,W,12
+Washington,17.0,W,13
+LSU,17.0,W,14
+Clemson,16.0,W,15
+Kentucky,15.0,W,16
+Tarleton State,14.0,W,17
+Illinois,13.0,W,18
+Baylor,12.0,W,19
+Texas State,12.0,W,20
+Tennessee,12.0,W,21
+South Dakota,12.0,W,22
+Kansas State,11.0,W,23
+Colorado St.,11.0,W,24
+Grand Canyon,10.0,W,25
+Rice,10.0,W,26
+Indiana State,10.0,W,27
+Kansas,10.0,W,28
+Penn State,10.0,W,29
+Notre Dame,10.0,W,30
+Virginia Tech,9.0,W,31
+Florida State,9.0,W,32
+Minnesota,9.0,W,33
+Washington St.,8.0,W,34
+Arizona,8.0,W,35
+Northwestern St.,8.0,W,36
+Creighton,8.0,W,37
+Bucknell,8.0,W,38
+Penn,8.0,W,39
+Texas,8.0,W,40
+Michigan State,8.0,W,41
+Texas A&M,7.0,W,42
+Howard,7.0,W,43
+Iowa State,6.0,W,44
+Montana State,6.0,W,45
+Miss State,6.0,W,46
+North Dakota,6.0,W,47
+Northern Arizona,6.0,W,48
+Duke,6.0,W,49
+Stanford,6.0,W,50
+Nevada,5.0,W,51
+North Carolina,5.0,W,52
+Louisville,5.0,W,53
+Southern,5.0,W,54
+Purdue,5.0,W,55
+Wichita State,5.0,W,56
+Eastern Kentucky,5.0,W,57
+Arizona State,5.0,W,58
+Georgetown,5.0,W,59
+NC State,4.0,W,60
+East Carolina,4.0,W,61
+SMU,4.0,W,62
 Charleston Southern,4.0,W,63
-Rice,4.0,W,64
-Illinois State,4.0,W,65
-SMU,4.0,W,66
-Virginia,3.0,W,67
-TCU,3.0,W,68
-North Dakota,3.0,W,69
-Wichita State,3.0,W,70
-Miss State,2.0,W,71
-New Hampshire,2.0,W,72
-Duke,2.0,W,73
-East Carolina,2.0,W,74
-Houston,2.0,W,75
-Penn,1.0,W,76
-Utah,1.0,W,77
-California,1.0,W,78
-Providence,1.0,W,79
-New Mexico,1.0,W,80
-Liberty,0.0,W,81
-Texas A&M-CC,0.0,W,82
-Colorado,0.0,W,83
-Tulsa,0.0,W,84
-UC Riverside,0.0,W,85
-UCF,0.0,W,86
-Cincinnati,0.0,W,87
-UMBC,0.0,W,88
-Montana State,0.0,W,89
-UTSA,0.0,W,90
-N. Carolina A&T,0.0,W,91
-Vanderbilt,0.0,W,92
-Vermont,0.0,W,93
-Cal Poly,0.0,W,94
-CSUN,0.0,W,95
-Wake Forest,0.0,W,96
-Brown,0.0,W,97
-Auburn,0.0,W,98
-Alabama State,0.0,W,99
-Cornell,0.0,W,100
-Ohio State,0.0,W,101
-Kent State,0.0,W,102
-Oklahoma,0.0,W,103
-Pittsburgh,0.0,W,104
-Kennesaw State,0.0,W,105
-Missouri,0.0,W,106
-Iowa,0.0,W,107
-Indiana,0.0,W,108
-Rutgers,0.0,W,109
-SE Louisiana,0.0,W,110
+California,4.0,W,64
+Akron,4.0,W,65
+UCLA,4.0,W,66
+Boise State,4.0,W,67
+New Mexico,3.0,W,68
+Cornell,3.0,W,69
+West Virginia,3.0,W,70
+Virginia,2.0,W,71
+Auburn,2.0,W,72
+Rutgers,2.0,W,73
+Boston College,2.0,W,74
+Miami (Fla.),2.0,W,75
+Illinois State,2.0,W,76
+Kent State,2.0,W,77
+Kennesaw State,2.0,W,78
+New Hampshire,2.0,W,79
+Providence,1.0,W,80
+UC Riverside,1.0,W,81
+Michigan,1.0,W,82
+SE Louisiana,1.0,W,83
+FIU,0.0,W,84
+Utah,0.0,W,85
+Tulsa,0.0,W,86
+Gonzaga,0.0,W,87
+UCF,0.0,W,88
+N. Carolina A&T,0.0,W,89
+UMBC,0.0,W,90
+Iowa,0.0,W,91
+UTSA,0.0,W,92
+Vanderbilt,0.0,W,93
+Pittsburgh,0.0,W,94
+Vermont,0.0,W,95
+Missouri,0.0,W,96
+Ole Miss,0.0,W,97
+Wake Forest,0.0,W,98
+Oklahoma State,0.0,W,99
+Alabama State,0.0,W,100
+Liberty,0.0,W,101
+Indiana,0.0,W,102
+Brown,0.0,W,103
+Texas A&M-CC,0.0,W,104
+CSUN,0.0,W,105
+Harvard,0.0,W,106
+High Point,0.0,W,107
+North Texas,0.0,W,108
+Florida A&M,0.0,W,109
+Houston,0.0,W,110
 Idaho,0.0,W,111
-Oklahoma State,0.0,W,112
-High Point,0.0,W,113
-Harvard,0.0,W,114
-Southern Illinois,0.0,W,115
-St. John's,0.0,W,116
-North Texas,0.0,W,117
-George Mason,0.0,W,118
-Florida A&M,0.0,W,119
-FIU,0.0,W,120
-Gonzaga,0.0,W,121
+Colorado,0.0,W,112
+Cincinnati,0.0,W,113
+Southern Illinois,0.0,W,114
+St. John's,0.0,W,115
+George Mason,0.0,W,116
+TCU,0.0,W,117
+Central Arkansas,0.0,W,118
+Oklahoma,0.0,W,119
+Cal Poly,0.0,W,120
+Ohio State,0.0,W,121

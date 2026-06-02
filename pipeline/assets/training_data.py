@@ -44,6 +44,8 @@ _CHAMP_URLS = {
     2024: "https://tf.tfrrs.org/results/87017/NCAA_Division_I_Outdoor_Track__Field_Championships",
     2023: "https://tf.tfrrs.org/results/81300/NCAA_Division_I_Outdoor_Track__Field_Championships",
     2022: "https://tf.tfrrs.org/results/75224/NCAA_Division_I_Outdoor_Track__Field_Championships",
+    2021: "https://www.tfrrs.org/results/70445/NCAA_Division_I_Track__Field_Championships",
+    2019: "https://tf.tfrrs.org/results/62668/NCAA_Division_I_Outdoor_Track__Field_Championships",
 }
 
 # URL slug (after stripping Mens-/Womens- prefix, lowercased) → standard event key
@@ -79,7 +81,28 @@ _MEET_ID_RE = re.compile(r"/results/(\d+)/")
 _CLASS_YEAR_RE = re.compile(r"\s*\[(?:FR|SO|JR|SR|5Y|GR)\]\s*", re.IGNORECASE)
 
 # Historical regional base URLs for relay qualifying data
+_TFRRS_REGIONAL_RELAY_URLS = {
+    2019: {
+        "east": {
+            "4x100_M": "https://www.tfrrs.org/results/62650/3849030/NCAA_Division_I_East_Region_Preliminary_Rounds/Mens-4-x-100-Relay",
+            "4x400_M": "https://www.tfrrs.org/results/62650/3849040/NCAA_Division_I_East_Region_Preliminary_Rounds/Mens-4-x-400-Relay",
+            "4x100_W": "https://www.tfrrs.org/results/62650/3849028/NCAA_Division_I_East_Region_Preliminary_Rounds/Womens-4-x-100-Relay",
+            "4x400_W": "https://www.tfrrs.org/results/62650/3849009/NCAA_Division_I_East_Region_Preliminary_Rounds/Womens-4-x-400-Relay",
+        },
+        "west": {
+            "4x100_M": "https://www.tfrrs.org/results/62651/3849070/NCAA_Division_I_West_Region_Preliminary_Rounds/Mens-4-x-100-Relay",
+            "4x400_M": "https://www.tfrrs.org/results/62651/3849080/NCAA_Division_I_West_Region_Preliminary_Rounds/Mens-4-x-400-Relay",
+            "4x100_W": "https://www.tfrrs.org/results/62651/3849068/NCAA_Division_I_West_Region_Preliminary_Rounds/Womens-4-x-100-Relay",
+            "4x400_W": "https://www.tfrrs.org/results/62651/3849049/NCAA_Division_I_West_Region_Preliminary_Rounds/Womens-4-x-400-Relay",
+        },
+    }
+}
+
 _REGIONAL_BASE_URLS = {
+    2021: {
+        "east": "https://flashresults.ncaa.com/OutdoorRegionals/2021/East/",
+        "west": "https://flashresults.ncaa.com/OutdoorRegionals/2021/West/",
+    },
     2022: {
         "east": "https://flashresults.ncaa.com/OutdoorRegionals/2022/East/",
         "west": "https://flashresults.ncaa.com/OutdoorRegionals/2022/West/",
@@ -153,6 +176,53 @@ def _event_links(index_url: str) -> list[tuple[str, str, str]]:
         links.append((full_url, event_key, gender))
 
     return links
+
+
+def _parse_tfrrs_regional_relay(url: str, event_key: str, gender: str, year: int) -> list[dict]:
+    """Parse a TFRRS-hosted regional relay page.
+
+    East pages have 4 cols: place | school | athletes | time
+    West pages have 7 cols: place | school | athletes | split | time | split | split
+    Relay time is always the first value that looks like a full relay time (≥36s for 4x100, ≥2:58 for 4x400).
+    """
+    try:
+        html = _get(url)
+    except Exception:
+        return []
+    soup = BeautifulSoup(html, "html.parser")
+
+    # Detect number of columns from first valid row
+    time_col = 3  # default for 4-column East pages
+    for tr in soup.select("table tbody tr"):
+        tds = tr.find_all("td")
+        if len(tds) >= 7:
+            time_col = 4  # 7-column West pages have relay time in td[4]
+            break
+
+    rows = []
+    for tr in soup.select("table tbody tr"):
+        tds = tr.find_all("td")
+        if len(tds) < 4:
+            continue
+        try:
+            place = int(tds[0].get_text(strip=True))
+        except ValueError:
+            continue
+        school = tds[1].get_text(strip=True)
+        col = time_col if len(tds) > time_col else 3
+        qualifying_time = tds[col].get_text(strip=True)
+        if not school:
+            continue
+        rows.append({
+            "year":             year,
+            "event":            event_key,
+            "gender":           gender,
+            "school":           school,
+            "qualifying_place": place,
+            "qualifying_time":  qualifying_time,
+            "qualifier":        "Q" if place <= 2 else "q",
+        })
+    return rows
 
 
 def _parse_regional_relay(base_url: str, event_num: str, event_key: str, gender: str, year: int) -> list[dict]:
@@ -301,12 +371,23 @@ def historical_relay_qualifying() -> pd.DataFrame:
     logger = dg.get_dagster_logger()
     all_rows: list[dict] = []
 
+    # Flash Results regional pages (2021–2025)
     for year, regions in _REGIONAL_BASE_URLS.items():
         for region, base_url in regions.items():
             for event_num, (event_key, gender) in _RELAY_SLUGS.items():
                 rows = _parse_regional_relay(base_url, event_num, event_key, gender, year)
                 if rows:
-                    logger.info(f"  {year} {region} {gender} {event_key}: {len(rows)} qualifying teams")
+                    logger.info(f"  {year} {region} {gender} {event_key}: {len(rows)} teams")
+                all_rows.extend(rows)
+
+    # TFRRS-hosted regional pages (2019)
+    for year, regions in _TFRRS_REGIONAL_RELAY_URLS.items():
+        for region, events in regions.items():
+            for event_slug, url in events.items():
+                event_key, gender = event_slug.split("_")
+                rows = _parse_tfrrs_regional_relay(url, event_key, gender, year)
+                if rows:
+                    logger.info(f"  {year} {region} {gender} {event_key}: {len(rows)} teams (TFRRS)")
                 all_rows.extend(rows)
 
     df = pd.DataFrame(all_rows)
@@ -471,6 +552,9 @@ def training_features() -> pd.DataFrame:
                 rq["qt_secs"] = rq["qualifying_time"].apply(
                     lambda m: _to_seconds(str(m)) if pd.notna(m) else None
                 )
+                rq["qualifying_place"] = pd.to_numeric(rq["qualifying_place"], errors="coerce")
+                # A school can appear in both East and West — keep their best regional result
+                rq = rq.sort_values("qualifying_place").drop_duplicates("school", keep="first")
                 qual_map = rq.set_index("school")[["qualifying_place", "qt_secs"]].to_dict("index")
 
                 # Season best per school in this relay event this year

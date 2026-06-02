@@ -12,9 +12,10 @@ const EVENT_LABELS: Record<string, string> = {
   "110H": "110m Hurdles", "100H": "100m Hurdles", "400H": "400m Hurdles",
   "HJ": "High Jump", "PV": "Pole Vault", "LJ": "Long Jump", "TJ": "Triple Jump",
   "SP": "Shot Put", "DT": "Discus", "HT": "Hammer", "JT": "Javelin",
+  "4x100": "4x100m Relay", "4x400": "4x400m Relay",
 }
 
-const CAT_ORDER = ["sprints", "distance", "field"]
+const CAT_ORDER = ["sprints", "distance", "field", "relays"]
 
 export default function App() {
   const [standings, setStandings] = useState<TeamStanding[]>([])
