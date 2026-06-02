@@ -9,7 +9,7 @@ Predicts the top 3 men's and women's teams at the 2026 NCAA D1 Outdoor Track & F
 ## How It Works
 
 1. **Data collection** — Athlete profiles and season results are scraped from TFRRS via the sports-skills library. Regional qualifiers are pulled from Flash Results.
-2. **Feature engineering** — 7 features are computed per athlete per event: season best, season average, average place, conference championship place, personal record, cross-event average place, and conference champion indicator across any event.
+2. **Feature engineering** — 7 features are computed per athlete per event: `season_best`, `season_avg`, `avg_place`, `conf_champ_place`, `pr`, `cross_event_avg_place`, and `conf_champ_place_any_event`.
 3. **Model training** — An XGBoost regressor is trained on 4 years of historical NCAA championship results (2022–2025), using 2025 as a holdout validation set.
 4. **Predictions** — The model predicts a finishing score for every 2026 qualifier. Athletes are ranked within each event, and team points are summed to produce the final standings.
 
