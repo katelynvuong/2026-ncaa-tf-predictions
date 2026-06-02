@@ -1,0 +1,5 @@
+[32m2026-06-01 21:31:40 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 6748621d-56f1-4e6c-921f-21551ce4039d - 27784 - LOGS_CAPTURED - Started capturing logs in process (pid: 27784).
+[32m2026-06-01 21:31:40 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 6748621d-56f1-4e6c-921f-21551ce4039d - 27784 - app_event_predictions - STEP_START - Started execution of step "app_event_predictions".
+[32m2026-06-01 21:31:40 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 6748621d-56f1-4e6c-921f-21551ce4039d - 27784 - app_event_predictions - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+[32m2026-06-01 21:31:40 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 6748621d-56f1-4e6c-921f-21551ce4039d - 27784 - app_event_predictions - ASSET_MATERIALIZATION - Materialized value app_event_predictions.
+[32m2026-06-01 21:31:40 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 6748621d-56f1-4e6c-921f-21551ce4039d - 27784 - app_event_predictions - STEP_SUCCESS - Finished execution of step "app_event_predictions" in 126ms.

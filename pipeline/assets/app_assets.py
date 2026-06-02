@@ -88,7 +88,6 @@ def app_metrics() -> None:
 
     raw = json.loads(src.read_text())
     train = pd.read_csv("data/training/training_dataset.csv", dtype=str)
-    train = train[~train["event"].isin(["4x100", "4x400"])]
     years = sorted(train["year"].dropna().unique().tolist())
 
     output = {
@@ -131,7 +130,7 @@ def app_team_standings() -> None:
             scorers = [
                 {
                     "event":        _EVENT_LABELS.get(r["event"], r["event"]),
-                    "athlete_name": r["athlete_name"],
+                    "athlete_name": r["athlete_name"] if pd.notna(r["athlete_name"]) else None,
                     "points":       int(r["points"]),
                 }
                 for _, r in school_preds.iterrows()
@@ -166,7 +165,7 @@ def app_event_predictions() -> None:
             {
                 "rank":            int(row["predicted_rank"]),
                 "bar_height":      9 - int(row["predicted_rank"]),
-                "athlete_name":    row["athlete_name"],
+                "athlete_name":    row["athlete_name"] if pd.notna(row["athlete_name"]) else None,
                 "school":          row["school"],
                 "predicted_place": round(float(row["predicted_place"]), 3),
             }

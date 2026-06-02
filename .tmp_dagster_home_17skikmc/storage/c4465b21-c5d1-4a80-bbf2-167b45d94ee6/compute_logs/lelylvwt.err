@@ -1,0 +1,5 @@
+[32m2026-06-01 21:22:05 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c4465b21-c5d1-4a80-bbf2-167b45d94ee6 - 21097 - LOGS_CAPTURED - Started capturing logs in process (pid: 21097).
+[32m2026-06-01 21:22:05 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c4465b21-c5d1-4a80-bbf2-167b45d94ee6 - 21097 - app_team_standings - STEP_START - Started execution of step "app_team_standings".
+[32m2026-06-01 21:22:05 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c4465b21-c5d1-4a80-bbf2-167b45d94ee6 - 21097 - app_team_standings - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+[32m2026-06-01 21:22:05 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c4465b21-c5d1-4a80-bbf2-167b45d94ee6 - 21097 - app_team_standings - ASSET_MATERIALIZATION - Materialized value app_team_standings.
+[32m2026-06-01 21:22:05 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c4465b21-c5d1-4a80-bbf2-167b45d94ee6 - 21097 - app_team_standings - STEP_SUCCESS - Finished execution of step "app_team_standings" in 103ms.
