@@ -2192,56 +2192,56 @@
       {
         "rank": 1,
         "bar_height": 8,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Miss State",
         "predicted_place": 3.333
       },
       {
         "rank": 2,
         "bar_height": 7,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "East Carolina",
         "predicted_place": 3.392
       },
       {
         "rank": 3,
         "bar_height": 6,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Ohio State",
         "predicted_place": 3.417
       },
       {
         "rank": 4,
         "bar_height": 5,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Minnesota",
         "predicted_place": 3.602
       },
       {
         "rank": 5,
         "bar_height": 4,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Auburn",
         "predicted_place": 3.745
       },
       {
         "rank": 6,
         "bar_height": 3,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Ole Miss",
         "predicted_place": 4.051
       },
       {
         "rank": 7,
         "bar_height": 2,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Tennessee",
         "predicted_place": 4.153
       },
       {
         "rank": 8,
         "bar_height": 1,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "LSU",
         "predicted_place": 4.216
       }
@@ -2250,56 +2250,56 @@
       {
         "rank": 1,
         "bar_height": 8,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "South Carolina",
         "predicted_place": 2.993
       },
       {
         "rank": 1,
         "bar_height": 8,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "USC",
         "predicted_place": 2.993
       },
       {
         "rank": 3,
         "bar_height": 6,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Georgia",
         "predicted_place": 3.215
       },
       {
         "rank": 3,
         "bar_height": 6,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Texas A&M",
         "predicted_place": 3.215
       },
       {
         "rank": 5,
         "bar_height": 4,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "LSU",
         "predicted_place": 3.246
       },
       {
         "rank": 5,
         "bar_height": 4,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Arizona",
         "predicted_place": 3.246
       },
       {
         "rank": 7,
         "bar_height": 2,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Tennessee",
         "predicted_place": 3.626
       },
       {
         "rank": 7,
         "bar_height": 2,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Texas",
         "predicted_place": 3.626
       }
@@ -2313,56 +2313,56 @@
       {
         "rank": 1,
         "bar_height": 8,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Texas A&M",
         "predicted_place": 2.876
       },
       {
         "rank": 2,
         "bar_height": 7,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Ohio State",
         "predicted_place": 3.232
       },
       {
         "rank": 3,
         "bar_height": 6,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Tennessee",
         "predicted_place": 3.383
       },
       {
         "rank": 4,
         "bar_height": 5,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "N. Carolina A&T",
         "predicted_place": 3.453
       },
       {
         "rank": 5,
         "bar_height": 4,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Purdue",
         "predicted_place": 3.587
       },
       {
         "rank": 6,
         "bar_height": 3,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "LSU",
         "predicted_place": 3.602
       },
       {
         "rank": 7,
         "bar_height": 2,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Georgia",
         "predicted_place": 4.148
       },
       {
         "rank": 8,
         "bar_height": 1,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Florida",
         "predicted_place": 4.301
       }
@@ -2371,56 +2371,56 @@
       {
         "rank": 1,
         "bar_height": 8,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Arkansas",
         "predicted_place": 3.062
       },
       {
         "rank": 2,
         "bar_height": 7,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Georgia",
         "predicted_place": 3.085
       },
       {
         "rank": 3,
         "bar_height": 6,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Duke",
         "predicted_place": 3.352
       },
       {
         "rank": 3,
         "bar_height": 6,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Texas",
         "predicted_place": 3.352
       },
       {
         "rank": 5,
         "bar_height": 4,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Kentucky",
         "predicted_place": 3.456
       },
       {
         "rank": 5,
         "bar_height": 4,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "USC",
         "predicted_place": 3.456
       },
       {
         "rank": 7,
         "bar_height": 2,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "Miami (Fla.)",
         "predicted_place": 3.93
       },
       {
         "rank": 7,
         "bar_height": 2,
-        "athlete_name": NaN,
+        "athlete_name": null,
         "school": "UCLA",
         "predicted_place": 3.93
       }
