@@ -1,24 +1,19 @@
 # 2026 NCAA D1 Outdoor Track & Field Championship Predictions
 
-A Dagster pipeline that scrapes TFRRS athlete data, engineers features, trains an XGBoost + Ridge ensemble model, and serves predictions through a React web app.
+Predicts the top 3 men's and women's teams at the 2026 NCAA D1 Outdoor Track & Field Championships. For each individual event, an XGBoost model predicts the top 8 finishers — those placements are then scored and summed to rank teams.
 
-## Project Structure
+**Live app:** [2026-ncaa-tf-predictions.vercel.app](https://2026-ncaa-tf-predictions.vercel.app)
 
-```
-pipeline/assets/         Dagster assets (data collection → ML → app)
-data/
-  regional_athletes/     TFRRS qualifying list CSVs
-  profiles/              Raw TFRRS athlete profile JSONs
-  flattened_dataframes/  season_results.csv, athletes_prs.csv
-  final_athletes.csv     Regional qualifiers (Flash Results)
-  features.csv           Engineered features for 2026 qualifiers
-  training/              Historical championship data + training dataset
-  predictions/           Model outputs (predictions.csv, team_scores.csv, metrics.json)
-  app/                   Preprocessed JSON served by the web app
-app/
-  backend/               FastAPI server
-  frontend/              React + Vite + Tailwind frontend
-```
+---
+
+## How It Works
+
+1. **Data collection** — Athlete profiles and season results are scraped from TFRRS via the sports-skills library. Regional qualifiers are pulled from Flash Results.
+2. **Feature engineering** — 7 features are computed per athlete per event: season best, season average, average place, conference championship place, personal record, cross-event average place, and conference champion indicator across any event.
+3. **Model training** — An XGBoost regressor is trained on 4 years of historical NCAA championship results (2022–2025), using 2025 as a holdout validation set.
+4. **Predictions** — The model predicts a finishing score for every 2026 qualifier. Athletes are ranked within each event, and team points are summed to produce the final standings.
+
+---
 
 ## Setup
 
@@ -32,43 +27,55 @@ uv sync
 cd app/frontend && npm install
 ```
 
-## Running the Dagster Pipeline
+---
+
+## Running the Pipeline
 
 ```bash
 source .venv/bin/activate
 dagster dev -m pipeline
 ```
 
-Then open `http://localhost:3000`.
+Open `http://localhost:3000` to access the Dagster UI.
 
-### Asset groups and order
+### Asset Groups
 
 **data_collection**
-1. `regional_athletes` — scrapes TFRRS qualifying lists (partitioned: east_f, east_m, west_f, west_m)
-2. `athlete_profiles` — bulk-fetches TFRRS profiles (~60–90 min, checkpointed)
-3. `final_athletes` — scrapes Flash Results regional qualifiers (Q/q)
-4. `supplemental_profiles` — fetches any profiles missing from final_athletes
+| # | Asset | Description |
+|---|---|---|
+| 1 | `regional_athletes` | Scrapes TFRRS qualifying lists (partitioned: east_f, east_m, west_f, west_m) |
+| 2 | `athlete_profiles` | Bulk-fetches TFRRS profiles (~60–90 min, checkpointed) |
+| 3 | `final_athletes` | Scrapes Flash Results regional qualifiers (Q/q) |
+| 4 | `supplemental_profiles` | Fetches any profiles missing from final_athletes |
 
 **data_processing**
-5. `flattened_dataframes` — flattens JSON profiles → season_results.csv + athletes_prs.csv
-6. `features` — engineers 7 features per (athlete, event) for 2026 qualifiers
+| # | Asset | Description |
+|---|---|---|
+| 5 | `flattened_dataframes` | Flattens JSON profiles → season_results.csv + athletes_prs.csv |
+| 6 | `features` | Engineers 7 features per (athlete, event) for 2026 qualifiers |
 
 **ml**
-7. `championship_results` — scrapes 2022–2025 NCAA championship placements from TFRRS
-8. `historical_profiles` — fetches profiles for historical championship athletes
-9. `training_features` — computes features for historical athletes per year
-10. `training_dataset` — joins championship results + features into ML training CSV
-11. `predictions` — trains XGBoost, evaluates on 2025 holdout, predicts 2026
+| # | Asset | Description |
+|---|---|---|
+| 7 | `championship_results` | Scrapes 2022–2025 NCAA championship placements from TFRRS |
+| 8 | `historical_profiles` | Fetches profiles for historical championship athletes |
+| 9 | `training_features` | Computes features for historical athletes per year |
+| 10 | `training_dataset` | Joins championship results + features into ML training CSV |
+| 11 | `predictions` | Trains XGBoost, evaluates on 2025 holdout, predicts 2026 |
 
 **app**
-12. `app_metrics` — exports model validation metrics to `app/frontend/public/data/metrics.json`
-13. `app_team_standings` — builds top-3 team standings with scorer breakdowns
-14. `app_event_predictions` — structures per-event top-8 predictions for the frontend
-15. `frontend_build` — runs `npm run build` in app/frontend/
+| # | Asset | Description |
+|---|---|---|
+| 12 | `app_metrics` | Exports model validation metrics to `public/data/metrics.json` |
+| 13 | `app_team_standings` | Builds top-3 team standings with per-athlete scorer breakdowns |
+| 14 | `app_event_predictions` | Structures per-event top-8 predictions for the frontend |
+| 15 | `frontend_build` | Runs `npm run build` in app/frontend/ |
 
-## Running the Web App
+---
 
-After materializing through the `app` group in Dagster:
+## Running the Web App Locally
+
+Materialize through the `app` group in Dagster first, then:
 
 ```bash
 cd app/frontend
@@ -76,31 +83,35 @@ npm run dev
 # Opens http://localhost:5173
 ```
 
-The FastAPI backend (`app/backend/`) is optional — it's only needed if you prefer to serve data via API locally. The default setup reads JSON files directly from `public/data/`.
+The app reads JSON files directly from `app/frontend/public/data/` — no backend required.
 
-The app shows:
-- **Team Standings** — gold/silver/bronze podium for predicted top-3 men's and women's teams
-- **Event Explorer** — dropdown to view predicted top-8 finishers for any individual event
-- **Model Info** — validation metrics and model details
+---
 
-## Deploying to Vercel (Public Link)
+## Deploying to Vercel
 
-1. Install the Vercel CLI: `npm i -g vercel`
-2. From the project root, run: `vercel`
-3. Follow the prompts — Vercel will detect `vercel.json` and configure automatically
-4. On subsequent deploys after updating predictions: `vercel --prod`
+The app is deployed as a static site. To redeploy after updating predictions:
 
-**Update workflow:**
-1. Re-run Dagster pipeline through the `app` group
-2. `git add app/frontend/public/data/ && git commit -m "update predictions"`
-3. `git push` — Vercel auto-deploys within ~30 seconds
+```bash
+# 1. Re-run Dagster pipeline through the app group
+# 2. Commit the updated data files
+git add app/frontend/public/data/
+git commit -m "update predictions"
+git push   # Vercel auto-deploys in ~30 seconds
+```
+
+To deploy manually:
+```bash
+vercel --prod --archive=tgz
+```
+
+---
 
 ## Data Sources
 
 | Source | Used for |
 |---|---|
 | [TFRRS](https://tfrrs.org) | Athlete profiles, PRs, season results, historical championship results |
-| [Flash Results](https://flashresults.ncaa.com) | 2026 regional qualifying results (Q/q) |
+| [Flash Results](https://flashresults.ncaa.com) | 2026 regional qualifying results |
 | [ESPN CDN](https://espn.com) | School logos |
 
 ## Dependencies
@@ -108,5 +119,5 @@ The app shows:
 - [Dagster](https://dagster.io) — pipeline orchestration
 - [sports-skills / xctf](https://github.com/machina-sports/sports-skills) — TFRRS data connector
 - XGBoost, scikit-learn, scipy — ML model
-- FastAPI + uvicorn — REST API backend
+- FastAPI + uvicorn — optional local API backend
 - React + Vite + Tailwind + Recharts — frontend
