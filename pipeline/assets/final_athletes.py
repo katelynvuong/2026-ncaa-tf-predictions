@@ -123,42 +123,50 @@ def _parse_event(url: str, region: str) -> list[dict]:
         athlete_id = ""
         athlete_name = ""
         school = ""
-
         tfrrs_url = ""
+        qualifying_time = ""
+        qualifying_place = ""
+
+        tds = tr.find_all("td")
+
         a_tag = tr.find("a", attrs={"stats-name": True})
         if a_tag:
-            # Extract athlete_id from the embedded TFRRS URL
             stats_href = a_tag.get("stats-href", "")
             id_match = _TFRRS_ID_RE.search(stats_href)
             if id_match:
                 athlete_id = id_match.group(1)
                 tfrrs_url = stats_href.strip()
-
             parts = a_tag["stats-name"].split("|", 1)
             if not is_relay:
                 athlete_name = parts[0].strip()
             school = parts[1].strip() if len(parts) > 1 else ""
         else:
-            b_tag = tr.find("b")
             small_tag = tr.find("small")
+            b_tag = tr.find("b")
             if not is_relay and b_tag:
                 athlete_name = b_tag.get_text(strip=True)
             if small_tag:
                 school = _CLASS_YEAR_RE.sub("", small_tag.get_text(strip=True)).strip()
+
+        if is_relay and len(tds) >= 4:
+            qualifying_place = tds[0].get_text(strip=True)
+            qualifying_time  = tds[3].get_text(strip=True)
 
         if not school and not athlete_name:
             continue
 
         rows.append(
             {
-                "athlete_id": athlete_id,
-                "athlete_name": athlete_name,
-                "school": school,
-                "event": event_name,
-                "gender": gender,
-                "region": region,
-                "qualifier": qualifier,
-                "tfrrs_url": tfrrs_url,
+                "athlete_id":       athlete_id,
+                "athlete_name":     athlete_name,
+                "school":           school,
+                "event":            event_name,
+                "gender":           gender,
+                "region":           region,
+                "qualifier":        qualifier,
+                "tfrrs_url":        tfrrs_url,
+                "qualifying_time":  qualifying_time,
+                "qualifying_place": qualifying_place,
             }
         )
 
@@ -196,7 +204,8 @@ def final_athletes() -> pd.DataFrame:
 
     df = pd.DataFrame(
         all_rows,
-        columns=["athlete_id", "athlete_name", "school", "event", "gender", "region", "qualifier", "tfrrs_url"],
+        columns=["athlete_id", "athlete_name", "school", "event", "gender", "region",
+                 "qualifier", "tfrrs_url", "qualifying_time", "qualifying_place"],
     )
 
     out = Path("data/final_athletes.csv")

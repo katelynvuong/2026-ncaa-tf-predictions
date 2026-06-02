@@ -79,8 +79,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2025,3000S,M,6,9020972,Mathew Kosgei,New Mexico,6:32.89
 2025,3000S,M,7,8261257,Benjamin Balazs,Oregon,9:40.13
 2025,3000S,M,8,7894462,Rob McManus,Montana State,9:06.30
-2025,4x100,M,1,,,,28.37
-2025,4x400,M,1,,,,2:18.93
+2025,4x100,M,1,,,Auburn,38.33
+2025,4x100,M,2,,,USC,38.46
+2025,4x100,M,3,,,Arkansas,38.72
+2025,4x100,M,4,,,South Florida,38.73
+2025,4x100,M,5,,,Tennessee,38.79
+2025,4x100,M,6,,,Kentucky,38.85
+2025,4x100,M,7,,,Minnesota,38.88
+2025,4x100,M,8,,,Texas,39.10
+2025,4x400,M,1,,,South Florida,3:00.42
+2025,4x400,M,2,,,Texas A&M,3:00.73
+2025,4x400,M,3,,,Arkansas,3:01.59
+2025,4x400,M,4,,,Iowa,3:01.61
+2025,4x400,M,5,,,Florida,3:01.88
+2025,4x400,M,6,,,Alabama,3:02.17
+2025,4x400,M,7,,,BYU,3:02.51
+2025,4x400,M,8,,,USC,3:03.18
 2025,HJ,M,1,8341372,Arvesta Troupe,Ole Miss,1.91m
 2025,HJ,M,4,7978389,Kamyren Garrett,Illinois,2.46m
 2025,HJ,M,5,8675817,Nathanil Figgers,South Carolina,1.61m
@@ -214,8 +228,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2025,3000S,W,6,7917518,Katelyn Stewart-Barnett,Michigan State,9:33.21
 2025,3000S,W,7,8704570,Shelby Jensen,Utah State,9:36.61
 2025,3000S,W,8,8917138,Leah Jeruto,Oklahoma,9:38.94
-2025,4x100,W,1,,,,42.22
-2025,4x400,W,1,,,,10
+2025,4x100,W,1,,,USC,45.18
+2025,4x100,W,2,,,South Carolina,44.95
+2025,4x100,W,3,,,Texas A&M,35.17
+2025,4x100,W,4,,,TCU,42.97
+2025,4x100,W,5,,,Texas,39.98
+2025,4x100,W,6,,,Howard,47.99
+2025,4x100,W,7,,,Florida State,49.80
+2025,4x100,W,8,,,LSU,39.43
+2025,4x400,W,1,,,Georgia,3:23.62
+2025,4x400,W,2,,,Arkansas,3:24.25
+2025,4x400,W,3,,,USC,3:26.01
+2025,4x400,W,4,,,Texas A&M,3:27.11
+2025,4x400,W,5,,,Duke,3:27.40
+2025,4x400,W,6,,,Iowa,3:27.42
+2025,4x400,W,7,,,UCLA,3:31.14
+2025,4x400,W,8,,,Miami (Fla.),3:47.22
 2025,HJ,W,1,8005705,Elena Kulichenko,Georgia,1.96m
 2025,HJ,W,2,8679706,Rose Yeboah,Illinois,1.93m
 2025,HJ,W,3,7727577,Jenna Rogers,Nebraska,1.90m
@@ -357,8 +385,19 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2024,3000S,M,6,8281094,Estanis Ruiz,Portland,8:17.99
 2024,3000S,M,7,7700490,Yasin Sado,Virginia,10:04.73
 2024,3000S,M,8,6874366,Alexander Korczynski,Northeastern,8:14.14
-2024,4x100,M,1,,,,30.05
-2024,4x400,M,1,,,,2:54.81
+2024,4x100,M,1,,,Auburn,46.78
+2024,4x100,M,2,,,LSU,42.42
+2024,4x100,M,3,,,Houston,27.93
+2024,4x100,M,4,,,Florida,43.71
+2024,4x100,M,5,,,Texas,49.13
+2024,4x400,M,1,,,Texas A&M,3:51.89
+2024,4x400,M,2,,,Arkansas,2:24.86
+2024,4x400,M,3,,,Florida,2:41.09
+2024,4x400,M,4,,,Arizona State,2:13.85
+2024,4x400,M,5,,,Tennessee,2:57.60
+2024,4x400,M,6,,,Texas,3:05.04
+2024,4x400,M,7,,,LSU,2:25.26
+2024,4x400,M,8,,,USC,3:48.35
 2024,HJ,M,1,7535392,Romaine Beckford,Arkansas,2.26m
 2024,HJ,M,2,7977923,Tyus Wilson,Nebraska,2.72m
 2024,HJ,M,3,7719884,Caleb  Snowden,Arkansas-Pine Bluff,1.81m
@@ -490,8 +529,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2024,3000S,W,6,7389432,Elise Thorner,Florida,11:03.90
 2024,3000S,W,7,7888162,Sophie Novak,Notre Dame,6:46.38
 2024,3000S,W,8,8720351,Karrie  Baloga,Northern Arizona,11:09.56
-2024,4x100,W,1,,,,51.66
-2024,4x400,W,1,,,,3:47.66
+2024,4x100,W,1,,,Ole Miss,33.88
+2024,4x100,W,2,,,LSU,36.61
+2024,4x100,W,3,,,South Carolina,39.22
+2024,4x100,W,4,,,Arkansas,34.17
+2024,4x100,W,5,,,Texas Tech,51.45
+2024,4x100,W,6,,,Baylor,55.02
+2024,4x100,W,7,,,Texas,45.65
+2024,4x100,W,8,,,Oregon,40.96
+2024,4x400,W,1,,,Arkansas,3:17.96
+2024,4x400,W,2,,,Tennessee,3:23.32
+2024,4x400,W,3,,,Texas,3:23.68
+2024,4x400,W,4,,,Georgia,3:24.26
+2024,4x400,W,5,,,Houston,3:24.73
+2024,4x400,W,6,,,South Carolina,3:24.86
+2024,4x400,W,7,,,Oregon,3:25.82
+2024,4x400,W,8,,,Texas A&M,3:25.89
 2024,HJ,W,3,8701620,Temitope Adeshina,Texas Tech,1.65m
 2024,HJ,W,4,7729642,Lamara Distin,Texas A&M,1.36m
 2024,PV,W,1,7980608,Chloe Timberg,Rutgers,3.91m
@@ -627,8 +680,20 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2023,3000S,M,6,8245050,Abdelhakim Abouzouhir,Eastern Kentucky,8:36.19
 2023,3000S,M,7,6990067,Victor Shitsama,Oklahoma State,8:36.79
 2023,3000S,M,8,6876347,Derek  Johnson,Virginia,8:37.29
-2023,4x100,M,1,,,,10
-2023,4x400,M,1,,,,2:57.74
+2023,4x100,M,1,,,LSU,38.05
+2023,4x100,M,2,,,Florida,38.26
+2023,4x100,M,3,,,Florida State,38.29
+2023,4x100,M,4,,,Arizona State,38.54
+2023,4x100,M,5,,,Alabama State,38.79
+2023,4x100,M,6,,,Louisville,38.81
+2023,4x400,M,1,,,Florida,3:13.74
+2023,4x400,M,2,,,Arizona State,2:52.45
+2023,4x400,M,3,,,UCLA,2:32.85
+2023,4x400,M,4,,,Alabama,3:36.98
+2023,4x400,M,5,,,Texas A&M,2:06.63
+2023,4x400,M,6,,,Baylor,2:08.96
+2023,4x400,M,7,,,Georgia,2:57.73
+2023,4x400,M,8,,,Arkansas,3:36.72
 2023,HJ,M,1,7535392,Romaine Beckford,South Florida,2.27m
 2023,HJ,M,2,6569708,Vernon Turner,Oklahoma,2.27m
 2023,HJ,M,3,6992911,Roberto Vilches,Missouri,2.24m
@@ -768,8 +833,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2023,3000S,W,6,6870153,Grace Fetherstonhaugh,Oregon State,7:04.43
 2023,3000S,W,7,7612157,Kaylee Mitchell,Oregon State,8:27.11
 2023,3000S,W,8,6545344,Pauline Meyer,Arkansas State,10:32.11
-2023,4x100,W,1,,,,41.60
-2023,4x400,W,1,,,,3:50.58
+2023,4x100,W,1,,,Texas,34.53
+2023,4x100,W,2,,,Kentucky,44.59
+2023,4x100,W,3,,,LSU,43.37
+2023,4x100,W,4,,,Arkansas,36.41
+2023,4x100,W,5,,,Ohio State,34.28
+2023,4x100,W,6,,,Georgia,47.59
+2023,4x100,W,7,,,Oregon,39.62
+2023,4x100,W,8,,,Baylor,32.34
+2023,4x400,W,1,,,Arkansas,2:26.92
+2023,4x400,W,2,,,Texas A&M,4:11.47
+2023,4x400,W,3,,,Ohio State,3:16.39
+2023,4x400,W,4,,,USC,4:13.06
+2023,4x400,W,5,,,Baylor,2:48.04
+2023,4x400,W,6,,,Kentucky,3:48.22
+2023,4x400,W,7,,,Oregon,3:34.01
+2023,4x400,W,8,,,Duke,3:14.05
 2023,HJ,W,1,7487638,Charity Griffith,Ball State,1.97m
 2023,HJ,W,2,7729642,Lamara Distin,Texas A&M,1.87m
 2023,HJ,W,3,8005705,Elena Kulichenko,Georgia,1.46m
@@ -910,8 +989,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2022,3000S,M,6,6882592,Kenneth Rooks,BYU,10:38.26
 2022,3000S,M,7,6011691,Alec Basten,Minnesota,7:28.44
 2022,3000S,M,8,6429582,Matthew Wilkinson,Minnesota,9:50.89
-2022,4x100,M,1,,,,38.49
-2022,4x400,M,1,,,,3:16.77
+2022,4x100,M,1,,,USC,38.11
+2022,4x100,M,2,,,Florida,44.69
+2022,4x100,M,3,,,Houston,46.37
+2022,4x100,M,4,,,Tennessee,40.39
+2022,4x100,M,5,,,Baylor,42.50
+2022,4x100,M,6,,,Texas,34.77
+2022,4x100,M,7,,,TCU,46.51
+2022,4x100,M,8,,,N. Carolina A&T,32.66
+2022,4x400,M,1,,,Florida,3:40.03
+2022,4x400,M,2,,,USC,3:48.58
+2022,4x400,M,3,,,Alabama,3:01.98
+2022,4x400,M,4,,,Texas,2:21.72
+2022,4x400,M,5,,,Texas A&M,3:50.79
+2022,4x400,M,6,,,Kentucky,2:33.71
+2022,4x400,M,7,,,Iowa,2:35.59
+2022,4x400,M,8,,,N. Carolina A&T,2:22.86
 2022,HJ,M,1,6533098,Tejaswin Shankar,Kansas State,1.91m
 2022,HJ,M,2,6121266,Darius Carbin,Georgia,2.89m
 2022,HJ,M,3,7019595,Dontavious Hill,Auburn,2.32m
@@ -1056,8 +1149,22 @@ year,event,gender,place,athlete_id,athlete_name,school,mark
 2022,3000S,W,6,7612157,Kaylee Mitchell,Oregon State,10:32.05
 2022,3000S,W,7,5965696,Logan Jolly,Arkansas,9:11.77
 2022,3000S,W,8,6910593,Adva Cohen,New Mexico,9:01.07
-2022,4x100,W,1,,,,52.18
-2022,4x400,W,1,,,,3:00.27
+2022,4x100,W,1,,,Texas,36.06
+2022,4x100,W,2,,,Kentucky,47.66
+2022,4x100,W,3,,,Oregon,38.76
+2022,4x100,W,4,,,LSU,36.23
+2022,4x100,W,5,,,Florida State,42.32
+2022,4x100,W,6,,,Ohio State,30.47
+2022,4x100,W,7,,,UCF,32.33
+2022,4x100,W,8,,,Coastal Carolina,43.78
+2022,4x400,W,1,,,Kentucky,3:22.55
+2022,4x400,W,2,,,Texas,3:23.35
+2022,4x400,W,3,,,Arkansas,3:23.69
+2022,4x400,W,4,,,Texas A&M,3:24.55
+2022,4x400,W,5,,,South Carolina,3:25.78
+2022,4x400,W,6,,,Howard,3:28.39
+2022,4x400,W,7,,,UCLA,3:28.71
+2022,4x400,W,8,,,Baylor,3:28.89
 2022,HJ,W,1,7729642,Lamara Distin,Texas A&M,1.68m
 2022,HJ,W,2,8014418,Abigail Kwarteng,Mid. Tenn. State,1.90m
 2022,HJ,W,3,7731611,Rachel  Glenn,South Carolina,2.23m

@@ -46,9 +46,19 @@ export default function MetricsPanel({ metrics }: Props) {
       tip: "How well the model ranks athletes within each event. 1.0 = perfect order, 0 = random. 0.7+ is considered a strong result.",
     },
     {
+      label: "Top-1 Accuracy",
+      value: `${metrics.top1_correct}/${metrics.top1_total} (${(metrics.top1_accuracy * 100).toFixed(1)}%)`,
+      tip: "Of all individual events at the 2025 NCAA Championships (validation holdout), how many event winners did the model correctly predict.",
+    },
+    {
       label: "Top-3 Hit Rate",
       value: `${metrics.top3_hits}/${metrics.top3_total} (${(metrics.top3_hit_rate * 100).toFixed(1)}%)`,
       tip: "Of all athletes who actually finished in the top 3 at the 2025 NCAA Championships (used as a validation holdout set), how many did the model also predict in the top 3.",
+    },
+    {
+      label: "Team Scoring MAE",
+      value: `${metrics.team_scoring_mae} pts`,
+      tip: "On average, how many points off the model's predicted team totals are from actual 2025 team totals. Lower is better — e.g. 3.5 means the model's team point predictions are off by about 3–4 points.",
     },
     {
       label: "Years Trained",

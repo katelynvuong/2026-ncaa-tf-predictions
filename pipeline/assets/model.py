@@ -21,16 +21,17 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 from xgboost import XGBRegressor
 
 FEATURES = ["season_best", "season_avg", "avg_place", "conf_champ_place", "pr",
-            "cross_event_avg_place", "conf_champ_place_any_event"]
+            "cross_event_avg_place", "conf_champ_place_any_event",
+            "relay_qualifying_time", "relay_season_best", "relay_qualifying_place"]
 TARGET = "place"
 RELAY_EVENTS = {"4x100", "4x400"}
-NORMALIZE_FEATURES = ["season_best", "season_avg", "pr"]
+NORMALIZE_FEATURES = ["season_best", "season_avg", "pr",
+                      "relay_qualifying_time", "relay_season_best"]
 SCORING = {1: 10, 2: 8, 3: 6, 4: 5, 5: 4, 6: 3, 7: 2, 8: 1}
 
 
 def _load_training(path: str) -> pd.DataFrame:
     df = pd.read_csv(path, dtype=str)
-    df = df[~df["event"].isin(RELAY_EVENTS)]
     for col in FEATURES + [TARGET]:
         df[col] = pd.to_numeric(df[col], errors="coerce")
     df["year"] = pd.to_numeric(df["year"], errors="coerce")
@@ -118,6 +119,7 @@ def predictions() -> pd.DataFrame:
         holdout["pred"] = preds_2025
 
         spearman_scores = []
+        top1_correct = top1_total = 0
         top3_hits = top3_total = 0
         for _, grp in holdout.groupby(["event", "gender"]):
             if len(grp) < 2:
@@ -125,28 +127,50 @@ def predictions() -> pd.DataFrame:
             corr, _ = spearmanr(grp[TARGET], grp["pred"])
             if not pd.isna(corr):
                 spearman_scores.append(corr)
+            # Top-1 accuracy
+            actual_winner = grp.nsmallest(1, TARGET).index[0]
+            pred_winner   = grp.nsmallest(1, "pred").index[0]
+            top1_correct += int(actual_winner == pred_winner)
+            top1_total   += 1
+            # Top-3 hit rate
             actual_top3 = set(grp.nsmallest(3, TARGET).index)
             pred_top3   = set(grp.nsmallest(3, "pred").index)
             top3_hits  += len(actual_top3 & pred_top3)
             top3_total += len(actual_top3)
 
         avg_spearman  = sum(spearman_scores) / len(spearman_scores) if spearman_scores else 0
+        top1_accuracy = top1_correct / top1_total if top1_total > 0 else 0
         top3_hit_rate = top3_hits / top3_total if top3_total > 0 else 0
 
+        # Team scoring error — compare actual vs predicted team point totals
+        holdout["pred_rank"]  = _rank_within_event(holdout, "pred").astype(int)
+        holdout["actual_pts"] = holdout[TARGET].map(SCORING).fillna(0)
+        holdout["pred_pts"]   = holdout["pred_rank"].map(SCORING).fillna(0)
+        team_actual = holdout.groupby(["gender", "school"])["actual_pts"].sum()
+        team_pred   = holdout.groupby(["gender", "school"])["pred_pts"].sum()
+        team_df     = pd.DataFrame({"actual": team_actual, "pred": team_pred}).fillna(0)
+        team_mae    = mean_absolute_error(team_df["actual"], team_df["pred"])
+
         logger.info("── 2025 holdout validation ──")
-        logger.info(f"  MAE:              {mae:.3f} places")
-        logger.info(f"  RMSE:             {rmse:.3f} places")
-        logger.info(f"  Spearman (avg):   {avg_spearman:.3f}")
-        logger.info(f"  Top-3 hit rate:   {top3_hits}/{top3_total} ({100*top3_hit_rate:.1f}%)")
+        logger.info(f"  MAE:                {mae:.3f} places")
+        logger.info(f"  RMSE:               {rmse:.3f} places")
+        logger.info(f"  Spearman (avg):     {avg_spearman:.3f}")
+        logger.info(f"  Top-1 accuracy:     {top1_correct}/{top1_total} ({100*top1_accuracy:.1f}%)")
+        logger.info(f"  Top-3 hit rate:     {top3_hits}/{top3_total} ({100*top3_hit_rate:.1f}%)")
+        logger.info(f"  Team scoring MAE:   {team_mae:.2f} pts")
 
         Path("data/predictions").mkdir(parents=True, exist_ok=True)
         Path("data/predictions/metrics.json").write_text(json.dumps({
-            "mae":           round(float(mae), 3),
-            "rmse":          round(float(rmse), 3),
-            "spearman":      round(float(avg_spearman), 3),
-            "top3_hit_rate": round(float(top3_hit_rate), 3),
-            "top3_hits":     int(top3_hits),
-            "top3_total":    int(top3_total),
+            "mae":              round(float(mae), 3),
+            "rmse":             round(float(rmse), 3),
+            "spearman":         round(float(avg_spearman), 3),
+            "top1_accuracy":    round(float(top1_accuracy), 3),
+            "top1_correct":     int(top1_correct),
+            "top1_total":       int(top1_total),
+            "top3_hit_rate":    round(float(top3_hit_rate), 3),
+            "top3_hits":        int(top3_hits),
+            "top3_total":       int(top3_total),
+            "team_scoring_mae": round(float(team_mae), 2),
         }, indent=2))
     else:
         logger.warning("No 2025 holdout data available for validation.")
@@ -165,7 +189,7 @@ def predictions() -> pd.DataFrame:
         logger.info(f"  {feat:30s}: {imp:.4f}")
 
     # ── Predict 2026 ─────────────────────────────────────────────────────────
-    ind = pred_df[~pred_df["event"].isin(RELAY_EVENTS)].copy()
+    ind = pred_df.copy()
     ind = _apply_normalizer(ind, final_norm)
     ind["predicted_place"] = model_final.predict(ind[FEATURES])
     ind["predicted_rank"]  = _rank_within_event(ind, "predicted_place").astype(int)
@@ -179,6 +203,7 @@ def predictions() -> pd.DataFrame:
     score_rows = []
     for gender in ["M", "W"]:
         gdf = ind[ind["gender"] == gender].copy()
+
         gdf["points"] = gdf["predicted_rank"].map(SCORING).fillna(0)
         totals = (
             gdf.groupby("school")["points"]

@@ -214,6 +214,16 @@ def features() -> pd.DataFrame:
     results = pd.read_csv("data/flattened_dataframes/season_results.csv", dtype=str)
     prs = pd.read_csv("data/flattened_dataframes/athletes_prs.csv", dtype=str)
 
+    # Relay season best: best time per (school, gender, relay_event) in 2026
+    relay_res = _filter_results(results[results["event"].isin(_RELAY_EVENTS)])
+    relay_res["numeric"] = pd.to_numeric(
+        relay_res["mark"].apply(lambda m: _to_seconds(str(m)) if pd.notna(m) else None),
+        errors="coerce"
+    )
+    relay_sb = relay_res.dropna(subset=["numeric"]).groupby(
+        ["school", "gender", "event"]
+    )["numeric"].min()
+
     results_marks = _filter_results(results)
     results_place = _filter_results_for_place(results)
     logger.info(f"Filtered results: {len(results_marks)} rows (mark-based), {len(results_place)} rows (place-based)")
@@ -228,22 +238,35 @@ def features() -> pd.DataFrame:
         is_relay = event in _RELAY_EVENTS
 
         if is_relay:
-            # One row per relay team — no individual features
             for _, athlete in group.iterrows():
+                school  = athlete["school"]
+                gender  = athlete["gender"]
+                qt_raw  = athlete.get("qualifying_time", "")
+                qt_secs = _to_seconds(str(qt_raw)) if qt_raw else None
+                qp_raw  = athlete.get("qualifying_place", "")
+                try:
+                    qp = int(qp_raw) if qp_raw else None
+                except (ValueError, TypeError):
+                    qp = None
+                rsb = relay_sb.get((school, gender, event))
                 rows.append({
-                    "athlete_id": None,
-                    "athlete_name": None,
-                    "school": athlete["school"],
-                    "event": event,
-                    "gender": athlete["gender"],
-                    "region": athlete["region"],
-                    "qualifier": athlete["qualifier"],
-                    "season_best": None,
-                    "season_avg": None,
-                    "avg_place": None,
-                    "conf_champ_place": None,
-                    "cross_event_avg_place": None,
+                    "athlete_id":                None,
+                    "athlete_name":              None,
+                    "school":                    school,
+                    "event":                     event,
+                    "gender":                    gender,
+                    "region":                    athlete["region"],
+                    "qualifier":                 athlete["qualifier"],
+                    "season_best":               None,
+                    "season_avg":                None,
+                    "avg_place":                 None,
+                    "conf_champ_place":          None,
+                    "pr":                        None,
+                    "cross_event_avg_place":     None,
                     "conf_champ_place_any_event": None,
+                    "relay_qualifying_time":     qt_secs,
+                    "relay_season_best":         float(rsb) if rsb is not None and not pd.isna(rsb) else None,
+                    "relay_qualifying_place":    qp,
                 })
             continue
 
@@ -269,8 +292,11 @@ def features() -> pd.DataFrame:
                 "avg_place": ap.get(aid),
                 "conf_champ_place": cp.get(aid),
                 "pr": pr.get(aid),
-                "cross_event_avg_place": cross_ap.get(aid),
+                "cross_event_avg_place":      cross_ap.get(aid),
                 "conf_champ_place_any_event": conf_champ_any.get(aid),
+                "relay_qualifying_time":      None,
+                "relay_season_best":          None,
+                "relay_qualifying_place":     None,
             })
 
     df = pd.DataFrame(rows)

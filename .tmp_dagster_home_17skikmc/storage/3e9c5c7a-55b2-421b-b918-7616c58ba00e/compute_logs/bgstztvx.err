@@ -1,0 +1,6 @@
+[32m2026-06-01 17:48:40 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 3e9c5c7a-55b2-421b-b918-7616c58ba00e - 83069 - LOGS_CAPTURED - Started capturing logs in process (pid: 83069).
+[32m2026-06-01 17:48:40 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 3e9c5c7a-55b2-421b-b918-7616c58ba00e - 83069 - supplemental_profiles - STEP_START - Started execution of step "supplemental_profiles".
+[32m2026-06-01 17:48:40 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 3e9c5c7a-55b2-421b-b918-7616c58ba00e - supplemental_profiles - Done: 0 saved, 860 skipped, 0 errors
+[32m2026-06-01 17:48:40 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 3e9c5c7a-55b2-421b-b918-7616c58ba00e - 83069 - supplemental_profiles - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+[32m2026-06-01 17:48:40 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 3e9c5c7a-55b2-421b-b918-7616c58ba00e - 83069 - supplemental_profiles - ASSET_MATERIALIZATION - Materialized value supplemental_profiles.
+[32m2026-06-01 17:48:40 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 3e9c5c7a-55b2-421b-b918-7616c58ba00e - 83069 - supplemental_profiles - STEP_SUCCESS - Finished execution of step "supplemental_profiles" in 99ms.

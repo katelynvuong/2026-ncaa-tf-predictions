@@ -32,9 +32,13 @@ export interface Metrics {
   mae: number
   rmse: number
   spearman: number
+  top1_accuracy: number
+  top1_correct: number
+  top1_total: number
   top3_hit_rate: number
   top3_hits: number
   top3_total: number
+  team_scoring_mae: number
   training_rows: number
   years_trained: number[]
   relay_excluded: boolean

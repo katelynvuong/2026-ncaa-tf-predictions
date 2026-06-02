@@ -2,63 +2,24 @@
   {
     "gender": "M",
     "rank": 1,
-    "school": "Oregon",
-    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
-    "total_points": 47.0,
+    "school": "Arkansas",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
+    "total_points": 50.0,
     "scorers": [
       {
-        "event": "1500m",
-        "athlete_name": "Simeon Birnbaum",
+        "event": "4x100m Relay",
+        "athlete_name": NaN,
+        "points": 10
+      },
+      {
+        "event": "4x400m Relay",
+        "athlete_name": NaN,
         "points": 10
       },
       {
         "event": "5000m",
-        "athlete_name": "Simeon Birnbaum",
-        "points": 8
-      },
-      {
-        "event": "Triple Jump",
-        "athlete_name": "Tre Betts",
-        "points": 6
-      },
-      {
-        "event": "110m H",
-        "athlete_name": "Kai Graves-Blanks",
-        "points": 5
-      },
-      {
-        "event": "3000m SC",
-        "athlete_name": "Benjamin Balazs",
-        "points": 5
-      },
-      {
-        "event": "Discus",
-        "athlete_name": "Ben Smith",
-        "points": 5
-      },
-      {
-        "event": "Shot Put",
-        "athlete_name": "Ben Smith",
-        "points": 5
-      },
-      {
-        "event": "1500m",
-        "athlete_name": "Tomas Palfrey",
-        "points": 3
-      }
-    ]
-  },
-  {
-    "gender": "M",
-    "rank": 2,
-    "school": "Arkansas",
-    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
-    "total_points": 27.0,
-    "scorers": [
-      {
-        "event": "5000m",
         "athlete_name": "Ben Shearer",
-        "points": 6
+        "points": 8
       },
       {
         "event": "800m",
@@ -68,21 +29,21 @@
       {
         "event": "100m",
         "athlete_name": "Jelani Watkins",
-        "points": 5
+        "points": 4
       },
       {
         "event": "200m",
         "athlete_name": "Jelani Watkins",
+        "points": 4
+      },
+      {
+        "event": "1500m",
+        "athlete_name": "Brian Masai",
         "points": 3
       },
       {
         "event": "10,000m",
         "athlete_name": "Ernest Cheruiyot",
-        "points": 2
-      },
-      {
-        "event": "1500m",
-        "athlete_name": "Brian Masai",
         "points": 2
       },
       {
@@ -104,34 +65,122 @@
   },
   {
     "gender": "M",
-    "rank": 3,
-    "school": "Auburn",
-    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
-    "total_points": 25.0,
+    "rank": 2,
+    "school": "Oregon",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
+    "total_points": 45.0,
     "scorers": [
       {
-        "event": "100m",
-        "athlete_name": "Kanyinsola Ajayi",
+        "event": "1500m",
+        "athlete_name": "Simeon Birnbaum",
         "points": 10
+      },
+      {
+        "event": "5000m",
+        "athlete_name": "Simeon Birnbaum",
+        "points": 6
+      },
+      {
+        "event": "Triple Jump",
+        "athlete_name": "Tre Betts",
+        "points": 6
+      },
+      {
+        "event": "3000m SC",
+        "athlete_name": "Benjamin Balazs",
+        "points": 5
+      },
+      {
+        "event": "Discus",
+        "athlete_name": "Ben Smith",
+        "points": 5
+      },
+      {
+        "event": "Shot Put",
+        "athlete_name": "Ben Smith",
+        "points": 5
       },
       {
         "event": "110m H",
-        "athlete_name": "Ja'Kobe Tharp",
+        "athlete_name": "Kai Graves-Blanks",
+        "points": 4
+      },
+      {
+        "event": "4x100m Relay",
+        "athlete_name": NaN,
+        "points": 3
+      },
+      {
+        "event": "1500m",
+        "athlete_name": "Tomas Palfrey",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "gender": "M",
+    "rank": 3,
+    "school": "Louisville",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
+    "total_points": 27.0,
+    "scorers": [
+      {
+        "event": "Long Jump",
+        "athlete_name": "Roman Kuleshov",
         "points": 10
       },
       {
-        "event": "200m",
-        "athlete_name": "Israel Okon",
+        "event": "10,000m",
+        "athlete_name": "Elsingi Kipruto",
+        "points": 8
+      },
+      {
+        "event": "Triple Jump",
+        "athlete_name": "Roman Kuleshov",
         "points": 5
+      },
+      {
+        "event": "5000m",
+        "athlete_name": "Elsingi Kipruto",
+        "points": 4
       }
     ]
   },
   {
     "gender": "W",
     "rank": 1,
+    "school": "Nebraska",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
+    "total_points": 32.0,
+    "scorers": [
+      {
+        "event": "4x400m Relay",
+        "athlete_name": NaN,
+        "points": 10
+      },
+      {
+        "event": "Shot Put",
+        "athlete_name": "Axelina Johansson",
+        "points": 10
+      },
+      {
+        "event": "400m H",
+        "athlete_name": "Kelsie Belquist",
+        "points": 6
+      },
+      {
+        "event": "Shot Put",
+        "athlete_name": "Donna Douglas",
+        "points": 6
+      }
+    ]
+  },
+  {
+    "gender": "W",
+    "rank": 2,
     "school": "South Carolina",
     "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
-    "total_points": 31.0,
+    "total_points": 30.0,
     "scorers": [
       {
         "event": "1500m",
@@ -161,65 +210,36 @@
       {
         "event": "Long Jump",
         "athlete_name": "Tristen Harris",
-        "points": 2
-      }
-    ]
-  },
-  {
-    "gender": "W",
-    "rank": 2,
-    "school": "Florida",
-    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
-    "total_points": 29.0,
-    "scorers": [
-      {
-        "event": "100m",
-        "athlete_name": "Gabrielle Matthews",
-        "points": 10
-      },
-      {
-        "event": "Discus",
-        "athlete_name": "Alida Van Daalen",
-        "points": 10
-      },
-      {
-        "event": "800m",
-        "athlete_name": "Layla Haynes",
-        "points": 5
-      },
-      {
-        "event": "Discus",
-        "athlete_name": "Akari Isaac",
-        "points": 4
+        "points": 1
       }
     ]
   },
   {
     "gender": "W",
     "rank": 3,
-    "school": "BYU",
-    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
-    "total_points": 28.0,
+    "school": "Tennessee",
+    "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
+    "total_points": 29.0,
     "scorers": [
       {
-        "event": "10,000m",
-        "athlete_name": "Jane Hedengren",
+        "event": "4x100m Relay",
+        "athlete_name": NaN,
         "points": 10
       },
       {
-        "event": "5000m",
-        "athlete_name": "Jane Hedengren",
+        "event": "4x400m Relay",
+        "athlete_name": NaN,
         "points": 10
       },
       {
-        "event": "3000m SC",
-        "athlete_name": "Taylor Lovell",
+        "event": "Pole Vault",
+        "athlete_name": "Hannah Grace",
         "points": 6
       },
       {
-        "event": "800m",
-        "athlete_name": "Krystie Solomon",
-        "points": 2
+        "event": "400m",
+        "athlete_name": "Esther Joseph",
+        "points": 3
       }
     ]
   }

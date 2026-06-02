@@ -73,10 +73,37 @@ _SLUG_EVENT_MAP = {
 
 _SKIP_SLUGS = {"decathlon", "heptathlon"}
 _SCORING_POINTS = {"10", "8", "6", "5", "4", "3", "2", "1"}
-# LJ/TJ have wind in last column instead of scoring points — filter by place directly
 _WIND_FIELD_EVENTS = {"LJ", "TJ"}
 _ATHLETE_ID_RE = re.compile(r"/athletes/(\d+)/")
 _MEET_ID_RE = re.compile(r"/results/(\d+)/")
+_CLASS_YEAR_RE = re.compile(r"\s*\[(?:FR|SO|JR|SR|5Y|GR)\]\s*", re.IGNORECASE)
+
+# Historical regional base URLs for relay qualifying data
+_REGIONAL_BASE_URLS = {
+    2022: {
+        "east": "https://flashresults.ncaa.com/OutdoorRegionals/2022/East/",
+        "west": "https://flashresults.ncaa.com/OutdoorRegionals/2022/West/",
+    },
+    2023: {
+        "east": "https://flashresults.ncaa.com/Outdoor/2023/FirstRounds/East/",
+        "west": "https://flashresults.ncaa.com/Outdoor/2023/FirstRounds/West/",
+    },
+    2024: {
+        "east": "https://flashresults.ncaa.com/Outdoor/2024/FirstRounds/East/",
+        "west": "https://flashresults.ncaa.com/Outdoor/2024/FirstRounds/West/",
+    },
+    2025: {
+        "east": "https://flashresults.ncaa.com/Outdoor/2025/FirstRounds/East/",
+        "west": "https://flashresults.ncaa.com/Outdoor/2025/FirstRounds/West/",
+    },
+}
+# Relay event slugs are consistent across all years
+_RELAY_SLUGS = {
+    "011": ("4x100", "M"),
+    "012": ("4x400", "M"),
+    "031": ("4x100", "W"),
+    "032": ("4x400", "W"),
+}
 
 
 def _get(url: str) -> str:
@@ -128,6 +155,47 @@ def _event_links(index_url: str) -> list[tuple[str, str, str]]:
     return links
 
 
+def _parse_regional_relay(base_url: str, event_num: str, event_key: str, gender: str, year: int) -> list[dict]:
+    """Scrape qualifying relay teams + times from a historical Flash Results regional page."""
+    url = f"{base_url}{event_num}-1_compiled.htm"
+    try:
+        html = _get(url)
+    except Exception:
+        return []
+    soup = BeautifulSoup(html, "html.parser")
+    rows = []
+    for tr in soup.find_all("tr"):
+        qual_span = tr.find("span", class_="q_qual")
+        if not qual_span:
+            continue
+        qualifier = qual_span.get_text(strip=True)
+        if qualifier not in ("Q", "q"):
+            continue
+        tds = tr.find_all("td")
+        if len(tds) < 4:
+            continue
+        try:
+            place = int(tds[0].get_text(strip=True))
+        except ValueError:
+            continue
+        small = tds[2].find("small")
+        school = _CLASS_YEAR_RE.sub("", small.get_text(strip=True)).strip() if small else ""
+        if not school:
+            b = tds[2].find("b")
+            school = b.get_text(strip=True) if b else ""
+        qualifying_time = tds[3].get_text(strip=True)
+        rows.append({
+            "year":             year,
+            "event":            event_key,
+            "gender":           gender,
+            "school":           school,
+            "qualifying_place": place,
+            "qualifying_time":  qualifying_time,
+            "qualifier":        qualifier,
+        })
+    return rows
+
+
 def _parse_results(event_url: str, event_key: str, gender: str, year: int) -> list[dict]:
     """Extract final-round placements from a championship event page."""
     soup = BeautifulSoup(_get(event_url), "html.parser")
@@ -154,22 +222,26 @@ def _parse_results(event_url: str, event_key: str, gender: str, year: int) -> li
             if tds[-1].get_text(strip=True) not in _SCORING_POINTS:
                 continue
 
-        mark = tds[4].get_text(strip=True)
-
         athlete_id = ""
         athlete_name = ""
         school = ""
 
-        athlete_link = tds[1].find("a", href=True)
-        if athlete_link:
-            id_match = _ATHLETE_ID_RE.search(athlete_link["href"])
-            if id_match and not is_relay:
-                athlete_id = id_match.group(1)
-                athlete_name = athlete_link.get_text(strip=True)
-
-        school_link = tds[3].find("a", href=True)
-        if school_link:
-            school = school_link.get_text(strip=True)
+        if is_relay:
+            # Relay page: td[1]=school, td[2]=athlete names, td[3]=time
+            school = tds[1].get_text(strip=True)
+            mark   = tds[3].get_text(strip=True)
+        else:
+            # Individual page: td[1]=athlete link, td[3]=school link, td[4]=mark
+            mark = tds[4].get_text(strip=True)
+            athlete_link = tds[1].find("a", href=True)
+            if athlete_link:
+                id_match = _ATHLETE_ID_RE.search(athlete_link["href"])
+                if id_match:
+                    athlete_id = id_match.group(1)
+                    athlete_name = athlete_link.get_text(strip=True)
+            school_link = tds[3].find("a", href=True)
+            if school_link:
+                school = school_link.get_text(strip=True)
 
         rows.append({
             "year":         year,
@@ -223,6 +295,30 @@ def championship_results() -> pd.DataFrame:
 
 @dg.asset(
     group_name="ml",
+    description="Scrape 2022–2025 regional relay qualifying times and places from Flash Results.",
+)
+def historical_relay_qualifying() -> pd.DataFrame:
+    logger = dg.get_dagster_logger()
+    all_rows: list[dict] = []
+
+    for year, regions in _REGIONAL_BASE_URLS.items():
+        for region, base_url in regions.items():
+            for event_num, (event_key, gender) in _RELAY_SLUGS.items():
+                rows = _parse_regional_relay(base_url, event_num, event_key, gender, year)
+                if rows:
+                    logger.info(f"  {year} {region} {gender} {event_key}: {len(rows)} qualifying teams")
+                all_rows.extend(rows)
+
+    df = pd.DataFrame(all_rows)
+    out = Path("data/training/historical_relay_qualifying.csv")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(out, index=False)
+    logger.info(f"Saved {len(df)} relay qualifying rows → {out}")
+    return df
+
+
+@dg.asset(
+    group_name="ml",
     deps=["championship_results"],
     description="Fetch TFRRS profiles for championship athletes not already in data/profiles/.",
 )
@@ -267,14 +363,18 @@ def historical_profiles(context) -> None:
 
 @dg.asset(
     group_name="ml",
-    deps=["historical_profiles"],
-    description="Compute the 5 training features per (athlete, event, year) using season results filtered to that year.",
+    deps=["historical_profiles", "historical_relay_qualifying"],
+    description="Compute training features per (athlete/team, event, year) for both individual and relay events.",
 )
 def training_features() -> pd.DataFrame:
     logger = dg.get_dagster_logger()
 
     champ = pd.read_csv("data/training/championship_results.csv", dtype=str)
-    champ = champ[champ["athlete_id"].notna() & (champ["athlete_id"] != "")]
+    # Keep relay rows (no athlete_id) + individual rows that have an athlete_id
+    champ = champ[
+        champ["event"].isin(_RELAY_EVENTS) |
+        (champ["athlete_id"].notna() & (champ["athlete_id"] != ""))
+    ]
 
     # Load all profiles and build a combined season_results for all historical athletes
     from pipeline.assets.dataframes import _load_profiles
@@ -306,6 +406,13 @@ def training_features() -> pd.DataFrame:
     logger.info(f"Built results table: {len(all_results)} rows across all profiles")
 
     prs = pd.read_csv("data/flattened_dataframes/athletes_prs.csv", dtype=str)
+    relay_qual = pd.read_csv("data/training/historical_relay_qualifying.csv", dtype=str)
+    relay_qual["qualifying_place"] = pd.to_numeric(relay_qual["qualifying_place"], errors="coerce")
+
+    # Load relay season_results — relay times attributed to individual athletes in season_results
+    # We group by (school, gender, event, year) and take the best (lowest) time
+    relay_results = all_results[all_results["event"].isin(_RELAY_EVENTS)].copy()
+    relay_results["date_year"] = relay_results["date"].str.extract(r"(\d{4})")
 
     feature_rows = []
     for year, year_group in champ.groupby("year"):
@@ -317,33 +424,82 @@ def training_features() -> pd.DataFrame:
         year_cross_ap       = _cross_event_avg_place(year_results_place, all_year_ids)
         year_conf_champ_any = _conf_champ_place_any_event(year_results_place, all_year_ids)
 
-        for event, event_group in year_group.groupby("event"):
-            if event in _RELAY_EVENTS:
-                continue
-            athlete_ids = event_group["athlete_id"].tolist()
-            sb  = _season_best(year_results_marks, event, athlete_ids)
-            avg = _season_avg(year_results_marks, event, athlete_ids)
-            ap  = _avg_place(year_results_place, event, athlete_ids)
-            cp  = _conf_champ_place(year_results_place, event, athlete_ids)
-            pr  = _pr_feature(prs, event, athlete_ids)
+        # Historical relay season best: best relay time by (school, gender, event) in that year
+        year_relay_results = relay_results[relay_results["date_year"] == str(year)].copy()
+        from pipeline.assets.features import _to_seconds
+        year_relay_results["numeric"] = year_relay_results["mark"].apply(
+            lambda m: _to_seconds(str(m)) if pd.notna(m) else None
+        )
+        year_relay_results = year_relay_results.dropna(subset=["numeric"])
 
-            for _, row in event_group.iterrows():
-                aid = row["athlete_id"]
-                feature_rows.append({
-                    "year":              year,
-                    "athlete_id":        aid,
-                    "athlete_name":      row["athlete_name"],
-                    "school":            row["school"],
-                    "event":             event,
-                    "gender":            row["gender"],
-                    "season_best":       sb.get(aid),
-                    "season_avg":        avg.get(aid),
-                    "avg_place":         ap.get(aid),
-                    "conf_champ_place":       cp.get(aid),
-                    "pr":                     pr.get(aid),
-                    "cross_event_avg_place":      year_cross_ap.get(aid),
-                    "conf_champ_place_any_event": year_conf_champ_any.get(aid),
-                })
+        for event, event_group in year_group.groupby("event"):
+            if event not in _RELAY_EVENTS:
+                athlete_ids = event_group["athlete_id"].tolist()
+                sb  = _season_best(year_results_marks, event, athlete_ids)
+                avg = _season_avg(year_results_marks, event, athlete_ids)
+                ap  = _avg_place(year_results_place, event, athlete_ids)
+                cp  = _conf_champ_place(year_results_place, event, athlete_ids)
+                pr  = _pr_feature(prs, event, athlete_ids)
+
+                for _, row in event_group.iterrows():
+                    aid = row["athlete_id"]
+                    feature_rows.append({
+                        "year":                      year,
+                        "athlete_id":                aid,
+                        "athlete_name":              row["athlete_name"],
+                        "school":                    row["school"],
+                        "event":                     event,
+                        "gender":                    row["gender"],
+                        "season_best":               sb.get(aid),
+                        "season_avg":                avg.get(aid),
+                        "avg_place":                 ap.get(aid),
+                        "conf_champ_place":          cp.get(aid),
+                        "pr":                        pr.get(aid),
+                        "cross_event_avg_place":     year_cross_ap.get(aid),
+                        "conf_champ_place_any_event": year_conf_champ_any.get(aid),
+                        "relay_qualifying_time":     None,
+                        "relay_season_best":         None,
+                        "relay_qualifying_place":    None,
+                    })
+            else:
+                # Relay: match historical qualifying data by school + gender + event + year
+                rq = relay_qual[
+                    (relay_qual["event"] == event) &
+                    (relay_qual["gender"] == event_group["gender"].iloc[0]) &
+                    (relay_qual["year"] == str(year))
+                ].copy()
+                rq["qt_secs"] = rq["qualifying_time"].apply(
+                    lambda m: _to_seconds(str(m)) if pd.notna(m) else None
+                )
+                qual_map = rq.set_index("school")[["qualifying_place", "qt_secs"]].to_dict("index")
+
+                # Season best per school in this relay event this year
+                ev_relay = year_relay_results[
+                    (year_relay_results["event"] == event)
+                ].copy()
+                sb_relay = ev_relay.groupby("school")["numeric"].min().to_dict()
+
+                for _, row in event_group.iterrows():
+                    school = row["school"]
+                    q_data = qual_map.get(school, {})
+                    feature_rows.append({
+                        "year":                      year,
+                        "athlete_id":                None,
+                        "athlete_name":              None,
+                        "school":                    school,
+                        "event":                     event,
+                        "gender":                    row["gender"],
+                        "season_best":               None,
+                        "season_avg":                None,
+                        "avg_place":                 None,
+                        "conf_champ_place":          None,
+                        "pr":                        None,
+                        "cross_event_avg_place":     None,
+                        "conf_champ_place_any_event": None,
+                        "relay_qualifying_time":     q_data.get("qt_secs"),
+                        "relay_season_best":         sb_relay.get(school),
+                        "relay_qualifying_place":    q_data.get("qualifying_place"),
+                    })
 
     df = pd.DataFrame(feature_rows)
     out = Path("data/training/training_features.csv")
@@ -364,29 +520,39 @@ def training_dataset() -> pd.DataFrame:
     champ = pd.read_csv("data/training/championship_results.csv", dtype=str)
     feats = pd.read_csv("data/training/training_features.csv", dtype=str)
 
-    # Convert numeric columns
     champ["place"] = pd.to_numeric(champ["place"], errors="coerce")
-    for col in ["season_best", "season_avg", "avg_place", "conf_champ_place", "pr",
-                "cross_event_avg_place", "conf_champ_place_any_event"]:
+    all_feat_cols = ["season_best", "season_avg", "avg_place", "conf_champ_place", "pr",
+                     "cross_event_avg_place", "conf_champ_place_any_event",
+                     "relay_qualifying_time", "relay_season_best", "relay_qualifying_place"]
+    for col in all_feat_cols:
         feats[col] = pd.to_numeric(feats[col], errors="coerce")
 
-    df = champ.merge(
-        feats[["year", "athlete_id", "event", "season_best", "season_avg",
-               "avg_place", "conf_champ_place", "pr",
-               "cross_event_avg_place", "conf_champ_place_any_event"]],
-        on=["year", "athlete_id", "event"],
-        how="left",
+    # Individual events join on athlete_id; relays join on school
+    ind = champ[~champ["event"].isin(_RELAY_EVENTS)]
+    rel = champ[champ["event"].isin(_RELAY_EVENTS)]
+
+    ind_feats = feats[~feats["event"].isin(_RELAY_EVENTS)]
+    rel_feats = feats[feats["event"].isin(_RELAY_EVENTS)]
+
+    df_ind = ind.merge(
+        ind_feats[["year", "athlete_id", "event"] + all_feat_cols],
+        on=["year", "athlete_id", "event"], how="left",
     )
+    df_rel = rel.merge(
+        rel_feats[["year", "school", "event", "gender"] + all_feat_cols],
+        on=["year", "school", "event", "gender"], how="left",
+    )
+    df = pd.concat([df_ind, df_rel], ignore_index=True)
 
     out = Path("data/training/training_dataset.csv")
     df.to_csv(out, index=False)
 
     logger.info(f"Training dataset: {len(df)} rows")
     logger.info(f"Feature fill rates:")
-    for col in ["season_best", "season_avg", "avg_place", "conf_champ_place", "pr", "cross_event_avg_place"]:
+    for col in all_feat_cols:
         n = df[col].notna().sum()
         logger.info(f"  {col}: {n}/{len(df)} ({100*n/len(df):.1f}%)")
     return df
 
 
-assets = [championship_results, historical_profiles, training_features, training_dataset]
+assets = [championship_results, historical_relay_qualifying, historical_profiles, training_features, training_dataset]
