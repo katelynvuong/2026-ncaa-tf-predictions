@@ -121,7 +121,7 @@
       },
       {
         "event": "4x100m Relay",
-        "athlete_name": NaN,
+        "athlete_name": null,
         "points": 4
       },
       {
@@ -150,7 +150,7 @@
       },
       {
         "event": "4x400m Relay",
-        "athlete_name": NaN,
+        "athlete_name": null,
         "points": 8
       },
       {
@@ -160,7 +160,7 @@
       },
       {
         "event": "4x100m Relay",
-        "athlete_name": NaN,
+        "athlete_name": null,
         "points": 6
       },
       {
@@ -189,7 +189,7 @@
       },
       {
         "event": "4x100m Relay",
-        "athlete_name": NaN,
+        "athlete_name": null,
         "points": 10
       },
       {
@@ -223,7 +223,7 @@
       },
       {
         "event": "4x100m Relay",
-        "athlete_name": NaN,
+        "athlete_name": null,
         "points": 10
       },
       {
@@ -233,7 +233,7 @@
       },
       {
         "event": "4x400m Relay",
-        "athlete_name": NaN,
+        "athlete_name": null,
         "points": 4
       },
       {
