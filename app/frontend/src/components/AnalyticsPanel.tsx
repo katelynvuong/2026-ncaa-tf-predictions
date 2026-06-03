@@ -54,11 +54,11 @@ export default function AnalyticsPanel({ analytics }: Props) {
     <div className="mt-6 border border-white/10 rounded-xl p-5 bg-white/5">
       <p className="text-xs uppercase tracking-widest text-white/40 mb-6 text-center">Analytics</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
 
         {/* Col 1 — Feature Importances */}
         <div>
-          <p className="text-xs text-white/40 uppercase tracking-wider mb-3 flex items-center">
+          <p className="text-xs text-white/40 tracking-wider mb-3 flex items-center">
             Feature importances
             <Tooltip text="How much each factor influenced the model's predictions. Higher % = the model relied on it more when ranking athletes." />
           </p>
@@ -87,7 +87,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
         <div className="flex flex-col gap-6">
           {/* Regional Split */}
           <div>
-            <p className="text-xs text-white/40 uppercase tracking-wider mb-3 flex items-center">
+            <p className="text-xs text-white/40 tracking-wider mb-3 flex items-center">
               Regional Split
               <Tooltip text="The model doesn't know about regions — it ranks athletes purely on performance. Any balance here reflects equal qualifying standards between East and West, not a deliberate split. The actual split at nationals may differ." />
             </p>
@@ -114,7 +114,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
 
           {/* School Depth */}
           <div>
-            <p className="text-xs text-white/40 uppercase tracking-wider mb-3 flex items-center">
+            <p className="text-xs text-white/40 tracking-wider mb-3 flex items-center">
               School Depth
               <Tooltip text="Schools with the most athletes predicted to score at nationals. High depth means a program is competitive across multiple events — also highlights potential dark-horse contenders if individual predictions shift." />
             </p>
@@ -147,7 +147,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
                 />
                 <Bar dataKey="count" radius={[0, 4, 4, 0]}>
                   {school_depth.map((_, i) => (
-                    <Cell key={i} fill="rgba(255,255,255,0.25)" fillOpacity={1 - i * 0.07} />
+                    <Cell key={i} fill="#6ba3a0" fillOpacity={1 - i * 0.07} />
                   ))}
                 </Bar>
               </BarChart>
@@ -157,7 +157,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
 
         {/* Col 3 — Team Category Breakdown */}
         <div>
-          <p className="text-xs text-white/40 uppercase tracking-wider mb-3">Points by Category</p>
+          <p className="text-xs text-white/40 tracking-wider mb-3">Points by Category</p>
           {["M", "W"].map(gender => {
             const teams = team_category_breakdown.filter(t => t.gender === gender)
             return (
