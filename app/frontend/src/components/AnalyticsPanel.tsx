@@ -58,7 +58,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
 
         {/* Col 1 — Feature Importances */}
         <div>
-          <p className="text-xs text-white/40 tracking-wider mb-3 flex items-center">
+          <p className="text-xs text-white/60 tracking-wider mb-3 flex items-center font-semibold">
             Feature importances
             <Tooltip text="How much each factor influenced the model's predictions. Higher % = the model relied on it more when ranking athletes." />
           </p>
@@ -87,7 +87,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
         <div className="flex flex-col gap-6">
           {/* Regional Split */}
           <div>
-            <p className="text-xs text-white/40 tracking-wider mb-3 flex items-center">
+            <p className="text-xs text-white/60 tracking-wider mb-3 flex items-center font-semibold">
               Regional Split
               <Tooltip text="The model doesn't know about regions — it ranks athletes purely on performance. Any balance here reflects equal qualifying standards between East and West, not a deliberate split. The actual split at nationals may differ." />
             </p>
@@ -114,7 +114,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
 
           {/* School Depth */}
           <div>
-            <p className="text-xs text-white/40 tracking-wider mb-3 flex items-center">
+            <p className="text-xs text-white/60 tracking-wider mb-3 flex items-center font-semibold">
               School Depth
               <Tooltip text="Schools with the most athletes predicted to score at nationals. High depth means a program is competitive across multiple events." />
             </p>
@@ -157,7 +157,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
 
         {/* Col 3 — Team Category Breakdown */}
         <div>
-          <p className="text-xs text-white/40 tracking-wider mb-3">Points by Category</p>
+          <p className="text-xs text-white/60 tracking-wider mb-3 font-semibold">Points by Category</p>
           {["M", "W"].map(gender => {
             const teams = team_category_breakdown.filter(t => t.gender === gender)
             return (
