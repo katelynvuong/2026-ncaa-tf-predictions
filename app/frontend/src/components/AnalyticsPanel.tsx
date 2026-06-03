@@ -8,13 +8,13 @@ const CAT_COLORS = { sprints: "#967f82", distance: "#6b8fa3", field: "#7fa36b", 
 const CAT_LABELS = { sprints: "Sprints", distance: "Distance", field: "Field", relays: "Relays" }
 
 const FEATURE_TIPS: Record<string, string> = {
-  "Avg Place":               "Average finishing position in race finals during the 2026 season — captures overall competitive level.",
+  "Avg Place":               "Average finishing position in race finals during the 2026 season.",
   "Conf Champ Place":        "Finishing position at the athlete's outdoor conference championship in this specific event.",
-  "Conf Champ (Any Event)":  "Best conference championship finish across any event — captures athletes who dominated their conference even in a different discipline.",
-  "Cross-Event Avg Place":   "Average finishing position across all events the athlete competed in during 2026 — a general athleticism signal.",
-  "Personal Record":         "All-time career best in this event, normalized against field — shows peak potential regardless of this season's race count.",
-  "Season Best":             "Best performance in this event during the 2026 season, normalized within event and gender.",
-  "Season Avg":              "Average performance across all 2026 competitions in this event — measures consistency.",
+  "Conf Champ (Any Event)":  "Best conference championship finish across any event.",
+  "Cross-Event Avg Place":   "Average finishing position across all events the athlete competed in during 2026.",
+  "Personal Record":         "All-time career best in this event, normalized against the field.",
+  "Season Best":             "Best performance in this event during the 2026 season.",
+  "Season Avg":              "Average performance across all 2026 competitions in this event.",
   "Relay Qualifying Time":   "The relay team's time at the 2026 regional qualifying meet.",
   "Relay Season Best":       "The relay team's fastest time run this season.",
   "Relay Qualifying Place":  "The relay team's finishing position at the regional qualifying meet.",
@@ -56,7 +56,10 @@ export default function AnalyticsPanel({ analytics }: Props) {
 
         {/* Feature Importances */}
         <div>
-          <p className="text-xs text-white/40 uppercase tracking-wider mb-3">Feature Importances</p>
+          <p className="text-xs text-white/40 uppercase tracking-wider mb-3 flex items-center">
+            Feature Importances
+            <Tooltip text="How much each factor influenced the model's predictions. Higher % = the model relied on it more when ranking athletes." />
+          </p>
           <div className="flex flex-col gap-2">
             {feature_importances.map(f => (
               <div key={f.feature}>
