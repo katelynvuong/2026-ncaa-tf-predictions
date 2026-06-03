@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Dagster runtime
+.dagster/
+.tmp_dagster_home*/
+
+# Large pipeline data — not baked into the image, mounted via EFS in production
+data/
+
+# Frontend build artifacts
+app/frontend/node_modules/
+app/frontend/dist/
+
+# Git
+.git/
+.gitignore
+
+# Misc
+*.log
+libomp.dylib
