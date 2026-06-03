@@ -1,0 +1,13 @@
+[32m2026-06-03 12:47:58 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - be964a23-c147-43f4-ab43-592c4750a3e5 - 48807 - LOGS_CAPTURED - Started capturing logs in process (pid: 48807).
+[32m2026-06-03 12:47:58 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - be964a23-c147-43f4-ab43-592c4750a3e5 - 48807 - frontend_build - STEP_START - Started execution of step "frontend_build".
+[32m2026-06-03 12:47:58 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - be964a23-c147-43f4-ab43-592c4750a3e5 - frontend_build - Installing npm dependencies...
+[32m2026-06-03 12:47:59 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - be964a23-c147-43f4-ab43-592c4750a3e5 - frontend_build - Building React app...
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[32m2026-06-03 12:48:00 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - be964a23-c147-43f4-ab43-592c4750a3e5 - frontend_build - Build complete → /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/app/frontend/dist
+[32m2026-06-03 12:48:00 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - be964a23-c147-43f4-ab43-592c4750a3e5 - 48807 - frontend_build - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+[32m2026-06-03 12:48:00 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - be964a23-c147-43f4-ab43-592c4750a3e5 - 48807 - frontend_build - ASSET_MATERIALIZATION - Materialized value frontend_build.
+[32m2026-06-03 12:48:00 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - be964a23-c147-43f4-ab43-592c4750a3e5 - 48807 - frontend_build - STEP_SUCCESS - Finished execution of step "frontend_build" in 2.18s.

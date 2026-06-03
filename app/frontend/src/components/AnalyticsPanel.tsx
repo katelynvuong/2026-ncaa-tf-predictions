@@ -62,7 +62,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
             Feature importances
             <Tooltip text="How much each factor influenced the model's predictions. Higher % = the model relied on it more when ranking athletes." />
           </p>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3.5">
             {feature_importances.map(f => (
               <div key={f.feature}>
                 <div className="flex justify-between text-xs mb-0.5 items-center">
@@ -116,7 +116,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
           <div>
             <p className="text-xs text-white/40 tracking-wider mb-3 flex items-center">
               School Depth
-              <Tooltip text="Schools with the most athletes predicted to score at nationals. High depth means a program is competitive across multiple events — also highlights potential dark-horse contenders if individual predictions shift." />
+              <Tooltip text="Schools with the most athletes predicted to score at nationals. High depth means a program is competitive across multiple events." />
             </p>
             <ResponsiveContainer width="100%" height={200}>
               <BarChart
@@ -161,7 +161,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
           {["M", "W"].map(gender => {
             const teams = team_category_breakdown.filter(t => t.gender === gender)
             return (
-              <div key={gender} className="mb-4">
+              <div key={gender} className="mb-8">
                 <p className="text-xs text-white/30 mb-2">{gender === "M" ? "Men" : "Women"}</p>
                 {teams.map(team => (
                   <div key={team.school} className="mb-2">
