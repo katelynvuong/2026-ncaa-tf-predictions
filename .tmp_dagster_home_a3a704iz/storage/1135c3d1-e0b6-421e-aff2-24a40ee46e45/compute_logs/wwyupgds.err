@@ -1,0 +1,56 @@
+[32m2026-06-03 10:46:45 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - 70089 - LOGS_CAPTURED - Started capturing logs in process (pid: 70089).
+[32m2026-06-03 10:46:45 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - 70089 - historical_relay_qualifying - STEP_START - Started execution of step "historical_relay_qualifying".
+[32m2026-06-03 10:46:46 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2021 east M 4x100: 12 teams
+[32m2026-06-03 10:46:46 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2021 east M 4x400: 12 teams
+[32m2026-06-03 10:46:47 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2021 east W 4x100: 12 teams
+[32m2026-06-03 10:46:47 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2021 east W 4x400: 12 teams
+[32m2026-06-03 10:46:47 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2021 west M 4x100: 12 teams
+[32m2026-06-03 10:46:48 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2021 west M 4x400: 12 teams
+[32m2026-06-03 10:46:48 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2021 west W 4x100: 12 teams
+[32m2026-06-03 10:46:48 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2021 west W 4x400: 12 teams
+[32m2026-06-03 10:46:48 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2022 east M 4x100: 12 teams
+[32m2026-06-03 10:46:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2022 east M 4x400: 12 teams
+[32m2026-06-03 10:46:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2022 east W 4x100: 12 teams
+[32m2026-06-03 10:46:50 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2022 east W 4x400: 12 teams
+[32m2026-06-03 10:46:50 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2022 west M 4x100: 12 teams
+[32m2026-06-03 10:46:50 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2022 west M 4x400: 12 teams
+[32m2026-06-03 10:46:51 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2022 west W 4x100: 12 teams
+[32m2026-06-03 10:46:51 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2022 west W 4x400: 12 teams
+[32m2026-06-03 10:46:51 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2023 east M 4x100: 12 teams
+[32m2026-06-03 10:46:52 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2023 east M 4x400: 12 teams
+[32m2026-06-03 10:46:52 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2023 east W 4x100: 12 teams
+[32m2026-06-03 10:46:53 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2023 east W 4x400: 12 teams
+[32m2026-06-03 10:46:53 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2023 west M 4x100: 12 teams
+[32m2026-06-03 10:46:53 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2023 west M 4x400: 12 teams
+[32m2026-06-03 10:46:54 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2023 west W 4x100: 12 teams
+[32m2026-06-03 10:46:54 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2023 west W 4x400: 12 teams
+[32m2026-06-03 10:46:55 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2024 east M 4x100: 12 teams
+[32m2026-06-03 10:46:55 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2024 east M 4x400: 12 teams
+[32m2026-06-03 10:46:55 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2024 east W 4x100: 12 teams
+[32m2026-06-03 10:46:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2024 east W 4x400: 12 teams
+[32m2026-06-03 10:46:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2024 west M 4x100: 12 teams
+[32m2026-06-03 10:46:56 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2024 west M 4x400: 12 teams
+[32m2026-06-03 10:46:57 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2024 west W 4x100: 12 teams
+[32m2026-06-03 10:46:57 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2024 west W 4x400: 12 teams
+[32m2026-06-03 10:46:58 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2025 east M 4x100: 12 teams
+[32m2026-06-03 10:46:58 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2025 east M 4x400: 12 teams
+[32m2026-06-03 10:46:58 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2025 east W 4x100: 12 teams
+[32m2026-06-03 10:46:58 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2025 east W 4x400: 12 teams
+[32m2026-06-03 10:46:59 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2025 west M 4x100: 12 teams
+[32m2026-06-03 10:46:59 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2025 west M 4x400: 12 teams
+[32m2026-06-03 10:46:59 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2025 west W 4x100: 12 teams
+[32m2026-06-03 10:47:00 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2025 west W 4x400: 12 teams
+[32m2026-06-03 10:47:00 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2019 east M 4x100: 46 teams (TFRRS)
+[32m2026-06-03 10:47:00 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2019 east M 4x400: 42 teams (TFRRS)
+[32m2026-06-03 10:47:00 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2019 east W 4x100: 48 teams (TFRRS)
+[32m2026-06-03 10:47:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2019 east W 4x400: 48 teams (TFRRS)
+[32m2026-06-03 10:47:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2019 west M 4x100: 40 teams (TFRRS)
+[32m2026-06-03 10:47:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2019 west M 4x400: 48 teams (TFRRS)
+[32m2026-06-03 10:47:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2019 west W 4x100: 40 teams (TFRRS)
+[32m2026-06-03 10:47:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying -   2019 west W 4x400: 48 teams (TFRRS)
+[32m2026-06-03 10:47:01 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying - Saved 840 relay qualifying rows → data/training/historical_relay_qualifying.csv
+[32m2026-06-03 10:47:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - 70089 - historical_relay_qualifying - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-06-03 10:47:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_relay_qualifying - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_a3a704iz/storage/historical_relay_qualifying using PickledObjectFilesystemIOManager...
+[32m2026-06-03 10:47:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - 70089 - historical_relay_qualifying - ASSET_MATERIALIZATION - Materialized value historical_relay_qualifying.
+[32m2026-06-03 10:47:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - 70089 - historical_relay_qualifying - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-06-03 10:47:01 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - 70089 - historical_relay_qualifying - STEP_SUCCESS - Finished execution of step "historical_relay_qualifying" in 16.11s.

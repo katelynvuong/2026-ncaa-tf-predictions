@@ -189,9 +189,85 @@ def app_event_predictions() -> None:
     (_APP_DATA / "event_predictions.json").write_text(json.dumps(ordered, indent=2))
 
 
+_FEATURE_LABELS = {
+    "avg_place":                  "Avg Place",
+    "conf_champ_place":           "Conf Champ Place",
+    "conf_champ_place_any_event": "Conf Champ (Any Event)",
+    "cross_event_avg_place":      "Cross-Event Avg Place",
+    "pr":                         "Personal Record",
+    "season_best":                "Season Best",
+    "season_avg":                 "Season Avg",
+    "relay_qualifying_time":      "Relay Qualifying Time",
+    "relay_season_best":          "Relay Season Best",
+    "relay_qualifying_place":     "Relay Qualifying Place",
+}
+
+
 @dg.asset(
     group_name="app",
-    deps=["app_metrics", "app_team_standings", "app_event_predictions"],
+    deps=["predictions"],
+    description="Compute analytics: feature importances, team category breakdown, regional split.",
+)
+def app_analytics() -> None:
+    preds = pd.read_csv("data/predictions/predictions.csv", dtype=str)
+    preds["predicted_rank"] = pd.to_numeric(preds["predicted_rank"], errors="coerce")
+    preds["points"] = preds["predicted_rank"].map(_SCORING_MAP).fillna(0)
+
+    # Feature importances
+    fi_path = Path("data/predictions/feature_importances.json")
+    feature_importances = []
+    if fi_path.exists():
+        raw = json.loads(fi_path.read_text())
+        feature_importances = [
+            {"feature": r["feature"], "importance": r["importance"],
+             "label": _FEATURE_LABELS.get(r["feature"], r["feature"])}
+            for r in raw
+        ]
+
+    # Team category breakdown (top 3 per gender)
+    scores = pd.read_csv("data/predictions/team_scores.csv", dtype=str)
+    scores["predicted_rank"] = pd.to_numeric(scores["predicted_rank"], errors="coerce")
+    preds["category"] = preds["event"].map(_EVENT_CATEGORY).fillna("other")
+
+    team_breakdown = []
+    for gender in ["M", "W"]:
+        top3 = scores[scores["gender"] == gender].nsmallest(3, "predicted_rank")
+        for _, row in top3.iterrows():
+            school = row["school"]
+            sp = preds[(preds["school"] == school) & (preds["gender"] == gender)]
+            cat_pts = sp.groupby("category")["points"].sum().to_dict()
+            team_breakdown.append({
+                "gender":       gender,
+                "rank":         int(row["predicted_rank"]),
+                "school":       school,
+                "logo_url":     _logo_url(school),
+                "total_points": float(row["total_points"]),
+                "sprints":      float(cat_pts.get("sprints", 0)),
+                "distance":     float(cat_pts.get("distance", 0)),
+                "field":        float(cat_pts.get("field", 0)),
+                "relays":       float(cat_pts.get("relays", 0)),
+            })
+
+    # Regional split — count of top-8 predicted athletes by region (all events, both genders)
+    ind = preds[~preds["event"].isin(["4x100", "4x400"])]
+    # region is already in predictions.csv — no join needed
+    east = int(ind[ind["region"] == "east"].shape[0])
+    west = int(ind[ind["region"] == "west"].shape[0])
+    regional_split = {"east": east, "west": west, "total": east + west}
+
+    output = {
+        "feature_importances": feature_importances,
+        "team_category_breakdown": team_breakdown,
+        "regional_split": regional_split,
+    }
+
+    _APP_DATA.mkdir(parents=True, exist_ok=True)
+    (_APP_DATA / "analytics.json").write_text(json.dumps(output, indent=2))
+
+
+@dg.asset(
+    group_name="app",
+    deps=["app_metrics", "app_team_standings", "app_event_predictions", "app_analytics"],
     description="Build the React frontend (npm run build) so it picks up the latest data.",
 )
 def frontend_build(context) -> None:
@@ -208,4 +284,4 @@ def frontend_build(context) -> None:
     context.log.info(f"Build complete → {frontend_dir / 'dist'}")
 
 
-assets = [app_metrics, app_team_standings, app_event_predictions, frontend_build]
+assets = [app_metrics, app_team_standings, app_event_predictions, app_analytics, frontend_build]

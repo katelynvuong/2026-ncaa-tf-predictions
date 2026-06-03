@@ -1,9 +1,0 @@
-[32m2026-05-31 08:34:19 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 269b7e6a-1832-40cb-8f91-97967c79ec06 - 26338 - LOGS_CAPTURED - Started capturing logs in process (pid: 26338).
-[32m2026-05-31 08:34:19 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 269b7e6a-1832-40cb-8f91-97967c79ec06 - 26338 - features - STEP_START - Started execution of step "features".
-[32m2026-05-31 08:34:22 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 269b7e6a-1832-40cb-8f91-97967c79ec06 - features - Filtered results: 59721 rows (2026, wind-legal)
-[32m2026-05-31 08:34:23 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 269b7e6a-1832-40cb-8f91-97967c79ec06 - features - season_best populated: 901/956 (94.2%)
-[32m2026-05-31 08:34:23 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 269b7e6a-1832-40cb-8f91-97967c79ec06 - 26338 - features - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
-[32m2026-05-31 08:34:23 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 269b7e6a-1832-40cb-8f91-97967c79ec06 - features - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_17skikmc/storage/features using PickledObjectFilesystemIOManager...
-[32m2026-05-31 08:34:23 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 269b7e6a-1832-40cb-8f91-97967c79ec06 - 26338 - features - ASSET_MATERIALIZATION - Materialized value features.
-[32m2026-05-31 08:34:23 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 269b7e6a-1832-40cb-8f91-97967c79ec06 - 26338 - features - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
-[32m2026-05-31 08:34:23 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 269b7e6a-1832-40cb-8f91-97967c79ec06 - 26338 - features - STEP_SUCCESS - Finished execution of step "features" in 3.96s.

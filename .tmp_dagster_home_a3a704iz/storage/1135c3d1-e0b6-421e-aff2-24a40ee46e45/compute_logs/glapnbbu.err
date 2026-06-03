@@ -1,0 +1,6 @@
+[32m2026-06-03 10:47:41 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - 70825 - LOGS_CAPTURED - Started capturing logs in process (pid: 70825).
+[32m2026-06-03 10:47:41 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - 70825 - historical_profiles - STEP_START - Started execution of step "historical_profiles".
+[32m2026-06-03 10:47:42 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - historical_profiles - Done: 0 saved, 1139 skipped, 0 errors
+[32m2026-06-03 10:47:42 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - 70825 - historical_profiles - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+[32m2026-06-03 10:47:42 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - 70825 - historical_profiles - ASSET_MATERIALIZATION - Materialized value historical_profiles.
+[32m2026-06-03 10:47:42 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 1135c3d1-e0b6-421e-aff2-24a40ee46e45 - 70825 - historical_profiles - STEP_SUCCESS - Finished execution of step "historical_profiles" in 122ms.

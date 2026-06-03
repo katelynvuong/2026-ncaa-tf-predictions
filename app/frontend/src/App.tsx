@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
-import type { TeamStanding, EventData, Metrics } from "./types"
+import type { TeamStanding, EventData, Metrics, Analytics } from "./types"
 import Podium from "./components/Podium"
 import EventChart from "./components/EventChart"
 import MetricsPanel from "./components/MetricsPanel"
+import AnalyticsPanel from "./components/AnalyticsPanel"
 
 const BASE = import.meta.env.VITE_DATA_URL ?? "/data"
 
@@ -18,15 +19,17 @@ const EVENT_LABELS: Record<string, string> = {
 const CAT_ORDER = ["sprints", "distance", "field", "relays"]
 
 export default function App() {
-  const [standings, setStandings] = useState<TeamStanding[]>([])
-  const [events, setEvents]       = useState<EventData[]>([])
-  const [metrics, setMetrics]     = useState<Metrics | null>(null)
-  const [selected, setSelected]   = useState("__podium__")
+  const [standings, setStandings]   = useState<TeamStanding[]>([])
+  const [events, setEvents]         = useState<EventData[]>([])
+  const [metrics, setMetrics]       = useState<Metrics | null>(null)
+  const [analytics, setAnalytics]   = useState<Analytics | null>(null)
+  const [selected, setSelected]     = useState("__podium__")
 
   useEffect(() => {
     fetch(`${BASE}/team_standings.json`).then(r => r.json()).then(setStandings)
     fetch(`${BASE}/event_predictions.json`).then(r => r.json()).then(setEvents)
     fetch(`${BASE}/metrics.json`).then(r => r.json()).then(setMetrics)
+    fetch(`${BASE}/analytics.json`).then(r => r.json()).then(setAnalytics)
   }, [])
 
   const byCategory = CAT_ORDER.map(cat => ({
@@ -101,6 +104,7 @@ export default function App() {
       ) : null}
 
       {metrics && <MetricsPanel metrics={metrics} />}
+      {analytics && <AnalyticsPanel analytics={analytics} />}
     </div>
   )
 }

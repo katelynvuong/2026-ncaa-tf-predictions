@@ -1,0 +1,127 @@
+{
+  "feature_importances": [
+    {
+      "feature": "avg_place",
+      "importance": 0.3726,
+      "label": "Avg Place"
+    },
+    {
+      "feature": "conf_champ_place",
+      "importance": 0.1182,
+      "label": "Conf Champ Place"
+    },
+    {
+      "feature": "conf_champ_place_any_event",
+      "importance": 0.1012,
+      "label": "Conf Champ (Any Event)"
+    },
+    {
+      "feature": "cross_event_avg_place",
+      "importance": 0.0804,
+      "label": "Cross-Event Avg Place"
+    },
+    {
+      "feature": "pr",
+      "importance": 0.0761,
+      "label": "Personal Record"
+    },
+    {
+      "feature": "season_best",
+      "importance": 0.0704,
+      "label": "Season Best"
+    },
+    {
+      "feature": "season_avg",
+      "importance": 0.0656,
+      "label": "Season Avg"
+    },
+    {
+      "feature": "relay_qualifying_time",
+      "importance": 0.044,
+      "label": "Relay Qualifying Time"
+    },
+    {
+      "feature": "relay_season_best",
+      "importance": 0.0417,
+      "label": "Relay Season Best"
+    },
+    {
+      "feature": "relay_qualifying_place",
+      "importance": 0.0297,
+      "label": "Relay Qualifying Place"
+    }
+  ],
+  "team_category_breakdown": [
+    {
+      "gender": "M",
+      "rank": 1,
+      "school": "Arkansas",
+      "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
+      "total_points": 39.0,
+      "sprints": 12.0,
+      "distance": 26.0,
+      "field": 1.0,
+      "relays": 0.0
+    },
+    {
+      "gender": "M",
+      "rank": 2,
+      "school": "Oregon",
+      "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
+      "total_points": 32.0,
+      "sprints": 6.0,
+      "distance": 19.0,
+      "field": 7.0,
+      "relays": 0.0
+    },
+    {
+      "gender": "M",
+      "rank": 3,
+      "school": "Auburn",
+      "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
+      "total_points": 30.0,
+      "sprints": 26.0,
+      "distance": 0.0,
+      "field": 0.0,
+      "relays": 4.0
+    },
+    {
+      "gender": "W",
+      "rank": 1,
+      "school": "Georgia",
+      "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
+      "total_points": 45.0,
+      "sprints": 31.0,
+      "distance": 0.0,
+      "field": 0.0,
+      "relays": 14.0
+    },
+    {
+      "gender": "W",
+      "rank": 2,
+      "school": "South Carolina",
+      "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
+      "total_points": 37.0,
+      "sprints": 16.0,
+      "distance": 10.0,
+      "field": 1.0,
+      "relays": 10.0
+    },
+    {
+      "gender": "W",
+      "rank": 3,
+      "school": "USC",
+      "logo_url": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
+      "total_points": 31.0,
+      "sprints": 17.0,
+      "distance": 0.0,
+      "field": 0.0,
+      "relays": 14.0
+    }
+  ],
+  "regional_split": {
+    "east": 144,
+    "west": 144,
+    "total": 288
+  }
+}

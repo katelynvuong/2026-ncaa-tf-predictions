@@ -28,6 +28,30 @@ export interface EventData {
   W: Athlete[]
 }
 
+export interface FeatureImportance {
+  feature: string
+  importance: number
+  label: string
+}
+
+export interface TeamCategoryBreakdown {
+  gender: "M" | "W"
+  rank: number
+  school: string
+  logo_url: string | null
+  total_points: number
+  sprints: number
+  distance: number
+  field: number
+  relays: number
+}
+
+export interface Analytics {
+  feature_importances: FeatureImportance[]
+  team_category_breakdown: TeamCategoryBreakdown[]
+  regional_split: { east: number; west: number; total: number }
+}
+
 export interface Metrics {
   mae: number
   rmse: number

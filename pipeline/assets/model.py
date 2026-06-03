@@ -187,6 +187,12 @@ def predictions() -> pd.DataFrame:
     logger.info("Feature importances:")
     for feat, imp in sorted(importance.items(), key=lambda x: -x[1]):
         logger.info(f"  {feat:30s}: {imp:.4f}")
+    Path("data/predictions/feature_importances.json").write_text(
+        json.dumps([
+            {"feature": f, "importance": round(float(v), 4)}
+            for f, v in sorted(importance.items(), key=lambda x: -x[1])
+        ], indent=2)
+    )
 
     # ── Predict 2026 ─────────────────────────────────────────────────────────
     ind = pred_df.copy()

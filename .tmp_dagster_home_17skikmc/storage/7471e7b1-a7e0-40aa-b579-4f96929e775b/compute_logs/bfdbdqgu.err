@@ -1,7 +1,0 @@
-[32m2026-05-31 08:33:48 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7471e7b1-a7e0-40aa-b579-4f96929e775b - 25996 - LOGS_CAPTURED - Started capturing logs in process (pid: 25996).
-[32m2026-05-31 08:33:48 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7471e7b1-a7e0-40aa-b579-4f96929e775b - 25996 - supplemental_profiles - STEP_START - Started execution of step "supplemental_profiles".
-[32m2026-05-31 08:33:48 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7471e7b1-a7e0-40aa-b579-4f96929e775b - supplemental_profiles - Saved 9252175 (McElhinney_Dylan)
-[32m2026-05-31 08:33:49 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7471e7b1-a7e0-40aa-b579-4f96929e775b - supplemental_profiles - Done: 1 saved, 859 skipped, 0 errors
-[32m2026-05-31 08:33:49 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7471e7b1-a7e0-40aa-b579-4f96929e775b - 25996 - supplemental_profiles - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
-[32m2026-05-31 08:33:49 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7471e7b1-a7e0-40aa-b579-4f96929e775b - 25996 - supplemental_profiles - ASSET_MATERIALIZATION - Materialized value supplemental_profiles.
-[32m2026-05-31 08:33:49 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7471e7b1-a7e0-40aa-b579-4f96929e775b - 25996 - supplemental_profiles - STEP_SUCCESS - Finished execution of step "supplemental_profiles" in 1.27s.
