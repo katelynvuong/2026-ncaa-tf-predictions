@@ -50,6 +50,7 @@ export interface Analytics {
   feature_importances: FeatureImportance[]
   team_category_breakdown: TeamCategoryBreakdown[]
   regional_split: { east: number; west: number; total: number }
+  school_depth: { school: string; count: number }[]
 }
 
 export interface Metrics {

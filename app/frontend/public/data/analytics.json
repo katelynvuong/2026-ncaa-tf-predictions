@@ -123,5 +123,47 @@
     "east": 144,
     "west": 144,
     "total": 288
-  }
+  },
+  "school_depth": [
+    {
+      "school": "Oregon",
+      "count": 13
+    },
+    {
+      "school": "Arkansas",
+      "count": 12
+    },
+    {
+      "school": "Georgia",
+      "count": 9
+    },
+    {
+      "school": "Princeton",
+      "count": 9
+    },
+    {
+      "school": "Nebraska",
+      "count": 7
+    },
+    {
+      "school": "USC",
+      "count": 7
+    },
+    {
+      "school": "South Carolina",
+      "count": 6
+    },
+    {
+      "school": "Louisville",
+      "count": 6
+    },
+    {
+      "school": "Tennessee",
+      "count": 6
+    },
+    {
+      "school": "Washington",
+      "count": 6
+    }
+  ]
 }

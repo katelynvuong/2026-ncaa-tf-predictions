@@ -255,10 +255,22 @@ def app_analytics() -> None:
     west = int(ind[ind["region"] == "west"].shape[0])
     regional_split = {"east": east, "west": west, "total": east + west}
 
+    # School depth — top 10 schools by number of athletes predicted top-8 (combined M+W)
+    school_depth = (
+        ind.groupby("school")
+        .size()
+        .sort_values(ascending=False)
+        .head(10)
+        .reset_index()
+        .rename(columns={0: "count"})
+        .to_dict("records")
+    )
+
     output = {
         "feature_importances": feature_importances,
         "team_category_breakdown": team_breakdown,
         "regional_split": regional_split,
+        "school_depth": school_depth,
     }
 
     _APP_DATA.mkdir(parents=True, exist_ok=True)

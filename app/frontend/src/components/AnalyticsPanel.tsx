@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { BarChart, Bar, XAxis, YAxis, Cell, ResponsiveContainer, Tooltip as ReTooltip } from "recharts"
 import type { Analytics } from "../types"
 
 interface Props { analytics: Analytics }
@@ -39,8 +40,9 @@ function Tooltip({ text }: { text: string }) {
 }
 
 export default function AnalyticsPanel({ analytics }: Props) {
-  const { feature_importances, team_category_breakdown, regional_split } = analytics
+  const { feature_importances, team_category_breakdown, regional_split, school_depth } = analytics
   const maxImportance = Math.max(...feature_importances.map(f => f.importance))
+  const maxDepth = Math.max(...school_depth.map(s => s.count))
 
   const regionalSummary = regional_split.east > regional_split.west
     ? "East producing more predicted top-8 finishers"
@@ -54,10 +56,10 @@ export default function AnalyticsPanel({ analytics }: Props) {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-        {/* Feature Importances */}
+        {/* Col 1 — Feature Importances */}
         <div>
           <p className="text-xs text-white/40 uppercase tracking-wider mb-3 flex items-center">
-            Feature Importances
+            Feature importances
             <Tooltip text="How much each factor influenced the model's predictions. Higher % = the model relied on it more when ranking athletes." />
           </p>
           <div className="flex flex-col gap-2">
@@ -81,7 +83,79 @@ export default function AnalyticsPanel({ analytics }: Props) {
           </div>
         </div>
 
-        {/* Team Category Breakdown */}
+        {/* Col 2 — Regional Split + School Depth */}
+        <div className="flex flex-col gap-6">
+          {/* Regional Split */}
+          <div>
+            <p className="text-xs text-white/40 uppercase tracking-wider mb-3 flex items-center">
+              Regional Split
+              <Tooltip text="The model doesn't know about regions — it ranks athletes purely on performance. Any balance here reflects equal qualifying standards between East and West, not a deliberate split. The actual split at nationals may differ." />
+            </p>
+            <p className="text-xs text-white/30 mb-3">Top-8 predicted finishers by qualifying region</p>
+            {[
+              { label: "East", value: regional_split.east },
+              { label: "West", value: regional_split.west },
+            ].map(({ label, value }) => (
+              <div key={label} className="mb-2">
+                <div className="flex justify-between text-xs mb-0.5">
+                  <span className="text-white/60">{label}</span>
+                  <span className="text-white/40">{value} <span className="text-white/20">/ {regional_split.total}</span></span>
+                </div>
+                <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
+                  <div
+                    className="h-full rounded-full bg-white/50"
+                    style={{ width: `${(value / regional_split.total) * 100}%` }}
+                  />
+                </div>
+              </div>
+            ))}
+            <p className="text-xs text-white/20 mt-3">{regionalSummary}</p>
+          </div>
+
+          {/* School Depth */}
+          <div>
+            <p className="text-xs text-white/40 uppercase tracking-wider mb-3 flex items-center">
+              School Depth
+              <Tooltip text="Schools with the most athletes predicted to score at nationals. High depth means a program is competitive across multiple events — also highlights potential dark-horse contenders if individual predictions shift." />
+            </p>
+            <ResponsiveContainer width="100%" height={200}>
+              <BarChart
+                data={school_depth}
+                layout="vertical"
+                margin={{ top: 0, right: 24, left: 0, bottom: 0 }}
+              >
+                <XAxis type="number" domain={[0, maxDepth + 1]} hide />
+                <YAxis
+                  type="category"
+                  dataKey="school"
+                  tick={{ fill: "rgba(240,238,236,0.5)", fontSize: 10 }}
+                  axisLine={false}
+                  tickLine={false}
+                  width={80}
+                />
+                <ReTooltip
+                  cursor={{ fill: "rgba(255,255,255,0.04)" }}
+                  content={({ active, payload }) => {
+                    if (!active || !payload?.length) return null
+                    const d = payload[0].payload
+                    return (
+                      <div className="bg-[#1c1c24] border border-white/10 rounded-lg px-3 py-1.5 text-xs text-white/60">
+                        {d.school}: <span className="text-white/80 font-semibold">{d.count}</span> athletes predicted top-8
+                      </div>
+                    )
+                  }}
+                />
+                <Bar dataKey="count" radius={[0, 4, 4, 0]}>
+                  {school_depth.map((_, i) => (
+                    <Cell key={i} fill="rgba(255,255,255,0.25)" fillOpacity={1 - i * 0.07} />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Col 3 — Team Category Breakdown */}
         <div>
           <p className="text-xs text-white/40 uppercase tracking-wider mb-3">Points by Category</p>
           {["M", "W"].map(gender => {
@@ -123,30 +197,6 @@ export default function AnalyticsPanel({ analytics }: Props) {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Regional Split */}
-        <div>
-          <p className="text-xs text-white/40 uppercase tracking-wider mb-3">Regional Split</p>
-          <p className="text-xs text-white/30 mb-3">Top-8 predicted finishers by qualifying region</p>
-          {[
-            { label: "East", value: regional_split.east },
-            { label: "West", value: regional_split.west },
-          ].map(({ label, value }) => (
-            <div key={label} className="mb-2">
-              <div className="flex justify-between text-xs mb-0.5">
-                <span className="text-white/60">{label}</span>
-                <span className="text-white/40">{value} <span className="text-white/20">/ {regional_split.total}</span></span>
-              </div>
-              <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
-                <div
-                  className="h-full rounded-full bg-white/50"
-                  style={{ width: `${(value / regional_split.total) * 100}%` }}
-                />
-              </div>
-            </div>
-          ))}
-          <p className="text-xs text-white/20 mt-3">{regionalSummary}</p>
         </div>
 
       </div>
