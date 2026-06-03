@@ -161,7 +161,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
           {["M", "W"].map(gender => {
             const teams = team_category_breakdown.filter(t => t.gender === gender)
             return (
-              <div key={gender} className="mb-8">
+              <div key={gender} className="mb-12">
                 <p className="text-xs text-white/30 mb-2">{gender === "M" ? "Men" : "Women"}</p>
                 {teams.map(team => (
                   <div key={team.school} className="mb-2">
