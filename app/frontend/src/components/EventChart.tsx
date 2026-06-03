@@ -73,7 +73,7 @@ export default function EventChart({ athletes, gender }: Props) {
                   {d.name && <p className="text-white/50">{d.school}</p>}
                   <p className="text-white/40 mt-1">
                     Model score: <span className="text-white/70">{d.place.toFixed(2)}</span>
-                    <span className="text-white/30"> (lower = stronger predicted finish)</span>
+                    <span className="text-white/30"> (lower = stronger predicted finish) · Bar height = 9 − rank, so the best-predicted athlete has the tallest bar.</span>
                   </p>
                 </div>
               )
