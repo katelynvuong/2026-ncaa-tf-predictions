@@ -1,3 +1,4 @@
+import { useState } from "react"
 import type { Analytics } from "../types"
 
 interface Props { analytics: Analytics }
@@ -6,9 +7,46 @@ const MEDAL_COLOR: Record<number, string> = { 1: "#FFD700", 2: "#C0C0C0", 3: "#C
 const CAT_COLORS = { sprints: "#967f82", distance: "#6b8fa3", field: "#7fa36b", relays: "#a3896b" }
 const CAT_LABELS = { sprints: "Sprints", distance: "Distance", field: "Field", relays: "Relays" }
 
+const FEATURE_TIPS: Record<string, string> = {
+  "Avg Place":               "Average finishing position in race finals during the 2026 season — captures overall competitive level.",
+  "Conf Champ Place":        "Finishing position at the athlete's outdoor conference championship in this specific event.",
+  "Conf Champ (Any Event)":  "Best conference championship finish across any event — captures athletes who dominated their conference even in a different discipline.",
+  "Cross-Event Avg Place":   "Average finishing position across all events the athlete competed in during 2026 — a general athleticism signal.",
+  "Personal Record":         "All-time career best in this event, normalized against field — shows peak potential regardless of this season's race count.",
+  "Season Best":             "Best performance in this event during the 2026 season, normalized within event and gender.",
+  "Season Avg":              "Average performance across all 2026 competitions in this event — measures consistency.",
+  "Relay Qualifying Time":   "The relay team's time at the 2026 regional qualifying meet.",
+  "Relay Season Best":       "The relay team's fastest time run this season.",
+  "Relay Qualifying Place":  "The relay team's finishing position at the regional qualifying meet.",
+}
+
+function Tooltip({ text }: { text: string }) {
+  const [visible, setVisible] = useState(false)
+  return (
+    <span className="relative inline-block ml-1">
+      <span
+        className="text-white/25 hover:text-white/50 cursor-default text-[10px] select-none"
+        onMouseEnter={() => setVisible(true)}
+        onMouseLeave={() => setVisible(false)}
+      >ⓘ</span>
+      {visible && (
+        <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 w-52 bg-[#1c1c24] border border-white/10 rounded-lg px-3 py-2 text-xs text-white/60 leading-relaxed z-20 shadow-xl">
+          {text}
+        </span>
+      )}
+    </span>
+  )
+}
+
 export default function AnalyticsPanel({ analytics }: Props) {
   const { feature_importances, team_category_breakdown, regional_split } = analytics
   const maxImportance = Math.max(...feature_importances.map(f => f.importance))
+
+  const regionalSummary = regional_split.east > regional_split.west
+    ? "East producing more predicted top-8 finishers"
+    : regional_split.west > regional_split.east
+    ? "West producing more predicted top-8 finishers"
+    : "East and West equally represented"
 
   return (
     <div className="mt-6 border border-white/10 rounded-xl p-5 bg-white/5">
@@ -22,8 +60,11 @@ export default function AnalyticsPanel({ analytics }: Props) {
           <div className="flex flex-col gap-2">
             {feature_importances.map(f => (
               <div key={f.feature}>
-                <div className="flex justify-between text-xs mb-0.5">
-                  <span className="text-white/60">{f.label}</span>
+                <div className="flex justify-between text-xs mb-0.5 items-center">
+                  <span className="text-white/60 flex items-center">
+                    {f.label}
+                    {FEATURE_TIPS[f.label] && <Tooltip text={FEATURE_TIPS[f.label]} />}
+                  </span>
                   <span className="text-white/40">{(f.importance * 100).toFixed(1)}%</span>
                 </div>
                 <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
@@ -84,7 +125,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
         {/* Regional Split */}
         <div>
           <p className="text-xs text-white/40 uppercase tracking-wider mb-3">Regional Split</p>
-          <p className="text-xs text-white/30 mb-3">Top-8 predicted finishers by region</p>
+          <p className="text-xs text-white/30 mb-3">Top-8 predicted finishers by qualifying region</p>
           {[
             { label: "East", value: regional_split.east },
             { label: "West", value: regional_split.west },
@@ -102,9 +143,7 @@ export default function AnalyticsPanel({ analytics }: Props) {
               </div>
             </div>
           ))}
-          <p className="text-xs text-white/20 mt-3">
-            {regional_split.east > regional_split.west ? "East" : "West"} producing more predicted top-8 finishers
-          </p>
+          <p className="text-xs text-white/20 mt-3">{regionalSummary}</p>
         </div>
 
       </div>
