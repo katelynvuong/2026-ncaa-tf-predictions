@@ -288,6 +288,11 @@ def frontend_build(context) -> None:
         context.log.warning(f"Frontend directory not found at {frontend_dir} — skipping build.")
         return
 
+    import shutil
+    if not shutil.which("npm"):
+        context.log.warning("npm not found — skipping frontend build. Deploy via Vercel instead.")
+        return
+
     context.log.info("Installing npm dependencies...")
     subprocess.run(["npm", "install"], cwd=frontend_dir, check=True)
 
