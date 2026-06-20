@@ -4,6 +4,7 @@ import Podium from "./components/Podium"
 import EventChart from "./components/EventChart"
 import MetricsPanel from "./components/MetricsPanel"
 import AnalyticsPanel from "./components/AnalyticsPanel"
+import ResultsAnalysis from "./components/ResultsAnalysis"
 
 const BASE = import.meta.env.VITE_DATA_URL ?? "/data"
 
@@ -23,13 +24,15 @@ export default function App() {
   const [events, setEvents]         = useState<EventData[]>([])
   const [metrics, setMetrics]       = useState<Metrics | null>(null)
   const [analytics, setAnalytics]   = useState<Analytics | null>(null)
-  const [selected, setSelected]     = useState("__podium__")
+  const [testMetrics, setTestMetrics] = useState<any>(null)
+  const [selected, setSelected]     = useState("__results__")
 
   useEffect(() => {
     fetch(`${BASE}/team_standings.json`).then(r => r.json()).then(setStandings)
     fetch(`${BASE}/event_predictions.json`).then(r => r.json()).then(setEvents)
     fetch(`${BASE}/metrics.json`).then(r => r.json()).then(setMetrics)
     fetch(`${BASE}/analytics.json`).then(r => r.json()).then(setAnalytics)
+    fetch(`${BASE}/test_metrics_2026.json`).then(r => r.json()).then(setTestMetrics).catch(() => {})
   }, [])
 
   const byCategory = CAT_ORDER.map(cat => ({
@@ -53,6 +56,7 @@ export default function App() {
           onChange={e => setSelected(e.target.value)}
           className="bg-[#1c1c24] border border-white/10 text-white/80 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-white/20 min-w-[220px]"
         >
+          <option value="__results__">⭐ Results</option>
           <option value="__podium__">🏆 Team Standings</option>
           {byCategory.map(({ cat, events: evts }) => (
             <optgroup key={cat} label={cat.charAt(0).toUpperCase() + cat.slice(1)}>
@@ -66,7 +70,9 @@ export default function App() {
         </select>
       </div>
 
-      {selected === "__podium__" ? (
+      {selected === "__results__" ? (
+        <ResultsAnalysis testMetrics={testMetrics} />
+      ) : selected === "__podium__" ? (
         <div key="podium" className="animate-rise flex flex-col md:flex-row gap-12 justify-center">
           <Podium standings={standings} gender="M" />
           <div className="hidden md:block w-px bg-white/10" />

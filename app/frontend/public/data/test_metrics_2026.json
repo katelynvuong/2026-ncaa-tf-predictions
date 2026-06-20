@@ -1,0 +1,12 @@
+{
+  "mae": 1.915,
+  "rmse": 2.417,
+  "spearman": 0.295,
+  "top1_accuracy": 0.475,
+  "top1_correct": 19,
+  "top1_total": 40,
+  "top3_hit_rate": 0.769,
+  "top3_hits": 90,
+  "top3_total": 117,
+  "team_scoring_mae": 3.5
+}
