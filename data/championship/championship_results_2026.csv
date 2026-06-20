@@ -1,0 +1,321 @@
+year,event,gender,place,athlete_id,athlete_name,school,mark,score
+2026,HT,M,1,,Angelos MANTZOURANIS,Minnesota,75.78m248-7,10
+2026,HT,M,2,,Texas TANNER,Air Force,75.45m247-6,8
+2026,HT,M,3,,Ryan JOHNSON,Iowa,74.40m244-1,6
+2026,HT,M,4,,Jeremiah NUBBE,Virginia,72.52m237-11,5
+2026,HT,M,5,,Travis MARTIN,Cal Poly,72.46m237-9,4
+2026,HT,M,6,,Anthony BARMES,Minnesota,71.91m235-11,3
+2026,HT,M,7,,Max LAMPINEN,USC,71.64m235-0,2
+2026,HT,M,8,,Igor OLARU,Tennessee,71.11m233-3,1
+2026,4x100,M,1,,,Auburn,37.75,10
+2026,4x100,M,2,,,Arkansas,38.32,8
+2026,4x100,M,3,,,Houston,38.34,6
+2026,4x100,M,4,,,LSU,38.40,5
+2026,4x100,M,5,,,Tennessee,38.47,4
+2026,4x100,M,6,,,N. Carolina A&T,38.53,3
+2026,4x100,M,7,,,Oregon,38.54,2
+2026,4x100,M,8,,,Ohio State,38.64,1
+2026,1500,M,1,,Connor MCCORMICK,Princeton,3:35.81,10
+2026,1500,M,2,,Carter CUTTING,BYU,3:35.95,8
+2026,1500,M,3,,Trent MCFARLAND,Michigan,3:36.07,6
+2026,1500,M,4,,Benne ANDERSON,Syracuse,3:36.15,5
+2026,1500,M,5,,Chris CAUDILLO,Cal Poly,3:36.30,4
+2026,1500,M,6,,Reuben REINA,Washington,3:36.31,3
+2026,1500,M,7,,Elliott COOK,Oregon,3:36.77,2
+2026,1500,M,8,,George COUTTIE,Virginia Tech,3:36.99,1
+2026,PV,M,1,,Dyson WICKER,Nebraska,5.85m19-2¼,10
+2026,PV,M,2,,Logan HAMMER,Utah State,5.75m18-10¼,8
+2026,PV,M,3,,Anthony MEACHAM,Kansas,5.70m18-8¼,6
+2026,PV,M,4,,Ismaila SAWANEH,Tennessee,5.70m18-8¼,5
+2026,PV,M,5,,Matthew GRAY,App State,5.60m18-4½,4
+2026,PV,M,6,,Maddox HAMM,Virginia Tech,5.60m18-4½,3
+2026,PV,M,7,,Conner MCCLURE,Virginia Tech,5.60m18-4½,2
+2026,PV,M,8,,Tyler CARREL,Indiana,5.60m18-4½,1
+2026,3000S,M,1,,Collins Kiprop KIPNGOK,Kentucky,8:24.39,10
+2026,3000S,M,2,,Benjamin BALAZS,Oregon,8:24.68,8
+2026,3000S,M,3,,Geoffrey KIRWA,Louisville,8:25.43,6
+2026,3000S,M,4,,Joash RUTO,Iowa State,8:25.58,5
+2026,3000S,M,5,,Nathan MOUNTAIN,Virginia,8:25.69,4
+2026,3000S,M,6,,Louis-Lys FANUCCHI,North Dakota,8:26.57(8:26.563),3
+2026,3000S,M,7,,Bismack KIPCHIRCHIR,Alabama,8:26.57(8:26.570),2
+2026,3000S,M,8,,Silas KIPTANUI,Tulane,8:26.74,1
+2026,110H,M,1,,Ja'Kobe THARP,Auburn,12.75,10
+2026,110H,M,2,,Kendrick SMALLWOOD,Texas,13.02,8
+2026,110H,M,3,,Demario PRINCE,Baylor,13.15,6
+2026,110H,M,4,,Braxton BRANN,Ohio State,13.17(13.161),5
+2026,110H,M,5,,Jason HOLMES,N. Carolina A&T,13.17(13.168),4
+2026,110H,M,6,,Andre KORBMACHER,Florida State,13.27,3
+2026,110H,M,7,,Bradley FRANKLIN,Samford,13.29,2
+2026,110H,M,8,,Matthew SOPHIA,LSU,13.30,1
+2026,JT,M,1,,Chinecherem Prosper NNAMDI,Texas A&M,82.26m269-10,10
+2026,JT,M,2,,Keyshawn STRACHAN,Nebraska,80.65m264-7,8
+2026,JT,M,3,,Jack LARRIVIERE,LSU,77.91m255-7,6
+2026,JT,M,4,,Jordan DAVIS,Georgia,77.83m255-4,5
+2026,JT,M,5,,Nick REYNOLDS,Georgia,77.43m254-0,4
+2026,JT,M,6,,Leikel CABRERA GAY,Florida,76.07m249-7,3
+2026,JT,M,7,,Pat VIALVA,Oregon,75.04m246-2,2
+2026,JT,M,8,,Daniel THRANA,Oregon,74.90m245-9,1
+2026,100,M,1,,Kanyinsola AJAYI,Auburn,9.94,10
+2026,100,M,2,,Jaiden REID,LSU,9.95,8
+2026,100,M,3,,Jelani WATKINS,Arkansas,10.05,6
+2026,100,M,4,,Israel OKON,Auburn,10.07,5
+2026,100,M,5,,Davonte HOWELL,Tennessee,10.08,4
+2026,100,M,6,,Mustapha BOKPIN,Middle Tennessee,10.09(10.081),3
+2026,100,M,6,,Eddie NKETIA,USC,10.09(10.081),3
+2026,100,M,8,,Omari LEWIS,Auburn,10.13,1
+2026,LJ,M,1,,Tafadzwa CHIKOMBA,Kansas State,8.37m27-5½,10
+2026,LJ,M,2,,Juriad HUGHES,Arkansas,8.25m27-¾,8
+2026,LJ,M,3,,Uroy RYAN,Kansas State,8.04m26-4½,6
+2026,LJ,M,4,,Greg FOSTER,Princeton,8.03m26-4¼,5
+2026,LJ,M,5,,Markus WHITE,Liberty,7.93m26-¼,4
+2026,LJ,M,6,,Zaid LATIF,Texas Tech,7.89m25-10¾,3
+2026,LJ,M,7,,Jayden KEYS,Georgia,7.88m25-10¼,2
+2026,LJ,M,8,,Charles GODFRED,Minnesota,7.83m25-8¼,1
+2026,400,M,1,,Samuel OGAZI,Alabama,44.73,10
+2026,400,M,2,,Sidi NJIE,Georgia,44.82,8
+2026,400,M,3,,Samuel VESSAT,Purdue,44.85,6
+2026,400,M,4,,Jordan PIERRE,Arkansas,44.89,5
+2026,400,M,5,,Justin BRAUN,Florida,44.97,4
+2026,400,M,6,,Jonathan SIMMS,Georgia,45.03,3
+2026,400,M,7,,Jaden MARCHAN,Georgetown,45.26,2
+2026,400,M,8,,Amal GLASGOW,LSU,45.31,1
+2026,800,M,1,,Rivaldo MARSHALL,Arkansas,1:45.05,10
+2026,800,M,2,,Christian JACKSON,Virginia Tech,1:45.38,8
+2026,800,M,3,,Niko SCHULTZ,Penn State,1:45.47,6
+2026,800,M,4,,Peter NARUMBE,Texas A&M,1:45.49,5
+2026,800,M,5,,Camden LAW,Michigan,1:45.56(1:45.559),4
+2026,800,M,6,,Colin SAHLMAN,Northern Arizona,1:45.56(1:45.560),3
+2026,800,M,7,,Allon CLAY,Penn State,1:45.76,2
+2026,800,M,8,,Jamie PHILLIPS,Bradley,1:45.77,1
+2026,SP,M,1,,Ben SMITH,Oregon,21.04m69-½,10
+2026,SP,M,2,,JL VAN RENSBURG,Tennessee,20.33m66-8½,8
+2026,SP,M,3,,Cade MORAN,Nebraska,20.21m66-3¾,6
+2026,SP,M,4,,Kobe LAWRENCE,Oregon,19.87m65-2¼,5
+2026,SP,M,5,,Hencu LAMBERTS,Nebraska,19.71m64-8,4
+2026,SP,M,6,,Ryan HENRY,Penn State,19.65m64-5¾,3
+2026,SP,M,7,,Xaver HASTENRATH,UCLA,19.24m63-1½,2
+2026,SP,M,8,,Jacob COOKINHAM,Illinois,19.17m62-10¾,1
+2026,400H,M,1,,Ja'Qualon SCOTT,Texas A&M,48.59,10
+2026,400H,M,2,,Kody BLACKWOOD,Texas,48.95,8
+2026,400H,M,3,,Isaiah TAYLOR,N. Carolina A&T,49.00,6
+2026,400H,M,4,,Marc Anthony IBRAHIM,Tennessee,49.18,5
+2026,400H,M,5,,Jayden DOUGLAS,TCU,49.22,4
+2026,400H,M,6,,Xzaviah TAYLOR,N. Carolina A&T,49.28,3
+2026,400H,M,7,,Vance NILSSON,Florida,49.39,2
+2026,400H,M,8,,Josiah JOHNSON,Northern Arizona,49.40,1
+2026,200,M,1,,Jaiden REID,LSU,20.05,10
+2026,200,M,2,,Israel OKON,Auburn,20.07,8
+2026,200,M,3,,Mustapha BOKPIN,Middle Tennessee,20.19,6
+2026,200,M,4,,Eddie NKETIA,USC,20.24,5
+2026,200,M,5,,T'Mars MCCALLUM,Tennessee,20.28,4
+2026,200,M,6,,Ian DOSSMAN,Cal St. Fullerton,20.32,3
+2026,200,M,7,,Jordan URRUTIA,Ole Miss,20.36,2
+2026,200,M,8,,Trelee BANKS,Indiana,20.38,1
+2026,10k,M,1,,Habtom SAMUEL,New Mexico,27:51.31,10
+2026,10k,M,2,,Elsingi KIPRUTO,Louisville,27:54.04,8
+2026,10k,M,3,,Ernest CHERUIYOT,Arkansas,27:58.62,6
+2026,10k,M,4,,Denis KIPNGETICH,Oklahoma State,28:02.24,5
+2026,10k,M,5,,Dismus LOKIRA,Alabama,28:08.49,4
+2026,10k,M,6,,Evans KURUI,Washington St.,28:10.73,3
+2026,10k,M,7,,Kelvin CHERUIYOT,Florida,28:13.36,2
+2026,10k,M,8,,Dennis KIPRUTO,Alabama,28:16.31,1
+2026,4x400,M,1,,,LSU,3:00.54,10
+2026,4x400,M,2,,,Arkansas,3:00.85,8
+2026,4x400,M,3,,,Georgia,3:00.88,6
+2026,4x400,M,4,,,Florida,3:01.25,5
+2026,4x400,M,5,,,Texas A&M,3:01.64,4
+2026,4x400,M,6,,,Purdue,3:01.73(3:01.729),3
+2026,4x400,M,6,,,Tennessee,3:01.73(3:01.729),3
+2026,4x400,M,8,,,Iowa,3:01.95,1
+2026,HT,W,1,,Elisabet RUT RUNARSDOTTIR,Texas State,73.19m240-1,10
+2026,HT,W,2,,Anthonett NABWE,Minnesota,73.15m240-0,8
+2026,HT,W,3,,Marie ROUGETET,Miss State,69.71m228-8,6
+2026,HT,W,4,,Hadley STREIT,Minnesota,69.50m228-0,5
+2026,HT,W,5,,Jordan KOSKONDY,Illinois,69.24m227-2,4
+2026,HT,W,6,,Lara ROBERTS,Texas State,69.05m226-6,3
+2026,HT,W,7,,Kali TERZA,Kennesaw State,68.72m225-5,2
+2026,HT,W,8,,Valentina SAVVA,California,68.60m225-1,1
+2026,4x100,W,1,,,USC,41.96,10
+2026,4x100,W,2,,,Georgia,42.00,8
+2026,4x100,W,3,,,LSU,42.38,6
+2026,4x100,W,4,,,South Carolina,42.44,5
+2026,4x100,W,5,,,Tennessee,42.46,4
+2026,4x100,W,6,,,Texas A&M,42.52,3
+2026,4x100,W,7,,,Texas,43.01,2
+2026,4x100,W,8,,,Texas Tech,43.11,1
+2026,1500,W,1,,Rosemary LONGISA,Washington St.,4:06.41,10
+2026,1500,W,2,,Sadie ENGELHARDT,NC State,4:06.65,8
+2026,1500,W,3,,Wilma NIELSEN,Oregon,4:06.78,6
+2026,1500,W,4,,Tia WILSON,Florida,4:06.81,5
+2026,1500,W,5,,Carlee HANSEN,BYU,4:07.08,4
+2026,1500,W,6,,Emmaculate JEMUTAI,Kansas,4:08.33,3
+2026,1500,W,7,,Elizabeth WHALEY,Wake Forest,4:08.52,2
+2026,1500,W,8,,Hayley BURNS,Northern Arizona,4:09.48,1
+2026,PV,W,1,,Amanda MOLL,Washington,4.84m15-10½,10
+2026,PV,W,2,,Hana MOLL,Washington,4.74m15-6½,8
+2026,PV,W,3,,Anna WILLIS,South Dakota,4.64m15-2¾,6
+2026,PV,W,4,,Ashley CALLAHAN,Louisville,4.64m15-2¾,5
+2026,PV,W,5,,Molly HAYWOOD,Baylor,4.59m15-¾,4
+2026,PV,W,6,,Hannah GRACE,Tennessee,4.54m14-10¾,3
+2026,PV,W,7,,Lexi EVANS,Cal Poly,4.49m14-8¾,2
+2026,PV,W,8,,Tenly KUHN,Baylor,4.49m14-8¾,1
+2026,3000S,W,1,,Cynthia JEMUTAI,Alabama,9:38.49,10
+2026,3000S,W,2,,Angelina NAPOLEON,NC State,9:39.54,8
+2026,3000S,W,3,,Sophie NOVAK,Notre Dame,9:39.73,6
+2026,3000S,W,4,,Taylor LOVELL,BYU,9:39.96,5
+2026,3000S,W,5,,Mercy KINYANJUI,West Virginia,9:43.10,4
+2026,3000S,W,6,,Kate PUTMAN,NC State,9:44.42,3
+2026,3000S,W,7,,Jule LINDNER,Virginia Tech,9:44.43,2
+2026,3000S,W,8,,Sydney MASCIARELLI,North Carolina,9:44.72,1
+2026,100H,W,1,,Aaliyah MCCORMICK,Oregon,12.58,10
+2026,100H,W,2,,Emmi SCALES,Kentucky,12.72,8
+2026,100H,W,3,,Celeste POLZONETTI,UCLA,12.74,6
+2026,100H,W,4,,Janela SPENCER,Ohio State,12.77,5
+2026,100H,W,5,,Rachel MEHRINGER,Indiana State,12.79,4
+2026,100H,W,6,,Symoria ADKINS,Texas Tech,12.84,3
+2026,100H,W,7,,Tonie-Ann FORBES,Texas Tech,12.86,2
+2026,100H,W,8,,Taylor COX,Georgia,12.89,1
+2026,JT,W,1,,McKyla VAN DER WESTHUIZEN,Rice,60.87m199-8,10
+2026,JT,W,2,,Evelyn BLISS,Bucknell,60.28m197-9,8
+2026,JT,W,3,,Irene JEPKEMBOI,TCU,60.16m197-4,6
+2026,JT,W,4,,Valentina BARRIOS BORNACELLI,Missouri,57.17m187-6,5
+2026,JT,W,5,,Lilly URBAN,Nevada,55.88m183-4,4
+2026,JT,W,6,,Christiana ELLINA,Virginia,54.99m180-5,3
+2026,JT,W,7,,Shea GREENE,Princeton,54.90m180-1,2
+2026,JT,W,8,,Arndis OSKARSDOTTIR,FIU,54.75m179-7,1
+2026,100,W,1,,Adaejah HODGE,Georgia,10.63,10
+2026,100,W,2,,Shawnti JACKSON,LSU,10.88,8
+2026,100,W,3,,Shenese WALKER,Florida State,10.94(10.935),6
+2026,100,W,4,,Brianna SELBY,USC,10.94(10.939),5
+2026,100,W,5,,Dana WILSON,Tennessee,11.01,4
+2026,100,W,6,,Gabrielle MATTHEWS,Florida,11.02(11.016),3
+2026,100,W,7,,JaMeesia FORD,South Carolina,11.02(11.020),2
+2026,100,W,8,,Alicia BURNETT,Ole Miss,11.03,1
+2026,LJ,W,1,,Alyssa JONES,Stanford,7.06m23-2,10
+2026,LJ,W,2,,Shantae FOREMAN,Clemson,6.69m21-11½,8
+2026,LJ,W,3,,Caelyn HARRIS,Alabama,6.65m21-10,6
+2026,LJ,W,4,,Sophia BECKMON,Illinois,6.57m21-6¾,5
+2026,LJ,W,5,,Maeva TAHOU,Charleston Southern,6.56m21-6¼,4
+2026,LJ,W,6,,Trinity SHADD-CERES,Creighton,6.52m21-4¾,3
+2026,LJ,W,7,,Morgan DAVIS,Texas A&M,6.52m21-4¾,2
+2026,LJ,W,8,,Aaliyah LINDSAY,Kansas State,6.44m21-1½,1
+2026,400,W,1,,Dejanea OAKLEY,Georgia,49.93,10
+2026,400,W,2,,Sydney SEGALLA,Boston College,50.31,8
+2026,400,W,3,,Sanaria BUTLER,Arkansas,50.53,6
+2026,400,W,4,,Kaylyn BROWN,Arkansas,50.62,5
+2026,400,W,5,,Madison WHYTE,USC,50.73,4
+2026,400,W,6,,Javonya VALCOURT,Tennessee,50.75,3
+2026,400,W,7,,Rachel JOSEPH,Iowa State,50.97,2
+2026,400,W,8,,Onyah Onyinye FAVOUR,SE Louisiana,51.00,1
+2026,800,W,1,,Sanu JALLOW,Arkansas,1:58.89,10
+2026,800,W,2,,Hayley KITCHING,Penn State,1:59.46,8
+2026,800,W,3,,Emmaculate JEMUTAI,Kansas,1:59.62,6
+2026,800,W,4,,Lauren TOLBERT,Duke,1:59.69,5
+2026,800,W,5,,Janet Jepkemboi AMIMO,Kentucky,1:59.75,4
+2026,800,W,6,,Gladys CHEPNGETICH,Clemson,1:59.81,3
+2026,800,W,7,,Makayla PAIGE,North Carolina,1:59.91,2
+2026,800,W,8,,Juliette WHITTAKER,Stanford,1:59.92,1
+2026,SP,W,1,,Axelina JOHANSSON,Nebraska,19.92m65-4¼,10
+2026,SP,W,2,,Ashley ERASMUS,USC,18.14m59-6¼,8
+2026,SP,W,3,,Alida VAN DAALEN,Florida,18.12m59-5½,6
+2026,SP,W,4,,Jessica OJI,Penn,17.98m59-0,5
+2026,SP,W,5,,Mine DE KLERK,Nebraska,17.86m58-7¼,4
+2026,SP,W,6,,Nina NDUBUISI,Georgia,17.67m57-11¾,3
+2026,SP,W,7,,Elizabeth TAPPER,Michigan,17.54m57-6½,2
+2026,SP,W,8,,Megan HAGUE,Auburn,17.51m57-5½,1
+2026,400H,W,1,,Akala GARRETT,South Carolina,54.49,10
+2026,400H,W,2,,Saira PRINCE,Arkansas,55.13,8
+2026,400H,W,3,,Vanice Kerubo NYAGISERA,Kentucky,55.41,6
+2026,400H,W,4,,Cenaiya BILLUPS,Howard,55.44,5
+2026,400H,W,5,,Amelliah BIRDOW,Texas,55.63,4
+2026,400H,W,6,,Vanessa BALDE,Texas Tech,55.77,3
+2026,400H,W,7,,Kelsie BELQUIST,Nebraska,55.94,2
+2026,400H,W,8,,Morgan HERBST,Arkansas,56.11,1
+2026,200,W,1,,Adaejah HODGE,Georgia,21.96,10
+2026,200,W,2,,Gabrielle MATTHEWS,Florida,22.22(22.212),8
+2026,200,W,3,,Camryn DICKSON,Texas A&M,22.22(22.217),6
+2026,200,W,4,,Dajaz DEFRAND,USC,22.36(22.354),5
+2026,200,W,4,,Yahnari LYONS,Howard,22.36(22.354),5
+2026,200,W,6,,Shawnti JACKSON,LSU,22.45,3
+2026,200,W,7,,Tiriah KELLEY,Baylor,22.51,2
+2026,200,W,8,,Christine MALLARD,USC,22.55,1
+2026,10k,W,1,,Mercyline KIRWA,Iowa State,31:54.88,10
+2026,10k,W,2,,Pamela KOSGEI,New Mexico,31:56.49,8
+2026,10k,W,3,,Jane HEDENGREN,BYU,31:57.94,6
+2026,10k,W,4,,Betty KIPKORE,Iowa State,31:59.72,5
+2026,10k,W,5,,Joy NAUKOT,West Virginia,32:01.51,4
+2026,10k,W,6,,Jadyn KEELER,North Dakota,32:04.97,3
+2026,10k,W,7,,Rylee BLADE,Florida State,32:08.83,2
+2026,10k,W,8,,Jenna HUTCHINS,BYU,32:16.16,1
+2026,4x400,W,1,,,Arkansas,3:21.90,10
+2026,4x400,W,2,,,Georgia,3:24.29,8
+2026,4x400,W,3,,,Duke,3:25.14,6
+2026,4x400,W,4,,,Tennessee,3:25.21,5
+2026,4x400,W,5,,,USC,3:25.97,4
+2026,4x400,W,6,,,Florida,3:26.06,3
+2026,4x400,W,7,,,Iowa,3:27.21,2
+2026,4x400,W,8,,,Kentucky,3:29.28,1
+2026,DT,M,1,,Ralford MULLINGS,Oklahoma,65.81m215-11,10
+2026,DT,M,2,,Racquil BRODERICK,USC,64.15m210-5,8
+2026,DT,M,3,,Vincent UGWOKE,USC,63.89m209-7,6
+2026,DT,M,4,,Texas TANNER,Air Force,63.75m209-2,5
+2026,DT,M,5,,Christopher YOUNG,Alabama,62.30m204-5,4
+2026,DT,M,6,,Shamar REID,Florida State,62.30m204-5,3
+2026,DT,M,7,,Christopher CRAWFORD,Alabama,61.96m203-3,2
+2026,DT,M,8,,Mico LAMPINEN,USC,61.89m203-0,1
+2026,HJ,M,1,,Kimani JACK,Georgia,2.28m7-5¾,10
+2026,HJ,M,2,,Scottie VINES,Arkansas,2.25m7-4½,8
+2026,HJ,M,3,,Grant CAMPBELL,Tennessee,2.25m7-4½,6
+2026,HJ,M,4,,Jordan WENGER,Oral Roberts,2.25m7-4½,5
+2026,HJ,M,5,,Riyon RANKIN,Georgia,2.22m7-3¼,4
+2026,HJ,M,6,,Elias GERALD,USC,2.22m7-3¼,3
+2026,HJ,M,7,,Ethan RUFFIN,FDU,2.19m7-2¼,2
+2026,HJ,M,7,,Khalil ANTOINE,Miss State,2.19m7-2¼,2
+2026,TJ,M,1,,Selva PRABHU,Kansas State,16.92m55-6¼,10
+2026,TJ,M,2,,Kevin KEMBOI,Oklahoma State,16.84m55-3,8
+2026,TJ,M,3,,Brandon GREEN JR,Oklahoma,16.78m55-¾,6
+2026,TJ,M,4,,Tre BETTS,Oregon,16.56m54-4,5
+2026,TJ,M,5,,Jonathan SEREMES,Texas Tech,16.48m54-1,4
+2026,TJ,M,6,,Jemuel MILLER,UTSA,16.45m53-11¾,3
+2026,TJ,M,7,,Kelsey DANIEL,Texas,16.44m53-11¼,2
+2026,TJ,M,8,,Praise ANIAMAKA,Purdue,16.43m53-11,1
+2026,5000,M,1,,Habtom SAMUEL,New Mexico,13:38.93,10
+2026,5000,M,2,,Rocky HANSEN,Wake Forest,13:39.91,8
+2026,5000,M,3,,Elsingi KIPRUTO,Louisville,13:42.58,6
+2026,5000,M,4,,Marco LANGON,Villanova,13:42.77,5
+2026,5000,M,5,,Ernest CHERUIYOT,Arkansas,13:44.52,4
+2026,5000,M,6,,Brian MUSAU,Oklahoma State,13:47.18,3
+2026,5000,M,7,,Pierre ATTIOGBE,Cornell,13:47.43,2
+2026,5000,M,8,,Isaac HEDENGREN,BYU,13:48.84,1
+2026,DT,W,1,,Alida VAN DAALEN,Florida,65.98m216-6,10
+2026,DT,W,2,,Joyce OGUAMA,Alabama,59.98m196-9,8
+2026,DT,W,3,,Ines LOPEZ,Arizona State,59.96m196-9,6
+2026,DT,W,4,,Alicia KHUNOU,Oregon,57.44m188-5,5
+2026,DT,W,5,,Klaire KOVATCH,Colorado St.,57.01m187-0,4
+2026,DT,W,6,,Layla GIORDANO,Princeton,56.94m186-10,3
+2026,DT,W,7,,Marie Josee BOVELE LINAKA,Oregon,56.65m185-10,2
+2026,DT,W,8,,Abigail MARTIN,Texas A&M,56.15m184-2,1
+2026,HJ,W,1,,Temitope ADESHINA,Texas Tech,1.96m6-5,10
+2026,HJ,W,2,,Rose YEBOAH,Illinois,1.96m6-5,8
+2026,HJ,W,3,,Kya CROOK,Arizona,1.90m6-2¾,6
+2026,HJ,W,4,,Ela VELEPEC,Nebraska,1.90m6-2¾,5
+2026,HJ,W,4,,Karsyn LEELING,Nebraska,1.90m6-2¾,5
+2026,HJ,W,6,,Valentina FAKROGHA,UCLA,1.87m6-1½,3
+2026,HJ,W,7,,Paris MIKINSKI,Arizona,1.87m6-1½,2
+2026,HJ,W,8,,Alyssa JONES,Stanford,1.87m6-1½,1
+2026,TJ,W,1,,Shantae FOREMAN,Clemson,14.24m46-8¾,10
+2026,TJ,W,2,,Sharifa DAVRONOVA,Oregon,14.15m46-5¼,8
+2026,TJ,W,3,,Destini SMITH,Kansas State,13.79m45-3,6
+2026,TJ,W,4,,Asia PHILLIPS,Florida,13.57m44-6¼,5
+2026,TJ,W,5,,Chelsea ANINYEI,UC Riverside,13.52m44-4¼,4
+2026,TJ,W,6,,Maeva TAHOU,Charleston Southern,13.44m44-1¼,3
+2026,TJ,W,7,,Georgina SCOOT,Princeton,13.38m43-10¾,2
+2026,TJ,W,8,,Jeanne LE GOFF,Texas,13.38m43-10¾,1
+2026,5000,W,1,,Marion JEPNGETICH,New Mexico,15:13.01,10
+2026,5000,W,2,,Mercyline KIRWA,Iowa State,15:13.72,8
+2026,5000,W,3,,Judy CHEPKOECH,Florida,15:14.05,6
+2026,5000,W,4,,Betty KIPKORE,Iowa State,15:14.43,5
+2026,5000,W,5,,Pamela KOSGEI,New Mexico,15:15.88,4
+2026,5000,W,6,,Hilda OLEMOMOI,Florida,15:16.23,3
+2026,5000,W,7,,Edna CHELULEI,Eastern Kentucky,15:18.21,2
+2026,5000,W,8,,Katie BOHLKE,Virginia Tech,15:18.71,1
