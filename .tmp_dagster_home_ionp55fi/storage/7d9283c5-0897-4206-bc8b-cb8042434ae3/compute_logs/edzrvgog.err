@@ -1,0 +1,16 @@
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - 40853 - LOGS_CAPTURED - Started capturing logs in process (pid: 40853).
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - 40853 - championship_actual_teams - STEP_START - Started execution of step "championship_actual_teams".
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_actual_teams - 2026 Official Final Team Scores:
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_actual_teams -   ── Top 3 Men ──
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_actual_teams -     1. Arkansas — 56 pts
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_actual_teams -     2. Georgia — 49 pts
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_actual_teams -     3. Tennessee — 46 pts
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_actual_teams -   ── Top 3 Women ──
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_actual_teams -     1. Georgia — 50 pts
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_actual_teams -     2. Florida — 43 pts
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_actual_teams -     3. Arkansas — 38 pts
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - 40853 - championship_actual_teams - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_actual_teams - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_ionp55fi/storage/championship_actual_teams using PickledObjectFilesystemIOManager...
+[32m2026-06-19 23:07:13 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - 40853 - championship_actual_teams - ASSET_MATERIALIZATION - Materialized value championship_actual_teams.
+[32m2026-06-19 23:07:13 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - 40853 - championship_actual_teams - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-06-19 23:07:13 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - 40853 - championship_actual_teams - STEP_SUCCESS - Finished execution of step "championship_actual_teams" in 658ms.

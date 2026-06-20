@@ -1,0 +1,52 @@
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - 40854 - LOGS_CAPTURED - Started capturing logs in process (pid: 40854).
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - 40854 - championship_results_2026 - STEP_START - Started execution of step "championship_results_2026".
+[32m2026-06-19 23:07:12 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 - 2026: 40 events found
+[32m2026-06-19 23:07:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M HT: 8 finalists
+[32m2026-06-19 23:07:13 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M 4x100: 8 finalists
+[32m2026-06-19 23:07:14 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M 1500: 8 finalists
+[32m2026-06-19 23:07:14 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M PV: 8 finalists
+[32m2026-06-19 23:07:15 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M 3000S: 8 finalists
+[32m2026-06-19 23:07:15 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M 110H: 8 finalists
+[32m2026-06-19 23:07:15 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M JT: 8 finalists
+[32m2026-06-19 23:07:16 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M 100: 8 finalists
+[32m2026-06-19 23:07:16 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M LJ: 8 finalists
+[32m2026-06-19 23:07:16 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M 400: 8 finalists
+[32m2026-06-19 23:07:17 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M 800: 8 finalists
+[32m2026-06-19 23:07:17 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M SP: 8 finalists
+[32m2026-06-19 23:07:18 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M 400H: 8 finalists
+[32m2026-06-19 23:07:18 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M 200: 8 finalists
+[32m2026-06-19 23:07:18 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M 10k: 8 finalists
+[32m2026-06-19 23:07:19 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M 4x400: 8 finalists
+[32m2026-06-19 23:07:19 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W HT: 8 finalists
+[32m2026-06-19 23:07:19 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W 4x100: 8 finalists
+[32m2026-06-19 23:07:20 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W 1500: 8 finalists
+[32m2026-06-19 23:07:20 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W PV: 8 finalists
+[32m2026-06-19 23:07:21 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W 3000S: 8 finalists
+[32m2026-06-19 23:07:21 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W 100H: 8 finalists
+[32m2026-06-19 23:07:21 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W JT: 8 finalists
+[32m2026-06-19 23:07:22 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W 100: 8 finalists
+[32m2026-06-19 23:07:23 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W LJ: 8 finalists
+[32m2026-06-19 23:07:23 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W 400: 8 finalists
+[32m2026-06-19 23:07:23 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W 800: 8 finalists
+[32m2026-06-19 23:07:24 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W SP: 8 finalists
+[32m2026-06-19 23:07:24 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W 400H: 8 finalists
+[32m2026-06-19 23:07:25 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W 200: 8 finalists
+[32m2026-06-19 23:07:25 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W 10k: 8 finalists
+[32m2026-06-19 23:07:25 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W 4x400: 8 finalists
+[32m2026-06-19 23:07:26 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M DT: 8 finalists
+[32m2026-06-19 23:07:26 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M HJ: 8 finalists
+[32m2026-06-19 23:07:27 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M TJ: 8 finalists
+[32m2026-06-19 23:07:27 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 M 5000: 8 finalists
+[32m2026-06-19 23:07:28 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W DT: 8 finalists
+[32m2026-06-19 23:07:28 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W HJ: 8 finalists
+[32m2026-06-19 23:07:28 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W TJ: 8 finalists
+[32m2026-06-19 23:07:29 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   2026 W 5000: 8 finalists
+[32m2026-06-19 23:07:29 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 - 2026 Championship Results: 320 finalists across 21 events
+[32m2026-06-19 23:07:29 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   Men: 160 entries
+[32m2026-06-19 23:07:29 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 -   Women: 160 entries
+[32m2026-06-19 23:07:29 -0700[0m - dagster - [34mINFO[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 - Saved → data/championship/championship_results_2026.csv
+[32m2026-06-19 23:07:29 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - 40854 - championship_results_2026 - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-06-19 23:07:29 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - championship_results_2026 - Writing file at: /Users/katelynvuong/Desktop/2026-ncaa-tf-predictions/.tmp_dagster_home_ionp55fi/storage/championship_results_2026 using PickledObjectFilesystemIOManager...
+[32m2026-06-19 23:07:29 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - 40854 - championship_results_2026 - ASSET_MATERIALIZATION - Materialized value championship_results_2026.
+[32m2026-06-19 23:07:29 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - 40854 - championship_results_2026 - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-06-19 23:07:29 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 7d9283c5-0897-4206-bc8b-cb8042434ae3 - 40854 - championship_results_2026 - STEP_SUCCESS - Finished execution of step "championship_results_2026" in 16.82s.

@@ -67,13 +67,20 @@ def _get(url: str) -> str:
 
 
 def _event_links(index_url: str) -> list[tuple[str, str, str]]:
-    """Return (event_url, event_key, gender) for every scoreable event from flashresults."""
+    """Return (event_url, event_key, gender) for every scoreable event from flashresults FINALS.
+
+    Note: Track/relay events use -2_compiled.htm (finals only).
+    Field events use -1_compiled.htm (we filter to top-8 by place).
+    """
     soup = BeautifulSoup(_get(index_url), "html.parser")
     seen: set[str] = set()
     links = []
 
+    # Events that only have -1_compiled.htm pages or whose -2 pages are blocked
+    # (Field events + distance events whose finals pages are inaccessible)
+    FIELD_EVENTS = {"HJ", "PV", "LJ", "TJ", "SP", "DT", "HT", "JT", "5000", "10k"}
+
     # Find all direct links to event result pages (e.g., "001-1_compiled.htm")
-    # This captures ALL events, not just those in the schedule tables
     all_links = soup.find_all("a", href=True)
 
     for a in all_links:
@@ -110,6 +117,11 @@ def _event_links(index_url: str) -> list[tuple[str, str, str]]:
         event_key = _map_event_name(event_name_clean)
         if not event_key:
             continue
+
+        # For track/relay events, use -2_compiled.htm (finals).
+        # For field events, use -1_compiled.htm (filter to top-8).
+        if event_key not in FIELD_EVENTS:
+            href = href.replace("-1_compiled.htm", "-2_compiled.htm")
 
         full_url = href if href.startswith("http") else f"{_CHAMP_BASE}/{href}"
         links.append((full_url, event_key, gender))
